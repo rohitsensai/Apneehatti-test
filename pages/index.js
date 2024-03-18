@@ -1,118 +1,487 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import Head from "next/head";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { TbTruckDelivery } from "react-icons/tb";
+import {
+  MdAddBusiness,
+  MdArrowBackIos,
+  MdArrowForwardIos,
+  MdLocalFlorist,
+} from "react-icons/md";
+import {
+  HiArrowCircleLeft,
+  HiArrowCircleRight,
+  HiArrowNarrowRight,
+  HiArrowRight,
+  HiArrowSmRight,
+} from "react-icons/hi";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
+import Slider from "react-slick";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchFeaturedProducts } from "../slices/product";
+import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const Herosection = dynamic(() => import("../components/herosection"), {
+  ssr: false,
+});
+const Benefits = dynamic(() => import("../components/Benefits"), {
+  ssr: false,
+})
+const Testimonials = dynamic(() => import("../components/Testimonials"), {
+  ssr: false,
+})
+const Product = dynamic(() => import("../components/card"), { ssr: false });
+const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
+  ssr: false,
+});
 
-export default function Home() {
+// {
+//   "id": 137963979,
+//   "sku": "1695042397112",
+//   "hsn": "",
+//   "name": "Chamba Chukh Red Chilli Chukh Garlic Flavour | Traditional Chamba Chukh with Garlic Flavour| ",
+//   "description": "",
+//   "category_code": "default",
+//   "category_name": "Default Category",
+//   "category_tax_code": "default",
+//   "image": "",
+//   "weight": "0.5 Kg",
+//   "size": "",
+//   "cost_price": "0.00",
+//   "mrp": "163.00",
+//   "tax_code": 0,
+//   "low_stock": 0,
+//   "ean": "",
+//   "upc": "",
+//   "isbn": "",
+//   "created_at": "18 Sep 2023 06:37 PM",
+//   "updated_at": "18 Sep 2023 06:37 PM",
+//   "quantity": 1,
+//   "color": "",
+//   "brand": "",
+//   "dimensions": "16 x 11 x 10 cm ",
+//   "status": "INACTIVE",
+//   "type": "Single"
+// },
+
+let socket;
+
+export default function Home({ socket_URL }) {
+  const dispatch = useDispatch();
+  const newArrivalSlider = useRef();
+  const topDealSlider = useRef();
+  const trendingProductSlider = useRef();
+  const bestSellerSlider = useRef();
+  const { newArrival, topDeals, trendingProducts, bestSellers, loading } =
+    useSelector((state) => state.products);
+    let copiedTopDeals = [...topDeals];
+    copiedTopDeals.push(bestSellers[0])
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  useEffect(() => {
+    dispatch(fetchFeaturedProducts());
+   
+  }, []);
+
+ 
+   
+ 
+
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">pages/index.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
+    <>
+      <Head>
+        <title>Apneehatti</title>
+      </Head>
+      <div>
+        <Herosection />
+        <div className="bg-gray-100 hidden">
+          <div className="grid grid-cols-2 w-11/12 gap-y-4 md:grid-cols-4 md:w-5/6 mx-auto py-12 gap-x-4">
+            <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
+              <MdAddBusiness className="text-4xl mb-1  mx-auto" />
+              <h1 className="font-medium">Support Local Business</h1>
+              <p className="text-sm text-gray-500">
+                We support the small business
+              </p>
+            </div>
+            <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
+              <TbTruckDelivery className="text-4xl mb-1  mx-auto" />
+              <h1 className="font-medium">Pan India Delivery</h1>
+              <p className="text-sm text-gray-500">
+                We are delivering happiness all over india
+              </p>
+            </div>
+            <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
+              <MdLocalFlorist className="text-4xl mb-1  mx-auto" />
+              <h1 className="font-medium">Eco Friendly Products</h1>
+              <p className="text-sm text-gray-500">
+                We deliver ecofriendly products
+              </p>
+            </div>
+            <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
+              <AiFillSafetyCertificate className="text-4xl mb-1  mx-auto" />
+              <h1 className="font-medium">Quality Assurance</h1>
+              <p className="text-sm text-gray-500">
+                We provide genuine and quality product
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-1  my-4">
+          <div className="">
+            <img
+              src="/images/banner/offer-1.png"
+              width="100%"
+              height="100%"
+              alt=""
             />
-          </a>
+          </div>
+          <div className="">
+            <img
+              src="/images/banner/offer-2.png"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+          <div className="hidden">
+            <img
+              src="/pictures/banner/offer-3.png"
+              width="100%"
+              height="100%"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div className="">
+          <div className="">
+            <div className="py-4">
+              <h3 className="text-center text-2xl font-semibold uppercase mb-2 ">
+                Deals of the day
+              </h3>
+              <h3 className="text-center text-gray-500">
+                Upto 50% Off plus free shipping | Grab it Fast
+              </h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="h-48 my-4">
+          <img
+            src="/images/banner/banner4.png"
+            width="100%"
+            // height="100%"
+            className=" h-full object-cover"
+            alt=""
+            id="dis-img"
+          />
+        </div>
+
+
+        <div className="">
+          <div className="relative">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button
+                onClick={() => {
+                  newArrivalSlider.current.slickPrev();
+                }}
+              >
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div> */}
+            <div className="py-8 px-2 md:p-8">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Latest new arrivals
+                  </h3>
+
+                  <h3 className="text-center text-gray-500">
+                    We’re crushing on new arrivals + 30% off all full price!
+                  </h3>
+
+                </div>
+                <div className="md:hidden w-20 flex justify-between items-center">
+                  <button onClick={() => newArrivalSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+                  <button onClick={() => newArrivalSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto ">
+                <Slider
+                  ref={(slider) => (newArrivalSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && newArrival.length > 0
+                    ? newArrival.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 1).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+               <button onClick={() => newArrivalSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button> 
+             </div>  */}
+          </div>
+
+          <div className="relative">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  "> */}
+            {/* <button
+                onClick={() => {
+                  topDealSlider.current.slickPrev();
+                }}
+              > */}
+            {/* <MdArrowBackIos className="text-3xl" /> */}
+            {/* </button> */}
+            {/* </div> */}
+            <div className="py-8 px-2 md:p-8  ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    TOP SELLING PRODUCTS
+                  </h3>
+
+                  <h3 className="text-center text-gray-500">
+                    Grab It Fast | Sale Is Live
+                  </h3>
+
+                </div>
+                <div className="md:hidden w-20 flex justify-between items-center">
+                  <button onClick={() => topDealSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => topDealSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="w-10/12 md:w-full  mx-auto" >
+                <Slider
+                  ref={(slider) => (topDealSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && copiedTopDeals.length > 0
+                    ? copiedTopDeals.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 2).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => topDealSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div> */}
+          </div>
+
+          <div className="relative">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div> */}
+            <div className="py-8 px-2 md:p-8  ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    SUMMER SPECIALS
+                  </h3>
+
+                  <h3 className="text-center text-gray-500">
+                    Grab It Fast | Sale Is Live
+                  </h3>
+
+                </div>
+                <div className="md:hidden w-20 flex justify-between items-center">
+                  <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => bestSellerSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (bestSellerSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && bestSellers.length > 0
+                    ? bestSellers.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 4).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div> */}
+          </div>
+
+          <div className="relative">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div> */}
+            <div className="py-8 px-2 md:p-8  ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Latest new arrivals
+                  </h3>
+
+                  <h3 className="text-center text-gray-500">
+                    Grab It Fast | Sale Is Live
+                  </h3>
+
+                </div>
+                <div className="md:hidden w-20 flex justify-between items-center">
+                  <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => bestSellerSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (bestSellerSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && newArrival.length > 0
+                    ? newArrival.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 4).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div> */}
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <Benefits />
+      <Testimonials />
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <button type="button" class="btn btn-outline-success" style={{ marginTop: "2%" }}>
+          <a href="https://g.page/r/CWqeVis8_uz7EB0/review">
+            Give Your Review
+          </a>
+        </button>
       </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   );
 }
