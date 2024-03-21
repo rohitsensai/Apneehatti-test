@@ -1,10 +1,10 @@
-import main from "../../../../database/conn";
+import Main from "../../../../database/conn";
 import Policy from "../../../model/policySchema";
 
 const GetAll = async (req, res) => {
   try {
     // Connect to database
-    await main().catch((err) => console.error(err));
+    await Main().catch((err) => console.error(err));
     const policies = await Policy.find({}).populate("product_category");
     return res.status(200).json(policies);
   } catch (error) {
