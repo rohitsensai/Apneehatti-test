@@ -318,8 +318,8 @@ export default function Home({ socket_URL }) {
                   ref={(slider) => (topDealSlider.current = slider)}
                   {...settings}
                 >
-                  {!loading && copiedTopDeals.length > 0
-                    ? copiedTopDeals.map((item) => (
+                  {!loading && topDeals.length > 0
+                    ? topDeals.map((item) => (
                       <Product
                         key={item._id}
                         product={{

@@ -1,4 +1,4 @@
-import main from "../../../database/conn";
+import main from "../../../../database/conn";
 import Policy from "../../../model/policySchema";
 
 const GetAll = async (req, res) => {

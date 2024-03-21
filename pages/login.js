@@ -8,7 +8,7 @@ import Head from "next/head";
 import { toast } from "react-toastify";
 import { BsEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import Image from "next/image";
-
+import Layout from "../layout/layout"
 
 export async function getServerSideProps(context) {
   let session = await getSession(context);
@@ -54,8 +54,8 @@ const login = () => {
     e.preventDefault();
 
     if (email && password) {
-      
-      signIn("Credentials", {
+      e.preventDefault();
+      signIn("credentials", {
         redirect: false,
         email,
         password,
@@ -105,6 +105,8 @@ const login = () => {
 
   return (
     <>
+    
+
       <Head>
         <title>Login</title>
       </Head>
@@ -206,6 +208,7 @@ const login = () => {
           </form>
         </div>
       </div>
+    
     </>
   );
 };
