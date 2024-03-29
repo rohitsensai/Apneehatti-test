@@ -1,16 +1,21 @@
-import Main from "../../../../database/conn";
-import Policy from "../../../model/policySchema";
+import main from "../../../../database/conn";
+import Policy from "../../../../model/policySchema";
 
-const GetAll = async (req, res) => {
+const getPolicy = async (req, res) => {
   try {
     // Connect to database
-    await Main().catch((err) => console.error(err));
-    const policies = await Policy.find({}).populate("product_category");
-    return res.status(200).json(policies);
+    await main().catch((err) => console.error(err));
+    const { policy_id } = req.query;
+    const policy = await Policy.findById({ _id: policy_id });
+    if (policy) {
+      res.status(200).json(policy);
+    } else {
+      res.status(400).json({ mesage: "Policy not found" });
+    }
   } catch (error) {
-    console.error(error);
-    return res.status(500).json({ error });
+    res.status(500).json({ error });
   }
 };
 
-export default GetAll;
+export default getPolicy;
+git
