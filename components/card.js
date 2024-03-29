@@ -32,7 +32,7 @@ const Product = ({ product }) => {
       console.log("id",session.user.id)
       console.log(product.id)
       addToBasketAnimation();
-      const data = await fetch(`http://localhost:3000/api/cart/${session.user.id}/add`, {
+      const data = await fetch(`/api/cart/${session.user.id}/add`, {
         headers: {
           "Content-Type": "application/json",
         },

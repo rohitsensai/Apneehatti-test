@@ -31,6 +31,8 @@ export async function getServerSideProps(context) {
     : [];
   const [res] = await Promise.all(dataPromises);
 
+  console.log("res",res)
+
   const filteredRes =
     res?.filter((item) => item?.category_id?.active && item?.active) || [];
   return {
