@@ -136,18 +136,20 @@ const Product = ({ product }) => {
             </div>
           </div>
           {/* Add to cart button */}
-          <div className=" d-flex    " >
-          <button className="col-6  uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold border-2 border-pink-500 text-pink-500 ">
+          <div className=" d-flex pl-4 pr-4 justify-between"  >
+        
+          <button className=" btn4 uppercase transition-all duration-300  hover:text-pink text-sm   text-white bg-pink-600">
            BUY NOW
             
             </button>
+
 
           
               <button
                 onClick={(e) => {
                   add(product);
                 }}
-                className="col-6 "
+                className=" "
               >
                 {added ? (
                   <div className="">
@@ -169,7 +171,7 @@ const Product = ({ product }) => {
                     </svg>
                   </div>
                 ) : (
-                  <div className=" uppercase transition-all duration-300 hover:bg-green-600 hover:text-white text-sm font-bold border-2 border-green-500 text-green-500 ">ADD TO BASKET</div>
+                  <div className="btn4 uppercase transition-all duration-300 hover:bg-green-600 hover:text-white text-sm  border-2 border-green-500 text-white bg-green-600 ">ADD TO BASKET</div>
                 )}
               </button>
             

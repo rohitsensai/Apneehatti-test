@@ -56,6 +56,9 @@ input[type=range]::-webkit-slider-thumb {
 .btn2{
   @apply text-white uppercase transition-all duration-300 bg-green-600 hover:bg-green-500 text-sm font-bold   border-2 border-green-700
 }
+.btn4{
+    
+}
 #scrollbar_container::-webkit-scrollbar {
   width: 5px;
 }
@@ -137,7 +140,7 @@ a {
 #navbarNav1{
     /* border: 4px solid red; */
     /* font-size: ; */
-    margin-top: -20px;
+    margin: 20px;
     background-color: #ffffff;
    font-family: sans-serif;
 }
@@ -256,8 +259,8 @@ a:hover{
 
 .cat-img{
     /* border: 2px solid rgb(161, 132, 132); */
-    width: 70%;
-    height: 8em;
+    width: 60%;
+    height: 6em;
     border-radius: 5em;
     background-color: white;
     margin: auto auto;

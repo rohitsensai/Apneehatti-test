@@ -62,12 +62,12 @@ function Herosection() {
               />
             ) : (
               <Image
-                src="/images/banner/banner-9.png"
+                src="/images/banner/banner-9.jpg"
                 alt="banner"
                 priority
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={"/images/banner/banner-9.png"}
+                blurDataURL={"/images/banner/banner-9.jpg"}
                 objectFit="contain"
               />
             )}

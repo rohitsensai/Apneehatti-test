@@ -46,7 +46,7 @@ const login = () => {
   const loginHandler = async (e) => {
     setLoading(!loading);
     e.preventDefault();
-    const REDIRECT_URL = "https://localhost:3000"
+    const REDIRECT_URL = process.env.HOST
     if (email && password) {
       await signIn("credentials", {
         redirect: false,

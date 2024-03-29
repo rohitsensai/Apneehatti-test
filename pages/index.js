@@ -16,7 +16,7 @@ import {
 } from "react-icons/hi";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
 import Slider from "react-slick";
 import { useDispatch, useSelector } from "react-redux";
@@ -69,15 +69,17 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
 let socket;
 
 export default function Home({ socket_URL }) {
+  const [copiedTopDeals, setCopiedTopDeals] = useState([]);
   const dispatch = useDispatch();
   const newArrivalSlider = useRef();
   const topDealSlider = useRef();
   const trendingProductSlider = useRef();
   const bestSellerSlider = useRef();
-  const { newArrival, topDeals, trendingProducts, bestSellers, loading } =
+  let { newArrival, topDeals, trendingProducts, bestSellers, loading } =
     useSelector((state) => state.products);
-    let copiedTopDeals = [...topDeals];
-    copiedTopDeals.push(bestSellers[0])
+
+
+
   var settings = {
     arrows: false,
     dots: false,
@@ -113,14 +115,25 @@ export default function Home({ socket_URL }) {
       },
     ],
   };
+
+
+
   useEffect(() => {
     dispatch(fetchFeaturedProducts());
-   
+    const fetchData = async () => {
+      // Your data fetching logic here
+      // For example, setting copiedTopDeals after fetching data
+      const newCopiedTopDeals = [bestSellers[0],...topDeals]; // Assuming topDeals and bestSellers are already defined
+      setCopiedTopDeals(newCopiedTopDeals);
+      
+    };
+
+    fetchData(); // Call the fetchData function when the component mounts
   }, []);
 
- 
-   
- 
+
+
+
 
   return (
     <>
@@ -318,8 +331,8 @@ export default function Home({ socket_URL }) {
                   ref={(slider) => (topDealSlider.current = slider)}
                   {...settings}
                 >
-                  {!loading && copiedTopDeals.length > 0
-                    ? topDeals.map((item) => (
+                  {!loading && topDeals.length > 0
+                    ? [...topDeals, ...topDeals].map((item) => (
                       <Product
                         key={item._id}
                         product={{
@@ -336,6 +349,7 @@ export default function Home({ socket_URL }) {
                     : Array.from({ length: 5 }, (_, i) => i + 2).map((i) => (
                       <ProductSkeleton key={i} />
                     ))}
+                   
                 </Slider>
               </div>
             </div>
