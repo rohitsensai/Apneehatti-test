@@ -33,7 +33,7 @@ function Herosection() {
   return (
     <>
       <div className="image-container h-44 sm:h-64 xl:h-[380px] 2xl:h-96">
-        <Carousel
+        <Carousel showThumbs={false}
           // leftControl={
             // <div className=" sm:hidden md:flex p-1 cursor-pointer  justify-center items-center absolute left-0 top-20 md:bg-gray-200 md:border-r-gray-300 md:border-t-gray-300 md:border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl md:border md:shadow-lg h-44  ">
             //   <button>

@@ -8,11 +8,9 @@ import Head from "next/head";
 import { toast } from "react-toastify";
 import { BsEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import Image from "next/image";
-import Layout from "../layout/layout"
 
 export async function getServerSideProps(context) {
-  let session = await getSession(context);
-  console.log("kajal",{ session });
+  const session = await getSession(context);
   if (session) {
     return {
       redirect: {
@@ -35,7 +33,7 @@ const login = () => {
   const router = useRouter();
   //   Login
   const inputHandler = (e) => {
-    const { name, value } = e.target; 
+    const { name, value } = e.target;
     setLoginDetails({
       ...loginDetails,
       [name]: value,
@@ -46,24 +44,18 @@ const login = () => {
   const { data: session, status } = useSession();
 
   const loginHandler = async (e) => {
-
-    console.log("email",email)
-    console.log("password",password)
-   
     setLoading(!loading);
     e.preventDefault();
-
+    const REDIRECT_URL = "https://localhost:3000"
     if (email && password) {
-      e.preventDefault();
-      signIn("credentials", {
+      await signIn("credentials", {
         redirect: false,
         email,
         password,
-        callbackUrl: process.env.HOST,
+        callbackUrl: REDIRECT_URL,
       }).then((res) => {
-        console.log("res",res)
         setLoading(false);
-
+        console.log("res",res)
         if (!res.ok) {
           toast.error("Invalid credentials", {
             position: "top-right",
@@ -77,9 +69,7 @@ const login = () => {
             autoClose: 3000,
             closeOnClick: true,
             pauseOnHover: true,
-            
           });
-          console.log("session",session)
         }
       });
     } else {
@@ -105,8 +95,6 @@ const login = () => {
 
   return (
     <>
-    
-
       <Head>
         <title>Login</title>
       </Head>
@@ -208,7 +196,6 @@ const login = () => {
           </form>
         </div>
       </div>
-    
     </>
   );
 };

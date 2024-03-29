@@ -54,7 +54,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .btn2{
-  @apply p-2 text-white uppercase transition-all duration-300 bg-green-600 hover:bg-green-500 text-sm font-bold w-full mt-2 border-2 border-green-700
+  @apply text-white uppercase transition-all duration-300 bg-green-600 hover:bg-green-500 text-sm font-bold   border-2 border-green-700
 }
 #scrollbar_container::-webkit-scrollbar {
   width: 5px;

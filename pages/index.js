@@ -127,7 +127,7 @@ export default function Home({ socket_URL }) {
       <Head>
         <title>Apneehatti</title>
       </Head>
-      <div>
+      <div className="bg-grey;">
         <Herosection />
         <div className="bg-gray-100 hidden">
           <div className="grid grid-cols-2 w-11/12 gap-y-4 md:grid-cols-4 md:w-5/6 mx-auto py-12 gap-x-4">
@@ -318,7 +318,7 @@ export default function Home({ socket_URL }) {
                   ref={(slider) => (topDealSlider.current = slider)}
                   {...settings}
                 >
-                  {!loading && topDeals.length > 0
+                  {!loading && copiedTopDeals.length > 0
                     ? topDeals.map((item) => (
                       <Product
                         key={item._id}

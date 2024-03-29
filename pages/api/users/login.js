@@ -4,7 +4,7 @@ import generateToken from "../../../utils/generateToken";
 
 // Handler function for login route
 const login = async (req, res) => {
-  consoloe.log("inside login.js")
+  console.log("inside login.js")
   const { email, password } = req.body;
   // Connect to database
   await main().catch((err) => console.error(err));

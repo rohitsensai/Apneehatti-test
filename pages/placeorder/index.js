@@ -12,14 +12,10 @@ import { toast } from "react-toastify";
 import countryState from "../../database/country-states.json";
 import Head from "next/head";
 import { clearCart } from "../../slices/cart";
-import EditAddressModal from "../../components/editAddress";
-import CartSummary from "../../components/cartSummary";
-import ShippingItem from "../../components/ShippingItem";
-import checkCourierServiceability from "../../utils/checkCourierServiceability";
 
 export async function getServerSideProps({ req }) {
   // Check if the user is authenticated, if not redirect to login page
-  let session = await getSession({ req });
+  const session = await getSession({ req });
   if (!session) {
     return {
       redirect: {
@@ -67,26 +63,22 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     address_line: "",
     mobile: "",
     state: "",
-    country: "India",
+    country: "",
     city: "",
     postal_code: "",
     email: session && session.user.email,
-    payment_method: null,
-    shipping_price: 0,
+    payment_method: "netbanking",
+    shipping_price: shipping,
     order_items: cartItems,
     total: total,
     transaction_id: null,
     shipping_address: "",
     coupon: "",
     discount: 0,
-    courier_company_id: null,
-    total_weight: 0,
   };
   const [address, setAddress] = useState(initialValues);
   const [coupon_code, setCoupon_code] = useState("");
   const [discount, setDiscount] = useState(0);
-  const [courierServices, setCourierServices] = useState([]);
-  const [selectedAddressId, setSelectedAddressId] = useState();
   const [savedAddress, setSavedAddress] = useState(saved_address);
   const [savedAddressId, setSavedAddressId] = useState();
   const [editAddressModalOpen, setEditAddressModalOpen] = useState(false);
@@ -98,10 +90,14 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
 
   const handleInputChange = (e) => {
     e.preventDefault();
+    const formElement = e.target.closest("form");
+    const form_data = new FormData(formElement);
+    const formData = Object.fromEntries(form_data);
     setAddress((prevAddress) => ({
       ...prevAddress,
-      [e.target.name]: e.target.value,
+      ...formData,
     }));
+    setFormSubmitted(true);
   };
 
   const clearCartFun = async () => {
@@ -111,21 +107,6 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   };
 
   const createOrderFun = async (address) => {
-    const order_obj = {
-      user_id: address.user_id,
-      order_items: cartItems,
-      payment_method: address.payment_method,
-      delivery_method: address.delivery_method,
-      shipping_price: address.shipping_price,
-      total: address.total,
-      transaction_id: address.transaction_id,
-      shipping_address: address.shipping_address,
-      coupon: address.coupon ? address.coupon : null,
-      courier_company_id: address.courier_company_id,
-      total_weight: address.total_weight,
-      discount: discount,
-    };
-    console.log({ order_obj });
     try {
       const res = await fetch(`/api/orders/create`, {
         headers: {
@@ -133,7 +114,17 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
           Authorization: `Bearer ${session && session.user.accessToken}`,
         },
         method: "POST",
-        body: JSON.stringify(order_obj),
+        body: JSON.stringify({
+          user_id: address.user_id,
+          order_items: cartItems,
+          payment_method: address.payment_method,
+          shipping_price: address.shipping_price,
+          total: address.total,
+          transaction_id: address.transaction_id,
+          shipping_address: address.shipping_address,
+          coupon: address.coupon ? address.coupon : null,
+          discount: discount,
+        }),
       });
       const response = await res.json();
       if (response.status == "ok" || response.id != undefined) {
@@ -218,7 +209,6 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
       try {
         var shipping_add = await response.shipping_address;
         address.shipping_address = await shipping_add;
-        console.log({ shipping_add });
         if (address.payment_method === "netbanking") {
           razorpayHandler(address, session && session.user.accessToken);
         } else {
@@ -259,7 +249,6 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     } else {
       setSavedAddress(savedAddress.filter((item) => item._id !== id));
       toast.success("Address deleted successfully");
-      setSelectedAddressId(null);
     }
   };
 
@@ -335,46 +324,6 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     }
   };
 
-  const checkCourierService = async () => {
-    var postalCode;
-    if (selectedAddressId) {
-      const selectedAddress = savedAddress.find(
-        (item) => item._id === selectedAddressId
-      );
-      postalCode = selectedAddressId ? selectedAddress.postal_code : null;
-    } else {
-      postalCode = address.postal_code;
-    }
-
-    const totalWeightedQuantity = cartItems.reduce(
-      (acc, item) => acc + item.weight * item.quantity,
-      0
-    );
-    setAddress((prev) => ({
-      ...prev,
-      total_weight: totalWeightedQuantity,
-    }));
-    console.log({ totalWeightedQuantity });
-    const data = await fetch(`/api/checkCourierServiceAbility`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        pickupPincode: 176052,
-        deliveryPincode: postalCode,
-        weight: totalWeightedQuantity,
-        cod: address.payment_method == "netbanking" ? 0 : 1,
-      }),
-    });
-    const res = await data.json();
-    console.log();
-    if (data.ok) {
-      setCourierServices(res);
-    } else {
-      console.log(res.error);
-    }
-  };
   useEffect(() => {
     if (total == 0) {
       router.push("/search?category=all");
@@ -382,14 +331,12 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     setAddress({
       ...address,
       total:
-        total != 0 && total - subtotal !== address.shipping_price
-          ? total + address.shipping_price
-          : total,
+        total != 0 && total - subtotal !== shipping ? total + shipping : total,
       discount: 0,
       order_items: cartItems,
     });
     setDiscount(0);
-  }, [address.shipping_price]);
+  }, [total]);
 
   useEffect(() => {
     if (formSubmitted) {
@@ -400,15 +347,6 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     }
   }, [formSubmitted]);
 
-  useEffect(() => {
-    if (
-      (address.shipping_address || address.postal_code) &&
-      address.payment_method
-    ) {
-      checkCourierService();
-    }
-  }, [selectedAddressId, address.postal_code, address.payment_method]);
-
   return (
     <>
       <Head>
@@ -416,321 +354,238 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
       </Head>
       <div className="lg:grid grid-cols-2">
         <div className="mx-5 my-5 lg:mx-20 lg:my-10 relative">
-          {/* <form onSubmit={(e) => handleInputChange(e)}> */}
-          {savedAddress && savedAddress.length > 0 && toggleAddNewAddress ? (
-            <div className="">
-              <div className="flex justify-between items-center">
-                <div className="text-lg  py-5 w-full  md:flex justify-between items-baseline">
-                  <h1> Choose shipping address </h1>
-                  <button
-                    className="text-green-500 font-medium block md:inline-block text-sm top-6 capitalize  right-2"
-                    type="button"
-                    onClick={() => setToggleAddNewAddress(!toggleAddNewAddress)}
-                  >
-                    {savedAddress &&
-                    savedAddress.length > 0 &&
-                    !toggleAddNewAddress
-                      ? "Back to saved address"
-                      : "Add new address"}
-                  </button>
+          <form onSubmit={(e) => handleInputChange(e)}>
+            {savedAddress && savedAddress.length > 0 && toggleAddNewAddress ? (
+              <div className="">
+                <div className="flex justify-between items-center">
+                  <div className="text-lg  py-5 w-full  md:flex justify-between items-baseline">
+                    <h1> Choose shipping address </h1>
+                    <button
+                      className="text-green-500 font-medium block md:inline-block text-sm top-6 capitalize  right-2"
+                      type="button"
+                      onClick={() =>
+                        setToggleAddNewAddress(!toggleAddNewAddress)
+                      }
+                    >
+                      {savedAddress &&
+                      savedAddress.length > 0 &&
+                      !toggleAddNewAddress
+                        ? "Back to saved address"
+                        : "Add new address"}
+                    </button>
+                  </div>
                 </div>
-              </div>
 
-              <div className="p-2 mb-2 grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
-                {savedAddress.map((item) => (
-                  <label
-                    htmlFor={item._id}
-                    key={item._id}
-                    className="border shadow-lg p-5 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 text-justify w-full"
-                  >
-                    <div className="flex justify-between items-center text-sm font-extrabold">
-                      <h5 className="flex gap-x-2 items-center">
-                        <input
-                          id={item._id}
-                          type="radio"
-                          name="shipping_address"
-                          onChange={(e) => {
-                            handleInputChange(e);
-                            setSelectedAddressId(e.target.id);
-                          }}
-                          value={item._id}
-                        />
-                        Address
-                      </h5>{" "}
-                      <div className="flex items-center">
-                        <MdEdit
-                          className="text-lg mr-2"
-                          onClick={() => {
-                            setEditAddressModalOpen(true);
-                            setSavedAddressId(item._id);
-                          }}
-                        />
-                        <MdDelete
-                          className="text-lg"
-                          onClick={() => deleteAddressById(item._id)}
-                        />
-                      </div>
-                    </div>
-                    <div className="text-sm text-gray-500 p-2 leading-6">
-                      <h6>{item?.fullname}</h6>
-                      <h6>{item.email}</h6>
-                      <h6 className=" text-justify ">
-                        {item.address_line +
-                          ", " +
-                          item.city +
-                          ", " +
-                          item.postal_code +
-                          ", " +
-                          item.country}
-                      </h6>
-                      <h6>{item.mobile}</h6>
-                    </div>
-                  </label>
-                ))}
-              </div>
-            </div>
-          ) : (
-            <div>
-              <div className="">
-                <h4 className="text-lg  py-5 md:flex justify-between items-baseline">
-                  Contact Information{" "}
-                  <button
-                    className="text-green-500 font-medium block md:inline-block text-sm top-6 capitalize  right-2"
-                    type="button"
-                    onClick={() => setToggleAddNewAddress(!toggleAddNewAddress)}
-                  >
-                    {!toggleAddNewAddress
-                      ? "Back to saved address"
-                      : "Add new address"}
-                  </button>
-                </h4>
-                <div className="mb-6">
-                  <label
-                    htmlFor="fullname"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    onChange={(e) => handleInputChange(e)}
-                    className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    required
-                  />
-                </div>
-                <div className="mb-6">
-                  <label
-                    htmlFor="mobile_number"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Mobile number
-                  </label>
-                  <input
-                    pattern="^\+\d{1,2}\d{3,}\d{3,}\d{3,}$"
-                    title="Please enter a valid phone number."
-                    type="number"
-                    id="mobile_number"
-                    name="mobile"
-                    onChange={(e) => handleInputChange(e)}
-                    className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    required
-                  />
-                </div>
-              </div>
-              <div className="">
-                <h4 className="text-lg  py-5">Shipping address</h4>
-                <div className="mb-6">
-                  <label
-                    htmlFor="address"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                  >
-                    Address
-                  </label>
-                  <input
-                    type="text"
-                    id="address"
-                    name="address_line"
-                    onChange={(e) => handleInputChange(e)}
-                    className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    required
-                  />
-                </div>
-                <div className="grid grid-cols-2 gap-5 mb-6">
-                  <div className="">
+                <div className="p-2 mb-2 grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+                  {savedAddress.map((item) => (
                     <label
-                      htmlFor="city"
+                      htmlFor={item._id}
+                      key={item._id}
+                      className="border shadow-lg p-5 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 text-justify w-full"
+                    >
+                      <div className="flex justify-between items-center text-sm font-extrabold">
+                        <h5 className="flex gap-x-2 items-center">
+                          <input
+                            id={item._id}
+                            type="radio"
+                            name="shipping_address"
+                            value={item._id}
+                          />
+                          Address
+                        </h5>{" "}
+                        <div className="flex items-center">
+                          <MdEdit
+                            className="text-lg mr-2"
+                            onClick={() => {
+                              setEditAddressModalOpen(true);
+                              setSavedAddressId(item._id);
+                            }}
+                          />
+                          <MdDelete
+                            className="text-lg"
+                            onClick={() => deleteAddressById(item._id)}
+                          />
+                        </div>
+                      </div>
+                      <div className="text-sm text-gray-500 p-2 leading-6">
+                        <h6>{item?.fullname}</h6>
+                        <h6>{item.email}</h6>
+                        <h6 className=" text-justify ">
+                          {item.address_line +
+                            ", " +
+                            item.city +
+                            ", " +
+                            item.postal_code +
+                            ", " +
+                            item.country}
+                        </h6>
+                        <h6>{item.mobile}</h6>
+                      </div>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div>
+                <div className="">
+                  <h4 className="text-lg  py-5 md:flex justify-between items-baseline">
+                    Contact Information{" "}
+                    <button
+                      className="text-green-500 font-medium block md:inline-block text-sm top-6 capitalize  right-2"
+                      type="button"
+                      onClick={() =>
+                        setToggleAddNewAddress(!toggleAddNewAddress)
+                      }
+                    >
+                      {!toggleAddNewAddress
+                        ? "Back to saved address"
+                        : "Add new address"}
+                    </button>
+                  </h4>
+                  <div className="mb-6">
+                    <label
+                      htmlFor="fullname"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      City
+                      Name
                     </label>
                     <input
                       type="text"
-                      id="city"
-                      name="city"
-                      onChange={(e) => handleInputChange(e)}
+                      id="fullname"
+                      name="fullname"
                       className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                       required
                     />
                   </div>
-                  <div className="">
+                  <div className="mb-6">
                     <label
-                      htmlFor="state"
+                      htmlFor="mobile_number"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      State / Province
-                    </label>
-                    <select
-                      id="state"
-                      name="state"
-                      onChange={(e) => handleInputChange(e)}
-                      required
-                      className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    >
-                      {countryCode.map((item, index) => (
-                        <option key={item.code} value={item.name}>
-                          {item.name}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div className="">
-                    <label
-                      htmlFor="postal_code"
-                      className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-                    >
-                      Postal code
+                      Mobile number
                     </label>
                     <input
+                      pattern="^\+\d{1,2}\d{3,}\d{3,}\d{3,}$"
+                      title="Please enter a valid phone number."
                       type="number"
-                      name="postal_code"
-                      id="postal_code"
-                      onChange={(e) => handleInputChange(e)}
+                      id="mobile_number"
+                      name="mobile"
                       className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                       required
                     />
                   </div>
-                  <div className="">
+                </div>
+                <div className="">
+                  <h4 className="text-lg  py-5">Shipping address</h4>
+                  <div className="mb-6">
                     <label
-                      htmlFor="country"
+                      htmlFor="address"
                       className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                     >
-                      Country
+                      Address
                     </label>
-                    <select
-                      name="country"
-                      id="country"
-                      onChange={(e) => {
-                        var country_code = e.target.value;
-                        setCountryCode(
-                          countryState.states[country_code.split(",")[0]]
-                        );
-                      }}
-                      required
+                    <input
+                      type="text"
+                      id="address"
+                      name="address_line"
                       className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                    >
-                      {Object.entries(countryState.country).map(
-                        (value, index) => (
-                          <option
-                            value={`${value}`}
-                            key={value.splice(0, 2)[0]}
-                          >
-                            {value.splice(0, 2)[1]}
+                      required
+                    />
+                  </div>
+                  <div className="grid grid-cols-2 gap-5 mb-6">
+                    <div className="">
+                      <label
+                        htmlFor="city"
+                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >
+                        City
+                      </label>
+                      <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                        required
+                      />
+                    </div>
+                    <div className="">
+                      <label
+                        htmlFor="state"
+                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >
+                        State / Province
+                      </label>
+                      <select
+                        id="state"
+                        name="state"
+                        required
+                        className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                      >
+                        {countryCode.map((item, index) => (
+                          <option key={item.code} value={item.name}>
+                            {item.name}
                           </option>
-                        )
-                      )}
-                    </select>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div className="">
+                      <label
+                        htmlFor="postal_code"
+                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >
+                        Postal code
+                      </label>
+                      <input
+                        type="number"
+                        name="postal_code"
+                        id="postal_code"
+                        className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                        required
+                      />
+                    </div>
+                    <div className="">
+                      <label
+                        htmlFor="country"
+                        className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >
+                        Country
+                      </label>
+                      <select
+                        name="country"
+                        id="country"
+                        onChange={(e) => {
+                          var country_code = e.target.value;
+                          setCountryCode(
+                            countryState.states[country_code.split(",")[0]]
+                          );
+                        }}
+                        required
+                        className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                      >
+                        {Object.entries(countryState.country).map(
+                          (value, index) => (
+                            <option
+                              value={`${value}`}
+                              key={value.splice(0, 2)[0]}
+                            >
+                              {value.splice(0, 2)[1]}
+                            </option>
+                          )
+                        )}
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          )}
-
-          <div className="">
-            <h4 className="text-lg  py-5">Payment Details</h4>
-            <div className="grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-2">
-              <div className="flex items-center ">
-                <input
-                  id="online"
-                  type="radio"
-                  value="netbanking"
-                  onChange={(e) => {
-                    handleInputChange(e);
-                  }}
-                  name="payment_method"
-                />
-                <label
-                  for="online"
-                  className="ml-2 flex items-center cursor-pointer text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="mr-2 -ml-1 w-10 h-3"
-                    viewBox="0 0 660 203"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M233.003 199.762L266.362 4.002H319.72L286.336 199.762H233.003V199.762ZM479.113 8.222C468.544 4.256 451.978 0 431.292 0C378.566 0 341.429 26.551 341.111 64.604C340.814 92.733 367.626 108.426 387.865 117.789C408.636 127.387 415.617 133.505 415.517 142.072C415.384 155.195 398.931 161.187 383.593 161.187C362.238 161.187 350.892 158.22 333.368 150.914L326.49 147.803L319.003 191.625C331.466 197.092 354.511 201.824 378.441 202.07C434.531 202.07 470.943 175.822 471.357 135.185C471.556 112.915 457.341 95.97 426.556 81.997C407.906 72.941 396.484 66.898 396.605 57.728C396.605 49.591 406.273 40.89 427.165 40.89C444.611 40.619 457.253 44.424 467.101 48.39L471.882 50.649L479.113 8.222V8.222ZM616.423 3.99899H575.193C562.421 3.99899 552.861 7.485 547.253 20.233L468.008 199.633H524.039C524.039 199.633 533.198 175.512 535.27 170.215C541.393 170.215 595.825 170.299 603.606 170.299C605.202 177.153 610.098 199.633 610.098 199.633H659.61L616.423 3.993V3.99899ZM551.006 130.409C555.42 119.13 572.266 75.685 572.266 75.685C571.952 76.206 576.647 64.351 579.34 57.001L582.946 73.879C582.946 73.879 593.163 120.608 595.299 130.406H551.006V130.409V130.409ZM187.706 3.99899L135.467 137.499L129.902 110.37C120.176 79.096 89.8774 45.213 56.0044 28.25L103.771 199.45L160.226 199.387L244.23 3.99699L187.706 3.996"
-                      fill="#0E4595"
-                    />
-                    <path
-                      d="M86.723 3.99219H0.682003L0 8.06519C66.939 24.2692 111.23 63.4282 129.62 110.485L110.911 20.5252C107.682 8.12918 98.314 4.42918 86.725 3.99718"
-                      fill="#F2AE14"
-                    />
-                  </svg>
-                  Net-banking
-                </label>
-              </div>
-              <div className="flex items-center">
-                <input
-                  id="offline"
-                  type="radio"
-                  value="cod"
-                  onChange={(e) => {
-                    handleInputChange(e);
-                  }}
-                  name="payment_method"
-                />
-                <label
-                  for="offline"
-                  className="flex items-center cursor-pointer ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  Cash on delivery
-                </label>
-              </div>
-            </div>
-          </div>
-          {courierServices.length > 0 && (
-            <div className="">
-              <h4 className="text-lg  py-5">Choose Delivery Method</h4>
-              <div className="space-y-3">
-                {courierServices.map((item) => (
-                  <ShippingItem
-                    id={item.courier_company_id}
-                    name={item.courier_name}
-                    estimate_delivery_date={item.etd}
-                    charges={item.rate}
-                    setAddress={setAddress}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
-          <div className=" relative">
-            <h4 className="text-lg  py-5">Apply Coupon</h4>
-            <div className="relative">
+            )}
+            <div className="relative ">
               <input
                 onBlur={(e) => couponHandler(e)}
                 onClick={() => setShowCouponField(true)}
                 type="text"
                 name="discount"
-                onChange={(e) => {
-                  setCoupon_code(e.target.value);
-                  handleInputChange(e);
-                }}
+                onChange={(e) => setCoupon_code(e.target.value)}
                 id="discount"
                 className=" border-0 border-gray-300 placeholder:text-green-500 placeholder:font-medium text-sm rounded-lg focus:ring-green-500 focus:shadow focus:border  focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                 placeholder="Add promotional code"
@@ -745,48 +600,329 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </button>
               )}
             </div>
-          </div>
-          <div className="my-10 flex items-end justify-end">
-            <button
-              disabled={disableBtn}
-              onClick={() => setFormSubmitted(true)}
-              className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-            >
-              Checkout
-              <svg
-                aria-hidden="true"
-                className="ml-2 -mr-1 w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
+            <div className="">
+              <h4 className="text-lg  py-5">Payment Details</h4>
+              <div className="grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-2">
+                <div className="flex items-center ">
+                  <input
+                    id="online"
+                    type="radio"
+                    value="netbanking"
+                    name="payment_method"
+                  />
+                  <label
+                    htmlFor="online"
+                    className="ml-2 flex items-center cursor-pointer text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="mr-2 -ml-1 w-10 h-3"
+                      viewBox="0 0 660 203"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M233.003 199.762L266.362 4.002H319.72L286.336 199.762H233.003V199.762ZM479.113 8.222C468.544 4.256 451.978 0 431.292 0C378.566 0 341.429 26.551 341.111 64.604C340.814 92.733 367.626 108.426 387.865 117.789C408.636 127.387 415.617 133.505 415.517 142.072C415.384 155.195 398.931 161.187 383.593 161.187C362.238 161.187 350.892 158.22 333.368 150.914L326.49 147.803L319.003 191.625C331.466 197.092 354.511 201.824 378.441 202.07C434.531 202.07 470.943 175.822 471.357 135.185C471.556 112.915 457.341 95.97 426.556 81.997C407.906 72.941 396.484 66.898 396.605 57.728C396.605 49.591 406.273 40.89 427.165 40.89C444.611 40.619 457.253 44.424 467.101 48.39L471.882 50.649L479.113 8.222V8.222ZM616.423 3.99899H575.193C562.421 3.99899 552.861 7.485 547.253 20.233L468.008 199.633H524.039C524.039 199.633 533.198 175.512 535.27 170.215C541.393 170.215 595.825 170.299 603.606 170.299C605.202 177.153 610.098 199.633 610.098 199.633H659.61L616.423 3.993V3.99899ZM551.006 130.409C555.42 119.13 572.266 75.685 572.266 75.685C571.952 76.206 576.647 64.351 579.34 57.001L582.946 73.879C582.946 73.879 593.163 120.608 595.299 130.406H551.006V130.409V130.409ZM187.706 3.99899L135.467 137.499L129.902 110.37C120.176 79.096 89.8774 45.213 56.0044 28.25L103.771 199.45L160.226 199.387L244.23 3.99699L187.706 3.996"
+                        fill="#0E4595"
+                      />
+                      <path
+                        d="M86.723 3.99219H0.682003L0 8.06519C66.939 24.2692 111.23 63.4282 129.62 110.485L110.911 20.5252C107.682 8.12918 98.314 4.42918 86.725 3.99718"
+                        fill="#F2AE14"
+                      />
+                    </svg>
+                    Net-banking
+                  </label>
+                </div>
+                <div className="flex items-center">
+                  <input
+                    id="offline"
+                    type="radio"
+                    value="cod"
+                    name="payment_method"
+                  />
+                  <label
+                    htmlFor="offline"
+                    className="flex items-center cursor-pointer ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Cash on delivery
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div className="my-10 flex items-end justify-end">
+              <button
+                type="submit"
+                disabled={disableBtn}
+                className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>{" "}
-              </svg>
-            </button>
-          </div>
-          {/* </form> */}
+                Checkout
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>{" "}
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
 
-        <CartSummary
-          cartItems={cartItems}
-          subtotal={subtotal}
-          discount={discount}
-          shippingPrice={address.shipping_price}
-          total={address.total}
-        />
-        <EditAddressModal
-          editAddressModalOpen={editAddressModalOpen}
-          setEditAddressModalOpen={setEditAddressModalOpen}
-          savedAddress={savedAddress}
-          savedAddressId={savedAddressId}
-          updateAddress={updateAddress}
-          countryCode={countryCode}
-          countryState={countryState}
-        />
+        <div className="hidden lg:block p-16">
+          <div className="mb-3">
+            <h5 className="mb-1  font-medium">Amount due</h5>
+            <h2 className=" text-3xl  font-extrabold ">
+              <CurrencyFormatter price={address.total} />
+            </h2>
+          </div>
+          <div
+            className="mb-3 max-h-[500px] overflow-y-scroll "
+            id="scrollbar_container"
+          >
+            {cartItems.length > 0 &&
+              cartItems.map((item) => (
+                <div className="p-4 flex justify-between" key={item.id}>
+                  <div className="flex w-full gap-x-4 items-start">
+                    <div className=" bg-white  rounded p-2 flex justify-center items-center">
+                      <div className="relative h-16 w-24">
+                        <Image
+                          src={item.thumbnail}
+                          layout="fill"
+                          objectFit="contain"
+                          alt={item.alt_text}
+                          loading="lazy"
+                          placeholder="blur"
+                          blurDataURL={item.thumbnail}
+                        />
+                      </div>
+                    </div>
+                    <div className="px-2 py-1 w-full">
+                      <h5 className="capitalize line-clamp-2 font-medium text-sm mb-1">
+                        {item.title}
+                      </h5>
+                      <h5 className="text-sm font-light">
+                        Qty {item.quantity}
+                      </h5>
+                    </div>
+                    <div>
+                      <h4 className=" font-medium">
+                        <CurrencyFormatter price={item.price * item.quantity} />
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              ))}
+          </div>
+          <div className="mt-6">
+            <div className="py-4 leading-8 border-r-0 border-l-0 border border-black ">
+              <div className="flex justify-between items-center ">
+                <h5 className="">Subtotal</h5>
+                <h5 className="">
+                  <CurrencyFormatter price={subtotal} />
+                </h5>
+              </div>
+              <div className="flex justify-between items-center ">
+                <h5 className="">Discount</h5>
+                <h5 className="">
+                  - &nbsp;
+                  <CurrencyFormatter price={discount} />
+                </h5>
+              </div>
+              <div className="flex justify-between items-center ">
+                <h5 className="">Shipping</h5>
+                <h5 className="">
+                  {" "}
+                  <CurrencyFormatter price={address.shipping_price} />
+                </h5>
+              </div>
+            </div>
+            <div className="flex font-medium justify-between items-center mt-3">
+              <h5 className="font-semibold">Total</h5>
+              <h5 className="font-semibold">
+                {" "}
+                <CurrencyFormatter price={address.total} />
+              </h5>
+            </div>
+          </div>
+        </div>
+        <Modal
+          show={editAddressModalOpen}
+          size="2xl"
+          popup={true}
+          onClose={() => setEditAddressModalOpen(false)}
+        >
+          <div className="p-5">
+            <Modal.Header>Edit address</Modal.Header>
+            <Modal.Body>
+              {savedAddress
+                .filter((address) => address._id == savedAddressId)
+                .map((address) => (
+                  <div key={address._id}>
+                    <form onSubmit={(e) => updateAddress(address._id, e)}>
+                      <div>
+                        <div className="">
+                          <h4 className="text-lg  py-4">Contact Information</h4>
+                          <div className="grid grid-cols-2 gap-x-2">
+                            <div className="">
+                              <label
+                                htmlFor="name"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                Fullname
+                              </label>
+                              <input
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                defaultValue={address.fullname}
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                required
+                              />
+                            </div>
+                            <div className="">
+                              <label
+                                htmlFor="mobile_number"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                Mobile number
+                              </label>
+                              <input
+                                type="number"
+                                id="mobile_number"
+                                pattern="^\+\d{1,2}\d{3,}\d{3,}\d{3,}$"
+                                title="Please enter a valid phone number."
+                                name="mobile"
+                                defaultValue={address.mobile}
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                required
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div className="">
+                          <h4 className="text-lg  py-4">Shipping address</h4>
+                          <div className="mb-6">
+                            <label
+                              htmlFor="address"
+                              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                            >
+                              Address
+                            </label>
+                            <input
+                              type="text"
+                              id="address"
+                              name="address_line"
+                              defaultValue={address.address_line}
+                              className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                              required
+                            />
+                          </div>
+                          <div className="grid grid-cols-2 gap-5 mb-6">
+                            <div className="">
+                              <label
+                                htmlFor="city"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                City
+                              </label>
+                              <input
+                                type="text"
+                                id="city"
+                                defaultValue={address.city}
+                                name="city"
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                required
+                              />
+                            </div>
+                            <div className="">
+                              <label
+                                htmlFor="state"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                State / Province
+                              </label>
+                              <select
+                                id="state"
+                                name="state"
+                                required
+                                defaultValue={address.state}
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                              >
+                                {countryCode.map((item, index) => (
+                                  <option key={item.code} value={item.name}>
+                                    {item.name}
+                                  </option>
+                                ))}
+                              </select>
+                            </div>
+
+                            <div className="">
+                              <label
+                                htmlFor="postal_code"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                Postal code
+                              </label>
+                              <input
+                                type="number"
+                                name="postal_code"
+                                defaultValue={address.postal_code}
+                                id="postal_code"
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                                required
+                              />
+                            </div>
+                            <div className="">
+                              <label
+                                htmlFor="country"
+                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                              >
+                                Country
+                              </label>
+                              <select
+                                name="country"
+                                id="country"
+                                onChange={(e) => {
+                                  var country_code = e.target.value;
+                                  setCountryCode(
+                                    countryState.states[
+                                      country_code.split(",")[0]
+                                    ]
+                                  );
+                                }}
+                                required
+                                className="shadow border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                              >
+                                {Object.entries(countryState.country).map(
+                                  (value, index) => (
+                                    <option
+                                      value={`${value}`}
+                                      key={value.splice(0, 2)[0]}
+                                    >
+                                      {value.splice(0, 2)[1]}
+                                    </option>
+                                  )
+                                )}
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <Button className="w-full" type="submit">
+                        Update
+                      </Button>
+                    </form>
+                  </div>
+                ))}
+            </Modal.Body>
+          </div>
+        </Modal>
       </div>
     </>
   );

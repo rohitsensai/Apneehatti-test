@@ -8,7 +8,11 @@ const addItem = async (req, res) => {
     const { user_id } = req.query;
     const { product_id, quantity } = req.body;
 
+  
+
     let cart = await Cart.findOne({ user_id });
+
+    console.log("cart",cart)
     let product = await Product.findOne(
       { _id: product_id },
       {
@@ -43,7 +47,7 @@ const addItem = async (req, res) => {
       image: product.images,
       alt_text: product.alt_text,
       price: product.price,
-      weight: product.weight,
+      weight: 109,
       SKU: product.SKU,
       MRP: product.MRP,
       quantity: quantity,

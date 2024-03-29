@@ -15,16 +15,7 @@ export const authOptions = {
       },
       async authorize(credentials, req) {
         try {
-          console.log("inside nextauth", { credentials, HOST });
-          // Your initial line of code
-          console.log("This is the line of code before the pause");
-
-          // Pause execution for 10 seconds
-          setTimeout(function () {
-            // Code to execute after the pause
-            console.log("This is the line of code after the 10-second pause");
-          }, 100000); // 10000 milliseconds = 10 seconds
-
+          console.log({ credentials, HOST });
           await main().catch((err) => console.error(err));
           const response = await fetch(`${HOST}/api/users/login`, {
             method: "POST",
@@ -44,7 +35,7 @@ export const authOptions = {
           console.error(`Error: ${status}`);
           return null;
         } catch (error) {
-          console.error(`Error: ${error}`);
+          console.error(`Errorrr: ${error}`);
           return null;
         }
       },

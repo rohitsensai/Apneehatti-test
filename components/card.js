@@ -29,8 +29,10 @@ const Product = ({ product }) => {
     if (!session) {
       toast.warning("Please SignIn First");
     } else {
+      console.log("id",session.user.id)
+      console.log(product.id)
       addToBasketAnimation();
-      const data = await fetch(`/api/cart/${session.user.id}/add`, {
+      const data = await fetch(`http://localhost:3000/api/cart/${session.user.id}/add`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -39,6 +41,7 @@ const Product = ({ product }) => {
       });
       if (data.ok) {
         const response = await data.json();
+        console.log("res",response)
         if (response) {
           const savedcart = response.items;
           const initialCartObj = {
@@ -53,10 +56,10 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div>
-      <div className="block bg-white   overflow-hidden m-1">
-        <div className="min-h-[445px] relative">
-          <div className="h-[220px] mb-4 relative overflow-hidden group transition">
+    <div className="border border-blue m-1">
+      <div className="block bg-white   overflow-hidden ">
+        <div className="min-h-[400px] relative">
+          <div className="h-[220px]  relative overflow-hidden group transition">
             {calculateDiscount(MRP, price) >= 1 && (
               <div
                 className="
@@ -93,7 +96,7 @@ const Product = ({ product }) => {
           </div>
           {/* category & title & MRP */}
           <div className=" pb-4 relative" >
-            <div className="text-xs capitalize text-gray-500 mb-1">
+            <div className="text-xs capitalize text-gray-500 ">
               {category}
             </div>
             <Link
@@ -133,21 +136,21 @@ const Product = ({ product }) => {
             </div>
           </div>
           {/* Add to cart button */}
-          <div className=" absolute bottom-3 w-full" >
-          <button className="btn1">
-            <div>Buy Now
-              </div>
+          <div className=" d-flex    " >
+          <button className="col-6  uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold border-2 border-pink-500 text-pink-500 ">
+           BUY NOW
+            
             </button>
 
-            <div >
+          
               <button
                 onClick={(e) => {
                   add(product);
                 }}
-                className="btn1"
+                className="col-6 "
               >
                 {added ? (
-                  <div className="flex gap-x-1 items-center justify-center">
+                  <div className="">
                     added successfully{" "}
                     <svg
                       className="w-4 h-4 font-medium flex-shrink-0  "
@@ -166,10 +169,10 @@ const Product = ({ product }) => {
                     </svg>
                   </div>
                 ) : (
-                  <div>add to basket</div>
+                  <div className=" uppercase transition-all duration-300 hover:bg-green-600 hover:text-white text-sm font-bold border-2 border-green-500 text-green-500 ">ADD TO BASKET</div>
                 )}
               </button>
-            </div>
+            
           </div>
         </div>
       </div>

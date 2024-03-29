@@ -163,16 +163,18 @@ const Header = ({ categories }) => {
                   <>
                     <li className="nav-item">
                   <a className="nav-link" href="/myprofile"><FaUser /></a>
-                  <div className="name" style={{ fontSize: "12px",marginLeft:"20%",cursor:"pointer" }} >Proifle</div>
+                  <div className="name"  style={{ fontSize: "9px" }} >Proifle</div>
 
                 </li>
                     <li className="nav-item">
-                      <a className="nav-link " href="#"><FaHeart /></a>
+                      <a className="nav-link " href="/wishlist"><FaHeart /></a>
                       <div className="name " style={{ fontSize: "9px" }}>Liked</div>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="#"><FaShoppingCart /></a>
+                      <button onClick={() => setIsOpen(!isOpen)}>
+                      <div className="nav-link" href="#"><FaShoppingCart /></div>
                       <div className="name" style={{ fontSize: "9px" }}>Cart</div>
+                      </button>
                     </li>
                   </>
                 )}
@@ -225,12 +227,13 @@ const Header = ({ categories }) => {
         </div>
 
       </div>
-      {/* <Cart
+       <Cart
         setIsOpen={setIsOpen}
         isOpen={isOpen}
         session={session}
         status={status}
       />
+      {/*
       <Search setIsSearchOpen={setIsSearchOpen} isSearchOpen={isSearchOpen} />
       <MobileSidebar
         setCloseSidebar={setCloseSidebar}

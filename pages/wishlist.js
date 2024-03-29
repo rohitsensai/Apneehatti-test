@@ -10,14 +10,16 @@ const WishlistCard = dynamic(() => import("../components/wishlistCard"), {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
-  const data = await fetch(`${process.env.HOST}/api/users/wishlist`, {
+  const data = await fetch(`https://apneehatti.com/api/users/wishlist`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${session && session.user.accessToken}`,
     },
   });
+  
   const res = await data.json();
+  console.log("data",res)
   return {
     props: {
       wishlistPro: res,

@@ -108,7 +108,7 @@ const register = () => {
                   pauseOnHover: true,
                 }
               );
-              router.push("/login");
+              router.push("/");
             }
           })
           .catch(function (error) {
