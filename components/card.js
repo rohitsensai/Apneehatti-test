@@ -136,12 +136,9 @@ const Product = ({ product }) => {
             </div>
           </div>
           {/* Add to cart button */}
-          <div className=" d-flex pl-4 pr-4 justify-between"  >
+          <div className=" d-flex  justify-between"  >
         
-          <button className=" btn4 uppercase transition-all duration-300  hover:text-pink text-sm   text-white bg-pink-600">
-           BUY NOW
-            
-            </button>
+          <img className="col-6" src="/images/pictures/wishlist.png" width={130} style={{cursor:"pointer"}}/>
 
 
           
@@ -149,7 +146,7 @@ const Product = ({ product }) => {
                 onClick={(e) => {
                   add(product);
                 }}
-                className=" "
+                className="col-6 "
               >
                 {added ? (
                   <div className="">
@@ -171,7 +168,7 @@ const Product = ({ product }) => {
                     </svg>
                   </div>
                 ) : (
-                  <div className="btn4 uppercase transition-all duration-300 hover:bg-green-600 hover:text-white text-sm  border-2 border-green-500 text-white bg-green-600 ">ADD TO BASKET</div>
+                  <img src="/images/pictures/addtocart.png" width={150}/>
                 )}
               </button>
             
