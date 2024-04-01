@@ -145,19 +145,21 @@ const Header = ({ categories }) => {
                   <li className="nav-item">
                     <a className="nav-link" href="#">Contact</a>
                   </li>
-                </ul>
-              </div>
-
-              <ul className="d-flex flex-row navbar-nav " id="pwc">
-                {session == null && (
+                  {session == null && (
                   <>
                 <li className="nav-item">
                   {/* <a className="nav-link" href="/myprofile" style={{marginLeft:"25%"}}><FaUser /></a> */}
-                  <a className="name" href="/login" style={{ fontSize: "13px",fontFamily:"serif",cursor:"pointer" }} >Login/Signup</a>
+                  <a className="nav-link" href="/login"  >Login/Signup</a>
 
                 </li>
                 </>
                 )}
+                </ul>
+               
+              </div>
+
+              <ul className="d-flex flex-row navbar-nav " id="pwc">
+               
 
                 {session !== null && (
                   <>

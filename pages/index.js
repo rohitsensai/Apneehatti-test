@@ -123,9 +123,9 @@ export default function Home({ socket_URL }) {
     const fetchData = async () => {
       // Your data fetching logic here
       // For example, setting copiedTopDeals after fetching data
-      const newCopiedTopDeals = [bestSellers[0],...topDeals]; // Assuming topDeals and bestSellers are already defined
+      const newCopiedTopDeals = [bestSellers[0], ...topDeals]; // Assuming topDeals and bestSellers are already defined
       setCopiedTopDeals(newCopiedTopDeals);
-      
+
     };
 
     fetchData(); // Call the fetchData function when the component mounts
@@ -139,7 +139,10 @@ export default function Home({ socket_URL }) {
     <>
       <Head>
         <title>Apneehatti</title>
-      </Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet" />
+    </Head >
       <div className="bg-grey;">
         <Herosection />
         <div className="bg-gray-100 hidden">
@@ -175,12 +178,11 @@ export default function Home({ socket_URL }) {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-1  my-4">
+        <div className="grid grid-cols-2 gap-1 m-2 p-2  my-4 ">
           <div className="">
             <img
               src="/images/banner/offer-1.png"
               width="100%"
-              height="100%"
               alt=""
             />
           </div>
@@ -188,16 +190,16 @@ export default function Home({ socket_URL }) {
             <img
               src="/images/banner/offer-2.png"
               width="100%"
-              height="100%"
               alt=""
+              
             />
           </div>
           <div className="hidden">
             <img
               src="/pictures/banner/offer-3.png"
-              width="100%"
-              height="100%"
+             
               alt=""
+              
             />
           </div>
         </div>
@@ -487,7 +489,7 @@ export default function Home({ socket_URL }) {
       <Testimonials />
       <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
         <button type="button" class="btn btn-outline-success" style={{ marginTop: "2%" }}>
-          <a href="https://g.page/r/CWqeVis8_uz7EB0/review">
+          <a href="https://g.page/r/CWqeVis8_uz7EB0/review" target="_blank">
             Give Your Review
           </a>
         </button>

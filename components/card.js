@@ -60,14 +60,7 @@ const Product = ({ product }) => {
       <div className="block bg-white   overflow-hidden ">
         <div className="min-h-[400px] relative">
           <div className="h-[220px]  relative overflow-hidden group transition">
-            {calculateDiscount(MRP, price) >= 1 && (
-              <div
-                className="
-              text-green-500 text-xs absolute z-10 top-2 bg-green-100 rounded-sm  right-3"
-              >
-                <span>{calculateDiscount(MRP, price)}% OFF</span>
-              </div>
-            )}
+           
 
             <div className="w-full h-full flex justify-center items-center cursor-pointer">
               {/* image */}
@@ -133,7 +126,16 @@ const Product = ({ product }) => {
               <div className="text-sm line-through text-gray-700">
                 <CurrencyFormatter price={MRP} />
               </div>
+              {calculateDiscount(MRP, price) >= 1 && (
+              <div
+                className="
+              text-green-500 text-xs z-10  bg-green-100 rounded-sm  right-3"
+              >
+                <span>{calculateDiscount(MRP, price)}% OFF</span>
+              </div>
+            )}
             </div>
+          
           </div>
           {/* Add to cart button */}
           <div className=" d-flex  justify-between"  >

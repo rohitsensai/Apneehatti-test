@@ -9,6 +9,10 @@ import FooterSection from "./footerSection";
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from "react-share";
 import { BsInstagram } from "react-icons/bs";
 import { Divider } from "@mui/material";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+
+
 
 const Footer = ({ categories }) => {
 //   const renderCategories = useMemo(() => {
@@ -33,34 +37,42 @@ const Footer = ({ categories }) => {
 //   }, [categories]);
   return (
 
-    <div  style={{display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:"3%"}}>
-      <div>
-          <div >HELP</div>
-          <div>Shipping Policy</div>
-          <div>Return Policy</div>
-          <div>Cancellation Policy</div>
-          <div>FAQ</div>
+    <div className=" m-10 text-white" style={{backgroundColor:"#191919", display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:"3%",height:"391"}}>
+      <div >
+          <div  style={{fontFamily: "Jockey One"}}>HELP</div>
+          <div style={{color:"#7A7A7A"}}>Shipping Policy</div>
+          <div style={{color:"#7A7A7A"}}>Return Policy</div>
+          <div style={{color:"#7A7A7A"}}>Cancellation Policy</div>
+          <div style={{color:"#7A7A7A"}}>FAQ</div>
       </div>
       <div>
-        <div>CONTACT US</div>
-        <div>Mobile:-+917876752516</div>
-        <div>Email:support@anpneehatti.com</div>
+        <div  style={{fontFamily: "Jockey One"}}>CONTACT US</div>
+        <div style={{color:"#7A7A7A"}}>Mobile +91 <span></span>7876752516</div>
+        <div style={{color:"#7A7A7A"}}>Email:support@anpneehatti.com</div>
       </div>
       <div>
-        <div>TOP CATEGORIES</div>
-        <div>Hnadlooms</div>
-        <div>Skincare & Beauty</div>
-        <div>Handcrafts</div>
-        <div>Organic Food Products</div>
-        <div>Health Care</div>
+        <div  style={{fontFamily: "Jockey One"}}>TOP CATEGORIES</div>
+        <div style={{color:"#7A7A7A"}}>Handlooms</div>
+        <div style={{color:"#7A7A7A"}}>Skincare & Beauty</div>
+        <div style={{color:"#7A7A7A"}}>Handcrafts</div>
+        <div style={{color:"#7A7A7A"}}>Organic Food Products</div>
+        <div style={{color:"#7A7A7A"}}>Health Care</div>
       </div>
       <div>
-        <div>FOLLOW APNEEHATTI</div>
+        <div  style={{fontFamily: "Jockey One"}}>FOLLOW APNEEHATTI</div>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
-          <a>F</a>
-          <a>T</a>
-          <a>I</a>
-          <a>L</a>
+          <a>
+            <FontAwesomeIcon icon={faFacebookF}/>
+          </a>
+          <a>
+          <FontAwesomeIcon icon={faInstagram}/>
+          </a>
+          <a>
+          <FontAwesomeIcon icon={faTwitter}/>
+          </a>
+          <a>
+          <FontAwesomeIcon icon={faLinkedinIn}/>
+          </a>
         </div>
       </div>
     </div>
