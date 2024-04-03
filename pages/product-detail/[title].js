@@ -381,54 +381,239 @@ const ProductDetail = ({
                  </div> */}
                 <div
                   className="w-5/6 md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden"
-                  style={{ maxHeight: "550px" }}
+                  style={{}}
                 >
                   <div
                     className=""
-                    onMouseMove={() => setZoomIn(true)}
-                    onMouseLeave={() => setZoomIn(false)}
+                  // onMouseMove={() => setZoomIn(true)}
+                  // onMouseLeave={() => setZoomIn(false)}
                   >
                     <div
                       id="img_wrapper"
                       className=" w-full h-full justify-center items-center cursor-pointer m-300"
-                 
+
                     >
                       <Image
                         src={mainImg}
-                        onMouseMove={imageMagnify}
+                        // onMouseMove={imageMagnify}
                         width={420}
                         height={520}
                         id="bigImg"
                         objectFit="contain"
                         alt={product_data.alt_text}
                       />
-                        <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
-                        <button
-                          className=" uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
-                          onClick={() => handleAddToWishlist(product_data._id)}
-                        >
-                          Add to Wishlist
-                        </button>
-                        <button
-                          className="uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
-                          onClick={() => handleAddToCart(product_data._id)}
-                        >
-                          Add to bag
-                        </button>
-                      </div>
 
 
                     </div>
-                
+
                     <div
                       className={`${zoomIn ? "" : "hidden"
                         } absolute z-30 opacity-60 top-0 w-28 h-20 border border-gray-300 bg-gray-100 opacity-15`}
                       id="lens"
                     ></div>
+                    <div class="reviews">
+                      <h4 class="reviews__heading">Customer reviews</h4>
+
+                      <div class="reviews__average-ratings">
+                        <div class="average-ratings__stars">
+                          <div class="stars__single">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 43 45"
+                              width="43"
+                              height="45"
+                            >
+                              <defs>
+                                <image
+                                  width="32"
+                                  height="30"
+                                  id="img1"
+                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
+                                />
+                              </defs>
+                              <use id="Background" href="#img1" x="6" y="7" />
+                            </svg>
+                          </div>
+                          <div class="stars__single">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 43 45"
+                              width="43"
+                              height="45"
+                            >
+                              <defs>
+                                <image
+                                  width="32"
+                                  height="30"
+                                  id="img1"
+                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
+                                />
+                              </defs>
+                              <use id="Background" href="#img1" x="6" y="7" />
+                            </svg>
+                          </div>
+                          <div class="stars__single">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 43 45"
+                              width="43"
+                              height="45"
+                            >
+                              <defs>
+                                <image
+                                  width="32"
+                                  height="30"
+                                  id="img1"
+                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
+                                />
+                              </defs>
+                              <use id="Background" href="#img1" x="6" y="7" />
+                            </svg>
+                          </div>
+                          <div class="stars__single">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 43 45"
+                              width="43"
+                              height="45"
+                            >
+                              <defs>
+                                <image
+                                  width="32"
+                                  height="30"
+                                  id="img1"
+                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
+                                />
+                              </defs>
+                              <use id="Background" href="#img1" x="6" y="7" />
+                            </svg>
+                          </div>
+                          <div class="stars__single">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 43 45"
+                              width="43"
+                              height="45"
+                            >
+                              <defs>
+                                <image
+                                  width="32"
+                                  height="30"
+                                  id="img1"
+                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
+                                />
+                              </defs>
+                              <use id="Background" href="#img1" x="6" y="7" />
+                            </svg>
+                          </div>
+
+                          <span class="stars__average-rating-score">
+                            4.7 out of 5
+                          </span>
+                        </div>
+                        <div class="average-ratings__total-customers">
+                          40 customer ratings
+                        </div>
+                      </div>
+
+                      <div class="reviews__breakdown">
+                        <div class="reviews-breakdown__wrapper">
+                          <div class="reviews__single-star-average">
+                            <div class="single-star-average__amount">5 star</div>
+                            <div class="single-star-average__progress-bar">
+                              <progress
+                                class="progress-bar__data"
+                                max="100"
+                                value="84"
+                              ></progress>
+                            </div>
+                            <div class="single-star-average__percentage">84%</div>
+                          </div>
+
+                          <div class="reviews__single-star-average">
+                            <div class="single-star-average__amount">4 star</div>
+                            <div class="single-star-average__progress-bar">
+                              <progress
+                                class="progress-bar__data"
+                                max="100"
+                                value="9"
+                              ></progress>
+                            </div>
+                            <div class="single-star-average__percentage">9%</div>
+                          </div>
+
+                          <div class="reviews__single-star-average">
+                            <div class="single-star-average__amount">3 star</div>
+                            <div class="single-star-average__progress-bar">
+                              <progress
+                                class="progress-bar__data"
+                                max="100"
+                                value="4"
+                              ></progress>
+                            </div>
+                            <div class="single-star-average__percentage">4%</div>
+                          </div>
+
+                          <div class="reviews__single-star-average">
+                            <div class="single-star-average__amount">2 star</div>
+                            <div class="single-star-average__progress-bar">
+                              <progress
+                                class="progress-bar__data"
+                                max="100"
+                                value="2"
+                              ></progress>
+                            </div>
+                            <div class="single-star-average__percentage">2%</div>
+                          </div>
+
+                          <div class="reviews__single-star-average">
+                            <div class="single-star-average__amount">1 star</div>
+                            <div class="single-star-average__progress-bar">
+                              <progress
+                                class="progress-bar__data"
+                                max="100"
+                                value="1"
+                              ></progress>
+                            </div>
+                            <div class="single-star-average__percentage">1%</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* give ratings */}
+                      <div class="rate" >
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+
+
+                      {/* submit form */}
+                    </div>
+                    <form action="#" method="post">
+                      <label for="review" style={{fontFamily: "Jockey One"}} >Write your review:</label><br />
+                      <textarea id="review" name="review" rows="4" cols="50" style={{backgroundColor:"#D9D9D9"}}></textarea><br />
+                      <input className="btn btn-secondary active" type="submit" value="Submit" />
+                    </form>
+
                   </div>
+
                 </div>
 
+
+
+
+
+
               </div>
+
 
 
             </div>
@@ -558,6 +743,35 @@ const ProductDetail = ({
                     </div>
                   </div>
                 </div>
+                {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
+                        <button
+                          className=" uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
+                          onClick={() => handleAddToWishlist(product_data._id)}
+                        >
+                          Add to Wishlist
+                        </button>
+                        <button
+                          className="uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
+                          onClick={() => handleAddToCart(product_data._id)}
+                        >
+                          Add to bag
+                        </button>
+                      </div>
+                       */}
+
+                <div className=" d-flex  justify-content-center m-4 "  >
+                  <button className="col-6  align-item-center" onClick={() => handleAddToWishlist(product_data._id)}>
+                    <img src="/images/pictures/wishlist.png" className=" m-auto" width={250} style={{ cursor: "pointer" }} />
+                  </button>
+
+
+                  <button className="col-6  " onClick={() => handleAddToCart(product_data._id)}>
+                    <img src="/images/pictures/addtocart.png " className="m-auto" width={250} />
+
+
+                  </button>
+                </div>
+
                 <div className="p-5 space-y-4 grid grid-cols-2 md:space-y-1  md:grid-cols-4 gap-x-5 align-top items-center border-b border-gray-300">
                   <div className="flex flex-col h-full items-center text-center space-y-2 ">
                     <MdRestore className="text-3xl" />
