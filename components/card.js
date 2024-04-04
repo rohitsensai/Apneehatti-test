@@ -60,7 +60,12 @@ const Product = ({ product }) => {
       <div className="block bg-white   overflow-hidden ">
         <div className="min-h-[400px] relative">
           <div className="h-[220px]  relative overflow-hidden group transition">
-           
+          <a href="/wishlist"
+                className="
+                absolute z-10 top-2   rounded-sm  right-3"
+              >
+                  <img src="/images/pictures/wishlist.png" width={30}/>
+              </a>
 
             <div className="w-full h-full flex justify-center items-center cursor-pointer">
               {/* image */}
@@ -140,7 +145,7 @@ const Product = ({ product }) => {
           {/* Add to cart button */}
           <div className=" d-flex  justify-between"  >
         
-          <img className="col-6" src="/images/pictures/wishlist.png" width={130} style={{cursor:"pointer"}}/>
+          <img className="col-6" src="/images/pictures/buynow.png" width={130} style={{cursor:"pointer"}}/>
 
 
           

@@ -37,7 +37,7 @@ const Footer = ({ categories }) => {
 //   }, [categories]);
   return (
 
-    <div className=" m-10 text-white" style={{backgroundColor:"#191919", display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:"3%",height:"391"}}>
+    <div className="  text-white" style={{backgroundColor:"#191919", display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:"3%",height:"391"}}>
       <div >
           <div  style={{fontFamily: "Jockey One"}}>HELP</div>
           <div style={{color:"#7A7A7A"}}>Shipping Policy</div>

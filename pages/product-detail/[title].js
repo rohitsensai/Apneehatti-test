@@ -351,36 +351,16 @@ const ProductDetail = ({
         </Breadcrumb> */}
 
         {/* ProductDetail */}
-        <div className=" m-2 md:m-6 space-y-3">
-          <div className=" lg:grid grid-cols-2 gap-5 relative" >
-            <div className="p-5 relative" >
+        <div className=" m-2 md:m-6 space-y-3 ">
+          <div className=" lg:grid grid-cols-2  relative" >
+            <div className="relative " >
               <div
-                className="flex w-full gap-x-3 lg:sticky lg:top-28  overflow-y-auto "
+                className="flex w-full  lg:sticky lg:top-28  overflow-y-auto  "
                 id="1"
               >
-                {/* <div className="w-1/6 ">
-                  {product_data.images.map((item, idx) => (
-                     <div
-                       key={item._id}
-                      className="bg-gray-50 mb-1 p-2 border hover:border-black cursor-pointer " 
-                     >
-                       <Image
-                        src={item}
-                        alt={product_data.alt_text}
-                        width={100}
-                        height={100}
-                        loading="lazy"
-                        placeholder="blur"
-                        blurDataURL={item}
-                        objectFit="contain"
-                        onMouseEnter={(e) => setMainImg(item)}
-                        onTouchStart={(e) => setMainImg(item)}
-                      /> 
-                     </div>
-                   ))}
-                 </div> */}
+
                 <div
-                  className="w-5/6 md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden"
+                  className=" md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden "
                   style={{}}
                 >
                   <div
@@ -390,27 +370,47 @@ const ProductDetail = ({
                   >
                     <div
                       id="img_wrapper"
-                      className=" w-full h-full justify-center items-center cursor-pointer m-300"
+                      className=" w-full h-full justify-center items-center cursor-pointer m-300 "
 
                     >
                       <Image
                         src={mainImg}
                         // onMouseMove={imageMagnify}
-                        width={420}
-                        height={520}
+                        width={900}
+                        height={700}
                         id="bigImg"
                         objectFit="contain"
                         alt={product_data.alt_text}
                       />
-
+                      <div className="flex justify-center flex-wrap">
+                        {product_data.images.map((item, idx) => (
+                          <div key={item._id}>
+                            <div className="bg-gray-50 mb-1 p-2  hover:border-black cursor-pointer">
+                              <Image
+                                src={item}
+                                alt={product_data.alt_text}
+                                width={100}
+                                height={100}
+                                loading="lazy"
+                                placeholder="blur"
+                                blurDataURL={item}
+                                objectFit="contain"
+                                onMouseEnter={(e) => setMainImg(item)}
+                                onTouchStart={(e) => setMainImg(item)}
+                              />
+                            </div>
+                          </div>
+                        ))}
+                      </div>
 
                     </div>
 
                     <div
                       className={`${zoomIn ? "" : "hidden"
-                        } absolute z-30 opacity-60 top-0 w-28 h-20 border border-gray-300 bg-gray-100 opacity-15`}
+                        } absolute z-30 opacity-60 top-0 w-28 h-20  bg-gray-100 opacity-15`}
                       id="lens"
                     ></div>
+                    { /* Reviews*/}
                     <div class="reviews">
                       <h4 class="reviews__heading">Customer reviews</h4>
 
@@ -597,11 +597,14 @@ const ProductDetail = ({
 
                       {/* submit form */}
                     </div>
-                    <form action="#" method="post">
-                      <label for="review" style={{fontFamily: "Jockey One"}} >Write your review:</label><br />
-                      <textarea id="review" name="review" rows="4" cols="50" style={{backgroundColor:"#D9D9D9"}}></textarea><br />
-                      <input className="btn btn-secondary active" type="submit" value="Submit" />
-                    </form>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                      <form action="#" method="post">
+                        <label for="review" style={{ fontFamily: "Jockey One" }}>Write your review:</label><br />
+                        <textarea id="review" name="review" rows="4" cols="50" style={{ backgroundColor: "#D9D9D9" }}></textarea><br />
+                        <input className="btn btn-secondary active" type="submit" value="Submit" />
+                      </form>
+                    </div>
+
 
                   </div>
 
@@ -631,7 +634,7 @@ const ProductDetail = ({
                 }}
               ></div>
 
-              <div className={` p-5  w-full lg:px-20 lg:py-3 `}>
+              <div className={`  w-full lg:px-20 lg:py-3`}>
                 <div className="space-y-2 border-t border-b p-4 border-gray-300">
                   <h2 className="text-xl md:text-2xl font-semibold font-serif">
                     {product_data.name}
@@ -687,9 +690,12 @@ const ProductDetail = ({
                             ) + "%"}
                           </h4>
                         )}
-                      <h4 className="text-3xl mr-4 text-gray-800 font-medium">
-                        <CurrencyFormatter price={product_data.price} />
-                      </h4>
+                      <div className="mr-2 text-green-800 font-medium " >
+                        
+                        New Price:
+                        
+                      </div>
+                      <CurrencyFormatter price={product_data.price} />
                     </div>
                     <h6 className="text-md  text-gray-400 ">
                       M.R.P :{" "}
@@ -761,7 +767,7 @@ const ProductDetail = ({
 
                 <div className=" d-flex  justify-content-center m-4 "  >
                   <button className="col-6  align-item-center" onClick={() => handleAddToWishlist(product_data._id)}>
-                    <img src="/images/pictures/wishlist.png" className=" m-auto" width={250} style={{ cursor: "pointer" }} />
+                    <img src="/images/pictures/buynow.png" className=" m-auto" width={250} style={{ cursor: "pointer" }} />
                   </button>
 
 
