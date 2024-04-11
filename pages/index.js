@@ -218,7 +218,7 @@ export default function Home({ socket_URL }) {
         </div>
 
 
-        <div className="h-48 my-4">
+        <div className="h-48 ">
           <img
             src="/images/banner/banner4.png"
             width="100%"
@@ -241,7 +241,7 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-            <div className="py-8 px-2 md:p-8">
+            <div className="py-2 px-2 md:p-8">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -305,7 +305,7 @@ export default function Home({ socket_URL }) {
             {/* <MdArrowBackIos className="text-3xl" /> */}
             {/* </button> */}
             {/* </div> */}
-            <div className="py-8 px-2 md:p-8  ">
+            <div className="py-2 px-2 md:p-8  ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -368,7 +368,7 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-            <div className="py-8 px-2 md:p-8  ">
+            <div className="py-2 px-2 md:p-8  ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -429,7 +429,7 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-            <div className="py-8 px-2 md:p-8  ">
+            <div className="py-2 px-2 md:p-8  ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -487,13 +487,7 @@ export default function Home({ socket_URL }) {
       </div>
       <Benefits />
       <Testimonials />
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <button type="button" class="btn btn-outline-success" style={{ marginTop: "2%" }}>
-          <a href="https://g.page/r/CWqeVis8_uz7EB0/review" target="_blank">
-            Give Your Review
-          </a>
-        </button>
-      </div>
+     
 
 
 

@@ -37,20 +37,20 @@ const Footer = ({ categories }) => {
 //   }, [categories]);
   return (
 
-    <div className="  text-white" style={{backgroundColor:"#191919", display:"flex",flexDirection:"row",justifyContent:"space-around",marginTop:"3%",height:"391"}}>
-      <div >
+    <div className="  text-white" style={{backgroundColor:"#191919", display:"flex",flexDirection:"row",justifyContent:"space-around",height:"291px"}}>
+      <div className="mt-20">
           <div  style={{fontFamily: "Jockey One"}}>HELP</div>
           <div style={{color:"#7A7A7A"}}>Shipping Policy</div>
           <div style={{color:"#7A7A7A"}}>Return Policy</div>
           <div style={{color:"#7A7A7A"}}>Cancellation Policy</div>
           <div style={{color:"#7A7A7A"}}>FAQ</div>
       </div>
-      <div>
+      <div className="mt-20">
         <div  style={{fontFamily: "Jockey One"}}>CONTACT US</div>
         <div style={{color:"#7A7A7A"}}>Mobile +91 <span></span>7876752516</div>
         <div style={{color:"#7A7A7A"}}>Email:support@anpneehatti.com</div>
       </div>
-      <div>
+      <div className="mt-20">
         <div  style={{fontFamily: "Jockey One"}}>TOP CATEGORIES</div>
         <div style={{color:"#7A7A7A"}}>Handlooms</div>
         <div style={{color:"#7A7A7A"}}>Skincare & Beauty</div>
@@ -58,7 +58,7 @@ const Footer = ({ categories }) => {
         <div style={{color:"#7A7A7A"}}>Organic Food Products</div>
         <div style={{color:"#7A7A7A"}}>Health Care</div>
       </div>
-      <div>
+      <div className="mt-20">
         <div  style={{fontFamily: "Jockey One"}}>FOLLOW APNEEHATTI</div>
         <div style={{display:"flex",flexDirection:"row",justifyContent:"space-around"}}>
           <a>

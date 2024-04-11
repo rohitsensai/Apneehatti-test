@@ -1,4 +1,3 @@
-"use client";
 import { EditorState, convertFromRaw } from "draft-js";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
@@ -8,50 +7,50 @@ const Editor = dynamic(
   () => import("react-draft-wysiwyg").then((module) => module.Editor),
   { ssr: false }
 );
-const textEditorView = ({ desc }) => {
+
+const TextEditorView = ({ desc }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
-  useEffect(() => {
-    if (desc) {
-      const prev_desc = convertFromRaw(JSON.parse(desc));
-      setEditorState(EditorState.createWithContent(prev_desc));
-    }
-    var table = document.getElementById("property-table");
-    var blocks = JSON.parse(desc).blocks;
 
-    blocks.forEach(function (block) {
-      if (block.text.trim() !== "") {
-        var colonIndex = block.text.indexOf(":");
-        if (colonIndex !== -1) {
-          var propertyName = block.text.substring(0, colonIndex).trim();
-          var propertyValue = block.text.substring(colonIndex + 1).trim();
+  // Define a helper function to render table rows
+  const renderTableRows = () => {
+    if (!desc) return null; // Return early if desc is empty
 
-          var row = table.insertRow();
-          var propNameCell = row.insertCell(0);
-          var propValueCell = row.insertCell(1);
-          propNameCell.textContent = propertyName;
-          propValueCell.textContent = propertyValue;
-        }
+    const prevDesc = JSON.parse(desc);
+    const blocks = prevDesc.blocks;
+
+    return blocks.map((block, index) => {
+      const { text } = block;
+      const colonIndex = text.indexOf(":");
+      if (colonIndex !== -1) {
+        const propertyName = text.substring(0, colonIndex).trim();
+        const propertyValue = text.substring(colonIndex + 1).trim();
+
+        return (
+          <tr key={index}>
+            <td style={{ padding: "0 10px" }}>{propertyName}</td>
+            <td style={{ padding: "0 10px" }}>{propertyValue}</td>
+          </tr>
+        );
       }
-    })
-  }, []);
+      return null; // Skip rendering if colonIndex is -1 (invalid format)
+    });
+  };
 
-
- 
   return (
-    // <div>
-    //   <Editor toolbarHidden editorState={editorState} readOnly />
-    // </div>
     <div>
       <table id="property-table">
-        <tr>
-          <th>Property Name</th>
-          <th>Value</th>
-        </tr>
+        <thead>
+          <tr>
+            <th style={{ padding: "0 10px" }}>Property Name</th>
+            <th style={{ padding: "0 10px" }}>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          {renderTableRows()} {/* Render dynamic table rows */}
+        </tbody>
       </table>
     </div>
   );
 };
 
-
-
-export default textEditorView;
+export default TextEditorView;

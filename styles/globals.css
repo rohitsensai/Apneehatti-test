@@ -117,6 +117,9 @@ a {
     
     
 }
+
+
+
 #navbarNav{
     /* border: 2px solid red; */
 }
@@ -208,25 +211,32 @@ a:hover{
 
 
 
-#search{
-     background-color:  #ef6e6e;
-     color: 'white' ;
-     border: none;
-     height:'25px';
-     border-radius:'5px';
-     width: 30%;
-     margin-left: 20px;
-     /* width: 100%; */
-     /* border:2px solid red; */
+#search {
+  background-color: #ececec;
+  color: white;
+  border-radius: 20px; /* Use a fixed pixel value for border radius */
+  height: 40px; /* Increase the height for better visibility */
+  width: 30%;
+  margin-left: 20px;
+  padding: 5px; /* Add padding for better spacing */
+  display: flex;
+  align-items: center;
 }
-#inside-search{
-    /* border: 2px solid red; */
-    background-color: #ececec;
-    color: #ABA7A7;
-    border: none;
-    
-    
+
+#inside-search {
+  flex: 1; /* Allow the input to expand and fill the container */
+ /* Remove default input border */
+  background: none; /* Remove default input background */
+
+  padding: 5px; /* Add padding inside the input */
+  background-color: #ececec;
+  color: #ABA7A7;
+  border: none;
+  
 }
+
+
+
 #pwc{
     /* border:2px solid red; */
     
@@ -260,7 +270,7 @@ a:hover{
 .cat-img{
     /* border: 2px solid rgb(161, 132, 132); */
     width: 60%;
-    height: 6em;
+    height: 6.8em;
     border-radius: 5em;
     background-color: white;
     margin: auto auto;
@@ -358,12 +368,7 @@ a:hover{
 
 
 
-#benefits{
-    background-color: rgb(255, 255, 255);
-    height: 150px;
-    margin: 2% auto;
-    display: flex;
-}
+
 
 #benefits img{
     height: 40%;
@@ -378,7 +383,7 @@ a:hover{
 #t-container {
     
     border: 0.5px solid rgb(0, 0, 0);
-    height: 13em;
+ 
     background-color:  rgb(255, 255, 255);
     color: rgb(28, 28, 28);
     font-family: sans-serif;
@@ -404,7 +409,7 @@ a:hover{
     /* border: 2px solid red; */
     width: 100%;
     text-align: left;
-    padding: 0% 10%;
+    
 }
 
 

@@ -123,13 +123,12 @@ const Header = ({ categories }) => {
           <header className="header navbar navbar-expand-lg navbar-light " id="header">
             <div className="container" >
 
-              <a className="navbar-brand" href="/" id="img">
-                <img src="images/logo/ApneeHatti_light.png" alt="Logo" className="img-fluid" />
+              <a href="/" id="img" style={{marginLeft:"30px"}}>
+                <img src="/images/logo/ApneeHatti_light.png" alt="Log" className="img-fluid" />
               </a>
 
               <form className="  form-inline " id="search">
                 <input className="form-control " type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
-                {/* <button className="btn  my-2 my-sm-0" type="submit">Search</button> */}
               </form>
               <div id="navbarNav" style={{ width: "50%" }}>
                 <ul className="navbar-nav" id="bar">

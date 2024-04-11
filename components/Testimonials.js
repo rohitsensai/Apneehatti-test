@@ -4,9 +4,24 @@ import Image from 'next/image'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
+
 function Testimonials() {
+    const openNewWindow = () => {
+        // Calculate window size and position
+        const width = 600; // Width of the new window
+        const height = 500; // Height of the new window
+        const left = (window.innerWidth - width) / 2; // Center horizontally
+        const top = (window.innerHeight - height) / 2; // Center vertically
+    
+        // Options for the new window
+        const options = `width=${width},height=${height},left=${left},top=${top}`;
+    
+        // Open new window with specified size and position
+        window.open('https://g.page/r/CWqeVis8_uz7EB0/review', 'New Window', options);
+      };
     return (
-        <div id='t-container'>
+        <div>
+        <div id='t-container' >
             <h3 className="text-center text-2xl font-semibold mb-2">
                 Customer Testimonials
             </h3>
@@ -148,7 +163,17 @@ function Testimonials() {
 
 
 
+
             </Carousel>
+            
+        </div>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='mt-2 mb-10'>
+                <button type="button" class="btn btn-outline-success" >
+                    <div onClick={openNewWindow}>
+                        Give Your Review
+                    </div>
+                </button>
+            </div>
         </div>
     )
 }

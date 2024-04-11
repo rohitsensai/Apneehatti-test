@@ -46,6 +46,8 @@ export async function getServerSideProps({ query }) {
   const data = await fetch(`${process.env.HOST}/api/products/${product_id}`);
   const res = await data.json();
 
+
+
   const [relatedProducts, pro_review] = await Promise.all([
     fetch(
       `${process.env.HOST}/api/products/category/${res.category_id.slug}`
@@ -279,6 +281,42 @@ const ProductDetail = ({
       }
     }
   };
+  const handleBuyNow = async (id) => {
+    if (!session) {
+      toast.warning("Please SignIn First");
+    } else {
+      const data = await fetch(`/api/cart/${session.user.id}/add`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        method: "POST",
+        body: JSON.stringify({ product_id: id, quantity: 1 }),
+      });
+      if (data.ok) {
+        const response = await data.json();
+        if (response) {
+          const savedcart = response.items;
+          const initialCartObj = {
+            savedcart,
+            shipping: response.shipping,
+            subtotal: response.subtotal,
+            total: response.total,
+          };
+          dispatch(initialCart(initialCartObj));
+          router.push('/checkout')
+        }
+      }
+    }
+  };
+
+  const handleSubmit = () => {
+
+    if(!session){
+      toast.warning("Please SignIn First");
+    }else{
+      toadt.success("Review added")
+    }
+  }
 
   const youtubeSearchUrl = 'https://youtube-search-and-download.p.rapidapi.com';
   const youtubeOptions = {
@@ -598,11 +636,11 @@ const ProductDetail = ({
                       {/* submit form */}
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center' }}>
-                      <form action="#" method="post">
+                      <div>
                         <label for="review" style={{ fontFamily: "Jockey One" }}>Write your review:</label><br />
                         <textarea id="review" name="review" rows="4" cols="50" style={{ backgroundColor: "#D9D9D9" }}></textarea><br />
-                        <input className="btn btn-secondary active" type="submit" value="Submit" />
-                      </form>
+                        <input className="btn btn-secondary active" type="submit" value="Submit"  onClick={ handleSubmit }/>
+                      </div>
                     </div>
 
 
@@ -691,9 +729,9 @@ const ProductDetail = ({
                           </h4>
                         )}
                       <div className="mr-2 text-green-800 font-medium " >
-                        
+
                         New Price:
-                        
+
                       </div>
                       <CurrencyFormatter price={product_data.price} />
                     </div>
@@ -766,7 +804,7 @@ const ProductDetail = ({
                        */}
 
                 <div className=" d-flex  justify-content-center m-4 "  >
-                  <button className="col-6  align-item-center" onClick={() => handleAddToWishlist(product_data._id)}>
+                  <button className="col-6  align-item-center" onClick={() => handleBuyNow(product_data._id)}>
                     <img src="/images/pictures/buynow.png" className=" m-auto" width={250} style={{ cursor: "pointer" }} />
                   </button>
 
@@ -829,36 +867,61 @@ const ProductDetail = ({
         />
       </div>
 
-      <Box sx={{ marginTop: { lg: '203px', xs: '20px' } }} p="20px" >
-        <Typography sx={{ fontSize: { lg: '20px', xs: '9px' } }} fontWeight={700} color="#000" mb="33px">
-          Watch <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{product_data.name}</span> Related Videos
-        </Typography>
-        <Stack sx={{ flexDirection: { lg: 'row' }, gap: { lg: '110px', xs: '0px' } }} justifyContent="flex-start" flexWrap="wrap" alignItems="center">
-          {relatedVideos?.slice(0, 3)?.map((item, index) => (
-            <a
-              key={index}
-              className="exercise-video"
-              href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} height="50px" />
-              <Box>
-                <Typography sx={{ fontSize: { lg: '10px', xs: '18px' } }} fontWeight={600} color="#000">
-                  {item.video.title}
-                </Typography>
-                <Typography fontSize="8px" color="#000">
-                  {item.video.channelName}
-                </Typography>
-              </Box>
-            </a>
-          ))}
-        </Stack>
-      </Box>
+      (
+    <Box sx={{ marginTop: "-150px", textAlign: 'center' }}>
+      <Typography fontWeight={700} color="#000" sx={{ width: '80%', margin: 'auto' }}>
+        <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{product_data.name}</span>
+      </Typography>
+      <Stack
+        sx={{
+          flexDirection: 'row',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          '& .exercise-video': {
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textDecoration: 'none',
+            margin: '10px',
+            padding: '10px',
+            backgroundColor: '#f9f9f9',
+            borderRadius: '8px',
+            maxWidth: '250px',
+          },
+          '@media (max-width: 600px)': {
+            flexDirection: 'column',
+            alignItems: 'center',
+          },
+        }}
+      >
+        {relatedVideos?.slice(0, 5)?.map((item, index) => (
+          <a
+            key={index}
+            className="exercise-video"
+            href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} height="50px" />
+            <Box sx={{ marginTop: '10px', textAlign: 'center' }}>
+              <Typography sx={{ fontSize: '14px', fontWeight: 600, color: '#000' }}>
+                {item.video.title}
+              </Typography>
+              <Typography sx={{ fontSize: '10px', color: '#000' }}>
+                {item.video.channelName}
+              </Typography>
+            </Box>
+          </a>
+        ))}
+      </Stack>
+    </Box>
+      )
 
 
 
-      <div className="p-5 mx-auto  min-h-[200px]">
+      <div className="p-5 mx-auto  min-h-[200px] ">
         {/* Related Products */}
         <RelatedProduct relatedProducts={relatedProducts} category={category} />
       </div>
