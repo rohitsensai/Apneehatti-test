@@ -10,7 +10,7 @@ import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import { useRouter } from "next/router";
-
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 const Product = ({ product }) => {
   const router = useRouter();
   const dispatch = useDispatch();
@@ -36,7 +36,9 @@ const Product = ({ product }) => {
       router.push('/wishlist')
     }
   };
-  const buynowhandler = async(product) => {
+  const buynowhandler = async (product) => {
+
+
 
     if (!session) {
       toast.warning("Please Sign In First");
@@ -103,18 +105,16 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border border-blue m-1">
-      <div className="block bg-white   overflow-hidden ">
-        <div className="min-h-[400px] relative">
-          <div className="h-[220px]  relative overflow-hidden group transition">
-            <div
-              className="
-                absolute z-10 top-2   rounded-sm  right-3" onClick={whishlisthandler} style={{ cursor: "pointer" }}
-            >
-              <img src="/images/pictures/wishlist.png" width={30} />
+    <div className="border border-blue m-1 " style={{ backgroundColor: "#DDFFDA" }}>
+      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "#DDFFDA" }}> 
+        <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#DDFFDA" }}>
+          <div className="h-[220px]  relative overflow-hidden group transition ">
+            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "#E42C16", borderRadius: "50%", padding: "8px" }}>
+              <FaHeart size={20} style={{ color: "white" }} />
             </div>
 
-            <div className="w-full h-full flex justify-center items-center cursor-pointer">
+
+            <div className="w-full h-full flex justify-center items-center cursor-pointer " style={{ backgroundColor: "#DDFFDA" }}>
               {/* image */}
               <Link
                 href={{
@@ -127,8 +127,8 @@ const Product = ({ product }) => {
                   <div className="relative mx-auto">
                     <Image
                       src={image}
-                      width={220}
-                      height={220}
+                      width={320}
+                      height={240}
                       alt={alt_text}
                       loading="lazy"
                       placeholder="blur"
@@ -140,7 +140,7 @@ const Product = ({ product }) => {
             </div>
           </div>
           {/* category & title & MRP */}
-          <div className=" pb-4 relative" >
+          <div className=" pb-4 relative" style={{ backgroundColor: "#DDFFDA" }}>
             <div className="text-xs capitalize text-gray-500 ">
               {category}
             </div>
@@ -190,17 +190,14 @@ const Product = ({ product }) => {
 
           </div>
           {/* Add to cart button */}
-          <div className=" d-flex  justify-between"  >
-
-            <img className="col-6" src="/images/pictures/buynow.png" width={130} style={{ cursor: "pointer" }} onClick={(e) => {buynowhandler(product)}} />
-
-
-
+          <div className=" d-flex  justify-content-around"  >
+         
+          
             <button
               onClick={(e) => {
                 add(product);
               }}
-              className="col-6 "
+              className=" "
             >
               {added ? (
                 <div className="">
@@ -222,9 +219,24 @@ const Product = ({ product }) => {
                   </svg>
                 </div>
               ) : (
-                <img src="/images/pictures/addtocart.png" width={150} />
+
+               
+                   <div className="d-flex justify-content-around align-items-center h-8 mr-4" style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#fcc534", width: "120px", borderRadius: "10px", color: "white" }}>
+                   ADD TO CART
+                   <FaShoppingCart style={{ color: "white" }} />
+                 </div>
+     
+                
+
+
+
               )}
             </button>
+            <div className="d-flex justify-content-around align-items-center h-8 " style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#d30c2b", width: "120px", borderRadius: "10px", cursor: "pointer", color: "white" }}>
+                  BUY NOW
+                  <FaShoppingCart style={{ color: "white" }} />
+                </div>
+
 
           </div>
         </div>
@@ -234,3 +246,4 @@ const Product = ({ product }) => {
 };
 
 export default Product;
+

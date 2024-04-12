@@ -5,12 +5,12 @@ const RelatedProduct = ({ relatedProducts, category }) => {
   return (
     <div className="">
       <h1 className="text-xl font-medium">
-        <span className="border-b-4 inline-block w-48 pb-1 border-green-400">
+        <span className=" inline-block w-48">
           Related Products
         </span>
       </h1>
       <div>
-        <div className="grid gap-2 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-5">
+        <div className="grid gap-2 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-2">
           {relatedProducts?.length > 0 &&
             relatedProducts?.map((item, idx) => (
               <Product

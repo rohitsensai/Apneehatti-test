@@ -324,7 +324,7 @@ const productScreen = ({ prod, pro_category, query }) => {
           </div>
         </div> */}
         <div className="  " >
-          <Breadcrumb
+          {/* <Breadcrumb
             aria-label="Solid background breadcrumb example"
             className="  dark:bg-gray-900"
           >
@@ -340,18 +340,19 @@ const productScreen = ({ prod, pro_category, query }) => {
                 {query}
               </Breadcrumb.Item>
             )}
-          </Breadcrumb>
+          </Breadcrumb> */}
           <div className="bg-white rounded shadow-sm mb-2  flex justify-between items-center">
             <div className="text-gray-500">Total {products.length} results</div>
             <div className="hidden md:flex lg:w-1/5 items-center">
-              <h5 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 border border-gray-300">
+              <h5 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 border border-gray-300 m-2">
                 Sort by
               </h5>
               <select
                 onChange={(e) => sortBy(e.target.value)}
                 id="sort_by"
-                className="bg-gray-50 border-gray-300  cursor-pointer text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                className="bg-gray-50 border-gray-300  cursor-pointer text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-5"
                 defaultValue={"selected"}
+              
               >
                 <option>Default</option>
 

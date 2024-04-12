@@ -21,6 +21,8 @@ import calculateDiscount from "../../helper/calculateDiscount";
 import Head from "next/head";
 import dynamic from "next/dynamic";
 import { Typography, Box, Stack } from '@mui/material';
+import { FaShoppingCart, FaHeart } from 'react-icons/fa';
+
 
 const ProductReview = dynamic(() => import("../../components/productReview"), {
   ssr: false,
@@ -45,6 +47,8 @@ export async function getServerSideProps({ query }) {
   const { pid: product_id } = query;
   const data = await fetch(`${process.env.HOST}/api/products/${product_id}`);
   const res = await data.json();
+
+  console.log("res",res)
 
 
 
@@ -311,9 +315,9 @@ const ProductDetail = ({
 
   const handleSubmit = () => {
 
-    if(!session){
+    if (!session) {
       toast.warning("Please SignIn First");
-    }else{
+    } else {
       toadt.success("Review added")
     }
   }
@@ -341,6 +345,20 @@ const ProductDetail = ({
     doSomething();
 
   }, [product_data]);
+
+  const openNewWindow = () => {
+    // Calculate window size and position
+    const width = 600; // Width of the new window
+    const height = 500; // Height of the new window
+    const left = (window.innerWidth - width) / 2; // Center horizontally
+    const top = (window.innerHeight - height) / 2; // Center vertically
+
+    // Options for the new window
+    const options = `width=${width},height=${height},left=${left},top=${top}`;
+
+    // Open new window with specified size and position
+    window.open('/policy', 'New Window', options);
+  };
 
 
 
@@ -639,7 +657,7 @@ const ProductDetail = ({
                       <div>
                         <label for="review" style={{ fontFamily: "Jockey One" }}>Write your review:</label><br />
                         <textarea id="review" name="review" rows="4" cols="50" style={{ backgroundColor: "#D9D9D9" }}></textarea><br />
-                        <input className="btn btn-secondary active" type="submit" value="Submit"  onClick={ handleSubmit }/>
+                        <input className="btn btn-secondary active" type="submit" value="Submit" onClick={handleSubmit} />
                       </div>
                     </div>
 
@@ -749,43 +767,46 @@ const ProductDetail = ({
                         </span>
                       </h5>
                     </div>
-                    <Link
-                      href={{
-                        pathname: "/policy",
-                      }}
-                    >
-                      <p className="text-sm  text-blue-500 cursor-pointer">
-                        Check Policy
-                      </p>
-                    </Link>
+
+                    <p className="text-sm  text-blue-500 cursor-pointer" onClick={openNewWindow}>
+                      Check Policy
+                    </p>
+
                   </div>
-                  <div className="flex flex-1 max-w-[200px] items-center h-full text-gray-700 border border-gray-400 bg-gray-100 text-primary font-medium p-2 my-2">
-                    {/* minus icon */}
+                  <div className="flex flex-1 max-w-[200px] items-center h-full text-primary font-medium p-2 my-2">
+                    {/* Minus icon */}
                     <div
                       onClick={() => minus(product_data._id)}
-                      className="flex-1 text-xl flex justify-center items-center cursor-pointer h-full"
+                      className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                      style={{ width: '30px', height: '30px' }}
                     >
-                      <IoMdRemove />
+                      <IoMdRemove style={{ color: 'black', fontSize: '20px' }} />
                     </div>
-                    {/* amount */}
-                    <div className="h-full flex justify-center items-center px-2">
-                      {cartItems.filter((item) => item.id == product_data._id)
-                        .length > 0
-                        ? cartItems
-                          .filter((item) => item.id == product_data._id)
+
+                    {/* Quantity display */}
+                    <div className="flex justify-center items-center px-2">
+                      {cartItems.filter((item) => item.id === product_data._id).length > 0 ? (
+                        cartItems
+                          .filter((item) => item.id === product_data._id)
                           .map((x) => (
                             <span key={x.id}>{x.quantity || 0}</span>
                           ))
-                        : 0}
+                      ) : (
+                        <span>0</span>
+                      )}
                     </div>
-                    {/* plus icon */}
+
+                    {/* Plus icon */}
                     <div
                       onClick={() => handleAddToCart(product_data._id)}
-                      className="flex-1 text-xl h-full flex justify-center items-center cursor-pointer"
+                      className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                      style={{ width: '30px', height: '30px' }}
                     >
-                      <IoMdAdd />
+                      <IoMdAdd style={{ color: 'black', fontSize: '20px' }} />
                     </div>
                   </div>
+
+
                 </div>
                 {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
                         <button
@@ -803,37 +824,41 @@ const ProductDetail = ({
                       </div>
                        */}
 
-                <div className=" d-flex  justify-content-center m-4 "  >
-                  <button className="col-6  align-item-center" onClick={() => handleBuyNow(product_data._id)}>
-                    <img src="/images/pictures/buynow.png" className=" m-auto" width={250} style={{ cursor: "pointer" }} />
+                <div className="d-flex justify-content-around m-4" style={{ height: "60px" }}>
+                  <button className="col-6 d-flex justify-content-center align-items-center m-2" style={{ fontWeight: "bold", backgroundColor: "#fcc534", borderRadius: "10px", color: "white" }} onClick={() => handleAddToCart(product_data._id)}>
+
+                    ADD TO CART
+                    <FaShoppingCart style={{ color: "white" }} />
+
+                  </button>
+                  <button className="col-6 d-flex justify-content-center align-items-center m-2" style={{ fontWeight: "bold", backgroundColor: "#d30c2b", borderRadius: "10px", cursor: "pointer", color: "white" }} onClick={() => handleBuyNow(product_data._id)}>
+                    BUY NOW <FaShoppingCart style={{ color: "white", marginLeft: "5px" }} />
                   </button>
 
 
-                  <button className="col-6  " onClick={() => handleAddToCart(product_data._id)}>
-                    <img src="/images/pictures/addtocart.png " className="m-auto" width={250} />
 
 
-                  </button>
                 </div>
 
-                <div className="p-5 space-y-4 grid grid-cols-2 md:space-y-1  md:grid-cols-4 gap-x-5 align-top items-center border-b border-gray-300">
-                  <div className="flex flex-col h-full items-center text-center space-y-2 ">
+                <div className="p-5 space-y-4 grid grid-cols-2 md:grid-cols-4 gap-5 items-center border-b border-gray-300">
+                  <div className="flex flex-col items-center justify-center text-center space-y-2">
                     <MdRestore className="text-3xl" />
                     <p className="text-xs font-medium">7 days replacement</p>
                   </div>
-                  <div className="flex flex-col h-full items-center text-center space-y-2 ">
+                  <div className="flex flex-col items-center justify-center text-center space-y-2">
                     <SiBrandfolder className="text-2xl" />
                     <p className="text-xs font-medium">Top brand</p>
                   </div>
-                  <div className="flex flex-col h-full items-center text-center space-y-2 ">
+                  <div className="flex flex-col items-center justify-center text-center space-y-2">
                     <TbTruckDelivery className="text-3xl" />
                     <p className="text-xs font-medium">Fast delivery</p>
                   </div>
-                  <div className="flex flex-col h-full items-center text-center space-y-2 ">
+                  <div className="flex flex-col items-center justify-center text-center space-y-2">
                     <RiSecurePaymentFill className="text-2xl" />
                     <p className="text-xs font-medium">Secure transaction</p>
                   </div>
                 </div>
+
 
                 <p className=" my-4 ld:px-4 text-sm text-gray-500 text-justify leading-6 line-clamp-6">
                   <TextEditorView desc={product_data.desc} />
@@ -867,61 +892,65 @@ const ProductDetail = ({
         />
       </div>
 
-      (
-    <Box sx={{ marginTop: "-150px", textAlign: 'center' }}>
-      <Typography fontWeight={700} color="#000" sx={{ width: '80%', margin: 'auto' }}>
-        <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{product_data.name}</span>
-      </Typography>
-      <Stack
-        sx={{
-          flexDirection: 'row',
-          justifyContent: 'center',
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          '& .exercise-video': {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
+
+      <Box sx={{ marginTop: "-190px", textAlign: 'center' }} >
+        <Typography fontWeight={700} color="#000" sx={{ width: '80%', margin: 'auto' }}>
+          <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{product_data.name}</span>
+        </Typography>
+        <Stack
+          sx={{
+            flexDirection: 'row',
             justifyContent: 'center',
-            textDecoration: 'none',
-            margin: '10px',
-            padding: '10px',
-            backgroundColor: '#f9f9f9',
-            borderRadius: '8px',
-            maxWidth: '250px',
-          },
-          '@media (max-width: 600px)': {
-            flexDirection: 'column',
+            flexWrap: 'wrap',
             alignItems: 'center',
-          },
-        }}
-      >
-        {relatedVideos?.slice(0, 5)?.map((item, index) => (
-          <a
-            key={index}
-            className="exercise-video"
-            href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img style={{ borderTopLeftRadius: '20px' }} src={item.video.thumbnails[0].url} alt={item.video.title} height="50px" />
-            <Box sx={{ marginTop: '10px', textAlign: 'center' }}>
-              <Typography sx={{ fontSize: '14px', fontWeight: 600, color: '#000' }}>
-                {item.video.title}
-              </Typography>
-              <Typography sx={{ fontSize: '10px', color: '#000' }}>
-                {item.video.channelName}
-              </Typography>
-            </Box>
-          </a>
-        ))}
-      </Stack>
-    </Box>
-      )
+            '& .exercise-video': {
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              textDecoration: 'none',
+              margin: '10px',
+              padding: '10px',
+              backgroundColor: '#f9f9f9',
+              borderRadius: '8px',
+              maxWidth: '250px', // Set maximum width for uniformity
+              width: '200px', // Set fixed width to ensure uniform size
+              height: '200px', // Set fixed height to ensure uniform size
+              overflow: 'hidden', // Hide overflow to prevent size variations
+            },
+            '@media (max-width: 600px)': {
+              flexDirection: 'column',
+              alignItems: 'center',
+            },
+          }}
+        >
+          {relatedVideos?.slice(0, 7)?.map((item, index) => (
+            <a
+              key={index}
+              className="exercise-video"
+              href={`https://www.youtube.com/watch?v=${item.video.videoId}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img style={{ borderTopLeftRadius: '8px', width: '100%', height: '50%', objectFit: 'cover' }} src={item.video.thumbnails[0].url} alt={item.video.title} />
+              <Box sx={{ marginTop: '10px', textAlign: 'center', width: '100%' }}>
+                <Typography sx={{ fontSize: '14px', fontWeight: 600, color: '#000', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {item.video.title}
+                </Typography>
+                <Typography sx={{ fontSize: '10px', color: '#000' }}>
+                  {item.video.channelName}
+                </Typography>
+              </Box>
+            </a>
+          ))}
+        </Stack>
+      </Box>
 
 
 
-      <div className="p-5 mx-auto  min-h-[200px] ">
+
+
+      <div className="p-2 mx-auto  min-h-[200px] ">
         {/* Related Products */}
         <RelatedProduct relatedProducts={relatedProducts} category={category} />
       </div>

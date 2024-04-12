@@ -13,6 +13,7 @@ import MobileSidebar from "./mobileSidebar";
 import Cart from "./cart";
 import SignOutConfirmation from "./signOutConfimation";
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Header = ({ categories }) => {
@@ -123,12 +124,12 @@ const Header = ({ categories }) => {
           <header className="header navbar navbar-expand-lg navbar-light " id="header">
             <div className="container" >
 
-              <a href="/" id="img" style={{marginLeft:"30px"}}>
+              <a href="/" id="img" style={{ marginLeft: "30px" }}>
                 <img src="/images/logo/ApneeHatti_light.png" alt="Log" className="img-fluid" />
               </a>
 
-              <form className="  form-inline " id="search">
-                <input className="form-control " type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
+              <form className=" " id="search">
+                <input className="form-control custom-no-outline" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
               </form>
               <div id="navbarNav" style={{ width: "50%" }}>
                 <ul className="navbar-nav" id="bar">
@@ -145,36 +146,43 @@ const Header = ({ categories }) => {
                     <a className="nav-link" href="#">Contact</a>
                   </li>
                   {session == null && (
-                  <>
-                <li className="nav-item">
-                  {/* <a className="nav-link" href="/myprofile" style={{marginLeft:"25%"}}><FaUser /></a> */}
-                  <a className="nav-link" href="/login"  >Login/Signup</a>
+                    <>
+                      <li className="nav-item">
+                        <a className="nav-link" href="/login"  >
+                          <button class="login-button" style={{color:"white"}}>
+                            LOGIN
+                            <FaUser style={{ marginLeft: '5px' }}/>
+                         
+                          </button>
+                         
 
-                </li>
-                </>
-                )}
+                        </a>
+
+                      </li>
+                    </>
+                  )}
                 </ul>
-               
+
               </div>
 
               <ul className="d-flex flex-row navbar-nav " id="pwc">
-               
+
 
                 {session !== null && (
                   <>
                     <li className="nav-item">
-                  <a className="nav-link" href="/myprofile"><FaUser /></a>
-                  <div className="name"  style={{ fontSize: "9px" }} >Proifle</div>
+                      <a className="nav-link" href="/myprofile"><FaUser /></a>
+                      <div className="name" style={{ fontSize: "9px" }} >Proifle</div>
 
-                </li>
+                    </li>
                     <li className="nav-item">
                       <a className="nav-link " href="/wishlist"><FaHeart /></a>
                       <div className="name " style={{ fontSize: "9px" }}>Liked</div>
                     </li>
                     <li className="nav-item">
                       <button onClick={() => setIsOpen(!isOpen)}>
-                      <div className="nav-link" href="#"><FaShoppingCart /></div>
-                      <div className="name" style={{ fontSize: "9px" }}>Cart</div>
+                        <div className="nav-link" href="#"><FaShoppingCart /></div>
+                        <div className="name" style={{ fontSize: "9px" }}>Cart</div>
                       </button>
                     </li>
                   </>
@@ -228,7 +236,7 @@ const Header = ({ categories }) => {
         </div>
 
       </div>
-       <Cart
+      <Cart
         setIsOpen={setIsOpen}
         isOpen={isOpen}
         session={session}

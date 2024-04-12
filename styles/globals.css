@@ -113,6 +113,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     
     
     
@@ -120,9 +121,7 @@ a {
 
 
 
-#navbarNav{
-    /* border: 2px solid red; */
-}
+
 .header{
     /* border:2px solid red; */
     padding: 0px 0px;
@@ -209,19 +208,39 @@ a:hover{
     color:#ABA7A7
 }
 
-
+*:focus {
+  outline: none;
+}
 
 #search {
   background-color: #ececec;
   color: white;
   border-radius: 20px; /* Use a fixed pixel value for border radius */
   height: 40px; /* Increase the height for better visibility */
-  width: 30%;
+  width: 35%;
   margin-left: 20px;
   padding: 5px; /* Add padding for better spacing */
   display: flex;
   align-items: center;
+  z-index: 1;
 }
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #44c0b8;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold; /* Apply bold font weight */
+}
+
+
+
+
 
 #inside-search {
   flex: 1; /* Allow the input to expand and fill the container */
@@ -229,7 +248,7 @@ a:hover{
   background: none; /* Remove default input background */
 
   padding: 5px; /* Add padding inside the input */
-  background-color: #ececec;
+  
   color: #ABA7A7;
   border: none;
   
@@ -370,12 +389,7 @@ a:hover{
 
 
 
-#benefits img{
-    height: 40%;
-    margin: auto;
-    /* border: 1px solid white; */
-    justify-content: space-around;
-}
+
 
 
 
