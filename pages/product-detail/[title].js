@@ -307,7 +307,7 @@ const ProductDetail = ({
             total: response.total,
           };
           dispatch(initialCart(initialCartObj));
-          router.push('/checkout')
+          router.push('/placeorder')
         }
       }
     }

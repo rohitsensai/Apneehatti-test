@@ -132,16 +132,25 @@ const Header = ({ categories }) => {
             {/* Navigation Links - Hidden on Small Screens */}
             <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">Shop</a>
+                <a className="nav-link" href="#">
+                <button type="button" class="btn btn-outline-secondary">Shop</button>
+
+                </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">About Us</a>
+                <a className="nav-link" href="#">
+                <button type="button" class="btn btn-outline-secondary">About Us</button>
+                </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">Blog</a>
+                <a className="nav-link" href="#">
+                <button type="button" class="btn btn-outline-secondary">Blog </button>
+                </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">Contact</a>
+                <a className="nav-link" href="#">
+                <button type="button" class="btn btn-outline-secondary">Contact</button>
+                </a>
               </li>
             </ul>
 

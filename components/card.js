@@ -68,7 +68,7 @@ const Product = ({ product }) => {
           dispatch(initialCart(initialCartObj));
         }
       }
-      router.push('/checkout')
+      router.push('/placeorder')
     }
   };
 
@@ -232,7 +232,7 @@ const Product = ({ product }) => {
 
               )}
             </button>
-            <div className="d-flex justify-content-around align-items-center h-8 " style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#d30c2b", width: "120px", borderRadius: "10px", cursor: "pointer", color: "white" }}>
+            <div className="d-flex justify-content-around align-items-center h-8 " style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#d30c2b", width: "120px", borderRadius: "10px", cursor: "pointer", color: "white" }} onClick={(e) => buynowhandler(e)}>
                   BUY NOW
                   <FaShoppingCart style={{ color: "white" }} />
                 </div>
