@@ -117,20 +117,20 @@ const Header = ({ categories }) => {
             </ul>
           </div>
 
-          <header className="container-fluid d-flex flex-row align-items-center justify-content-between border border-primary  py-3 " id="header">
+          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  py-3 " id="header">
 
             {/* Logo - Hidden on Small Screens */}
-            <a href="/" className="border border-danger d-none d-md-block">
+            <a href="/" className=" d-none d-md-block">
               <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
             </a>
 
             {/* Search Form */}
-            <form className="flex-grow-0.8 d-flex align-items-center mx-3 my-2 my-md-0 border border-danger" id="search">
+            <form className="flex-grow-0.8 d-flex align-items-center mx-3 my-2 my-md-0 " id="search">
               <input className="form-control custom-no-outline flex-grow-1" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
             </form>
 
             {/* Navigation Links - Hidden on Small Screens */}
-            <ul className="border border-danger d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">Shop</a>
               </li>
@@ -159,7 +159,7 @@ const Header = ({ categories }) => {
 
             {session !== null && (
               <>
-                <ul className="border border-danger d-flex flex-row navbar-nav mx-2" id="pwc">
+                <ul className=" d-flex flex-row navbar-nav mx-2" id="pwc">
                   <li className="nav-item">
                     <a className="nav-link" href="/myprofile">
                       <FaUser />
