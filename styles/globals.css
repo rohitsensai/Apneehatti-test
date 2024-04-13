@@ -104,41 +104,16 @@ a {
 
 
 
+
+
+
+
+
 *{
-    
-}
-#bar{
-    /* border: 4px solid red; */
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-around;
-    align-items: center;
-    
-    
-    
+  font-family: sans-serif;
 }
 
 
-
-
-.header{
-    /* border:2px solid red; */
-    padding: 0px 0px;
-}
-
-.container{
-    margin: 0;
-    margin-right: 0;
-    /* border: 2px solid red; */
-    padding: 0px 0px;
-}
-*{
-    font-family: sans-serif;
-}
-.outer{
-    /* height: 40%; */
-}
 #navbarNav1{
     /* border: 4px solid red; */
     /* font-size: ; */
@@ -146,31 +121,29 @@ a {
     background-color: #ffffff;
    font-family: sans-serif;
 }
-
-#img{
-    height: auto;
-    /* border: 2px solid red; */
-    width: 7%;
-    margin:0px 0px;
+#bar {
+  width: 50%; /* Set the width to 100% of its container */
+  max-width: 500px; /* Set a maximum width if needed */
+  padding: auto;
 
 }
 
 
+
 #sidebar{
     position:absolute;
-    /* width: 200px; */
+    
     height: 1000px;
     background: #000;
     /* border: 2px solid red;  */
     left: -200px; 
     transition: 0.4s;
     top: 0;
+    z-index: 2;
  
 }
 
- #sidebar .active{
-    left: 0px;
-}
+
 #sidebar ul li {
     list-style: none;
     color: #fff;
@@ -183,7 +156,8 @@ a {
    
   
      top:12px; 
-    left:150%;
+    left:200px;
+    z-index: 2;
     display: none;
 }
 
@@ -236,6 +210,7 @@ a:hover{
   cursor: pointer;
   font-size: 16px;
   font-weight: bold; /* Apply bold font weight */
+ 
 }
 
 
@@ -248,22 +223,14 @@ a:hover{
   background: none; /* Remove default input background */
 
   padding: 5px; /* Add padding inside the input */
-  
-  color: #ABA7A7;
+  outline: none;
+  color: black;
   border: none;
   
 }
 
 
 
-#pwc{
-    /* border:2px solid red; */
-    
-}
-#pwc .nav-item{
-    /* border: 2px solid red; */
-    /* margin: 10%; */
-}
 #pwc .nav-link{
   
     margin:auto ;
@@ -271,9 +238,7 @@ a:hover{
 #pwc .name{
     font-size: 12px;
 }
-#navbarNav1 .nav-link{
-    /* border:2px solid red; */
-}
+
 #navbarNav1 div{
  
     text-align: center;
@@ -299,28 +264,11 @@ a:hover{
 
 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:768px) {
 
-    .container{
-        /* border: 2px solid red; */
-        display: flex;
-        flex-direction: row;
-        /* font-size: 9px; */
-    }
-    #search{
-        /* border: 2px solid red; */
-       border-radius: 5px;
-        margin-left: 20%;
-        width: 45%;
-    }
-    #img{
-        /* border: 2px solid red; */
-        display: none;
-    }
-    #navbarNav{
-        /* border: 2px solid red; */
-        display: none;
-    }
+  
+ 
+   
     #pwc{
         /* border: 2px solid red; */
         width: 30%;
@@ -347,10 +295,7 @@ a:hover{
         margin: auto;
     }
     
-    #sidebar{
-        border: 2px solid red;
-    }
-
+   
     #sidebar .toggle-btn{
         display:block; 
        

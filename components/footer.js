@@ -54,11 +54,11 @@ const Footer = ({ categories }) => {
         <a href="https://www.apneehatti.com/policy" style={{ color: "#7A7A7A" }}>Cancellation Policy</a>
         <a href="https://www.apneehatti.com/FAQs" style={{ color: "#7A7A7A" }}>FAQ</a>
       </div>
-      <div className="mt-20">
+      {/* <div className="mt-20">
         <div style={{ fontFamily: "Jockey One" }}>CONTACT US</div>
         <div style={{ color: "#7A7A7A" }}>Mobile +91 <span></span>7876752516</div>
         <div style={{ color: "#7A7A7A" }}>Email:support@anpneehatti.com</div>
-      </div>
+      </div> */}
       <div className="mt-20 d-flex flex-column">
         <div style={{ fontFamily: "Jockey One" }}>TOP CATEGORIES</div>
         <a href="http://localhost:3000/search?category=Handlooms" style={{ color: "#7A7A7A" }}>Handlooms</a>
@@ -69,7 +69,6 @@ const Footer = ({ categories }) => {
       </div>
       <div className="mt-20">
         <div className="mb-1" style={{ fontFamily: 'Jockey One' }}>FOLLOW APNEEHATTI</div>
-        {isMounted && (  // Only render FontAwesome icons when component is mounted (client-side)
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
             <a href="https://www.facebook.com/Apneehatti-103048901780149">
               <BsFacebook size={20} />
@@ -84,7 +83,7 @@ const Footer = ({ categories }) => {
               <BsLinkedin size={20} />
             </a>
           </div>
-        )}
+      
       </div>
     </div>
 

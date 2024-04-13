@@ -79,7 +79,6 @@ const Header = ({ categories }) => {
 
 
   function show() {
-    console.log("heel")
     var element = document.getElementById('sidebar'),
       style = window.getComputedStyle(element),
       left = style.getPropertyValue('left');
@@ -87,17 +86,14 @@ const Header = ({ categories }) => {
 
     console.log(left)
     if (left == "-200px") {
-      console.log("if")
-      // document.getElementById('sidebar').classList.toggle('active');
+      
+      document.getElementById('sidebar').classList.toggle('active');
       document.getElementById('sidebar').style.left = '0';
-      document.getElementById('sidebar').style.zIndex = '1'
       document.getElementById('sidebar').style.top = '0'
       document.getElementsByClassName('toggle-btn').display = 'none'
     }
     else {
-      console.log("else")
       document.getElementById('sidebar').style.left = '-200px';
-      document.getElementById('sidebar').style.zIndex = '1'
       document.getElementById('sidebar').style.top = '0'
     }
   }
@@ -106,7 +102,7 @@ const Header = ({ categories }) => {
   return (
     <>
       <div id="outer">
-        <div id="upper">
+        <div id="upper" >
           <div id="sidebar">
             <div class="toggle-btn" onClick={show}>
               <span></span>
@@ -121,78 +117,76 @@ const Header = ({ categories }) => {
             </ul>
           </div>
 
-          <header className="header navbar navbar-expand-lg navbar-light " id="header">
-            <div className="container" >
+          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  py-3 " id="header">
 
-              <a href="/" id="img" style={{ marginLeft: "30px" }}>
-                <img src="/images/logo/ApneeHatti_light.png" alt="Log" className="img-fluid" />
-              </a>
+            {/* Logo - Hidden on Small Screens */}
+            <a href="/" className=" d-none d-md-block">
+              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
+            </a>
 
-              <form className=" " id="search">
-                <input className="form-control custom-no-outline" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
-              </form>
-              <div id="navbarNav" style={{ width: "50%" }}>
-                <ul className="navbar-nav" id="bar">
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Shop</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">About Us</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Blog</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Contact</a>
-                  </li>
-                  {session == null && (
-                    <>
-                      <li className="nav-item">
-                        <a className="nav-link" href="/login"  >
-                          <button class="login-button" style={{color:"white"}}>
-                            LOGIN
-                            <FaUser style={{ marginLeft: '5px' }}/>
-                         
-                          </button>
-                         
+            {/* Search Form */}
+            <form className="flex-grow-0.8 d-flex align-items-center mx-3 my-2 my-md-0" id="search">
+              <input className="form-control custom-no-outline flex-grow-1" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
+            </form>
 
-                        </a>
-
-                      </li>
-                    </>
-                  )}
-                </ul>
-
-              </div>
-
-              <ul className="d-flex flex-row navbar-nav " id="pwc">
+            {/* Navigation Links - Hidden on Small Screens */}
+            <ul className="d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#">Shop</a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#">About Us</a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#">Blog</a>
+              </li>
+              <li className="nav-item mx-2">
+                <a className="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
 
 
-                {session !== null && (
-                  <>
-                    <li className="nav-item">
-                      <a className="nav-link" href="/myprofile"><FaUser /></a>
-                      <div className="name" style={{ fontSize: "9px" }} >Proifle</div>
-
-                    </li>
-                    <li className="nav-item">
-                      <a className="nav-link " href="/wishlist"><FaHeart /></a>
-                      <div className="name " style={{ fontSize: "9px" }}>Liked</div>
-                    </li>
-                    <li className="nav-item">
-                      <button onClick={() => setIsOpen(!isOpen)}>
-                        <div className="nav-link" href="#"><FaShoppingCart /></div>
-                        <div className="name" style={{ fontSize: "9px" }}>Cart</div>
-                      </button>
-                    </li>
-                  </>
-                )}
-
-              </ul>
-
+            {/* Login Button - Always Visible */}
+            <div className="mx-2">
+              {session == null && (
+                <a href="/login">
+                  <button className="btn btn-primary login-button">
+                    LOGIN <FaUser style={{ marginLeft: '5px' }} />
+                  </button>
+                </a>
+              )}
             </div>
-          </header>
-        </div>
+
+            {session !== null && (
+              <>
+                <ul className="d-flex flex-row navbar-nav" id="pwc">
+
+
+
+                  <li className="nav-item">
+                    <a className="nav-link" href="/myprofile"><FaUser /></a>
+                    <div className="name" style={{ fontSize: "9px" }} >Proifle</div>
+
+                  </li>
+                  <li className="nav-item">
+                    <a className="nav-link " href="/wishlist"><FaHeart /></a>
+                    <div className="name " style={{ fontSize: "9px" }}>Liked</div>
+                  </li>
+                  <li className="nav-item">
+                    <button onClick={() => setIsOpen(!isOpen)}>
+                      <div className="nav-link" href="#"><FaShoppingCart /></div>
+                      <div className="name" style={{ fontSize: "9px" }}>Cart</div>
+                    </button>
+                  </li>
+
+
+                </ul>
+              </>
+            )}
+
+
+          </header >
+        </div >
 
 
 
@@ -235,7 +229,7 @@ const Header = ({ categories }) => {
           </ul>
         </div>
 
-      </div>
+      </div >
       <Cart
         setIsOpen={setIsOpen}
         isOpen={isOpen}
