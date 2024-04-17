@@ -79,29 +79,32 @@ const Header = ({ categories }) => {
 
 
   function show() {
-    var element = document.getElementById('sidebar'),
-      style = window.getComputedStyle(element),
-      left = style.getPropertyValue('left');
+    // var element = document.getElementById('sidebar'),
+    //   style = window.getComputedStyle(element),
+    //   left = style.getPropertyValue('left');
 
 
-    console.log(left)
-    if (left == "-200px") {
+    // console.log(left)
+    // if (left == "-200px") {
 
-      document.getElementById('sidebar').classList.toggle('active');
-      document.getElementById('sidebar').style.left = '0';
-      document.getElementById('sidebar').style.top = '0'
-      document.getElementsByClassName('toggle-btn').display = 'none'
-    }
-    else {
-      document.getElementById('sidebar').style.left = '-200px';
-      document.getElementById('sidebar').style.top = '0'
-    }
+    //   document.getElementById('sidebar').classList.toggle('active');
+    //   document.getElementById('sidebar').style.left = '0';
+    //   document.getElementById('sidebar').style.top = '0'
+    //   document.getElementsByClassName('toggle-btn').display = 'none'
+    // }
+    // else {
+    //   document.getElementById('sidebar').style.left = '-200px';
+    //   document.getElementById('sidebar').style.top = '0'
+    // }
+    setCloseSidebar(!closeSidebar);
+    console.log("closesidebar", closeSidebar)
+
   }
 
 
   return (
     <>
-      <div id="outer">
+      <div id="outer" className=""> 
         <div id="upper" >
           <div id="sidebar">
             <div class="toggle-btn" onClick={show}>
@@ -117,46 +120,49 @@ const Header = ({ categories }) => {
             </ul>
           </div>
 
-          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  py-3 " id="header">
+          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  " id="header">
 
-            {/* Logo - Hidden on Small Screens */}
-            <a href="/" className=" d-none d-md-block">
+      {/* Logo - Hidden on Small Screens */}
+      <a href="/" className=" d-none d-md-block">
               <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
             </a>
 
-            {/* Search Form */}
-            <form className="flex-grow-0.8 d-flex align-items-center mx-3 my-2 my-md-0 " id="search">
-              <input className="form-control custom-no-outline flex-grow-1" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" />
-            </form>
+      {/* Search Form */}
+      <form className="flex-grow-0.8 d-flex align-items-center mx-3 my-2 my-md-0 " id="search">
+              <input className="form-control custom-no-outline flex-grow-1" type="search" placeholder="Search for products" aria-label="Search" id="inside-search" onChange={(e) => {
+                setSearchKey(e.target.value);
+              }}
+                value={searchKey} />
+            </form> 
 
-            {/* Navigation Links - Hidden on Small Screens */}
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
+      {/* Navigation Links - Hidden on Small Screens */}
+      <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                <button type="button" class="btn btn-outline-secondary">Shop</button>
+                  <button type="button" class="btn btn-outline-secondary no-border">Shop</button>
 
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                <button type="button" class="btn btn-outline-secondary">About Us</button>
+                  <button type="button" class="btn btn-outline-secondary no-border">About Us</button>
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                <button type="button" class="btn btn-outline-secondary">Blog </button>
+                  <button type="button" class="btn btn-outline-secondary no-border">Blog </button>
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                <button type="button" class="btn btn-outline-secondary">Contact</button>
+                  <button type="button" class="btn btn-outline-secondary no-border">Contact</button>
                 </a>
               </li>
             </ul>
 
 
-            {/* Login Button - Always Visible */}
-            <div className="mx-2">
+      {/* Login Button - Always Visible */}
+      <div className="mx-2">
               {session == null && (
                 <a href="/login">
                   <button className="btn btn-primary login-button">
@@ -195,47 +201,47 @@ const Header = ({ categories }) => {
 
           </header >
         </div >
-
-
-
         <div className="  " id="navbarNav1">
-          <ul className="navbar-nav d-flex flex-row justify-content-around">
-            <li className="nav-item">
+        <ul className="navbar-nav d-flex flex-row justify-content-around">
+          <li className="nav-item">
 
-              <a className="nav-link" href="/search?category=Handlooms">
-                <img className="cat-img" src="/images/pictures/category/1.jpg"></img>
-                <div className="text"> Handlooms</div>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Skincare-and-Beauty">
-                <img className="cat-img" src="/images/pictures/category/2.jpg"></img>
-                <div className="text">  Skincare & Beauty</div>
+            <a className="nav-link" href="/search?category=Handlooms">
+              <img className="cat-img" src="/images/pictures/category/1.jpg"></img>
+              <div className="text"> Handlooms</div>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/search?category=Skincare-and-Beauty">
+              <img className="cat-img" src="/images/pictures/category/2.jpg"></img>
+              <div className="text">  Skincare & Beauty</div>
 
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Handcrafts">
-                <img className="cat-img" src="/images/pictures/category/3.jpeg"></img>
-                <div className="text"> Handcrafts</div>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/search?category=Handcrafts">
+              <img className="cat-img" src="/images/pictures/category/3.jpeg"></img>
+              <div className="text"> Handcrafts</div>
 
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Organic-Food-Products">
-                <img className="cat-img" src="/images/pictures/category/4.jpeg"></img>
-                <div className="text"> Organic Food Porducts</div>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/search?category=Organic-Food-Products">
+              <img className="cat-img" src="/images/pictures/category/4.jpeg"></img>
+              <div className="text"> Organic Food Porducts</div>
 
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Health-Care">
-                <img className="cat-img" src="/images/pictures/category/5.jpeg"></img>
-                <div className="text"> Health Care</div>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/search?category=Health-Care">
+              <img className="cat-img" src="/images/pictures/category/5.jpeg"></img>
+              <div className="text"> Health Care</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+        
 
       </div >
       <Cart
@@ -244,8 +250,9 @@ const Header = ({ categories }) => {
         session={session}
         status={status}
       />
-      {/*
-      <Search setIsSearchOpen={setIsSearchOpen} isSearchOpen={isSearchOpen} />
+
+      {/* <Search setIsSearchOpen={setIsSearchOpen} isSearchOpen={isSearchOpen} /> */}
+          
       <MobileSidebar
         setCloseSidebar={setCloseSidebar}
         closeSidebar={closeSidebar}
@@ -254,7 +261,7 @@ const Header = ({ categories }) => {
         status={status}
         signOut={signOut}
       />
-
+      {/*
       <div className="bg-white">
         <div className=" h-[162px]">
           <div className=" bg-white z-30  w-screen  fixed top-0 ">
@@ -585,6 +592,8 @@ const Header = ({ categories }) => {
         </div>
       </div> */}
 
+     
+      
 
     </>
   );

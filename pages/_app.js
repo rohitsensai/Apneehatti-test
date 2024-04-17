@@ -11,6 +11,7 @@ import Router from "next/router";
 import dynamic from "next/dynamic";
 const Loader = dynamic(() => import("../components/loader"), { ssr: false });
 
+
 function MyApp({ Component, pageProps }) {
   let persistor = persistStore(store);
   const [isLoading, setIsLoading] = useState(false);

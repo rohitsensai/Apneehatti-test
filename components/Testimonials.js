@@ -8,7 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 function Testimonials() {
 
     return (
-        <div>
+        <div className='d-none d-md-block  px-40 py-10'>
             {/* <div id='t-container' >
             <h3 className="text-center text-2xl font-semibold mb-2">
                 Customer Testimonials
@@ -163,8 +163,9 @@ function Testimonials() {
                 </button>
             </div> */}
 
-            <section class="bg-light py-5 py-xl-8">
 
+            <section class="bg-light ">
+            
 
                 <div class="container overflow-hidden">
                     <div class="row gy-4 gy-md-0 gx-xxl-5">
@@ -172,28 +173,13 @@ function Testimonials() {
                             <div class="card border-0 border-bottom border-primary shadow-sm">
                                 <div class="card-body p-4 p-xxl-5">
                                     <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/1.png" alt="Luna John" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">                                Apnee Hatti is a gem in Himachal! I'm hooked on their red rice, sea buckthorn juice, honey, muesli, and hair oils. What makes it special is that they source everything locally from acro..
-</blockquote>
-                                            <h1 class="mb-2" className='fs-4'>Simran Sahni</h1>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="h-60 col-12 col-md-4">
-                            <div class="card border-0 border-bottom border-primary shadow-sm">
-                                <div class="card-body p-4 p-xxl-5">
-                                    <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/2.png" alt="Mark Smith" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">                            Great 💯👍 Online marketplace for products manufactured in Himachal Pradesh. We really love Apneehatti. Thank you apneehatti to deliver the happiness of Himachal. …
-                                            </blockquote>
-                                            <h4 class="mb-2" className='fs-4'>Jatin Sharma</h4>
-                                        </figcaption>
+                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/1.png" alt=""/>
+                                            <figcaption>
+                                                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                                <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+                                                <h4 class="mb-2">Luna John</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">UX Designer</h5>
+                                            </figcaption>
                                     </figure>
                                 </div>
                             </div>
@@ -202,12 +188,28 @@ function Testimonials() {
                             <div class="card border-0 border-bottom border-primary shadow-sm">
                                 <div class="card-body p-4 p-xxl-5">
                                     <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/3.png" alt="Luke Reeves" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">   hey are best in customer experience, delivered things as per the sprint decided. Clients' friendly & optimistic approach, will always be our priority list for developments.</blockquote>
-                                            <h4 class="mb-2" className='fs-4'>Dhirendra Singh Sengar</h4>
-                                        </figcaption>
+                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/2.png" alt=""/>
+                                            <figcaption>
+                                                <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
+                                                <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+                                                <h4 class="mb-2">Mark Smith</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">Marketing Specialist</h5>
+                                            </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="card border-0 border-bottom border-primary shadow-sm">
+                                <div class="card-body p-4 p-xxl-5">
+                                    <figure>
+                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/3.png" alt=""/>
+                                            <figcaption>
+                                                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                                                <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
+                                                <h4 class="mb-2">Luke Reeves</h4>
+                                                <h5 class="fs-6 text-secondary mb-0">Sales Manager</h5>
+                                            </figcaption>
                                     </figure>
                                 </div>
                             </div>

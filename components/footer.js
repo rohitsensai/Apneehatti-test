@@ -49,10 +49,10 @@ const Footer = ({ categories }) => {
     <div className="  text-white" style={{ backgroundColor: "#191919", display: "flex", flexDirection: "row", justifyContent: "space-around", height: "291px" }}>
       <div className="mt-20 d-flex flex-column">
         <div style={{ fontFamily: "Jockey One" }}>HELP</div>
-        <a href="https://www.apneehatti.com/policy" style={{ color: "#7A7A7A" }}>Shipping Policy</a>
-        <a href="https://www.apneehatti.com/policy" style={{ color: "#7A7A7A" }}>Return Policy</a>
-        <a href="https://www.apneehatti.com/policy" style={{ color: "#7A7A7A" }}>Cancellation Policy</a>
-        <a href="https://www.apneehatti.com/FAQs" style={{ color: "#7A7A7A" }}>FAQ</a>
+        <a href="/policy" style={{ color: "#7A7A7A" }}>Shipping Policy</a>
+        <a href="/policy" style={{ color: "#7A7A7A" }}>Return Policy</a>
+        <a href="/policy" style={{ color: "#7A7A7A" }}>Cancellation Policy</a>
+        <a href="/FAQs" style={{ color: "#7A7A7A" }}>FAQ</a>
       </div>
       <div className="mt-20 d-none d-md-block">
         <div style={{ fontFamily: "Jockey One" }}>CONTACT US</div>
@@ -61,11 +61,11 @@ const Footer = ({ categories }) => {
       </div>
       <div className="mt-20 d-flex flex-column">
         <div style={{ fontFamily: "Jockey One" }}>TOP CATEGORIES</div>
-        <a href="http://localhost:3000/search?category=Handlooms" style={{ color: "#7A7A7A" }}>Handlooms</a>
-        <a href="http://localhost:3000/search?category=Skincare-and-Beauty" style={{ color: "#7A7A7A" }}>Skincare & Beauty</a>
-        <a href="http://localhost:3000/search?category=Handcrafts" style={{ color: "#7A7A7A" }}>Handcrafts</a>
-        <a href="http://localhost:3000/search?category=Organic-Food-Products" style={{ color: "#7A7A7A" }}>Organic Food Products</a>
-        <a href="http://localhost:3000/search?category=Health-Care" style={{ color: "#7A7A7A" }}>Health Care</a>
+        <a href="/search?category=Handlooms" style={{ color: "#7A7A7A" }}>Handlooms</a>
+        <a href="/search?category=Skincare-and-Beauty" style={{ color: "#7A7A7A" }}>Skincare & Beauty</a>
+        <a href="/search?category=Handcrafts" style={{ color: "#7A7A7A" }}>Handcrafts</a>
+        <a href="/search?category=Organic-Food-Products" style={{ color: "#7A7A7A" }}>Organic Food Products</a>
+        <a href="/search?category=Health-Care" style={{ color: "#7A7A7A" }}>Health Care</a>
       </div>
       <div className="mt-20">
         <div className="mb-1" style={{ fontFamily: 'Jockey One' }}>FOLLOW APNEEHATTI</div>

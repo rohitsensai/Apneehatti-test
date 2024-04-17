@@ -19,6 +19,7 @@
     "@vercel/og": "^0.5.8",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
+    "bs-brain": "^2.0.3",
     "cors": "^2.8.5",
     "draft-js": "^0.11.7",
     "eslint": "8.29.0",

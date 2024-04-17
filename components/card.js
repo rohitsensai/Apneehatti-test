@@ -106,7 +106,7 @@ const Product = ({ product }) => {
   };
   return (
     <div className="border border-blue m-1 " style={{ backgroundColor: "#DDFFDA" }}>
-      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "#DDFFDA" }}> 
+      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "#DDFFDA" }}>
         <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#DDFFDA" }}>
           <div className="h-[220px]  relative overflow-hidden group transition ">
             <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "#E42C16", borderRadius: "50%", padding: "8px" }}>
@@ -114,8 +114,7 @@ const Product = ({ product }) => {
             </div>
 
 
-            <div className="w-full h-full flex justify-center items-center cursor-pointer " style={{ backgroundColor: "#DDFFDA" }}>
-              {/* image */}
+            <div className="w-full h-full flex justify-center items-center cursor-pointer" style={{ backgroundColor: "#DDFFDA" }}>
               <Link
                 href={{
                   pathname: `/product-detail/[title]`,
@@ -124,7 +123,7 @@ const Product = ({ product }) => {
                 passHref
               >
                 <a target="_blank" rel="noopener noreferrer">
-                  <div className="relative mx-auto">
+                  <div className="relative mx-auto" style={{ width: "320px", height: "240px" }}>
                     <Image
                       src={image}
                       width={320}
@@ -138,6 +137,7 @@ const Product = ({ product }) => {
                 </a>
               </Link>
             </div>
+
           </div>
           {/* category & title & MRP */}
           <div className=" pb-4 relative" style={{ backgroundColor: "#DDFFDA" }}>
@@ -190,55 +190,34 @@ const Product = ({ product }) => {
 
           </div>
           {/* Add to cart button */}
-          <div className=" d-flex  justify-content-around"  >
-         
-          
-            <button
-              onClick={(e) => {
-                add(product);
-              }}
-              className=" "
-            >
-              {added ? (
-                <div className="">
-                  added successfully{" "}
-                  <svg
-                    className="w-4 h-4 font-medium flex-shrink-0  "
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                    />
-                  </svg>
+          <div className="">
+            {/* Other content */}
+            {/* Add to cart and Buy now buttons */}
+            <div className="d-flex justify-content-between  button-wrapper">
+              <button
+                onClick={(e) => {
+                  add(product);
+                }}
+                className="button"
+              >
+                <div className="button-content">
+                  ADD TO CART
+                  <FaShoppingCart />
                 </div>
-              ) : (
-
-               
-                   <div className="d-flex justify-content-around align-items-center h-8 mr-4" style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#fcc534", width: "120px", borderRadius: "10px", color: "white" }}>
-                   ADD TO CART
-                   <FaShoppingCart style={{ color: "white" }} />
-                 </div>
-     
-                
-
-
-
-              )}
-            </button>
-            <div className="d-flex justify-content-around align-items-center h-8 " style={{ fontSize: "14px", fontWeight: "bold", backgroundColor: "#d30c2b", width: "120px", borderRadius: "10px", cursor: "pointer", color: "white" }} onClick={(e) => buynowhandler(e)}>
+              </button>
+              <div
+                className="button button-buy-now"
+                onClick={(e) => buynowhandler(e)}
+              >
+                <div className="button-content">
                   BUY NOW
-                  <FaShoppingCart style={{ color: "white" }} />
+                  <FaShoppingCart />
                 </div>
-
-
+              </div>
+            </div>
           </div>
+
+
         </div>
       </div>
     </div>

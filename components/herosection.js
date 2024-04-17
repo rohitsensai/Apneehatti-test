@@ -15,7 +15,7 @@ const ImageCarousel = () => {
       interval={3000} // Auto-play interval in milliseconds (3 seconds)
       infiniteLoop={true} // Infinite loop
       showThumbs={false} // Hide thumbnail navigation
-      showArrows={false} // Show navigation arrows
+      showArrows={true} // Show navigation arrows
     >
       {images.map((image, index) => (
         <div key={index}>

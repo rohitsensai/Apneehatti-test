@@ -31,7 +31,7 @@ const MobileSidebar = ({
           <div className="flex justify-between items-center border-b pb-4">
             <div className="relative h-14 w-14">
               <Image
-                src="/images/logo/apneehatti_logo.svg"
+                src="/images/logo/ApneeHatti_light.png"
                 alt="logo"
                 layout="fill"
                 objectFit="contain"
@@ -220,7 +220,7 @@ const MobileSidebar = ({
             <h6 className=" uppercase mb-2 font-medium bg-gray-50 p-2  shadow-lg">
               Support
             </h6>
-            <div className="p-4 text-sm space-y-2 text-center overflow-y-auto bg-gradient-to-br from-green-100  to-green-300 border-green-500 shadow-green-200 shadow-md border">
+            <div className="p-4 text-sm space-y-2 text-center overflow-y-auto bg-gradient-to-br shadow-md border">
               <h6 className="font-medium">
                 FOR ANY HELP, YOU MAY CALL US AT +917876752516
               </h6>
