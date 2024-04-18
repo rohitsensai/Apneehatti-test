@@ -8,6 +8,7 @@ import Head from "next/head";
 import { toast } from "react-toastify";
 import { BsEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import Image from "next/image";
+import { FaArrowRight } from 'react-icons/fa';
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
@@ -55,7 +56,7 @@ const login = () => {
         callbackUrl: REDIRECT_URL,
       }).then((res) => {
         setLoading(false);
-        console.log("res",res)
+        console.log("res", res)
         if (!res.ok) {
           toast.error("Invalid credentials", {
             position: "top-right",
@@ -99,17 +100,17 @@ const login = () => {
         <title>Login</title>
       </Head>
       <div className="flex flex-col items-center justify-center pb-40 pt-20">
-        <div className=" w-10/12 lg:w-1/3 bg-gray-100 p-5 border shadow-sm ">
+        <div className=" w-10/12 lg:w-1/3 bg-blue-100 p-5 border shadow-sm ">
           <h1
-            className="text-center pb-3 text-4xl font-medium
+            className=" pb-3 text-4xl font-medium text-white px-4
         "
-            style={{ fontFamily: "fantasy" }}
+            style={{ fontFamily: "" }}
           >
-            Sign In
+            Welcome <br /> Back
           </h1>
 
           <form method="post" onSubmit={loginHandler}>
-            <div className="p-4">
+            <div className="p-4 border border-danger">
               {loading && (
                 <AnimatePresence>
                   <div className="border bg-white p-2 mb-6 overflow-hidden text-sm font-medium text-gray-500 flex gap-x-2 items-center shadow-sm">
@@ -131,7 +132,7 @@ const login = () => {
                   required
                 />
               </div>
-              <div className="mb-4 relative">
+              <div className="mb-4 relative ">
                 <input
                   type={passwordVisible ? "text" : "password"}
                   id="password"
@@ -139,9 +140,10 @@ const login = () => {
                   placeholder="Password"
                   value={loginDetails.password}
                   onChange={inputHandler}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                  className="bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-md text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                   required
                 />
+
                 {passwordVisible ? (
                   <BsFillEyeSlashFill
                     onClick={togglePasswordVisibility}
@@ -154,43 +156,33 @@ const login = () => {
                   />
                 )}
               </div>
-              <button type="submit" className="btn2 mb-3">
+              <div className="d-flex flex-row justify-content-between fw-bold mb-3 border border-danger">
                 Sign in
-              </button>
-            </div>
-
-            <div className="flex items-start mb-6 mt-3">
-              <p className="text-sm font-medium">
-                By continuing, you agree to Apneehatti's{" "}
-                <a href="#" className="text-blue-500 underline cursor-pointer">
-                  conditions of use
-                </a>{" "}
-                and{" "}
-                <a href="#" className="text-blue-500 underline cursor-pointer">
-                  privacy notice.
+                <a className="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-3">
+                  <FaArrowRight />
                 </a>
-              </p>
-            </div>
-            <div className="text-center mt-8">
-              <div className="p-4 bg-white border">
-                <div className="flex items-center">
-                  <hr className="w-full border-black" />
-                  <p className="text-sm font-medium whitespace-nowrap px-4">
-                    New to apneehatti ?
-                  </p>
-                  <hr className="w-full border-black" />
-                </div>
+              </div>
 
-                <Link href="/register">
-                  <div className="border cursor-pointer border-black py-2 w-full text-xs uppercase font-medium mt-2 hover:text-white hover:bg-black hover:shadow-md transition-all duration-300">
-                    <span className="">Create account</span>
-                  </div>
-                </Link>
-                <Link href="/forgot-password">
-                  <div className="border cursor-pointer border-black py-2 w-full text-xs uppercase font-medium mt-2 hover:text-white hover:bg-black hover:shadow-md transition-all duration-300">
-                    <span className="">Forgot password</span>
-                  </div>
-                </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <div className="p-4 ">
+
+                <div className="d-flex flex-row justify-content-between">
+                  <Link href="/register">
+                    <div className="fw-bold cursor-pointer py-2 px-1 font-medium mt-2 border border-danger position-relative">
+                      Sign Up
+                    <div className="h-5 bg-red">
+
+                    </div>
+                    </div>
+                  </Link>
+                  <Link href="/forgot-password">
+                    <div className="fw-bold cursor-pointer  py-2   font-medium mt-2 hover:text-white hover:bg-black hover:shadow-md transition-all duration-300">
+                      <span className="">Forgot password</span>
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </form>

@@ -113,7 +113,9 @@ a {
 
 body {
 
-  background:#C7F6C7
+  background:#C7F6C7;
+  font-family: "Montserrat", sans-serif;
+  
 }
 
 
@@ -188,7 +190,7 @@ a:hover{
   border-radius: 20px; /* Use a fixed pixel value for border radius */
   height: 40px; /* Increase the height for better visibility */
   width: 35%;
-  margin-left: 20px;
+  margin-left: 5em;
   padding: 5px; /* Add padding for better spacing */
   display: flex;
   align-items: center;
@@ -231,11 +233,9 @@ a:hover{
   padding: 15px; /* Add padding to each nav item */
 
 }
-.nav-link:hover .cat-img,
-.nav-link:hover .text {
+
+.nav-link:hover {
   transform: scale(1.2); /* Scale up on hover */
-}.nav-link:hover .text {
-  padding-top: 15px; /* Adjust downward shift */
 }
 
 #pwc .nav-link {
@@ -283,6 +283,7 @@ a:hover{
   #pwc {
     justify-content: space-around; /* Align items evenly */
   }
+
 
   #pwc .nav-item {
     flex-basis: 30%; /* Each item takes 30% width on smaller screens */
@@ -534,18 +535,18 @@ table, th, td {
 }
 
 .button {
-  background-color: #fcc534;
+  background-color: #85d74b;
 }
 
 .button-buy-now {
-  background-color: #d30c2b;
+  background-color: #909090;
 }
 
 .button-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  width: 100%; /* Ensure content fills the button */
+  width: 80%; /* Ensure content fills the button */
 }
 
 @media screen and (max-width: 768px) {
@@ -558,3 +559,7 @@ table, th, td {
 /* navbar */
 /* testimonials */
 /* .container{background-color: rgb(232, 242, 245);padding: 50px 40px 20px;margin-top: 20px;margin-bottom: 20px;overflow: hidden;box-shadow: 5px 5px 25px #a7a7a7}.tag{text-align: center;font-size: 1.1rem}.fa-heart{color: rgba(255, 230, 0, 0.959);font-size: 30px}.card{height: 320px;padding: 10px 20px;border: none;box-shadow: -1px 3px 5px #a7a7a7}.testimonial{font-size: 0.9rem;line-height: 1.4rem;font-weight: 500}.active-star{color: #FBC02D;margin-bottom: 8px}.active-star:hover{color: #F9A825;cursor: pointer}.profile{padding-top: 10px}.name{font-weight: 700}.designation{font-size: 0.84rem;font-weight: 600}.owl-carousel{margin-bottom: 15px}.owl-carousel .owl-stage-outer{padding: 40px 10px;height: 380px}.owl-carousel .owl-item img{width: 45px !important;height: 45px;border-radius: 50%;object-fit: cover}.owl-theme .owl-nav [class*='owl-']{border-radius: 50% !important;background: inherit !important;border: 3px solid #bbb;color: #bbb !important}.owl-theme .owl-nav [class*='owl-']:hover{border: 3px solid #1010ca;color: #1010ca !important}@media(max-width: 575.5px){.container{margin: 0px;padding: 20px}} */
+/* Custom CSS for responsive adjustments */
+/* Custom CSS for responsiveness */
+
+

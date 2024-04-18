@@ -105,16 +105,16 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border border-blue m-1 " style={{ backgroundColor: "#DDFFDA" }}>
-      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "#DDFFDA" }}>
-        <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#DDFFDA" }}>
+    <div className="border border-blue m-1 " style={{ backgroundColor: "white" }}>
+      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "white" }}>
+        <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#white" }}>
           <div className="h-[220px]  relative overflow-hidden group transition ">
-            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "#E42C16", borderRadius: "50%", padding: "8px" }}>
-              <FaHeart size={20} style={{ color: "white" }} />
+            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}>
+              <FaHeart size={15} style={{ color: "white" }} />
             </div>
 
 
-            <div className="w-full h-full flex justify-center items-center cursor-pointer" style={{ backgroundColor: "#DDFFDA" }}>
+            <div className="w-full h-full flex justify-center items-center cursor-pointer " style={{ backgroundColor: "white" }}>
               <Link
                 href={{
                   pathname: `/product-detail/[title]`,
@@ -140,7 +140,7 @@ const Product = ({ product }) => {
 
           </div>
           {/* category & title & MRP */}
-          <div className=" pb-4 relative" style={{ backgroundColor: "#DDFFDA" }}>
+          <div className=" pb-4 relative px-2" style={{ backgroundColor: "white" }}>
             <div className="text-xs capitalize text-gray-500 ">
               {category}
             </div>
@@ -181,7 +181,7 @@ const Product = ({ product }) => {
               {calculateDiscount(MRP, price) >= 1 && (
                 <div
                   className="
-              text-green-500 text-xs z-10  bg-green-100 rounded-sm  right-3"
+              text-green-500 text-xs z-10  bg-white-100 rounded-sm  right-3"
                 >
                   <span>{calculateDiscount(MRP, price)}% OFF</span>
                 </div>
@@ -190,19 +190,20 @@ const Product = ({ product }) => {
 
           </div>
           {/* Add to cart button */}
-          <div className="">
+          <div className="bg-white">
             {/* Other content */}
             {/* Add to cart and Buy now buttons */}
-            <div className="d-flex justify-content-between  button-wrapper">
+            <div className="d-flex justify-content-between  button-wrapper  px-2 bg-white">
               <button
                 onClick={(e) => {
                   add(product);
                 }}
                 className="button"
               >
-                <div className="button-content">
+                <div className="button-content ">
+                <FaShoppingCart />
                   ADD TO CART
-                  <FaShoppingCart />
+        
                 </div>
               </button>
               <div
@@ -211,7 +212,7 @@ const Product = ({ product }) => {
               >
                 <div className="button-content">
                   BUY NOW
-                  <FaShoppingCart />
+              
                 </div>
               </div>
             </div>
