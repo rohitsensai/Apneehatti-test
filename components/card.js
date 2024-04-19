@@ -123,7 +123,7 @@ const Product = ({ product }) => {
                 passHref
               >
                 <a target="_blank" rel="noopener noreferrer">
-                  <div className="relative mx-auto" style={{ width: "320px", height: "240px" }}>
+                  <div className="relative mx-auto " style={{ width: "320px", height: "240px" }}>
                     <Image
                       src={image}
                       width={320}
@@ -132,6 +132,7 @@ const Product = ({ product }) => {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={image}
+                   
                     />
                   </div>
                 </a>

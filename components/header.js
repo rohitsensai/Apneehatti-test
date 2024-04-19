@@ -14,7 +14,7 @@ import Cart from "./cart";
 import SignOutConfirmation from "./signOutConfimation";
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { BiSearch } from 'react-icons/bi'; 
 
 const Header = ({ categories }) => {
   const dispatch = useDispatch();
@@ -26,6 +26,11 @@ const Header = ({ categories }) => {
   const { cartItems } = useSelector((state) => state.cart);
   const { data: session, status } = useSession();
   const { searchList } = useSelector((state) => state.products);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleSearchClick = () => {
+    setIsActive(true); // Set isActive to true when the search form is clicked
+  };
 
 
 
@@ -104,7 +109,12 @@ const Header = ({ categories }) => {
 
   return (
     <>
-      <div id="outer" className="">
+      <div id="outer" className=" pb-2 mb-4" >
+      <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
+              <p className=" animate-pulse">
+                Goodness of Himalayas at your Doorstep!
+              </p>
+            </div>
         <div id="upper" >
           <div id="sidebar">
             <div class="toggle-btn" onClick={show}>
@@ -129,11 +139,15 @@ const Header = ({ categories }) => {
 
             {/* Search Form */}
 
-            <form className="d-flex align-items-center mx-30 my-2 my-md-0 " id="search">
+            <form
+              className={`d-flex align-items-center mx-30 my-2 my-md-0 ${isActive ? 'active' : ''}`}
+              id="search"
+              onClick={handleSearchClick}
+            >
               <input
                 className="form-control custom-no-outline flex-grow-1"
                 type="search"
-                placeholder="Search for products"
+                placeholder="Search for Mountain Products"
                 aria-label="Search"
                 id="inside-search"
                 onChange={(e) => {
@@ -141,6 +155,9 @@ const Header = ({ categories }) => {
                 }}
                 value={searchKey}
               />
+              <button className="btn " type="submit">
+          <BiSearch /> {/* Search icon from React Icons */}
+        </button>
             </form>
 
 
@@ -148,26 +165,26 @@ const Header = ({ categories }) => {
 
 
             {/* Navigation Links - Hidden on Small Screens */}
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">
-                  <button type="button" class="btn btn-outline-secondary no-border">Shop</button>
+                <a className="nav-link" href="/">
+                  <button type="button" class="btnn rounded">Shop</button>
 
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                  <button type="button" class="btn btn-outline-secondary no-border">About Us</button>
+                  <button type="button" class="btnn   rounded">About Us</button>
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                  <button type="button" class="btn btn-outline-secondary no-border">Blog </button>
+                  <button type="button" class="btnn rounded">Blog </button>
                 </a>
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                  <button type="button" class="btn btn-outline-secondary no-border">Contact</button>
+                  <button type="button" class="btnn rounded">Contact</button>
                 </a>
               </li>
             </ul>
@@ -177,8 +194,8 @@ const Header = ({ categories }) => {
             <div className="mx-2">
               {session == null && (
                 <a href="/login">
-                  <button className="btn btn-primary login-button text-white">
-                    LOGIN <FaUser style={{ marginLeft: '5px' ,color:"white" }} />
+                  <button className="btn btn-primary mybtn text-white">
+                    LOGIN <FaUser style={{ marginLeft: '5px', color: "white" }} />
                   </button>
                 </a>
               )}
@@ -213,7 +230,7 @@ const Header = ({ categories }) => {
 
           </header >
         </div >
-        <div className=" " id="navbarNav1">
+        <div className="mx-4 bg-white py-2 rounded " id="navbarNav1">
           <ul className="navbar-nav d-flex flex-row justify-content-around">
             <li className="nav-item">
 

@@ -102,7 +102,7 @@ const login = () => {
       <div className="flex flex-col items-center justify-center pb-40 pt-20">
         <div className=" w-10/12 lg:w-1/3 bg-blue-100 p-5 border shadow-sm ">
           <h1
-            className=" pb-3 text-4xl font-medium text-white px-4
+            className="fw-bold pb-3 text-4xl font-medium text-white px-4
         "
             style={{ fontFamily: "" }}
           >
@@ -156,12 +156,16 @@ const login = () => {
                   />
                 )}
               </div>
+             
               <div className="d-flex flex-row justify-content-between fw-bold mb-3 border border-danger">
                 Sign in
                 <a className="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-3">
-                  <FaArrowRight />
+                <button type="submit"> <FaArrowRight />
+                </button>
                 </a>
+
               </div>
+             
 
             </div>
 
@@ -169,14 +173,14 @@ const login = () => {
               <div className="p-4 ">
 
                 <div className="d-flex flex-row justify-content-between">
-                  <Link href="/register">
+                  <a href="/register">
                     <div className="fw-bold cursor-pointer py-2 px-1 font-medium mt-2 border border-danger position-relative">
                       Sign Up
-                    <div className="h-5 bg-red">
+                    
+                    </div>
+                   
 
-                    </div>
-                    </div>
-                  </Link>
+                  </a>
                   <Link href="/forgot-password">
                     <div className="fw-bold cursor-pointer  py-2   font-medium mt-2 hover:text-white hover:bg-black hover:shadow-md transition-all duration-300">
                       <span className="">Forgot password</span>

@@ -145,6 +145,9 @@ export default function Home({ socket_URL }) {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
             <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+            <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
           </Head >
           <div className="bg-grey;">
             <Herosection />
@@ -244,10 +247,10 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-                <div className="py-2 px-2 md:p-8">
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2" style={{fontFamily: "Noto Sans"}}>
                         Latest new arrivals
                       </h3>
 
@@ -308,7 +311,7 @@ export default function Home({ socket_URL }) {
                 {/* <MdArrowBackIos className="text-3xl" /> */}
                 {/* </button> */}
                 {/* </div> */}
-                <div className="py-2 px-2 md:p-8  ">
+                <div className="py-2 px-2 md:p-8 rounded my-4 bg-white mx-4">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -371,7 +374,7 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-                <div className="py-2 px-2 md:p-8  ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -432,7 +435,7 @@ export default function Home({ socket_URL }) {
                 <MdArrowBackIos className="text-3xl" />
               </button>
             </div> */}
-                <div className="py-2 px-2 md:p-8  ">
+                <div className="py-2 px-2 md:p-8 border bg-white rounded mx-4 my-4border  bg-white mx-4 my-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">

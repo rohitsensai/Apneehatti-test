@@ -179,7 +179,7 @@ function Testimonials() {
             </div> */}
 
 
-            <section class="bg-light">
+            <section class="bg-light rounded">
                 <div class="container overflow-hidden">
                     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                         <div class="col">
@@ -232,7 +232,7 @@ function Testimonials() {
             </section>
 
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='mt-2 mb-10'>
-                <button type="button" class="btn btn-outline-success" >
+                <button type="button" class="btn btn-outline-success mybtn text-white" >
                     <div onClick={openNewWindow}>
                         Give Your Review
                     </div>
