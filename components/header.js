@@ -109,13 +109,13 @@ const Header = ({ categories }) => {
 
   return (
     <>
-      <div id="outer" className=" pb-2 mb-4" >
+      <div id="outer" className=" " >
       <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
               <p className=" animate-pulse">
                 Goodness of Himalayas at your Doorstep!
               </p>
             </div>
-        <div id="upper" >
+        <div id="upper"  style={{backgroundColor:"grey"}}>
           <div id="sidebar">
             <div class="toggle-btn" onClick={show}>
               <span></span>
@@ -174,7 +174,7 @@ const Header = ({ categories }) => {
               </li>
               <li className="nav-item mx-2">
                 <a className="nav-link" href="#">
-                  <button type="button" class="btnn   rounded">About Us</button>
+                  <button type="button" class="btnn  rounded">About Us</button>
                 </a>
               </li>
               <li className="nav-item mx-2">

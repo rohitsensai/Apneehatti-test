@@ -118,6 +118,11 @@ body {
   
 }
 
+.btnn{
+  font-size: 16px;
+  font-weight: bold; 
+}
+
 
 #navbarNav1{
     /* border: 4px solid red; */
