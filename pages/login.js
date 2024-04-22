@@ -99,18 +99,18 @@ const login = () => {
       <Head>
         <title>Login</title>
       </Head>
-      <div className="flex flex-col items-center justify-center pb-40 pt-20">
-        <div className=" w-10/12 lg:w-1/3 bg-blue-100 p-5 border shadow-sm ">
+      <div className="rounded flex flex-col items-center justify-center pb-40 pt-20 bg-white ">
+        <div className="rounded w-8/12 lg:w-3/12 bg-blue-100 p-5 border shadow-sm ">
           <h1
-            className="fw-bold pb-3 text-4xl font-medium text-white px-4
+            className="welcome fw-bold  text-3xl font-medium text-white px-4 rounded mb-3
         "
-            style={{ fontFamily: "" }}
+            style={{ fontFamily: "Ubuntu", }}
           >
             Welcome <br /> Back
           </h1>
 
           <form method="post" onSubmit={loginHandler}>
-            <div className="p-4 border border-danger">
+            <div className="pt-24 ">
               {loading && (
                 <AnimatePresence>
                   <div className="border bg-white p-2 mb-6 overflow-hidden text-sm font-medium text-gray-500 flex gap-x-2 items-center shadow-sm">
@@ -127,7 +127,7 @@ const login = () => {
                   name="email"
                   value={loginDetails.email}
                   onChange={inputHandler}
-                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-sm text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                  className="bg-gray-50 rounded border border-gray-300 text-gray-900 text-sm rounded-sm text-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                   placeholder="Email"
                   required
                 />
@@ -140,7 +140,7 @@ const login = () => {
                   placeholder="Password"
                   value={loginDetails.password}
                   onChange={inputHandler}
-                  className="bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-md text-md focus:ring-green-500 focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                  className="bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-md text-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                   required
                 />
 
@@ -157,8 +157,8 @@ const login = () => {
                 )}
               </div>
              
-              <div className="d-flex flex-row justify-content-between fw-bold mb-3 border border-danger">
-                Sign in
+              <div className="d-flex flex-row justify-content-end fw-bold mb-3 ">
+              
                 <a className="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-3">
                 <button type="submit"> <FaArrowRight />
                 </button>
@@ -174,18 +174,18 @@ const login = () => {
 
                 <div className="d-flex flex-row justify-content-between">
                   <a href="/register">
-                    <div className="fw-bold cursor-pointer py-2 px-1 font-medium mt-2 border border-danger position-relative">
+                    <div className="fw-bold cursor-pointer py-2 px-1 font-medium mt-2  position-relative">
                       Sign Up
                     
                     </div>
                    
 
                   </a>
-                  <Link href="/forgot-password">
-                    <div className="fw-bold cursor-pointer  py-2   font-medium mt-2 hover:text-white hover:bg-black hover:shadow-md transition-all duration-300">
+                  <a href="/forget-password">
+                    <div className="fw-bold cursor-pointer  py-2  px-1 font-medium mt-2  position-relative ">
                       <span className="">Forgot password</span>
                     </div>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

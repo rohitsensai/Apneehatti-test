@@ -122,7 +122,9 @@ body {
   font-size: 16px;
   font-weight: bold; 
 }
-
+.welcome{
+  background-color: #4857df;
+}
 
 #navbarNav1{
     /* border: 4px solid red; */
@@ -353,6 +355,30 @@ a:hover{
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+  }
+  #property-table {
+    border-collapse: collapse; /* Collapse table borders */
+    width: 100%; /* Optional: Set table width to 100% */
+    border: none; /* Remove outer border of the table */
+  }
+
+  /* Style the table headers */
+  #property-table th {
+    border: none; /* Remove borders from table headers */
+    padding: 10px; /* Add padding to table headers */
+    background-color: #f0f0f0; /* Optional: Add background color to table headers */
+  }
+
+  /* Style the table cells */
+  #property-table td {
+    border: none; /* Remove borders from table cells */
+    padding: 10px; /* Add padding to table cells */
+  }
+
+  #property-table th,
+  #property-table td {
+    border: none; /* Remove borders from table cells */
+    padding: 0 10px; /* Optional: Add padding to table cells */
   }
 
   /*ratings */

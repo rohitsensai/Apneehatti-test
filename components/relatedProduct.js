@@ -3,14 +3,14 @@ import Product from "./card";
 
 const RelatedProduct = ({ relatedProducts, category }) => {
   return (
-    <div className="">
-      <h1 className="text-xl font-medium">
-        <span className=" inline-block w-48">
+    <div className="rounded bg-white rounded">
+      <h1 className="text-2xl font-medium ">
+        <span className=" d-flex flex-row justify-content-center ">
           Related Products
         </span>
       </h1>
       <div>
-        <div className="grid gap-2 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-2">
+        <div className="grid gap-2 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 py-2  ">
           {relatedProducts?.length > 0 &&
             relatedProducts?.map((item, idx) => (
               <Product

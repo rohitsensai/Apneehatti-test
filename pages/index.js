@@ -225,14 +225,16 @@ export default function Home({ socket_URL }) {
 
 
             <div className="mx-4">
+              <a href="/">
               <img
                 src="/images/banner/banner4.png"
                 width="100%"
                 height="100%"
-                className=" h-full object-cover"
+                className="cursor-pointer h-full object-cover"
                 alt=""
                 id="dis-img"
               />
+              </a>
             </div>
 
 

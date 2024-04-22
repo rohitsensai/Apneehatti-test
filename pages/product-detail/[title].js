@@ -48,7 +48,7 @@ export async function getServerSideProps({ query }) {
   const data = await fetch(`${process.env.HOST}/api/products/${product_id}`);
   const res = await data.json();
 
-  console.log("res",res)
+  console.log("res", res)
 
 
 
@@ -416,26 +416,26 @@ const ProductDetail = ({
               >
 
                 <div
-                  className=" md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden "
+                  className=" md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden rounded"
                   style={{}}
                 >
                   <div
-                    className=""
+                    className="rounded"
                   // onMouseMove={() => setZoomIn(true)}
                   // onMouseLeave={() => setZoomIn(false)}
                   >
                     <div
                       id="img_wrapper"
-                      className=" w-full h-full justify-center items-center cursor-pointer m-300 "
+                      className=" w-full h-full justify-center items-center cursor-pointer mb-20 mx-20 rounded bg-white"
 
                     >
                       <Image
                         src={mainImg}
                         // onMouseMove={imageMagnify}
-                        width={900}
+                        width={700}
                         height={700}
                         id="bigImg"
-                        objectFit="contain"
+                        // objectFit="contain"
                         alt={product_data.alt_text}
                       />
                       <div className="flex justify-center flex-wrap">
@@ -466,200 +466,7 @@ const ProductDetail = ({
                         } absolute z-30 opacity-60 top-0 w-28 h-20  bg-gray-100 opacity-15`}
                       id="lens"
                     ></div>
-                    { /* Reviews*/}
-                    <div class="reviews">
-                      <h4 class="reviews__heading">Customer reviews</h4>
-
-                      <div class="reviews__average-ratings">
-                        <div class="average-ratings__stars">
-                          <div class="stars__single">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 43 45"
-                              width="43"
-                              height="45"
-                            >
-                              <defs>
-                                <image
-                                  width="32"
-                                  height="30"
-                                  id="img1"
-                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
-                                />
-                              </defs>
-                              <use id="Background" href="#img1" x="6" y="7" />
-                            </svg>
-                          </div>
-                          <div class="stars__single">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 43 45"
-                              width="43"
-                              height="45"
-                            >
-                              <defs>
-                                <image
-                                  width="32"
-                                  height="30"
-                                  id="img1"
-                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
-                                />
-                              </defs>
-                              <use id="Background" href="#img1" x="6" y="7" />
-                            </svg>
-                          </div>
-                          <div class="stars__single">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 43 45"
-                              width="43"
-                              height="45"
-                            >
-                              <defs>
-                                <image
-                                  width="32"
-                                  height="30"
-                                  id="img1"
-                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
-                                />
-                              </defs>
-                              <use id="Background" href="#img1" x="6" y="7" />
-                            </svg>
-                          </div>
-                          <div class="stars__single">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 43 45"
-                              width="43"
-                              height="45"
-                            >
-                              <defs>
-                                <image
-                                  width="32"
-                                  height="30"
-                                  id="img1"
-                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
-                                />
-                              </defs>
-                              <use id="Background" href="#img1" x="6" y="7" />
-                            </svg>
-                          </div>
-                          <div class="stars__single">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              viewBox="0 0 43 45"
-                              width="43"
-                              height="45"
-                            >
-                              <defs>
-                                <image
-                                  width="32"
-                                  height="30"
-                                  id="img1"
-                                  href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAMAAAB61OwbAAAAAXNSR0IB2cksfwAAAGxQTFRF9vj/9uGb9vX09fPn989R9eSl9eSm9tJb99Rl9fHc9eex9fTo9evH9Om89dyF9tFa9dp79eax9fHd9tdw9vXz9tdv9eq89e7S9fDd9d6P9e7R9d+Q9vj+989S9tJa9em89fPo9eew9tp699Vm8/jTiwAAACR0Uk5TAP8Z//////////////////////8y/////////wD/////////WF554gAAAMlJREFUeJyFktkWgjAMBVMIWNlaARdUxOX//9HSIocGGvME5w5TLgTAHxEBOzEmPJDijlXEEnlFisgqRgGrGAWcwgkYhRMYRSDfTwLEjBySF6WopMLFKC0ORe28jZf4I3UO7TGcI56MgiHU2R4SJNRleskAMecAUcXnZro/+ZqQJIcrAW70O5cEaCggCEB/2F0ToM8J8KAtCh9o53a/i2yzhBzg2W3WeNmnE7so8Xu8+axKTLH1md3qSYlFbD+L7GuPSFarXrpdgC+z9gvgcfNgTwAAAABJRU5ErkJggg=="
-                                />
-                              </defs>
-                              <use id="Background" href="#img1" x="6" y="7" />
-                            </svg>
-                          </div>
-
-                          <span class="stars__average-rating-score">
-                            4.7 out of 5
-                          </span>
-                        </div>
-                        <div class="average-ratings__total-customers">
-                          40 customer ratings
-                        </div>
-                      </div>
-
-                      <div class="reviews__breakdown">
-                        <div class="reviews-breakdown__wrapper">
-                          <div class="reviews__single-star-average">
-                            <div class="single-star-average__amount">5 star</div>
-                            <div class="single-star-average__progress-bar">
-                              <progress
-                                class="progress-bar__data"
-                                max="100"
-                                value="84"
-                              ></progress>
-                            </div>
-                            <div class="single-star-average__percentage">84%</div>
-                          </div>
-
-                          <div class="reviews__single-star-average">
-                            <div class="single-star-average__amount">4 star</div>
-                            <div class="single-star-average__progress-bar">
-                              <progress
-                                class="progress-bar__data"
-                                max="100"
-                                value="9"
-                              ></progress>
-                            </div>
-                            <div class="single-star-average__percentage">9%</div>
-                          </div>
-
-                          <div class="reviews__single-star-average">
-                            <div class="single-star-average__amount">3 star</div>
-                            <div class="single-star-average__progress-bar">
-                              <progress
-                                class="progress-bar__data"
-                                max="100"
-                                value="4"
-                              ></progress>
-                            </div>
-                            <div class="single-star-average__percentage">4%</div>
-                          </div>
-
-                          <div class="reviews__single-star-average">
-                            <div class="single-star-average__amount">2 star</div>
-                            <div class="single-star-average__progress-bar">
-                              <progress
-                                class="progress-bar__data"
-                                max="100"
-                                value="2"
-                              ></progress>
-                            </div>
-                            <div class="single-star-average__percentage">2%</div>
-                          </div>
-
-                          <div class="reviews__single-star-average">
-                            <div class="single-star-average__amount">1 star</div>
-                            <div class="single-star-average__progress-bar">
-                              <progress
-                                class="progress-bar__data"
-                                max="100"
-                                value="1"
-                              ></progress>
-                            </div>
-                            <div class="single-star-average__percentage">1%</div>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* give ratings */}
-                      <div class="rate" >
-                        <input type="radio" id="star5" name="rate" value="5" />
-                        <label for="star5" title="text">5 stars</label>
-                        <input type="radio" id="star4" name="rate" value="4" />
-                        <label for="star4" title="text">4 stars</label>
-                        <input type="radio" id="star3" name="rate" value="3" />
-                        <label for="star3" title="text">3 stars</label>
-                        <input type="radio" id="star2" name="rate" value="2" />
-                        <label for="star2" title="text">2 stars</label>
-                        <input type="radio" id="star1" name="rate" value="1" />
-                        <label for="star1" title="text">1 star</label>
-                      </div>
-
-
-                      {/* submit form */}
-                    </div>
-                    <div style={{ display: 'flex', justifyContent: 'center' }}>
-                      <div>
-                        <label for="review" style={{ fontFamily: "Jockey One" }}>Write your review:</label><br />
-                        <textarea id="review" name="review" rows="4" cols="50" style={{ backgroundColor: "#D9D9D9" }}></textarea><br />
-                        <input className="btn btn-secondary active" type="submit" value="Submit" onClick={handleSubmit} />
-                      </div>
-                    </div>
+                  
 
 
                   </div>
@@ -678,7 +485,7 @@ const ProductDetail = ({
             </div>
 
 
-            <div className="relative overflow-y-auto font-serif " id="2">
+            <div className="relative overflow-y-auto font-serif rounded " id="2">
               <div
                 className={`${zoomIn ? "" : "hidden"
                   }   top-0 fixed flex justify-center z-10 items-center border-2   `}
@@ -690,13 +497,14 @@ const ProductDetail = ({
                 }}
               ></div>
 
-              <div className={`  w-full lg:px-20 lg:py-3`}>
-                <div className="space-y-2 border-t border-b p-4 border-gray-300">
+              <div className={`  w-full lg:px-20 lg:py-3 rounded `}>
+                <div className="rounded bg-white">
+                <div className="space-y-2  p-4 border-gray-300 rounded bg-white rounded ">
                   <h2 className="text-xl md:text-2xl font-semibold font-serif">
                     {product_data.name}
                   </h2>
                 </div>
-                <div className="space-y-2 md:space-y-0 md:flex gap-10 border-b p-4 border-gray-300">
+                <div className="space-y-2 md:space-y-0 md:flex gap-10 p-4 border-gray-300 rounded my-2 bg-white rounded">
                   <div className=" space-y-2">
                     <Link
                       href={{
@@ -704,7 +512,7 @@ const ProductDetail = ({
                         query: { category: product_data.category_id.slug },
                       }}
                     >
-                      <p className="text-md text-blue-500 cursor-pointer">
+                      <p className="text-md text-blue-500 cursor-pointer ">
                         Visit the {product_data.category_id.name}
                       </p>
                     </Link>
@@ -734,7 +542,7 @@ const ProductDetail = ({
                     quote={product_data.name}
                   />
                 </div>
-                <div className="p-4 space-y-1 flex items-center gap-x-5 border-b border-gray-300">
+                <div className="p-4 space-y-1 flex items-center gap-x-5 border-gray-300 rounded bg-white rounded">
                   <div className="space-y-2">
                     <div className="flex  items-end  space-x-2">
                       {calculateDiscount(product_data.price, product_data.MRP) >
@@ -806,7 +614,7 @@ const ProductDetail = ({
                     </div>
                   </div>
 
-
+                      </div>
                 </div>
                 {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
                         <button
@@ -823,44 +631,53 @@ const ProductDetail = ({
                         </button>
                       </div>
                        */}
+                <div className="d-flex justify-content-between mt-6 button-wrapper  ">
+                  <button
+                    onClick={(e) => {
+                      add(product);
+                    }}
+                    className="button"
+                  >
+                    <div className="d-flex flex-row">
+                      <FaShoppingCart />
+                      ADD TO CART
 
-                <div className="d-flex justify-content-around m-4" style={{ height: "60px" }}>
-                  <button className="col-6 d-flex justify-content-center align-items-center m-2" style={{ fontWeight: "bold", backgroundColor: "#fcc534", borderRadius: "10px", color: "white" }} onClick={() => handleAddToCart(product_data._id)}>
-
-                    ADD TO CART
-                    <FaShoppingCart style={{ color: "white" }} />
-
+                    </div>
                   </button>
-                  <button className="col-6 d-flex justify-content-center align-items-center m-2" style={{ fontWeight: "bold", backgroundColor: "#d30c2b", borderRadius: "10px", cursor: "pointer", color: "white" }} onClick={() => handleBuyNow(product_data._id)}>
-                    BUY NOW <FaShoppingCart style={{ color: "white", marginLeft: "5px" }} />
-                  </button>
+                  <div
+                    className="button button-buy-now"
+                    onClick={(e) => buynowhandler(e)}
+                  >
+                    <div className="button-content">
+                      BUY NOW
 
-
-
-
+                    </div>
+                  </div>
                 </div>
 
-                <div className="p-5 space-y-4 grid grid-cols-2 md:grid-cols-4 gap-5 items-center border-b border-gray-300">
-                  <div className="flex flex-col items-center justify-center text-center space-y-2">
+                <div className="p-4 grid grid-cols-2 md:grid-cols-4 gap-5 items-stretch border-b border-gray-300 bg-white rounded my-4">
+                  <div className="flex flex-col items-center justify-center text-center h-full space-y-2 ">
                     <MdRestore className="text-3xl" />
                     <p className="text-xs font-medium">7 days replacement</p>
                   </div>
-                  <div className="flex flex-col items-center justify-center text-center space-y-2">
+                  <div className="flex flex-col items-center justify-center text-center h-full space-y-2 ">
                     <SiBrandfolder className="text-2xl" />
                     <p className="text-xs font-medium">Top brand</p>
                   </div>
-                  <div className="flex flex-col items-center justify-center text-center space-y-2">
+                  <div className="flex flex-col items-center justify-center text-center h-full space-y-2 ">
                     <TbTruckDelivery className="text-3xl" />
                     <p className="text-xs font-medium">Fast delivery</p>
                   </div>
-                  <div className="flex flex-col items-center justify-center text-center space-y-2">
+                  <div className="flex flex-col items-center justify-center text-center h-full space-y-2">
                     <RiSecurePaymentFill className="text-2xl" />
                     <p className="text-xs font-medium">Secure transaction</p>
                   </div>
                 </div>
 
 
-                <p className=" my-4 ld:px-4 text-sm text-gray-500 text-justify leading-6 line-clamp-6">
+
+
+                <p className=" my-4 ld:px-4 text-sm text-gray-500 text-justify leading-6 line-clamp-6  bg-white rounded">
                   <TextEditorView desc={product_data.desc} />
                   {/* {product_data.desc} */}
                 </p>
@@ -870,7 +687,7 @@ const ProductDetail = ({
           </div>
         </div>
       </div>
-      <div className="p-5  mx-auto  min-h-[200px]">
+      <div className="p-5  mx-auto  min-h-[200px] ">
         {/* Reviews */}
         <ProductReview
           reviews={reviews}
@@ -893,9 +710,9 @@ const ProductDetail = ({
       </div>
 
 
-      <Box sx={{ marginTop: "-190px", textAlign: 'center' }} >
-        <Typography fontWeight={700} color="#000" sx={{ width: '80%', margin: 'auto' }}>
-          <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{product_data.name}</span>
+      <Box sx={{ textAlign: 'center' }} >
+        <Typography  color="#000" sx={{ width: '80%', margin: 'auto' }}>
+          <span className="text-2xl" style={{  textTransform: 'capitalize' }}>Related Videos</span>
         </Typography>
         <Stack
           sx={{

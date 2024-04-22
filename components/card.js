@@ -105,7 +105,7 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border border-blue m-1 " style={{ backgroundColor: "white" }}>
+    <div className="border border-blue m-1  rounded" style={{ backgroundColor: "white" }}>
       <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "white" }}>
         <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#white" }}>
           <div className="h-[220px]  relative overflow-hidden group transition ">
@@ -123,8 +123,8 @@ const Product = ({ product }) => {
                 passHref
               >
                 <a target="_blank" rel="noopener noreferrer">
-                  <div className="relative mx-auto " style={{ width: "320px", height: "240px" }}>
-                    <Image
+                  <div className="relative mx-auto rounded" style={{ width: "320px", height: "240px", overflow: "hidden" }}>
+                    <img
                       src={image}
                       width={320}
                       height={240}
@@ -132,7 +132,11 @@ const Product = ({ product }) => {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={image}
-                   
+                     
+                      style={{
+                        borderRadius: "35px", // Adjust the border radius as needed
+                        overflow: "hidden", // Clip content within the rounded corners
+                      }}
                     />
                   </div>
                 </a>
@@ -202,9 +206,9 @@ const Product = ({ product }) => {
                 className="button"
               >
                 <div className="button-content ">
-                <FaShoppingCart />
+                  <FaShoppingCart />
                   ADD TO CART
-        
+
                 </div>
               </button>
               <div
@@ -213,7 +217,7 @@ const Product = ({ product }) => {
               >
                 <div className="button-content">
                   BUY NOW
-              
+
                 </div>
               </div>
             </div>

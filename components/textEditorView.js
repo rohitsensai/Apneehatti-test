@@ -37,6 +37,7 @@ const TextEditorView = ({ desc }) => {
   };
 
   return (
+    
     <div>
       <table id="property-table">
         <thead>

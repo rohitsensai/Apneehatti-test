@@ -15,6 +15,8 @@ const Whatsapp = dynamic(() => import("../components/whatsapp"), {
 const Layout = ({ children }) => {
   const router = useRouter();
   const isLoginPage = router.pathname  === '/login'
+  const isRegisterPage = router.pathname  === '/register'
+  const isForgetPasswordPage = router.pathname  === '/forget-password'
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.categories);
 
@@ -26,10 +28,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <div className="relative">
-        {!isLoginPage && <Header categories={categories} />}
+        {!isLoginPage && !isRegisterPage && !isForgetPasswordPage && <Header categories={categories} />}
         {children}
         <Whatsapp />
-        <Footer categories={categories} />
+        {!isLoginPage && !isRegisterPage && !isForgetPasswordPage && <Footer categories={categories} />}
       </div>
     </>
   );

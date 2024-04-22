@@ -171,12 +171,12 @@ const register = () => {
       <Head>
         <title>Register</title>
       </Head>
-      <div className="flex flex-col items-center justify-center pb-40 pt-10">
-        <div className=" w-10/12 lg:w-1/3 bg-gray-100 p-5 border shadow-sm ">
+      <div className="flex flex-col items-center justify-center pb-40 pt-10 bg-white">
+        <div className=" w-10/12 lg:w-1/3 p-5 border shadow-sm bg-blue-100">
           <h1
-            className="text-center pb-3 text-4xl font-medium
+            className=" text-center pb-3 text-4xl font-medium
         "
-            style={{ fontFamily: "fantasy" }}
+            style={{ fontFamily: "fantasy",color:"white" }}
           >
             Create account
           </h1>

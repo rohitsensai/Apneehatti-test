@@ -148,7 +148,7 @@ const productScreen = ({ prod, pro_category, query }) => {
               </Breadcrumb.Item>
             )}
           </Breadcrumb> */}
-<div className="d-flex flex-row justify-content-between bg-white rounded shadow-sm mb-2 sticky top-0 z-20 px-3">
+<div className="d-flex flex-row justify-content-between bg-white rounded shadow-sm mb-4 sticky top-0 z-20 px-3 mx-4 ">
             <div className="text-gray-500">Total {products.length} results</div>
             <div>
             <button
@@ -382,7 +382,7 @@ const productScreen = ({ prod, pro_category, query }) => {
          
 
           <AnimatePresence >
-            <div className=" grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4  z-index-1">
+            <div className="rounded grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4  z-index-1 bg-white mx-4">
               {products.length > 0 &&
                 products.map((item) => (
                   <Product

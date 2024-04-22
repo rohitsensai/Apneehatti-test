@@ -26,11 +26,9 @@ const ProductReview = ({
   const router = useRouter();
   return (
     <>
-      {/* <div>
+      <div className="border bg-white rounded">
         <h1 className="text-xl font-medium">
-          <span className="border-b-4 inline-block w-48 pb-1 border-green-400">
-            See Reviews{" "}
-          </span>
+         
           <span className="float-right text-sm font-normal text-gray-400">
             Total Review : {reviews.length}
           </span>
@@ -82,7 +80,7 @@ const ProductReview = ({
                       ? setReviewModalOpen(!reviewModalOpen)
                       : router.push("/login");
                   }}
-                  className=" px-10 py-2  uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
+                  className=" px-10 py-2 rounded uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
                 >
                   Write Review
                 </button>
@@ -164,11 +162,11 @@ const ProductReview = ({
               </div>
             ))}
         </div>
-      </div> */}
+      </div>
 
       {/*Add Review Modal */}
 
-      {/* <Modal
+      <Modal
         className="h-screen "
         show={reviewModalOpen}
         size="2xl"
@@ -270,7 +268,7 @@ const ProductReview = ({
             </div>
           </form>
         </Modal.Body>
-      </Modal> */}
+      </Modal>
 
       {/* Review Edit Modal */}
       <Modal

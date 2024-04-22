@@ -27,11 +27,20 @@ const Header = ({ categories }) => {
   const { data: session, status } = useSession();
   const { searchList } = useSelector((state) => state.products);
   const [isActive, setIsActive] = useState(false);
+  const [isSessionLoaded, setIsSessionLoaded] = useState(false); // State to track if session data has been loaded
 
   const handleSearchClick = () => {
     setIsActive(true); // Set isActive to true when the search form is clicked
   };
-
+  useEffect(() => {
+    if (status === 'loading') {
+      // Session data is still loading
+      setIsSessionLoaded(false); // Set session loaded state to false
+    } else if (status === 'success' && session !== null) {
+      // Session data has been successfully loaded and is not null
+      setIsSessionLoaded(true); // Set session loaded state to true
+    }
+  }, [status, session]);
 
 
 
@@ -109,7 +118,7 @@ const Header = ({ categories }) => {
 
   return (
     <>
-      <div id="outer" className=" " >
+      <div id="outer" className="" >
       <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
               <p className=" animate-pulse">
                 Goodness of Himalayas at your Doorstep!
@@ -201,7 +210,7 @@ const Header = ({ categories }) => {
               )}
             </div>
 
-            {session !== null && (
+            {isSessionLoaded && session !== null && (
               <>
                 <ul className=" d-flex flex-row navbar-nav mx-2" id="pwc">
                   <li className="nav-item">
