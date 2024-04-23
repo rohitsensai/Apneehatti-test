@@ -15,6 +15,9 @@ const Product = dynamic(() => import("../../components/card"));
 export async function getServerSideProps(context) {
   const { category, q } = context.query;
 
+  console.log("c",category)
+  console.log("q",q)
+
   const apiEndpoints = {
     all: "/api/products/list",
     category: category ? `/api/products/category/${category}` : null,
@@ -31,7 +34,6 @@ export async function getServerSideProps(context) {
     : [];
   const [res] = await Promise.all(dataPromises);
 
-  console.log("res", res)
 
   const filteredRes =
     res?.filter((item) => item?.category_id?.active && item?.active) || [];

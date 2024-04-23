@@ -16,7 +16,8 @@ const Layout = ({ children }) => {
   const router = useRouter();
   const isLoginPage = router.pathname  === '/login'
   const isRegisterPage = router.pathname  === '/register'
-  const isForgetPasswordPage = router.pathname  === '/forget-password'
+  const isForgetPasswordPage = router.pathname  === '/forgot-password'
+
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.categories);
 

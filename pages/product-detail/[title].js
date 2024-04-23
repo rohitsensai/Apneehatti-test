@@ -466,8 +466,8 @@ const ProductDetail = ({
                         } absolute z-30 opacity-60 top-0 w-28 h-20  bg-gray-100 opacity-15`}
                       id="lens"
                     ></div>
-                  
-
+                    { /* Reviews*/}
+                    
 
                   </div>
 
@@ -687,7 +687,7 @@ const ProductDetail = ({
           </div>
         </div>
       </div>
-      <div className="p-5  mx-auto  min-h-[200px] ">
+      <div className="p-5  mx-auto  min-h-[200px]">
         {/* Reviews */}
         <ProductReview
           reviews={reviews}
@@ -710,7 +710,7 @@ const ProductDetail = ({
       </div>
 
 
-      <Box sx={{ textAlign: 'center' }} >
+      <Box sx={{  textAlign: 'center' }} >
         <Typography  color="#000" sx={{ width: '80%', margin: 'auto' }}>
           <span className="text-2xl" style={{  textTransform: 'capitalize' }}>Related Videos</span>
         </Typography>

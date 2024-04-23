@@ -229,9 +229,7 @@ function Testimonials() {
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='mt-2 mb-10'>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='my-2'>
                 <button type="button" class="btn btn-outline-success mybtn text-white" >
                     <div onClick={openNewWindow}>
                         Give Your Review
@@ -239,6 +237,9 @@ function Testimonials() {
                 </button>
             </div> 
 
+            </section>
+
+          
         </div>
     )
 }

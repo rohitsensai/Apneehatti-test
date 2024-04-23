@@ -181,7 +181,7 @@ const login = () => {
                    
 
                   </a>
-                  <a href="/forget-password">
+                  <a href="/forgot-password">
                     <div className="fw-bold cursor-pointer  py-2  px-1 font-medium mt-2  position-relative ">
                       <span className="">Forgot password</span>
                     </div>

@@ -56,10 +56,10 @@ const ForgotPassword = () => {
       <Head>
         <title>Forgot Password</title>
       </Head>
-      <div className="flex flex-col items-center justify-center pb-40 pt-20">
-        <div className=" w-10/12 lg:w-1/3 bg-gray-100 p-4 border shadow-sm ">
+      <div className=" flex flex-col items-center justify-center pb-40 pt-20">
+        <div className="bg-blue-100 rounded w-10/12 lg:w-1/3 p-4 border shadow-sm ">
           <h1
-            className="text-center pb-3 text-4xl font-medium
+            className="text-center pb-3 text-4xl font-medium text-white
           "
             style={{ fontFamily: "fantasy" }}
           >
@@ -86,9 +86,15 @@ const ForgotPassword = () => {
                 <button className="btn2 mb-3" type="submit">
                   Reset Password
                 </button>
+                <div className="fw-bold cursor-pointer  py-2  px-1 font-medium mt-2  position-relative ">
+            <a href="/login">
+              SignIn
+            </a>
+          </div>
               </form>
             </div>
           )}
+         
         </div>
       </div>
     </>

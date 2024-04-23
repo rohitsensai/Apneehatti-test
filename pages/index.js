@@ -65,13 +65,149 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
 //   "status": "INACTIVE",
 //   "type": "Single"
 // },
+export async function getServerSideProps() {
+  
 
+
+  let category = "Handlooms";
+
+  let q = null;
+
+  let apiEndpoints = {
+    all: "/api/products/list",
+    category: category ? `/api/products/category/${category}` : null,
+    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+  };
+
+  let endpoint =
+    apiEndpoints[
+    category && category != "all" ? "category" : q ? "name" : "all"
+    ];
+  let url = process.env.HOST + endpoint;
+  let dataPromises = endpoint
+    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+    : [];
+  let [res] = await Promise.all(dataPromises);
+
+
+  let filteredRes1 =
+    res?.filter((item) => item?.category_id?.active && item?.active) || [];
+
+  category = "Skincare-and-Beauty";
+  q = null;
+
+  apiEndpoints = {
+    all: "/api/products/list",
+    category: category ? `/api/products/category/${category}` : null,
+    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+  };
+
+  endpoint =
+    apiEndpoints[
+    category && category != "all" ? "category" : q ? "name" : "all"
+    ];
+  url = process.env.HOST + endpoint;
+  dataPromises = endpoint
+    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+    : [];
+  [res] = await Promise.all(dataPromises);
+
+
+  let filteredRes2 =
+    res?.filter((item) => item?.category_id?.active && item?.active) || [];
+    category = "Handcrafts";
+    q = null;
+  
+    apiEndpoints = {
+      all: "/api/products/list",
+      category: category ? `/api/products/category/${category}` : null,
+      name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+    };
+  
+    endpoint =
+      apiEndpoints[
+      category && category != "all" ? "category" : q ? "name" : "all"
+      ];
+    url = process.env.HOST + endpoint;
+    dataPromises = endpoint
+      ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+      : [];
+    [res] = await Promise.all(dataPromises);
+  
+  
+    let filteredRes3 =
+      res?.filter((item) => item?.category_id?.active && item?.active) || [];
+
+      category = "Organic-Food-Products";
+      q = null;
+    
+      apiEndpoints = {
+        all: "/api/products/list",
+        category: category ? `/api/products/category/${category}` : null,
+        name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+      };
+    
+      endpoint =
+        apiEndpoints[
+        category && category != "all" ? "category" : q ? "name" : "all"
+        ];
+      url = process.env.HOST + endpoint;
+      dataPromises = endpoint
+        ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+        : [];
+      [res] = await Promise.all(dataPromises);
+    
+    
+      let filteredRes4 =
+        res?.filter((item) => item?.category_id?.active && item?.active) || [];
+  
+        category = "Health-Care";
+        q = null;
+      
+        apiEndpoints = {
+          all: "/api/products/list",
+          category: category ? `/api/products/category/${category}` : null,
+          name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+        };
+      
+        endpoint =
+          apiEndpoints[
+          category && category != "all" ? "category" : q ? "name" : "all"
+          ];
+        url = process.env.HOST + endpoint;
+        dataPromises = endpoint
+          ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+          : [];
+        [res] = await Promise.all(dataPromises);
+      
+      
+        let filteredRes5 =
+          res?.filter((item) => item?.category_id?.active && item?.active) || [];
+  return {
+    props: {
+      pro_category: category || null,
+      prod1: filteredRes1,
+      prod2:filteredRes2,
+      prod3:filteredRes3,
+      prod4:filteredRes4,
+      prod5:filteredRes5,
+      query: q || null,
+    },
+  };
+}
 let socket;
 
-export default function Home({ socket_URL }) {
+export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
   const [copiedTopDeals, setCopiedTopDeals] = useState([]);
   const dispatch = useDispatch();
   const newArrivalSlider = useRef();
+  const [products1, setProducts1] = useState(prod1 || []);
+  const [products2, setProducts2] = useState(prod2 || []);
+  const [products3, setProducts3] = useState(prod3 || []);
+  const [products4, setProducts4] = useState(prod4 || []);
+  const [products5, setProducts5] = useState(prod5 || []);
+
+
   const topDealSlider = useRef();
   const trendingProductSlider = useRef();
   const bestSellerSlider = useRef();
@@ -491,6 +627,326 @@ export default function Home({ socket_URL }) {
               </button>
             </div>
               </div>
+
+              <div className="relative">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div>
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                  <div className="flex justify-between items-center ">
+                    <div className="py-4" style={{ width: "100%" }}>
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                        Handlooms
+                      </h3>
+
+                      <h3 className="text-center text-gray-500">
+                        Grab It Fast | Sale Is Live
+                      </h3>
+
+                    </div>
+                    <div className="md:hidden w-20 flex justify-between items-center">
+                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                        <HiArrowCircleLeft className="text-3xl" />
+                      </button>
+
+                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                        <HiArrowCircleRight className="text-3xl" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-10/12 md:w-full  mx-auto">
+                    <Slider
+                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      {...settings}
+                    >
+                      {!loading && products1.length > 0
+                        ? products1.map((item) => (
+                          <Product
+                            key={item._id}
+                            product={{
+                              id: item._id,
+                              title: item.name,
+                              price: item.price,
+                              MRP: item.MRP,
+                              category: item.category_id.name,
+                              image: item.images[0],
+                              alt_text: item.alt_text,
+                            }}
+                          />
+                        ))
+                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                          <ProductSkeleton key={i} />
+                        ))}
+                    </Slider>
+                  </div>
+                </div>
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div>
+              </div>
+
+
+          
+              <div className="relative">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div>
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                  <div className="flex justify-between items-center ">
+                    <div className="py-4" style={{ width: "100%" }}>
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                        sKINCARE & BEAUTY
+                      </h3>
+
+                      <h3 className="text-center text-gray-500">
+                        Grab It Fast | Sale Is Live
+                      </h3>
+
+                    </div>
+                    <div className="md:hidden w-20 flex justify-between items-center">
+                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                        <HiArrowCircleLeft className="text-3xl" />
+                      </button>
+
+                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                        <HiArrowCircleRight className="text-3xl" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-10/12 md:w-full  mx-auto">
+                    <Slider
+                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      {...settings}
+                    >
+                      {!loading && products2.length > 0
+                        ? products2.map((item) => (
+                          <Product
+                            key={item._id}
+                            product={{
+                              id: item._id,
+                              title: item.name,
+                              price: item.price,
+                              MRP: item.MRP,
+                              category: item.category_id.name,
+                              image: item.images[0],
+                              alt_text: item.alt_text,
+                            }}
+                          />
+                        ))
+                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                          <ProductSkeleton key={i} />
+                        ))}
+                    </Slider>
+                  </div>
+                </div>
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div>
+              </div>
+
+
+
+              
+              <div className="relative">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div>
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                  <div className="flex justify-between items-center ">
+                    <div className="py-4" style={{ width: "100%" }}>
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                        Handcrafts
+                      </h3>
+
+                      <h3 className="text-center text-gray-500">
+                        Grab It Fast | Sale Is Live
+                      </h3>
+
+                    </div>
+                    <div className="md:hidden w-20 flex justify-between items-center">
+                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                        <HiArrowCircleLeft className="text-3xl" />
+                      </button>
+
+                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                        <HiArrowCircleRight className="text-3xl" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-10/12 md:w-full  mx-auto">
+                    <Slider
+                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      {...settings}
+                    >
+                      {!loading && products3.length > 0
+                        ? products3.map((item) => (
+                          <Product
+                            key={item._id}
+                            product={{
+                              id: item._id,
+                              title: item.name,
+                              price: item.price,
+                              MRP: item.MRP,
+                              category: item.category_id.name,
+                              image: item.images[0],
+                              alt_text: item.alt_text,
+                            }}
+                          />
+                        ))
+                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                          <ProductSkeleton key={i} />
+                        ))}
+                    </Slider>
+                  </div>
+                </div>
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div>
+              </div>
+
+
+
+              
+              <div className="relative">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div>
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                  <div className="flex justify-between items-center ">
+                    <div className="py-4" style={{ width: "100%" }}>
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                      Organic fOOD PRODUCTS
+                      </h3>
+
+                      <h3 className="text-center text-gray-500">
+                        Grab It Fast | Sale Is Live
+                      </h3>
+
+                    </div>
+                    <div className="md:hidden w-20 flex justify-between items-center">
+                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                        <HiArrowCircleLeft className="text-3xl" />
+                      </button>
+
+                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                        <HiArrowCircleRight className="text-3xl" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-10/12 md:w-full  mx-auto">
+                    <Slider
+                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      {...settings}
+                    >
+                      {!loading && products4.length > 0
+                        ? products4.map((item) => (
+                          <Product
+                            key={item._id}
+                            product={{
+                              id: item._id,
+                              title: item.name,
+                              price: item.price,
+                              MRP: item.MRP,
+                              category: item.category_id.name,
+                              image: item.images[0],
+                              alt_text: item.alt_text,
+                            }}
+                          />
+                        ))
+                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                          <ProductSkeleton key={i} />
+                        ))}
+                    </Slider>
+                  </div>
+                </div>
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div>
+              </div>
+
+
+
+
+              
+              <div className="relative">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                <MdArrowBackIos className="text-3xl" />
+              </button>
+            </div>
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                  <div className="flex justify-between items-center ">
+                    <div className="py-4" style={{ width: "100%" }}>
+                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                        hEALT CARE
+                      </h3>
+
+                      <h3 className="text-center text-gray-500">
+                        Grab It Fast | Sale Is Live
+                      </h3>
+
+                    </div>
+                    <div className="md:hidden w-20 flex justify-between items-center">
+                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                        <HiArrowCircleLeft className="text-3xl" />
+                      </button>
+
+                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                        <HiArrowCircleRight className="text-3xl" />
+                      </button>
+                    </div>
+                  </div>
+                  <div className="w-10/12 md:w-full  mx-auto">
+                    <Slider
+                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      {...settings}
+                    >
+                      {!loading && products5.length > 0
+                        ? products5.map((item) => (
+                          <Product
+                            key={item._id}
+                            product={{
+                              id: item._id,
+                              title: item.name,
+                              price: item.price,
+                              MRP: item.MRP,
+                              category: item.category_id.name,
+                              image: item.images[0],
+                              alt_text: item.alt_text,
+                            }}
+                          />
+                        ))
+                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                          <ProductSkeleton key={i} />
+                        ))}
+                    </Slider>
+                  </div>
+                </div>
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-3xl" />
+              </button>
+            </div>
+              </div>
+
+
+
             </div>
           </div>
           <Benefits />
