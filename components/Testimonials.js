@@ -206,7 +206,7 @@ function Testimonials() {
                                             <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
                                             <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
                                             <h4 class="mb-2">Mark Smith</h4>
-                                            <h5 class="fs-6 text-secondary mb-0">Marketing Specialist</h5>
+                                            <h5 class="fs-6 text-secondary mb-0"> Specialist</h5>
                                         </figcaption>
                                     </figure>
                                 </div>

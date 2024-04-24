@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import CurrencyFormatter from "../helper/currencyFormatter";
 import MobileSidebar from "./mobileSidebar";
 import Cart from "./cart";
+import { useRouter } from "next/router";
 import SignOutConfirmation from "./signOutConfimation";
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -114,11 +115,15 @@ const Header = ({ categories }) => {
     console.log("closesidebar", closeSidebar)
 
   }
+  const router = useRouter();
+
+  const isCategoryPage = router.pathname.startsWith("/search")
+  console.log("page",isCategoryPage)
 
 
   return (
     <>
-      <div id="outer" className="" >
+      <div id="outer" className={`${isCategoryPage ? 'sticky top-0 z-20' : ''}`} >
       <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
               <p className=" animate-pulse">
                 Goodness of Himalayas at your Doorstep!
@@ -210,25 +215,25 @@ const Header = ({ categories }) => {
               )}
             </div>
 
-            {isSessionLoaded && session !== null && (
+            {session !== null && (
               <>
-                <ul className=" d-flex flex-row navbar-nav mx-2" id="pwc">
+                <ul className=" d-flex flex-row navbar-nav mx-2 text-white" id="pwc">
                   <li className="nav-item">
                     <a className="nav-link" href="/myprofile">
-                      <FaUser />
-                      <div className="name" style={{ fontSize: "9px" }}>Profile</div>
+                      <FaUser className="text-white"/>
+                      <div className="name" style={{ fontSize: "9px",color:"white" }}>Profile</div>
                     </a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/wishlist">
-                      <FaHeart />
-                      <div className="name" style={{ fontSize: "9px" }}>Liked</div>
+                      <FaHeart className="text-white"/>
+                      <div className="name text-white" style={{ fontSize: "9px" }}>Liked</div>
                     </a>
                   </li>
                   <li className="nav-item">
                     <button onClick={() => setIsOpen(!isOpen)} className="nav-link">
-                      <FaShoppingCart />
-                      <div className="name" style={{ fontSize: "9px" }}>Cart</div>
+                      <FaShoppingCart className="text-white"/>
+                      <div className="name text-white" style={{ fontSize: "9px" }}>Cart</div>
                     </button>
                   </li>
                 </ul>
@@ -239,7 +244,7 @@ const Header = ({ categories }) => {
 
           </header >
         </div >
-        <div className="mx-4 bg-white py-2 rounded " id="navbarNav1">
+        <div className="mx-4 bg-white pt-2 rounded " id="navbarNav1">
           <ul className="navbar-nav d-flex flex-row justify-content-around">
             <li className="nav-item">
 

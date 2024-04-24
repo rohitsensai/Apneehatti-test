@@ -20,6 +20,8 @@ const Product = ({ product }) => {
 
 
 
+
+
   const addToBasketAnimation = () => {
     setAdded(!added);
     setTimeout(() => {
@@ -105,16 +107,15 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border border-blue m-1  rounded" style={{ backgroundColor: "white" }}>
-      <div className="block bg-white   overflow-hidden " style={{ backgroundColor: "white" }}>
-        <div className="min-h-[400px] relative borde" style={{ backgroundColor: "#white" }}>
-          <div className="h-[220px]  relative overflow-hidden group transition ">
+    <div className="border border-grey m-1 rounded" style={{ backgroundColor: "white" }}>
+      <div className="block bg-white overflow-hidden">
+        <div className="min-h-[320px] relative " style={{ backgroundColor: "#white" }}>
+          <div className="h-[220px] relative overflow-hidden group transition">
             <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}>
               <FaHeart size={15} style={{ color: "white" }} />
             </div>
 
-
-            <div className="w-full h-full flex justify-center items-center cursor-pointer " style={{ backgroundColor: "white" }}>
+            <div className="w-full h-full flex justify-center items-center cursor-pointer">
               <Link
                 href={{
                   pathname: `/product-detail/[title]`,
@@ -132,9 +133,8 @@ const Product = ({ product }) => {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={image}
-                     
                       style={{
-                        borderRadius: "35px", // Adjust the border radius as needed
+                        borderRadius: "25px", // Adjust the border radius as needed
                         overflow: "hidden", // Clip content within the rounded corners
                       }}
                     />
@@ -142,11 +142,11 @@ const Product = ({ product }) => {
                 </a>
               </Link>
             </div>
-
           </div>
-          {/* category & title & MRP */}
-          <div className=" pb-4 relative px-2" style={{ backgroundColor: "white" }}>
-            <div className="text-xs capitalize text-gray-500 ">
+
+          {/* Category, Title, Rating, Price */}
+          <div className="relative px-2 ">
+            <div className="text-xs capitalize text-gray-500">
               {category}
             </div>
             <Link
@@ -157,23 +157,18 @@ const Product = ({ product }) => {
               passHref
             >
               <a target="_blank" rel="noopener noreferrer">
-                <h2 className="lg:text-sm  font-semibold mb-1 line-clamp-2" data-toggle="tooltip" data-placement="top" title={title}>
+                <h2 className="lg:text-sm font-semibold mb-1 line-clamp-2" data-toggle="tooltip" data-placement="top" title={title}>
                   {title}
                 </h2>
               </a>
             </Link>
             <div>
               <Rating size={"sm"}>
-                {Array.from({ length: 5 }, (elem, index) => {
-                  return (
-                    <div>
-                      <Rating.Star
-                        key={index}
-                        filled={rating > index ? true : false}
-                      />
-                    </div>
-                  );
-                })}
+                {Array.from({ length: 5 }, (elem, index) => (
+                  <div key={index}>
+                    <Rating.Star filled={rating > index} />
+                  </div>
+                ))}
               </Rating>
             </div>
             <div className="flex items-center gap-x-2">
@@ -184,51 +179,37 @@ const Product = ({ product }) => {
                 <CurrencyFormatter price={MRP} />
               </div>
               {calculateDiscount(MRP, price) >= 1 && (
-                <div
-                  className="
-              text-green-500 text-xs z-10  bg-white-100 rounded-sm  right-3"
-                >
+                <div className="text-green-500 text-xs z-10 bg-white-100 rounded-sm right-3">
                   <span>{calculateDiscount(MRP, price)}% OFF</span>
                 </div>
               )}
             </div>
-
           </div>
-          {/* Add to cart button */}
-          <div className="bg-white">
-            {/* Other content */}
-            {/* Add to cart and Buy now buttons */}
-            <div className="d-flex justify-content-between  button-wrapper  px-2 bg-white">
-              <button
-                onClick={(e) => {
-                  add(product);
-                }}
-                className="button"
-              >
-                <div className="button-content ">
-                  <FaShoppingCart />
-                  ADD TO CART
+        </div>
 
-                </div>
-              </button>
-              <div
-                className="button button-buy-now"
-                onClick={(e) => buynowhandler(e)}
-              >
-                <div className="button-content">
-                  BUY NOW
-
-                </div>
+        {/* Add to Cart Button */}
+        <div className=" bg-white my-3">
+          <div className="d-flex justify-content-between button-wrapper px-2 bg-white ">
+            <button
+              onClick={(e) => {
+                add(product);
+              }}
+              className="button"
+            >
+              <div className="button-content ">
+                <FaShoppingCart />
+                ADD TO CART
               </div>
-            </div>
+            </button>
           </div>
-
-
         </div>
       </div>
     </div>
+
+
   );
 };
 
 export default Product;
+
 

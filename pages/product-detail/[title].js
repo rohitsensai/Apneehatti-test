@@ -407,16 +407,16 @@ const ProductDetail = ({
         </Breadcrumb> */}
 
         {/* ProductDetail */}
-        <div className=" m-2 md:m-6 space-y-3 ">
-          <div className=" lg:grid grid-cols-2  relative" >
+        <div className=" md:m-6 space-y-3 ">
+          <div className=" lg:grid grid-cols-2  relative " >
             <div className="relative " >
               <div
-                className="flex w-full  lg:sticky lg:top-28  overflow-y-auto  "
+                className="flex w-full  lg:sticky lg:top-35 mt-2   overflow-y-auto  mx-20 "
                 id="1"
               >
 
                 <div
-                  className=" md:min-h-[550px] min-h-[400px] p-2 relative flex justify-center items-center  overflow-hidden rounded"
+                  className=" md:min-h-[550px] min-h-[400px]  relative flex justify-center items-center  overflow-hidden rounded"
                   style={{}}
                 >
                   <div
@@ -426,19 +426,20 @@ const ProductDetail = ({
                   >
                     <div
                       id="img_wrapper"
-                      className=" w-full h-full justify-center items-center cursor-pointer mb-20 mx-20 rounded bg-white"
+                      className=" w-full h-full  justify-center items-center cursor-pointer mb-20 rounded bg-white"
 
                     >
                       <Image
                         src={mainImg}
                         // onMouseMove={imageMagnify}
-                        width={700}
-                        height={700}
+                        width={600}
+                        height={740}
                         id="bigImg"
+                        className="border"
                         // objectFit="contain"
                         alt={product_data.alt_text}
                       />
-                      <div className="flex justify-center flex-wrap">
+                      <div className="flex justify-center flex-wrap ">
                         {product_data.images.map((item, idx) => (
                           <div key={item._id}>
                             <div className="bg-gray-50 mb-1 p-2  hover:border-black cursor-pointer">
@@ -497,8 +498,8 @@ const ProductDetail = ({
                 }}
               ></div>
 
-              <div className={`  w-full lg:px-20 lg:py-3 rounded `}>
-                <div className="rounded bg-white">
+              <div className={`  w-4/5 lg:px-10 m-2 bg-white mx-auto rounded  `}>
+                <div className="rounded bg-white ">
                 <div className="space-y-2  p-4 border-gray-300 rounded bg-white rounded ">
                   <h2 className="text-xl md:text-2xl font-semibold font-serif">
                     {product_data.name}
@@ -687,7 +688,7 @@ const ProductDetail = ({
           </div>
         </div>
       </div>
-      <div className="p-5  mx-auto  min-h-[200px]">
+      <div className="  mx-4  min-h-[200px]">
         {/* Reviews */}
         <ProductReview
           reviews={reviews}
@@ -710,8 +711,8 @@ const ProductDetail = ({
       </div>
 
 
-      <Box sx={{  textAlign: 'center' }} >
-        <Typography  color="#000" sx={{ width: '80%', margin: 'auto' }}>
+      <Box sx={{  textAlign: 'center' }} className="mb-3 bg-white mx-4 rounded" >
+        <Typography  color="#000" sx={{ width: '100%', margin: 'auto' }}>
           <span className="text-2xl" style={{  textTransform: 'capitalize' }}>Related Videos</span>
         </Typography>
         <Stack
@@ -741,7 +742,7 @@ const ProductDetail = ({
             },
           }}
         >
-          {relatedVideos?.slice(0, 7)?.map((item, index) => (
+          {relatedVideos?.slice(0, 6)?.map((item, index) => (
             <a
               key={index}
               className="exercise-video"
@@ -767,7 +768,7 @@ const ProductDetail = ({
 
 
 
-      <div className="p-2 mx-auto  min-h-[200px] ">
+      <div className="p-2 mx-4  min-h-[200px] ">
         {/* Related Products */}
         <RelatedProduct relatedProducts={relatedProducts} category={category} />
       </div>

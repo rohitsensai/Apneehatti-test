@@ -9,9 +9,25 @@ import { toast } from "react-toastify";
 import { BsEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import Image from "next/image";
 import { FaArrowRight } from 'react-icons/fa';
+import { BsFacebook, BsLinkedin, BsGoogle } from "react-icons/bs";
+
+import { useDispatch } from "react-redux";
+
+import { TiTick } from "react-icons/ti";
+import { ImCross } from "react-icons/im";
+
+import "intl-tel-input/build/css/intlTelInput.css";
+import * as util from "intl-tel-input/build/js/utils";
+import intlTelInput from "intl-tel-input";
+import {
+
+  BsInfoCircleFill,
+} from "react-icons/bs";
+
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
+
   if (session) {
     return {
       redirect: {
@@ -24,20 +40,48 @@ export async function getServerSideProps(context) {
 }
 
 const initialValues = {
+  fullname: "",
   email: "",
   password: "",
+  confirmPassword: "",
+  mobile: "",
 };
 const login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
   const [loginDetails, setLoginDetails] = useState(initialValues);
   const [loading, setLoading] = useState(false);
+
+  const [isSignUpActive, setIsSignUpActive] = useState(false);
+  const [retypePasswordVisible, setRetypePasswordVisible] = useState(false);
+
+  const dispatch = useDispatch();
+  const [userDetails, setUserDetails] = useState(initialValues);
+  const [mobile, setMobile] = useState();
+  const [validateMobile, setValidateMobile] = useState();
+  const [isValidNumber, setIsValidNumber] = useState();
+
   const router = useRouter();
+
+  const handleSignUpClick = () => {
+    setIsSignUpActive(!isSignUpActive);
+    console.log("issignupactive", isSignUpActive)
+  };
+
+
   //   Login
   const inputHandler = (e) => {
     const { name, value } = e.target;
     setLoginDetails({
       ...loginDetails,
       [name]: value,
+    });
+  };
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    const { id, value } = e.target;
+    setUserDetails({
+      ...userDetails,
+      [id]: value,
     });
   };
 
@@ -83,68 +127,163 @@ const login = () => {
       });
     }
   };
+  const registerSubmitHandler = (e) => {
+    e.preventDefault();
+    if (
+      userDetails.fullname &&
+      userDetails.email &&
+      userDetails.mobile &&
+      userDetails.password &&
+      userDetails.confirmPassword
+    ) {
+      if (userDetails.password == userDetails.confirmPassword) {
+        fetch(`/api/users/create`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            fullname: userDetails.fullname,
+            email: userDetails.email,
+            mobile: userDetails.mobile,
+            password: userDetails.password,
+          }),
+        })
+          .then((res) => res.json())
+          .then(function (response) {
+            if (response.error) {
+              toast.error(response.error, {
+                position: "top-right",
+                autoClose: 3000,
+                closeOnClick: true,
+                pauseOnHover: true,
+              });
+            } else {
+              toast.success(
+                "Registration Successful! Welcome to apnnehatti. Explore and enjoy!",
+                {
+                  position: "top-right",
+                  autoClose: 3000,
+                  closeOnClick: true,
+                  pauseOnHover: true,
+                }
+              );
+              router.push("/");
+            }
+          })
+          .catch(function (error) {
+            console.log({ error });
+            toast.error("Something went wrong", {
+              position: "top-right",
+              autoClose: 3000,
+              closeOnClick: true,
+              pauseOnHover: true,
+            });
+          });
+      } else {
+        toast.error(
+          "Please check password and confirm password should be same",
+          {
+            position: "top-right",
+            autoClose: 3000,
+            closeOnClick: true,
+            pauseOnHover: true,
+          }
+        );
+      }
+    } else {
+      toast.warning("Fill all the fields", {
+        position: "top-right",
+        autoClose: 3000,
+        closeOnClick: true,
+        pauseOnHover: true,
+      });
+    }
+  };
+  var iti;
+
+  const validateNumber = (e) => {
+    setIsValidNumber(!validateMobile.isValidNumber() && "Invalid Number");
+    if (isValidNumber !== "Invalid Number") {
+      setUserDetails({
+        ...userDetails,
+        mobile: Number(
+          validateMobile.selectedCountryData.dialCode + e.target.value
+        ),
+      });
+    }
+  };
 
   const togglePasswordVisibility = () => {
     setPasswordVisible(!passwordVisible);
+  };
+  const toggleRetypePasswordVisibility = () => {
+    setRetypePasswordVisible(!retypePasswordVisible);
   };
 
   useEffect(() => {
     if (status == "authenticated") {
       router.push("/");
     }
+    const intlTelInputScriptLoad = (iti) => {
+      const input = document.querySelector("#mobile");
+      iti = intlTelInput(input, {
+        initialCountry: "in",
+        // separateDialCode: true,
+        utilsScript: util,
+      });
+      setValidateMobile(iti);
+    };
+    intlTelInputScriptLoad(iti);
   }, [status]);
+
+
+
 
   return (
     <>
       <Head>
         <title>Login</title>
       </Head>
-      <div className="rounded flex flex-col items-center justify-center pb-40 pt-20 bg-white ">
-        <div className="rounded w-8/12 lg:w-3/12 bg-blue-100 p-5 border shadow-sm ">
-          <h1
-            className="welcome fw-bold  text-3xl font-medium text-white px-4 rounded mb-3
-        "
-            style={{ fontFamily: "Ubuntu", }}
-          >
-            Welcome <br /> Back
-          </h1>
-
-          <form method="post" onSubmit={loginHandler}>
-            <div className="pt-24 ">
-              {loading && (
-                <AnimatePresence>
-                  <div className="border bg-white p-2 mb-6 overflow-hidden text-sm font-medium text-gray-500 flex gap-x-2 items-center shadow-sm">
-                    <span className="flex gap-x-2 items-center">
-                      <Spinner color={"success"} /> Please wait ...{" "}
-                    </span>
-                  </div>
-                </AnimatePresence>
-              )}
-              <div className="mb-6">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={loginDetails.email}
-                  onChange={inputHandler}
-                  className="bg-gray-50 rounded border border-gray-300 text-gray-900 text-sm rounded-sm text-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                  placeholder="Email"
-                  required
-                />
+      <div className="mybody">
+        <div className={`container   ${isSignUpActive ? 'right-panel-active' : ''}`} id="container" >
+          <div class="form-container sign-up-container">
+            <form className="loginform" onSubmit={registerSubmitHandler}>
+              <h1 className="myh1">Create Account</h1>
+              <div class="social-container">
+                <a href="#" className="social mya"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" className="social mya"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" className="social mya"><i class="fab fa-linkedin-in"></i></a>
               </div>
-              <div className="mb-4 relative ">
-                <input
-                  type={passwordVisible ? "text" : "password"}
-                  id="password"
-                  name="password"
-                  placeholder="Password"
-                  value={loginDetails.password}
-                  onChange={inputHandler}
-                  className="bg-white-50 border border-gray-300 text-gray-900 text-sm rounded-md text-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                  required
-                />
+              <span className="myspan">or use your email for registration</span>
+              <input id="fullname" onChange={(e) => handleInputChange(e)} className="logininput rounded " type="text" placeholder="Name" pattern="^[a-zA-Z ]+$" required />
+              <input id="email" onChange={(e) => handleInputChange(e)} required className="logininput rounded" type="email" placeholder="Email" />
+              <input
+                onBlur={(e) => validateNumber(e)}
+                className="logininput rounded"
+                id="mobile"
+                placeholder="Mobile"
+                pattern="^[0-9]{8,15$}"
+                // title="Do not add country code"
+                required
+                style={{ width: '285px' }} // Adjust the width value as needed
+              />
 
-                {passwordVisible ? (
+              {isValidNumber && (
+                <h1 className="bg-red-100 border border-red-400 mt-1 mx-auto p-1 text-center text-red-400 text-sm w w-full">
+                  {isValidNumber}
+                </h1>
+              )}
+              <input className="logininput rounded"
+                type={passwordVisible ? "text" : "password"}
+                placeholder="Password"
+                id="password"
+                onChange={(e) => handleInputChange(e)}
+                minLength={8}
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                required
+              />
+              {/* {passwordVisible ? (
                   <BsFillEyeSlashFill
                     onClick={togglePasswordVisibility}
                     className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
@@ -154,42 +293,77 @@ const login = () => {
                     onClick={togglePasswordVisibility}
                     className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
                   />
-                )}
+                )} */}
+              {/* <div className="flex gap-x-1 justify-center items-start py-2">
+                  <BsInfoCircleFill className="text-xl text-gray-600" />
+                  <p className="text-xs font-medium text-gray-600  ">
+                    Passwords should be a minimum of 8 characters with at least
+                    one uppercase letter, one lowercase letter, and one digit.
+                  </p>
+                </div> */}
+              <input className="logininput rounded"
+                type={retypePasswordVisible ? "text" : "password"}
+                id="confirmPassword"
+                onChange={(e) => handleInputChange(e)}
+                placeholder="Retype Password"
+                minLength={8}
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                required
+              />
+              {/* {retypePasswordVisible ? (
+                  <BsFillEyeSlashFill
+                    onClick={toggleRetypePasswordVisibility}
+                    className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
+                  />
+                ) : (
+                  <BsEyeFill
+                    onClick={toggleRetypePasswordVisibility}
+                    className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
+                  />
+                )} */}
+              <button className="loginbutton" type="submit">Sign Up</button>
+            </form>
+          </div>
+          <div class="form-container sign-in-container">
+            <form className="loginform" method="post" onSubmit={loginHandler}>
+              <h1 className="myh1" >Sign in</h1>
+              <div class="social-container">
+                <a href="#" className="social mya"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" className="social mya"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#" className="social mya"><i class="fab fa-linkedin-in"></i></a>
               </div>
-             
-              <div className="d-flex flex-row justify-content-end fw-bold mb-3 ">
-              
-                <a className="btn btn-primary rounded-circle d-flex align-items-center justify-content-center p-3">
-                <button type="submit"> <FaArrowRight />
-                </button>
-                </a>
-
+              <span className="myspan">or use your account</span>
+              <input id="email" name="email" value={loginDetails.email} onChange={inputHandler} className="logininput rounded" required type="email" placeholder="Email" />
+              {/* {passwordVisible ? (
+                  <BsFillEyeSlashFill
+                    onClick={togglePasswordVisibility}
+                    className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
+                  />
+                ) : (
+                  <BsEyeFill
+                    onClick={togglePasswordVisibility}
+                    className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
+                  />
+                )} */}
+              <input className="logininput rounded" id="password" name="password" value={loginDetails.password} onChange={inputHandler} required type={passwordVisible ? "text" : "password"} placeholder="Password" />
+              <a className="mya cursor-pointer" href="forgot-password">Forgot your password?</a>
+              <button className="loginbutton " type="submit">Sign In</button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1 className="myh1">Welcome to Apneehatti!</h1>
+                <p>To keep connected with us please login with your personal info</p>
+                <button className="loginbutton" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
               </div>
-             
-
+              <div class="overlay-panel overlay-right">
+                <h1 className="myh1">Welcome Back</h1>
+                <p className="myp">Enter your personal details and start journey with us</p>
+                <button className="loginbutton" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+              </div>
             </div>
-
-            <div className="text-center mt-8">
-              <div className="p-4 ">
-
-                <div className="d-flex flex-row justify-content-between">
-                  <a href="/register">
-                    <div className="fw-bold cursor-pointer py-2 px-1 font-medium mt-2  position-relative">
-                      Sign Up
-                    
-                    </div>
-                   
-
-                  </a>
-                  <a href="/forgot-password">
-                    <div className="fw-bold cursor-pointer  py-2  px-1 font-medium mt-2  position-relative ">
-                      <span className="">Forgot password</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </>

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useMemo } from "react";
 import FooterSection from "./footerSection";
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from "react-share";
-import { BsInstagram,BsFacebook,BsTwitter,BsLinkedin } from "react-icons/bs";
+import { BsInstagram,BsFacebook,BsTwitter,BsLinkedin,BsGoogle } from "react-icons/bs";
 import { FaArrowUp } from 'react-icons/fa';
 
 import { Divider } from "@mui/material";
@@ -58,20 +58,20 @@ const Footer = ({ categories }) => {
       <div className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"  onClick={handleScrollToTop}>
       Back to Top <span>  <FaArrowUp /></span>
       </div>
-    <div className="  text-white" style={{ backgroundColor: "#191919", display: "flex", flexDirection: "row", justifyContent: "space-around", height: "291px" }}>
-      <div className="mt-20 d-flex flex-column">
+    <div className="  text-white" style={{ backgroundColor: "#191919", display: "flex", flexDirection: "row", justifyContent: "space-around", height: "211px" }}>
+      <div className="mt-5 d-flex flex-column">
         <div style={{ fontFamily: "Jockey One" }}>HELP</div>
         <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Shipping Policy</a>
         <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Return Policy</a>
         <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Cancellation Policy</a>
         <a href="/FAQs" style={{ color: "#7A7A7A" }} className="underlinee">FAQ</a>
       </div>
-      <div className="mt-20 d-none d-md-block">
+      <div className="mt-5 d-none d-md-block">
         <div style={{ fontFamily: "Jockey One" }}>CONTACT US</div>
         <div style={{ color: "#7A7A7A" }}>Mobile +91 <span></span>7876752516</div>
         <div style={{ color: "#7A7A7A" }}>Email:support@anpneehatti.com</div>
       </div>
-      <div className="mt-20 d-flex flex-column">
+      <div className="mt-5 d-flex flex-column">
         <div style={{ fontFamily: "Jockey One" }}>TOP CATEGORIES</div>
         <a href="/search?category=Handlooms" style={{ color: "#7A7A7A" }} className="underlinee">Handlooms</a>
         <a href="/search?category=Skincare-and-Beauty" style={{ color: "#7A7A7A" }} className="underlinee">Skincare & Beauty</a>
@@ -79,7 +79,7 @@ const Footer = ({ categories }) => {
         <a href="/search?category=Organic-Food-Products" style={{ color: "#7A7A7A" }} className="underlinee">Organic Food Products</a>
         <a href="/search?category=Health-Care" style={{ color: "#7A7A7A" }} className="underlinee">Health Care</a>
       </div>
-      <div className="mt-20">
+      <div className="mt-5">
         <div className="mb-1" style={{ fontFamily: 'Jockey One' }}>FOLLOW APNEEHATTI</div>
           <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
             <a href="https://www.facebook.com/Apneehatti-103048901780149">
@@ -98,7 +98,9 @@ const Footer = ({ categories }) => {
           <div className="mt-10  align-item-center d-flex flex-row justify-content-center cursor-pointer">Certificates</div>
       
       </div>
+     
     </div>
+    
     </div>
 
     // <footer className="hidden   md:block  text-center border-t-4 border-green-400 shadow-2xl shadow-green-400 ">

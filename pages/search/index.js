@@ -132,7 +132,7 @@ const productScreen = ({ prod, pro_category, query }) => {
       </Head>
       <div className=" " >
      
-        <div className="  " >
+        <div className=" " >
           {/* <Breadcrumb
             aria-label="Solid background breadcrumb example"
             className="  dark:bg-gray-900"
@@ -150,8 +150,8 @@ const productScreen = ({ prod, pro_category, query }) => {
               </Breadcrumb.Item>
             )}
           </Breadcrumb> */}
-<div className="d-flex flex-row justify-content-between bg-white rounded shadow-sm mb-4 sticky top-0 z-20 px-3 mx-4 ">
-            <div className="text-gray-500">Total {products.length} results</div>
+<div className="d-flex flex-row justify-content-between bg-transparent  rounded shadow-sm mb-4 fixed w-full z-20 px-3 mx-4 ">
+            {/* <div className="text-gray-500">Total {products.length} results</div> */}
             <div>
             <button
               className="bg-gray-200 hover:bg-gray-300 text-black font-medium text-sm whitespace-nowrap py-2 px-3 border border-gray-300"
@@ -361,7 +361,7 @@ const productScreen = ({ prod, pro_category, query }) => {
         </div>)}
             </div>
             
-            <div className="hidden md:flex lg:w-1/5 items-center">
+            <div className="hidden md:flex lg:w-1/5 items-center mr-10">
               <h5 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 border border-gray-300 m-2">
                 Sort by
               </h5>

@@ -287,40 +287,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
           </Head >
           <div className="bg-grey;">
             <Herosection />
-            <div className="bg-gray-100 hidden">
-              <div className="grid grid-cols-2 w-11/12 gap-y-4 md:grid-cols-4 md:w-5/6 mx-auto py-12 gap-x-4">
-                <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
-                  <MdAddBusiness className="text-4xl mb-1  mx-auto" />
-                  <h1 className="font-medium">Support Local Business</h1>
-                  <p className="text-sm text-gray-500">
-                    We support the small business
-                  </p>
-                </div>
-                <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
-                  <TbTruckDelivery className="text-4xl mb-1  mx-auto" />
-                  <h1 className="font-medium">Pan India Delivery</h1>
-                  <p className="text-sm text-gray-500">
-                    We are delivering happiness all over india
-                  </p>
-                </div>
-                <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
-                  <MdLocalFlorist className="text-4xl mb-1  mx-auto" />
-                  <h1 className="font-medium">Eco Friendly Products</h1>
-                  <p className="text-sm text-gray-500">
-                    We deliver ecofriendly products
-                  </p>
-                </div>
-                <div className="text-center shadow-md hover:shadow-xl transition-all duration-300  hover:bg-white p-5">
-                  <AiFillSafetyCertificate className="text-4xl mb-1  mx-auto" />
-                  <h1 className="font-medium">Quality Assurance</h1>
-                  <p className="text-sm text-gray-500">
-                    We provide genuine and quality product
-                  </p>
-                </div>
-              </div>
-            </div>
+           
 
-            <div className="grid grid-cols-2 gap-1 m-2 p-2  my-4 ">
+            <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
               <div className="">
                 <img
                   src="/images/banner/offer-1.png"
@@ -346,17 +315,17 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
             </div>
 
-            <div className="">
-              <div className="">
+            <div className=" ">
+
                 <div className="py-4">
-                  <h3 className="text-center text-2xl font-semibold uppercase mb-2 ">
+                  <h3 className="text-center text-2xl font-semibold uppercase  ">
                     Deals of the day
                   </h3>
                   <h3 className="text-center text-gray-500">
                     Upto 50% Off plus free shipping | Grab it Fast
                   </h3>
                 </div>
-              </div>
+           
             </div>
 
 
@@ -894,7 +863,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        hEALT CARE
+                        Health CARE
                       </h3>
 
                       <h3 className="text-center text-gray-500">

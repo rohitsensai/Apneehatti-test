@@ -10,7 +10,7 @@ const ImageCarousel = () => {
   ];
 
   return (
-    <a href='/'>
+    <a href='/' className=''>
             
     <Carousel className='mx-4'
       autoPlay={true}
