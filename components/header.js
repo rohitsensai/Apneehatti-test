@@ -214,8 +214,8 @@ const Header = ({ categories }) => {
                 </a>
               )}
             </div>
-
-            {session !== null && (
+          
+            {session && session.user && (
               <>
                 <ul className=" d-flex flex-row navbar-nav mx-2 text-white" id="pwc">
                   <li className="nav-item">
@@ -239,7 +239,8 @@ const Header = ({ categories }) => {
                 </ul>
 
               </>
-            )}
+            ) 
+          }
 
 
           </header >
