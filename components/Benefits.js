@@ -6,7 +6,7 @@ function Benefits() {
 
       <div className='d-flex justify-content-center mx-4'>
           <img
-            src="/images/pictures/benefits.png" className='h-60 w-full rounded'/>
+            src="/images/pictures/benefits2.png" className='h-60 w-full rounded'/>
             </div>
   
   )
