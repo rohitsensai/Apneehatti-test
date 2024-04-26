@@ -1,247 +1,201 @@
-import React from 'react'
-import Image from 'next/image'
+import React, { useEffect } from 'react';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-
+ // Custom styles for testimonials
 
 function Testimonials() {
+  // Empty dependency array ensures useEffect runs only once on mount
 
-    const openNewWindow = () => {
-        // Calculate window size and position
-        const width = 600; // Width of the new window
-        const height = 500; // Height of the new window
-        const left = (window.innerWidth - width) / 2; // Center horizontally
-        const top = (window.innerHeight - height) / 2; // Center vertically
-    
-        // Options for the new window
-        const options = `width=${width},height=${height},left=${left},top=${top}`;
-    
-        // Open new window with specified size and position
-        window.open('https://g.page/r/CWqeVis8_uz7EB0/review', 'New Window', options);
-      };
-    
-    
+  const openNewWindow = () => {
+    // Calculate window size and position
+    const width = 600; // Width of the new window
+    const height = 500; // Height of the new window
+    const left = (window.innerWidth - width) / 2; // Center horizontally
+    const top = (window.innerHeight - height) / 2; // Center vertically
+
+    // Options for the new window
+    const options = `width=${width},height=${height},left=${left},top=${top}`;
+
+    // Open new window with specified size and position
+    window.open('https://g.page/r/CWqeVis8_uz7EB0/review', 'New Window', options);
+  };
+  const openNewWindow2 = () => {
+    // Calculate window size and position
+    const width = 600; // Width of the new window
+    const height = 500; // Height of the new window
+    const left = (window.innerWidth - width) / 2; // Center horizontally
+    const top = (window.innerHeight - height) / 2; // Center vertically
+
+    // Options for the new window
+    const options = `width=${width},height=${height},left=${left},top=${top}`;
+
+    // Open new window with specified size and position
+    window.open('https://www.google.com/maps/place/Apneehatti/@32.1500477,76.4083107,17z/data=!4m18!1m9!3m8!1s0x391b51da5869f5c7:0xfbecfe3c2b569e6a!2sApneehatti!8m2!3d32.1500477!4d76.4108856!9m1!1b1!16s%2Fg%2F11mhnmch32!3m7!1s0x391b51da5869f5c7:0xfbecfe3c2b569e6a!8m2!3d32.1500477!4d76.4108856!9m1!1b1!16s%2Fg%2F11mhnmch32?entry=ttu', 'New Window', options);
+  };
+
     return (
-        <div className="sm:px-2 md:px-2 lg:px-40 py-10 " >
-            {/* <div id='t-container' >
-            <h3 className="text-center text-2xl font-semibold mb-2">
-                Customer Testimonials
-            </h3>
+        <section class="py-10 bg-gray-50 sm:py-16 lg:py-10 mx-4">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex flex-col items-center">
+                <div class="text-center">
+                    <p class="text-lg font-medium text-gray-600 font-pj">50+ people have said how good Apneehatti is</p>
+                    <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our happy users say about us</h2>
+                </div>
+    
+                <div class="mt-8 text-center md:mt-16 md:order-3">
+                    <div onClick={openNewWindow2} class=" text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600 cursor-pointer"> Check all reviews </div>
+                  <br/>
+                     <div onClick={openNewWindow} className=' text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600 cursor-pointer'>Give your valueable Review</div>
 
-            <Carousel autoPlay={true} interval={3000} infiniteLoop={true}>
-                <div>
+                </div>
 
-                    <div id='t-component'>
-                        <div id='testimonial-img'>
-                            <Image src="/images/pictures/profile/1.png"
-                                alt="Description of the image"
-                                width={100}
-                                height={100}
-                            />
-                            <div>Simran Sahni</div>
-
-
+    
+                <div class="relative mt-10 md:mt-24 md:order-2">
+                    <div class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
+                        <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter" style={{background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"}}></div>
+                    </div>
+    
+                    <div class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                        <div class="flex flex-col overflow-hidden shadow-xl">
+                            <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                                <div class="flex-1">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                    </div>
+    
+                                    <blockquote class="flex-1 mt-8">
+                                        <p class="text-lg leading-relaxed text-gray-900 font-pj">“Apnee Hatti is a gem in Himachal! I'm hooked on their red rice, sea buckthorn juice, honey, muesli, and hair oils. What makes it special is that they source everything locally from across Himachal, supporting the community. Being a regular customer, I've witnessed their commitment to quality and freshness. Their top-notch customer service ensures a delightful shopping experience every time. Cheers to Apnee Hatti!”</p>
+                                    </blockquote>
+                                </div>
+    
+                                <div class="flex items-center mt-8">
+                                    <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="/images/pictures/profile/1.png" alt="" />
+                                    <div class="ml-4">
+                                        <p class="text-base font-bold text-gray-900 font-pj">Simran Sahni</p>
+                                        
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div id='opinion'>
-                            <div>
-                                Apnee Hatti is a gem in Himachal! I'm hooked on their red rice, sea buckthorn juice, honey, muesli, and hair oils. What makes it special is that they source everything locally from across Himachal, supporting the community. Being a regular customer, I've witnessed their commitment to quality and freshness. Their top-notch customer service ensures a delightful shopping experience every time. Cheers to Apnee Hatti!
+    
+                        <div class="flex flex-col overflow-hidden shadow-xl">
+                            <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                                <div class="flex-1">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                    </div>
+    
+                                    <blockquote class="flex-1 mt-8">
+                                        <p class="text-lg leading-relaxed text-gray-900 font-pj">“Great 💯👍 Online marketplace for products manufactured in Himachal Pradesh. We really love Apneehatti. Thank you apneehatti to deliver the happiness of Himachal. …”</p>
+                                    </blockquote>
+                                </div>
+    
+                                <div class="flex items-center mt-8">
+                                    <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="/images/pictures/profile/2.png"  alt="" />
+                                    <div class="ml-4">
+                                        <p class="text-base font-bold text-gray-900 font-pj">Jatin Sharma</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="star-rating">
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
+                        </div>
+    
+                        <div class="flex flex-col overflow-hidden shadow-xl">
+                            <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                                <div class="flex-1">
+                                    <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                    </div>
+    
+                                    <blockquote class="flex-1 mt-8">
+                                        <p class="text-lg leading-relaxed text-gray-900 font-pj">“They are best in customer experience, delivered things as per the sprint decided. Clients' friendly & optimistic approach, will always be our priority list for developments.”</p>
+                                    </blockquote>
+                                </div>
+    
+                                <div class="flex items-center mt-8">
+                                    <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="/images/pictures/profile/3.png"  alt="" />
+                                    <div class="ml-4">
+                                        <p class="text-base font-bold text-gray-900 font-pj">Dhirendra Singh Sengar</p>
+                                    </div>
+                                </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
-
-                <div>
-
-                    <div id='t-component'>
-                        <div id='testimonial-img'>
-                            <Image src="/images/pictures/profile/2.png"
-                                alt="Description of the image"
-                                width={100}
-                                height={100}
-                            />
-                            <div>Jatin Sharma</div>
-
-
-                        </div>
-                        <div id='opinion' >
-
-                            Great 💯👍 Online marketplace for products manufactured in Himachal Pradesh. We really love Apneehatti. Thank you apneehatti to deliver the happiness of Himachal. …
-                            <div class="star-rating" style={{ norder: "2px solid red" }}>
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div>
-                    <div id='t-component'>
-                        <div id='testimonial-img'>
-                            <Image src="/images/pictures/profile/3.png"
-                                alt="Description of the image"
-                                width={100}
-                                height={100}
-                            />
-                            <div>Dhirendra Singh Sengar</div>
-
-
-                        </div>
-                        <div id='opinion'>
-                            hey are best in customer experience, delivered things as per the sprint decided. Clients' friendly & optimistic approach, will always be our priority list for developments.
-                            <div class="star-rating">
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div>
-                    <div id='t-component'>
-                        <div id='testimonial-img'>
-                            <Image src="/images/pictures/profile/4.png"
-                                alt="Description of the image"
-                                width={100}
-                                height={100}
-                            />
-                            <div>Neetu Singh</div>
-
-
-                        </div>
-                        <div id='opinion'>
-                            Very good n appreciating activities by your team and true quality product
-                            <div class="star-rating">
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div>
-                    <div id='t-component'>
-                        <div id='testimonial-img'>
-                            <Image src="/images/pictures/profile/3.png"
-                                alt="Description of the image"
-                                width={100}
-                                height={100}
-                            />
-                            <div>Admya Sharma</div>
-
-
-                        </div>
-                        <div id='opinion'>
-                            Do reach out to Apnee Hatti for professional establishment of your local business.
-                            <div class="star-rating">
-                                <span class="star" data-value="1">&#9733;</span>
-                                <span class="star" data-value="2">&#9733;</span>
-                                <span class="star" data-value="3">&#9733;</span>
-                                <span class="star" data-value="4">&#9733;</span>
-                                <span class="star" data-value="5">&#9733;</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-            </Carousel>
-            
+            </div>
         </div>
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='mt-2 mb-10'>
-                <button type="button" class="btn btn-outline-success" >
-                    <div onClick={openNewWindow}>
-                        Give Your Review
-                    </div>
-                </button>
-            </div> */}
-
-
-            <section class="bg-light rounded">
-                <div class="container overflow-hidden">
-                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                        <div class="col">
-                            <div class="card border-0 border-bottom border-primary shadow-sm">
-                                <div class="card-body p-4 p-md-5">
-                                    <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/1.png" alt="" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
-                                            <h4 class="mb-2">Luna John</h4>
-                                            <h5 class="fs-6 text-secondary mb-0">UX Designer</h5>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card border-0 border-bottom border-primary shadow-sm">
-                                <div class="card-body p-4 p-md-5">
-                                    <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/2.png" alt="" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
-                                            <h4 class="mb-2">Mark Smith</h4>
-                                            <h5 class="fs-6 text-secondary mb-0"> Specialist</h5>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card border-0 border-bottom border-primary shadow-sm">
-                                <div class="card-body p-4 p-md-5">
-                                    <figure>
-                                        <img class="img-fluid rounded rounded-circle mb-4 border border-5" loading="lazy" src="/images/pictures/profile/3.png" alt="" />
-                                        <figcaption>
-                                            <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
-                                            <blockquote class="bsb-blockquote-icon mb-4">Nam ultricies, ex lacinia dapibus faucibus, sapien ipsum euismod massa, at aliquet erat turpis quis diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</blockquote>
-                                            <h4 class="mb-2">Luke Reeves</h4>
-                                            <h5 class="fs-6 text-secondary mb-0">Sales Manager</h5>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }} className='my-2'>
-                <button type="button" class="btn btn-outline-success mybtn text-white" >
-                    <div onClick={openNewWindow}>
-                        Give Your Review
-                    </div>
-                </button>
-            </div> 
-
-            </section>
-
-          
-        </div>
-    )
+    </section>
+    );
 }
 
-export default Testimonials
+export default Testimonials;

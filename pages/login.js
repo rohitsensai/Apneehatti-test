@@ -93,14 +93,13 @@ const login = () => {
     e.preventDefault();
     const REDIRECT_URL = process.env.HOST
     if (email && password) {
-      await signIn("credentials", {
+       signIn("credentials", {
         redirect: false,
         email,
         password,
         callbackUrl: REDIRECT_URL,
       }).then((res) => {
         setLoading(false);
-        console.log("res", res)
         if (!res.ok) {
           toast.error("Invalid credentials", {
             position: "top-right",

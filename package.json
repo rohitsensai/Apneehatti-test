@@ -54,7 +54,8 @@
     "react-toastify": "^9.1.1",
     "redux-persist": "^6.0.0",
     "slick-carousel": "^1.8.1",
-    "slugify": "^1.6.5"
+    "slugify": "^1.6.5",
+    "swiper": "^6.8.4"
   },
   "devDependencies": {
     "@tailwindcss/line-clamp": "^0.4.2",
