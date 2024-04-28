@@ -1,5 +1,6 @@
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
+import GoogleProvider from 'next-auth/providers/google'
 import main from "../../../database/conn";
 
 const { AUTH_SECRET, HOST } = process.env;
@@ -7,6 +8,12 @@ const { AUTH_SECRET, HOST } = process.env;
 export const authOptions = {
   secret: AUTH_SECRET,
   providers: [
+    
+    GoogleProvider({
+      clientId:process.env.GOOGLE_CLIENT_ID,
+      clientSecret:process.env.GOOGLE_CLIENT_SECRET
+    }),
+
     CredentialsProvider({
       name: "Credentials",
       credentials: {

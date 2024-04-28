@@ -251,7 +251,7 @@ const login = () => {
               <h1 className="myh1">Create Account</h1>
               <div class="social-container">
                 <a href="#" className="social mya"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" className="social mya"><i class="fab fa-google-plus-g"></i></a>
+                <a  className="social mya"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" className="social mya"><i class="fab fa-linkedin-in"></i></a>
               </div>
               <span className="myspan">or use your email for registration</span>
@@ -327,9 +327,9 @@ const login = () => {
             <form className="loginform" method="post" onSubmit={loginHandler}>
               <h1 className="myh1" >Sign in</h1>
               <div class="social-container">
-                <a href="#" className="social mya"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" className="social mya"><i class="fab fa-google-plus-g"></i></a>
-                <a href="#" className="social mya"><i class="fab fa-linkedin-in"></i></a>
+              
+                <a  className="social mya login-with-google-btn cursor-pointer" onClick={() => signIn("google")}>Sign In with Google</a>
+              
               </div>
               <span className="myspan">or use your account</span>
               <input id="email" name="email" value={loginDetails.email} onChange={inputHandler} className="logininput rounded" required type="email" placeholder="Email" />

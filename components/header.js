@@ -197,7 +197,7 @@ const Header = ({ categories }) => {
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/contact-us">
                   <button type="button" class="btnn rounded">Contact</button>
                 </a>
               </li>

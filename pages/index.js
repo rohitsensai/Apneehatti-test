@@ -556,7 +556,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        Latest new arrivals
+                        Handpicks for You
                       </h3>
 
                       <h3 className="text-center text-gray-500">
