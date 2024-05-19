@@ -156,8 +156,9 @@ const Header = ({ categories }) => {
             <form
               className={`d-flex align-items-center mx-30 my-2 my-md-0 ${isActive ? 'active' : ''}`}
               id="search"
-              onClick={handleSearchClick}
+              // onClick={handleSearchClick}
             >
+             
               <input
                 className="form-control custom-no-outline flex-grow-1"
                 type="search"
@@ -169,13 +170,98 @@ const Header = ({ categories }) => {
                 }}
                 value={searchKey}
               />
-              <button className="btn " type="submit">
-          <BiSearch /> {/* Search icon from React Icons */}
-        </button>
-            </form>
+             
+           
+            <div>
+                      {searchKey ? (
+                        <Link
+                          href={{
+                            pathname: "/search",
+                            query: searchKey
+                              ? { q: searchKey }
+                              : { category: "all" },
+                          }}
+                        >
+                          <svg
+                            className="hidden md:block h-6 w-6 text-gray-700"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            strokeWidth="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                            />
+                          </svg>
+                        </Link>
+                      ) : (
+                        <svg
+                          className="hidden md:block h-6 w-6 text-gray-700"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          strokeWidth="1.5"
+                          stroke="currentColor"
+                          aria-hidden="true"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                          />
+                        </svg>
+                      )}
+                    </div>
+                  
+                  <div
+                    className={`${
+                      searchKey
+                        ? "absolute top-0 mt-12  right-0 z-10 bg-white w-[600px]  border-l-4 border-green-400"
+                        : "hidden"
+                    }`}
+                  >
+                    <div className="border-gray-400 border-l-0 border p-2 cursor-pointer max-h-80 overflow-y-auto ">
+                      <AnimatePresence>
+                        {searchList.length > 0 ? (
+                          searchList.map((list) => (
+                            <Link
+                              key={list._id}
+                              href={{
+                                pathname: "/search",
+                                query: { q: list.name },
+                              }}
+                            >
+                              <motion.div
+                                onClick={(e) => {
+                                  setSearchKey("");
+                                }}
+                                layout
+                                key={list._id}
+                                transition={{ duration: 0.3 }}
+                                exit={{ opacity: 0 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black"
+                              >
+                                {list.name}
+                              </motion.div>
+                            </Link>
+                          ))
+                        ) : (
+                          <div className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black">
+                            Not found
+                          </div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  </div>
+                
 
-
-
+                </form>
 
 
             {/* Navigation Links - Hidden on Small Screens */}
