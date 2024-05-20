@@ -16,7 +16,7 @@ function ContactUs() {
         <div class="row justify-content-xl-center">
           <div class="col-12 col-xl-11">
             <h2 class="h1 mb-3">Get in touch</h2>
-            <p class="lead fs-4 text-secondary mb-5">We're always on the lookout to work with new clients. If you're interested in working with us, please get in touch in one of the following ways.</p>
+            <p class="lead fs-4 text-secondary mb-5">We'd love to hear from you! Whether you have questions about our Himalayan products, need assistance with an order, or just want to share your feedback, our team is here to help. Fill out the form below, and we'll get back to you as soon as possible.</p>
             <div class="d-flex mb-5">
               <div class="me-4 text-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
@@ -25,7 +25,7 @@ function ContactUs() {
               </div>
               <div>
                 <h4 class="mb-3">Address</h4>
-                <address class="mb-0 text-secondary">Ramerh, Tehsil, Village - Uthra Gram, P.O, Palampur - Dharamshala Rd, Padar, Dharamshala, Himachal Pradesh 176052</address>
+                <address class="mb-0 text-secondary">Apneehatti, Bhagsunag Rd, opposite to Hotel Green, McLeod Ganj, Dharamshala, Himachal Pradesh 176219</address>
               </div>
             </div>
             <div class="row mb-5">

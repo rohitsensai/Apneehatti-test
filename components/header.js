@@ -15,7 +15,7 @@ import { useRouter } from "next/router";
 import SignOutConfirmation from "./signOutConfimation";
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BiSearch } from 'react-icons/bi'; 
+import { BiSearch } from 'react-icons/bi';
 import header from '../styles/Header.module.css'
 import { link } from "fontawesome";
 
@@ -31,6 +31,7 @@ const Header = ({ categories }) => {
   const { searchList } = useSelector((state) => state.products);
   const [isActive, setIsActive] = useState(false);
   const [isSessionLoaded, setIsSessionLoaded] = useState(false); // State to track if session data has been loaded
+
 
   const handleSearchClick = () => {
     setIsActive(true); // Set isActive to true when the search form is clicked
@@ -120,18 +121,19 @@ const Header = ({ categories }) => {
   const router = useRouter();
 
   const isCategoryPage = router.pathname.startsWith("/search")
-  console.log("page",isCategoryPage)
+  const isCheckoutPage = router.pathname.startsWith("/placeorder")
 
 
   return (
     <>
-      <div id={header["outer"]} className={`${isCategoryPage ? 'sticky top-0 z-20' : ''}`} >
-      <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
-              <p className="animate-pulse">
-                Goodness of Himalayas at your Doorstep!
-              </p>
-            </div>
-        <div id={header["upper"]}  style={{backgroundColor:"grey"}}>
+
+      <div id={header["outer"]} className=" sticky top-0 z-20" >
+        <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
+          <p className="animate-pulse">
+            Goodness of Himalayas at your Doorstep!
+          </p>
+        </div>
+        <div style={{ backgroundColor: "grey" }} >
           <div id={header["sidebar"]}>
             <div class={header["toggle-btn"]} onClick={show}>
               <span></span>
@@ -158,12 +160,12 @@ const Header = ({ categories }) => {
             <form
               className={`d-flex align-items-center mx-30 my-2 my-md-0 ${isActive ? 'active' : ''}`}
               id="search"
-              // onClick={handleSearchClick}
+            // onClick={handleSearchClick}
             >
-             
+
               <input
                 className="form-control custom-no-outline flex-grow-1"
-                class = {header["form-control"]}
+                class={header["form-control"]}
                 type="search"
                 placeholder="Search for Mountain Products"
                 aria-label="Search"
@@ -173,98 +175,97 @@ const Header = ({ categories }) => {
                 }}
                 value={searchKey}
               />
-             
-           
-            <div>
-                      {searchKey ? (
+
+
+              <div>
+                {searchKey ? (
+                  <Link
+                    href={{
+                      pathname: "/search",
+                      query: searchKey
+                        ? { q: searchKey }
+                        : { category: "all" },
+                    }}
+                  >
+                    <svg
+                      className="hidden md:block h-6 w-6 text-gray-700"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                      />
+                    </svg>
+                  </Link>
+                ) : (
+                  <svg
+                    className="hidden md:block h-6 w-6 text-gray-700"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                )}
+              </div>
+
+              <div
+                className={`${searchKey
+                  ? "absolute top-0 mt-12  right-0 z-10 bg-white w-[600px]  border-l-4 border-green-400"
+                  : "hidden"
+                  }`}
+              >
+                <div className="border-gray-400 border-l-0 border p-2 cursor-pointer max-h-80 overflow-y-auto ">
+                  <AnimatePresence>
+                    {searchList.length > 0 ? (
+                      searchList.map((list) => (
                         <Link
+                          key={list._id}
                           href={{
                             pathname: "/search",
-                            query: searchKey
-                              ? { q: searchKey }
-                              : { category: "all" },
+                            query: { q: list.name },
                           }}
                         >
-                          <svg
-                            className="hidden md:block h-6 w-6 text-gray-700"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth="1.5"
-                            stroke="currentColor"
-                            aria-hidden="true"
+                          <motion.div
+                            onClick={(e) => {
+                              setSearchKey("");
+                            }}
+                            layout
+                            key={list._id}
+                            transition={{ duration: 0.3 }}
+                            exit={{ opacity: 0 }}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black"
                           >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                            />
-                          </svg>
+                            {list.name}
+                          </motion.div>
                         </Link>
-                      ) : (
-                        <svg
-                          className="hidden md:block h-6 w-6 text-gray-700"
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          strokeWidth="1.5"
-                          stroke="currentColor"
-                          aria-hidden="true"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                          />
-                        </svg>
-                      )}
-                    </div>
-                  
-                  <div
-                    className={`${
-                      searchKey
-                        ? "absolute top-0 mt-12  right-0 z-10 bg-white w-[600px]  border-l-4 border-green-400"
-                        : "hidden"
-                    }`}
-                  >
-                    <div className="border-gray-400 border-l-0 border p-2 cursor-pointer max-h-80 overflow-y-auto ">
-                      <AnimatePresence>
-                        {searchList.length > 0 ? (
-                          searchList.map((list) => (
-                            <Link
-                              key={list._id}
-                              href={{
-                                pathname: "/search",
-                                query: { q: list.name },
-                              }}
-                            >
-                              <motion.div
-                                onClick={(e) => {
-                                  setSearchKey("");
-                                }}
-                                layout
-                                key={list._id}
-                                transition={{ duration: 0.3 }}
-                                exit={{ opacity: 0 }}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black"
-                              >
-                                {list.name}
-                              </motion.div>
-                            </Link>
-                          ))
-                        ) : (
-                          <div className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black">
-                            Not found
-                          </div>
-                        )}
-                      </AnimatePresence>
-                    </div>
-                  </div>
-                
+                      ))
+                    ) : (
+                      <div className="p-2 cursor-pointer text-gray-500 text-sm capitalize hover:bg-gray-100 hover:font-medium hover:text-black">
+                        Not found
+                      </div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </div>
 
-                </form>
+
+            </form>
 
 
             {/* Navigation Links - Hidden on Small Screens */}
@@ -276,17 +277,17 @@ const Header = ({ categories }) => {
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav-link} ${header.a}`} href="#">
+                <a className={`${header.nav - link} ${header.a}`} href="#">
                   <button type="button" class="btnn  rounded">About Us</button>
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav-link} ${header.a}`} href="#">
+                <a className={`${header.nav - link} ${header.a}`} href="#">
                   <button type="button" class="btnn rounded">Blog </button>
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav-link} ${header.a}`} href="/contact-us">
+                <a className={`${header.nav - link} ${header.a}`} href="/contact-us">
                   <button type="button" class="btnn rounded">Contact</button>
                 </a>
               </li>
@@ -303,80 +304,93 @@ const Header = ({ categories }) => {
                 </a>
               )}
             </div>
-          
+
             {session && session.user && (
               <>
-                <ul className=" d-flex flex-row navbar-nav mx-2 text-white" id={header["pwc"]}>
+                <ul className=" d-flex flex-row navbar-nav mx-2 text-white " id={header["pwc"]}>
                   <li className={header["nav-item"]}>
                     <a className={header["nav-link"]} href="/myprofile">
-                      <FaUser className="text-white"/>
-                      <div className="name" style={{ fontSize: "9px",color:"white" }}>Profile</div>
+                      <FaUser className="text-white" />
+                      <div className="name btnn rounded" style={{ color: "white" }}>Profile</div>
                     </a>
                   </li>
                   <li className={header["nav-item"]}>
-                    <a className={header["nav-;ink"]} href="/wishlist">
-                      <FaHeart className="text-white"/>
-                      <div className="name text-white" style={{ fontSize: "9px" }}>Liked</div>
+                    <a className={header["nav-link"]} href="/wishlist">
+                      <FaHeart className="text-white" />
+                      <div className="name text-white btnn rounded" style={{}}>Wishlist</div>
                     </a>
                   </li>
                   <li className={header["nav-item"]}>
                     <button onClick={() => setIsOpen(!isOpen)} className={header["nav-link"]}>
-                      <FaShoppingCart className="text-white"/>
-                      <div className="name text-white" style={{ fontSize: "9px" }}>Cart</div>
+                      <FaShoppingCart className="text-white" />
+
+                      <div className="name text-white btnn rounded" style={{ display: 'flex', alignItems: 'center' }}>
+                        <div className="d-flex flex-row align-items-center">
+                          <span>Cart</span>
+                          <span>({cartItems.length})</span>
+                        </div>
+
+                      </div>
+
                     </button>
                   </li>
+                  <SignOutConfirmation signOut={signOut} />
                 </ul>
 
               </>
-            ) 
-          }
+            )
+            }
 
 
           </header >
         </div >
-        <div className="mx-4 bg-white pt-2 rounded " id={header["navbarNav1"]}>
-          <ul className="navbar-nav d-flex flex-row justify-content-around" >
-            <li className={header["nav-item"]}>
+      </div>
+      {!isCheckoutPage && (
+      <div className="mx-4 bg-white pt-2 rounded " id={header["navbarNav1"]}>
+        <ul className="navbar-nav d-flex flex-row justify-content-around" >
+          <li className={header["nav-item"]}>
 
-              <a  class="nav-link"  href="/search?category=Handlooms" >
-                <img className={header["cat-img"]} src="/images/pictures/category/1.jpg"></img>
-                <div className={header["text"]}> Handlooms</div>
-              </a>
-            </li>
-            <li className={header["nav-item"]}>
-              <a  class="nav-link" href="/search?category=Skincare-and-Beauty">
-                <img className={header["cat-img"]} src="/images/pictures/category/2.jpg"></img>
-                <div className={header["text"]}>  Skincare & Beauty</div>
+            <a class="nav-link" href="/search?category=Handlooms" >
+              <img className={header["cat-img"]} src="/images/pictures/category/1.jpg"></img>
+              <div className={header["text"]}> Handlooms</div>
+            </a>
+          </li>
+          <li className={header["nav-item"]}>
+            <a class="nav-link" href="/search?category=Skincare-and-Beauty">
+              <img className={header["cat-img"]} src="/images/pictures/category/2.jpg"></img>
+              <div className={header["text"]}>  Skincare & Beauty</div>
 
-              </a>
-            </li>
-            <li className={header["nav-item"]}>
-              <a  class="nav-link" href="/search?category=Handcrafts">
-                <img className={header["cat-img"]} src="/images/pictures/category/3.jpeg"></img>
-                <div className={header["text"]}> Handcrafts</div>
+            </a>
+          </li>
+          <li className={header["nav-item"]}>
+            <a class="nav-link" href="/search?category=Handcrafts">
+              <img className={header["cat-img"]} src="/images/pictures/category/3.jpeg"></img>
+              <div className={header["text"]}> Handcrafts</div>
 
-              </a>
-            </li>
-            <li className={header["nav-item"]}>
-              <a  class="nav-link" href="/search?category=Organic-Food-Products">
-                <img className={header["cat-img"]} src="/images/pictures/category/4.jpeg"></img>
-                <div className={header["text"]}> Organic Food Porducts</div>
+            </a>
+          </li>
+          <li className={header["nav-item"]}>
+            <a class="nav-link" href="/search?category=Organic-Food-Products">
+              <img className={header["cat-img"]} src="/images/pictures/category/4.jpeg"></img>
+              <div className={header["text"]}> Organic Food Porducts</div>
 
-              </a>
-            </li>
-            <li className={header["nav-item"]}>
-              <a  class="nav-link" href="/search?category=Health-Care">
-                <img className={header["cat-img"]} src="/images/pictures/category/5.jpeg"></img>
-                <div className={header["text"]}> Health Care</div>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+          <li className={header["nav-item"]}>
+            <a class="nav-link" href="/search?category=Health-Care">
+              <img className={header["cat-img"]} src="/images/pictures/category/5.jpeg"></img>
+              <div className={header["text"]}> Health Care</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+      )
+    }
 
 
 
 
-      </div >
+
       <Cart
         setIsOpen={setIsOpen}
         isOpen={isOpen}

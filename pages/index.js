@@ -357,20 +357,20 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
             <div className="">
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
               <button
                 onClick={() => {
                   newArrivalSlider.current.slickPrev();
                 }}
               >
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className=" text-2xl " />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2" style={{fontFamily: "Noto Sans"}}>
-                        Latest new arrivals
+                        Latest new arrivalss
                       </h3>
 
                       <h3 className="text-center text-gray-500">
@@ -413,21 +413,21 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
                <button onClick={() => newArrivalSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button> 
              </div> 
               </div>
 
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
                 <button
                 onClick={() => {
                   topDealSlider.current.slickPrev();
                 }}
               >
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
                 </button>
                 </div>
                 <div className="py-2 px-2 md:p-8 rounded my-4 bg-white mx-4">
@@ -480,17 +480,17 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => topDealSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
 
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -541,17 +541,17 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
 
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 border bg-white rounded mx-4 my-4border  bg-white mx-4 my-4 ">
@@ -602,17 +602,17 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
 
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -663,9 +663,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
@@ -673,9 +673,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
           
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -726,9 +726,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
@@ -737,9 +737,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
               
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -790,9 +790,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
@@ -801,9 +801,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
               
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -854,9 +854,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>
@@ -866,9 +866,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
               
               <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 bg-gray-200 border-r-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-3xl" />
+                <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
                 <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
@@ -919,9 +919,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                     </Slider>
                   </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10 bg-gray-200 border-l-gray-300 border-t-gray-300 border-b-gray-300 text-gray-700 hover:text-black hover:shadow-2xl border shadow-lg h-44  ">
+                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-3xl" />
+                <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
               </div>

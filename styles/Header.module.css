@@ -77,6 +77,7 @@
   
   #pwc .nav-item {
     padding: 15px; /* Add padding to each nav item */
+    /* border: 2px solid red; */
   
   }
   
@@ -90,6 +91,9 @@
     align-items: center;
     text-decoration: none;
     color: black; /* Adjust link color */
+    /* border :2px solid blue; */
+    width: 50px;
+    justify-content: space-between;
   }
   
   #pwc .name {

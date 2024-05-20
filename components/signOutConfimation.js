@@ -12,10 +12,12 @@ export default function SignOutConfirmation({ signOut }) {
     <>
       <li
         onClick={() => props.setOpenModal("pop-up")}
-        className="block px-4 py-2 hover:bg-gray-100 hover:font-medium dark:hover:bg-gray-600 dark:hover:text-white"
+        style={{ fontSize: "15px", whiteSpace: "nowrap" }}
+        className="block px-4 py-2 cursor-pointer mybtn"
       >
         Sign out
       </li>
+
       <Modal
         show={props.openModal === "pop-up"}
         size="md"

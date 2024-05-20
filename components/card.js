@@ -80,8 +80,7 @@ const Product = ({ product }) => {
     if (!session) {
       toast.warning("Please SignIn First");
     } else {
-      console.log("id", session.user.id)
-      console.log(product.id)
+     
       addToBasketAnimation();
       const data = await fetch(`/api/cart/${session.user.id}/add`, {
         headers: {
@@ -92,7 +91,7 @@ const Product = ({ product }) => {
       });
       if (data.ok) {
         const response = await data.json();
-        console.log("res", response)
+       
         if (response) {
           const savedcart = response.items;
           const initialCartObj = {
@@ -103,6 +102,12 @@ const Product = ({ product }) => {
           };
           dispatch(initialCart(initialCartObj));
         }
+        toast.success("Product Added Successfully", {
+          position: "top-right",
+          autoClose: 3000,
+          closeOnClick: true,
+          pauseOnHover: true,
+        });
       }
     }
   };

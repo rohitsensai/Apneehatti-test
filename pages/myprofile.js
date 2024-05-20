@@ -1,11 +1,15 @@
 import Head from "next/head";
-import { useEffect, useState } from "react";
+import { useEffect, useState  } from "react";
+import { useSession, signOut } from "next-auth/react";
+
 import "intl-tel-input/build/css/intlTelInput.css";
 import * as util from "intl-tel-input/build/js/utils";
 import intlTelInput from "intl-tel-input";
 import { getSession } from "next-auth/react";
 import { HiUserCircle } from "react-icons/hi";
 import { toast } from "react-toastify";
+import SignOutConfirmation from "../components/signOutConfimation";
+
 
 export async function getServerSideProps({ req }) {
   let session = await getSession({ req });
@@ -169,6 +173,7 @@ const myprofile = ({ profile, session }) => {
                   Update Profile
                 </button>
               </div>
+              <SignOutConfirmation signOut={signOut} />
             </div>
           </form>
         </div>

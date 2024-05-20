@@ -64,7 +64,6 @@ const login = () => {
 
   const handleSignUpClick = () => {
     setIsSignUpActive(!isSignUpActive);
-    console.log("issignupactive", isSignUpActive)
   };
 
 
@@ -245,7 +244,10 @@ const login = () => {
         <title>Login</title>
       </Head>
       <div className="mybody">
-        <div className={`container   ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
+      <a href="/" className="a d-none d-md-block">
+              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
+            </a>
+        <div className={`container  ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
           <div class="form-container sign-up-container" className={loginn["form-container"]}>
             <form className="loginform" onSubmit={registerSubmitHandler}>
               <h1 className="myh1">Create Account</h1>
@@ -320,7 +322,7 @@ const login = () => {
                     className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
                   />
                 )} */}
-              <button className="loginbutton" type="submit">Sign Up</button>
+              <button className="loginbutton mybtn" type="submit">Sign Up</button>
             </form>
           </div>
           <div class="form-container sign-in-container">
@@ -346,7 +348,7 @@ const login = () => {
                 )} */}
               <input className="logininput rounded" id="password" name="password" value={loginDetails.password} onChange={inputHandler} required type={passwordVisible ? "text" : "password"} placeholder="Password" />
               <a className="mya cursor-pointer" href="forgot-password">Forgot your password?</a>
-              <button className="loginbutton " type="submit">Sign In</button>
+              <button className="loginbutton mybtn" type="submit">Sign In</button>
             </form>
           </div>
           <div class="overlay-container">
@@ -354,12 +356,12 @@ const login = () => {
               <div class="overlay-panel overlay-left">
                 <h1 className="myh1">Welcome to Apneehatti!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <button className="loginbutton" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
+                <button className="loginbutton mybtn" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
               </div>
               <div class="overlay-panel overlay-right">
                 <h1 className="myh1">Welcome Back</h1>
                 <p className="myp">Enter your personal details and start journey with us</p>
-                <button className="loginbutton" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+                <button className="loginbutton mybtn" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
               </div>
             </div>
           </div>

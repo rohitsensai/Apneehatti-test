@@ -62,7 +62,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
       <div
         className={`${
           isOpen ? "right-0" : "-right-full"
-        }  w-full bg-white fixed top-0 bottom-0 shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-40 px-4 lg:px-[20px]`}
+        }  w-full bg-white fixed top-0 bottom-0 shadow-2xl  transition-all duration-300 z-40 px-4 lg:px-[20px]`}
       >
         <div className="flex flex-col  h-[75%] overflow-y-auto overflow-x-hidden ">
           <div className="flex items-center py-3 justify-between   border-b">

@@ -42,9 +42,49 @@ function Testimonials() {
                 </div>
     
                 <div class="mt-8 text-center md:mt-16 md:order-3">
-                    <div onClick={openNewWindow2} class=" text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600 cursor-pointer"> Check all reviews </div>
-                  <br/>
-                     <div onClick={openNewWindow} className=' text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600 cursor-pointer'>Give your valueable Review</div>
+                   <div className='border h-full w-ful d-flex justify-content-center flex-column'>
+                    <img src='./images/logo/google.jpeg' width={50} className="align"></img>
+                   <div class="flex items-center">
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                        <svg class="w-5 h-5 text-[#FDB241]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                            />
+                                        </svg>
+                                    </div>
+                       <p className='mx-2'>
+                            <b>4.8</b> ratings from <b>502</b> reviews
+                            </p>
+                       <div className='d-flex flex-row my-2 mx-10'>
+                       <img src="/images/pictures/profile/1.png" width={40}></img>
+                        <img src="/images/pictures/profile/2.png" width={40}></img>
+                        <img src="/images/pictures/profile/3.png" width={40}></img>
+                        <img src="/images/pictures/profile/499.jpg" className='rounded-circle' width={40} ></img>
+                       </div>
+                       <button className='mybtn my-2' onClick={openNewWindow}>
+                        Leave a review
+                       </button>
+
+                   </div>
 
                 </div>
 
@@ -135,14 +175,15 @@ function Testimonials() {
                                     <blockquote class="flex-1 mt-8">
                                         <p class="text-lg leading-relaxed text-gray-900 font-pj">“Great 💯👍 Online marketplace for products manufactured in Himachal Pradesh. We really love Apneehatti. Thank you apneehatti to deliver the happiness of Himachal. …”</p>
                                     </blockquote>
-                                </div>
-    
-                                <div class="flex items-center mt-8">
+                                    <div class="flex items-center mt-4">
                                     <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="/images/pictures/profile/2.png"  alt="" />
                                     <div class="ml-4">
                                         <p class="text-base font-bold text-gray-900 font-pj">Jatin Sharma</p>
                                     </div>
                                 </div>
+                                </div>
+    
+                              
                             </div>
                         </div>
     
@@ -180,14 +221,16 @@ function Testimonials() {
                                     <blockquote class="flex-1 mt-8">
                                         <p class="text-lg leading-relaxed text-gray-900 font-pj">“They are best in customer experience, delivered things as per the sprint decided. Clients' friendly & optimistic approach, will always be our priority list for developments.”</p>
                                     </blockquote>
-                                </div>
-    
-                                <div class="flex items-center mt-8">
+                                    
+                                <div class="flex items-center  mt-4">
                                     <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="/images/pictures/profile/3.png"  alt="" />
                                     <div class="ml-4">
                                         <p class="text-base font-bold text-gray-900 font-pj">Dhirendra Singh Sengar</p>
                                     </div>
                                 </div>
+                                </div>
+    
+                                
                             </div>
                         </div>
                     </div>

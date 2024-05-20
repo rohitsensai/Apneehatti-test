@@ -15,8 +15,9 @@ const Loader = () => {
           width={100}
           height={100}
           blurDataURL="/images/logo/apneehatti_logo.svg"
-          src={"/images/logo/apneehatti_logo.svg"}
+          src="/images/logo/ApneeHatti_light.png" 
           alt="Brand Logo"
+          className="z-20"
         />
       </motion.div>
     </div>
