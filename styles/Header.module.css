@@ -1,0 +1,172 @@
+
+  
+  #navbarNav1{
+      /* border: 4px solid red; */
+      /* font-size: ; */
+      margin: 20px;
+    
+     font-family: sans-serif;
+  }
+  #bar {
+    width: 50%; /* Set the width to 100% of its container */
+    max-width: 500px; /* Set a maximum width if needed */
+    padding: auto;
+  
+  }
+  
+  
+  
+  #sidebar{
+      position:absolute;
+      
+      height: 1000px;
+      background: #000;
+      /* border: 2px solid red;  */
+      left: -200px; 
+      transition: 0.4s;
+      top: 10;
+      z-index: 2;
+   
+  }
+  
+  
+  #sidebar ul li {
+      list-style: none;
+      color: #fff;
+      font-size: 20px;
+      padding: 20px 24px;
+  }
+  
+  #sidebar .toggle-btn{
+      position: absolute; 
+     
+    
+       top:12px; 
+      left:200px;
+      z-index: 2;
+      display: none;
+  }
+  
+  .toggle-btn span{
+      width: 45px;
+      height: 5px;
+      background:#000;
+      display: block;
+      margin-top:4px ;
+  }
+  
+  
+  
+  .a:hover{
+    color:#ABA7A7
+}
+  
+.form-control:focus {
+    border-color: inherit;
+    background-color: #ececec;
+    /* border: 2px solid green; */
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .form-control:focus, .form-control:active {
+    background: transparent;
+  }
+  
+  
+  
+  
+  #pwc .nav-item {
+    padding: 15px; /* Add padding to each nav item */
+  
+  }
+  
+  .nav-link:hover {
+    transform: scale(1.2); /* Scale up on hover */
+  }
+  
+  #pwc .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black; /* Adjust link color */
+  }
+  
+  #pwc .name {
+    font-size: 1lvw;
+  }
+  
+  #navbarNav1 div{
+   
+      text-align: center;
+     
+      /* border: 2px solid gold; */
+  }
+  #navbarNav1 .nav-item{
+      /* border: 2px solid rgb(52, 170, 89); */
+      width: 12em;
+     
+  }
+  
+  .cat-img{
+      /* border: 2px solid rgb(161, 132, 132); */
+      width: 60%;
+      height: 6.8em;
+      border-radius: 5em;
+      background-color: white;
+      margin: auto auto;
+  
+  }
+  
+  
+  
+  
+  @media screen and (max-width:768px) {
+  
+    
+   
+     
+    #pwc {
+      justify-content: space-around; /* Align items evenly */
+    }
+  
+  
+    #pwc .nav-item {
+      flex-basis: 30%; /* Each item takes 30% width on smaller screens */
+      text-align: center; /* Center align items */
+    }
+      
+     
+      #sidebar .toggle-btn{
+          display:block; 
+         
+      }
+      #navbarNav1{
+          margin:1% auto;
+      }
+      
+       #navbarNav1 .nav-link{
+          /* border: 2px solid saddlebrown; */
+          margin: 4% auto ;
+          font-size: 9px;
+          height: auto;
+          padding: 0;
+  
+        
+      }
+      #navbarNav1 div{
+          font-size: 1.2em;
+      }
+      #navbarNav1 .nav-item{
+          height: 7em;
+          /* border: 2px solid red; */
+      }
+      .cat-img{
+          height: 9em;
+          width: 9em;
+          border-radius: 50%;
+      }
+   
+  }
+  
+  

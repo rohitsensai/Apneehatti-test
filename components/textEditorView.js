@@ -2,6 +2,7 @@ import { EditorState, convertFromRaw } from "draft-js";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
+import textEditorView from '../styles/textEditorView.module.css'
 
 const Editor = dynamic(
   () => import("react-draft-wysiwyg").then((module) => module.Editor),
@@ -39,11 +40,11 @@ const TextEditorView = ({ desc }) => {
   return (
     
     <div>
-      <table id="property-table">
+      <table id={textEditorView["property-table"]} className={textEditorView["table"]} >
         <thead>
           <tr>
-            <th style={{ padding: "0 10px" }}>Property Name</th>
-            <th style={{ padding: "0 10px" }}>Value</th>
+            <th style={{ padding: "0 10px" }} className={textEditorView["th"]}>Property Name</th>
+            <th style={{ padding: "0 10px" }} className={textEditorView["td"]}>Value</th>
           </tr>
         </thead>
         <tbody>

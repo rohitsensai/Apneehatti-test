@@ -7,7 +7,7 @@ import { useSession, signOut } from "next-auth/react";
 import { fetchSearch } from "../slices/product";
 import { FiUser } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, transform } from "framer-motion";
 import CurrencyFormatter from "../helper/currencyFormatter";
 import MobileSidebar from "./mobileSidebar";
 import Cart from "./cart";
@@ -16,6 +16,8 @@ import SignOutConfirmation from "./signOutConfimation";
 import { FaUser, FaHeart, FaShoppingCart } from 'react-icons/fa';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BiSearch } from 'react-icons/bi'; 
+import header from '../styles/Header.module.css'
+import { link } from "fontawesome";
 
 const Header = ({ categories }) => {
   const dispatch = useDispatch();
@@ -123,15 +125,15 @@ const Header = ({ categories }) => {
 
   return (
     <>
-      <div id="outer" className={`${isCategoryPage ? 'sticky top-0 z-20' : ''}`} >
+      <div id={header["outer"]} className={`${isCategoryPage ? 'sticky top-0 z-20' : ''}`} >
       <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
-              <p className=" animate-pulse">
+              <p className="animate-pulse">
                 Goodness of Himalayas at your Doorstep!
               </p>
             </div>
-        <div id="upper"  style={{backgroundColor:"grey"}}>
-          <div id="sidebar">
-            <div class="toggle-btn" onClick={show}>
+        <div id={header["upper"]}  style={{backgroundColor:"grey"}}>
+          <div id={header["sidebar"]}>
+            <div class={header["toggle-btn"]} onClick={show}>
               <span></span>
               <span></span>
               <span></span>
@@ -144,10 +146,10 @@ const Header = ({ categories }) => {
             </ul>
           </div>
 
-          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  " id="header">
+          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  " class={header["container-fluid"]} id={header["header"]}>
 
             {/* Logo - Hidden on Small Screens */}
-            <a href="/" className=" d-none d-md-block">
+            <a href="/" className="a d-none d-md-block">
               <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
             </a>
 
@@ -161,6 +163,7 @@ const Header = ({ categories }) => {
              
               <input
                 className="form-control custom-no-outline flex-grow-1"
+                class = {header["form-control"]}
                 type="search"
                 placeholder="Search for Mountain Products"
                 aria-label="Search"
@@ -265,25 +268,25 @@ const Header = ({ categories }) => {
 
 
             {/* Navigation Links - Hidden on Small Screens */}
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id="bar" style={{ width: '40%', maxWidth: '800px' }}>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="/">
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header["nav-link"]} ${header["a"]}`} href="/">
                   <button type="button" class="btnn rounded">Shop</button>
 
                 </a>
               </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="#">
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav-link} ${header.a}`} href="#">
                   <button type="button" class="btnn  rounded">About Us</button>
                 </a>
               </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="#">
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav-link} ${header.a}`} href="#">
                   <button type="button" class="btnn rounded">Blog </button>
                 </a>
               </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" href="/contact-us">
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav-link} ${header.a}`} href="/contact-us">
                   <button type="button" class="btnn rounded">Contact</button>
                 </a>
               </li>
@@ -293,8 +296,8 @@ const Header = ({ categories }) => {
             {/* Login Button - Always Visible */}
             <div className="mx-2">
               {session == null && (
-                <a href="/login">
-                  <button className="btn btn-primary mybtn text-white">
+                <a href="/login" className={header["a"]}>
+                  <button className="btn btn-primary mybtn text-white" class={header.mybtn}>
                     LOGIN <FaUser style={{ marginLeft: '5px', color: "white" }} />
                   </button>
                 </a>
@@ -303,21 +306,21 @@ const Header = ({ categories }) => {
           
             {session && session.user && (
               <>
-                <ul className=" d-flex flex-row navbar-nav mx-2 text-white" id="pwc">
-                  <li className="nav-item">
-                    <a className="nav-link" href="/myprofile">
+                <ul className=" d-flex flex-row navbar-nav mx-2 text-white" id={header["pwc"]}>
+                  <li className={header["nav-item"]}>
+                    <a className={header["nav-link"]} href="/myprofile">
                       <FaUser className="text-white"/>
                       <div className="name" style={{ fontSize: "9px",color:"white" }}>Profile</div>
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/wishlist">
+                  <li className={header["nav-item"]}>
+                    <a className={header["nav-;ink"]} href="/wishlist">
                       <FaHeart className="text-white"/>
                       <div className="name text-white" style={{ fontSize: "9px" }}>Liked</div>
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <button onClick={() => setIsOpen(!isOpen)} className="nav-link">
+                  <li className={header["nav-item"]}>
+                    <button onClick={() => setIsOpen(!isOpen)} className={header["nav-link"]}>
                       <FaShoppingCart className="text-white"/>
                       <div className="name text-white" style={{ fontSize: "9px" }}>Cart</div>
                     </button>
@@ -331,40 +334,40 @@ const Header = ({ categories }) => {
 
           </header >
         </div >
-        <div className="mx-4 bg-white pt-2 rounded " id="navbarNav1">
-          <ul className="navbar-nav d-flex flex-row justify-content-around">
-            <li className="nav-item">
+        <div className="mx-4 bg-white pt-2 rounded " id={header["navbarNav1"]}>
+          <ul className="navbar-nav d-flex flex-row justify-content-around" >
+            <li className={header["nav-item"]}>
 
-              <a className="nav-link" href="/search?category=Handlooms">
-                <img className="cat-img" src="/images/pictures/category/1.jpg"></img>
-                <div className="text"> Handlooms</div>
+              <a  class="nav-link"  href="/search?category=Handlooms" >
+                <img className={header["cat-img"]} src="/images/pictures/category/1.jpg"></img>
+                <div className={header["text"]}> Handlooms</div>
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Skincare-and-Beauty">
-                <img className="cat-img" src="/images/pictures/category/2.jpg"></img>
-                <div className="text">  Skincare & Beauty</div>
-
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Handcrafts">
-                <img className="cat-img" src="/images/pictures/category/3.jpeg"></img>
-                <div className="text"> Handcrafts</div>
+            <li className={header["nav-item"]}>
+              <a  class="nav-link" href="/search?category=Skincare-and-Beauty">
+                <img className={header["cat-img"]} src="/images/pictures/category/2.jpg"></img>
+                <div className={header["text"]}>  Skincare & Beauty</div>
 
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Organic-Food-Products">
-                <img className="cat-img" src="/images/pictures/category/4.jpeg"></img>
-                <div className="text"> Organic Food Porducts</div>
+            <li className={header["nav-item"]}>
+              <a  class="nav-link" href="/search?category=Handcrafts">
+                <img className={header["cat-img"]} src="/images/pictures/category/3.jpeg"></img>
+                <div className={header["text"]}> Handcrafts</div>
 
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/search?category=Health-Care">
-                <img className="cat-img" src="/images/pictures/category/5.jpeg"></img>
-                <div className="text"> Health Care</div>
+            <li className={header["nav-item"]}>
+              <a  class="nav-link" href="/search?category=Organic-Food-Products">
+                <img className={header["cat-img"]} src="/images/pictures/category/4.jpeg"></img>
+                <div className={header["text"]}> Organic Food Porducts</div>
+
+              </a>
+            </li>
+            <li className={header["nav-item"]}>
+              <a  class="nav-link" href="/search?category=Health-Care">
+                <img className={header["cat-img"]} src="/images/pictures/category/5.jpeg"></img>
+                <div className={header["text"]}> Health Care</div>
               </a>
             </li>
           </ul>

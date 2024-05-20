@@ -281,6 +281,8 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 />
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 
+<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-3/assets/css/contact-3.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>

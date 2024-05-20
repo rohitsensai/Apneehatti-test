@@ -23,7 +23,7 @@ import {
 
   BsInfoCircleFill,
 } from "react-icons/bs";
-
+import loginn from '../styles/Login.module.css'
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
@@ -245,8 +245,8 @@ const login = () => {
         <title>Login</title>
       </Head>
       <div className="mybody">
-        <div className={`container   ${isSignUpActive ? 'right-panel-active' : ''}`} id="container" >
-          <div class="form-container sign-up-container">
+        <div className={`container   ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
+          <div class="form-container sign-up-container" className={loginn["form-container"]}>
             <form className="loginform" onSubmit={registerSubmitHandler}>
               <h1 className="myh1">Create Account</h1>
               <div class="social-container">
