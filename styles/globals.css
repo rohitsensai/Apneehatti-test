@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+.enlarge:hover{
+  transform: scale(1.2);
+}
 
 
 input[type=range]::-webkit-slider-thumb {
@@ -435,13 +438,14 @@ body {
 }
 @media screen and (max-width: 768px) {
   .benefits{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: none;
   }
   .footer{
     display: block;
     /* border:2px solid blue; */
   }
+  
 }
 
 h2 {
@@ -457,9 +461,13 @@ h2 {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
-    margin: auto  auto;
+    /* margin: auto  auto; */
 }
 
+.loginarrow{
+  width: 768px;
+  margin: 0 auto;;
+}
 
 .myh1 {
     font-weight: bold;
@@ -500,7 +508,7 @@ h2 {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 50px;
+    padding: 0 10px;
     height: 100%;
     text-align: center;
 }
@@ -696,4 +704,25 @@ h2 {
     cursor: not-allowed;
   }
 }
+
+.imagediv{
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  #mobile{
+    width: max-content;
+  }
+  .loginarrow{
+    width: 100%;
+  }
+  .imagediv{
+    margin: 0 0;
+  }
+  
+
+
+}
+
 

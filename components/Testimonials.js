@@ -80,7 +80,7 @@ function Testimonials() {
                         <img src="/images/pictures/profile/3.png" width={40}></img>
                         <img src="/images/pictures/profile/499.jpg" className='rounded-circle' width={40} ></img>
                        </div>
-                       <button className='mybtn my-2' onClick={openNewWindow}>
+                       <button className='mybtn my-2 btn btn-primary' onClick={openNewWindow}>
                         Leave a review
                        </button>
 
@@ -127,7 +127,7 @@ function Testimonials() {
                                     </div>
     
                                     <blockquote class="flex-1 mt-8">
-                                        <p class="text-lg leading-relaxed text-gray-900 font-pj">“Apnee Hatti is a gem in Himachal! I'm hooked on their red rice, sea buckthorn juice, honey, muesli, and hair oils. What makes it special is that they source everything locally from across Himachal, supporting the community. Being a regular customer, I've witnessed their commitment to quality and freshness. Their top-notch customer service ensures a delightful shopping experience every time. Cheers to Apnee Hatti!”</p>
+                                        <p class="text-lg leading-relaxed text-gray-900 font-pj">“Apnee Hatti is a gem in Himachal! I'm hooked on their red rice, sea buckthorn juice, honey, muesli, and hair oils. What makes it special is that they source everything locally from across Himachal.!”</p>
                                     </blockquote>
                                 </div>
     

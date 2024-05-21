@@ -317,14 +317,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                 />
               </div>
-              <div className="hidden">
-                <img
-                  src="/pictures/banner/offer-3.png"
-
-                  alt=""
-
-                />
-              </div>
+            
             </div>
 
             <div className=" ">

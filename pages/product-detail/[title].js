@@ -411,7 +411,7 @@ const ProductDetail = ({
           <div className=" lg:grid grid-cols-2  relative " >
             <div className="relative " >
               <div
-                className="flex w-full  lg:sticky lg:top-35 mt-2   overflow-y-auto  mx-20 "
+                className="flex w-full  lg:sticky lg:top-35 mt-2   overflow-y-auto imageidv  "
                 id="1"
               >
 
@@ -426,7 +426,7 @@ const ProductDetail = ({
                   >
                     <div
                       id="img_wrapper"
-                      className=" w-full h-full  justify-center items-center cursor-pointer mb-20 rounded bg-white"
+                      className=" w-full h-full  justify-center items-center cursor-pointer mb-20 rounded bg-white "
 
                     >
                       <Image

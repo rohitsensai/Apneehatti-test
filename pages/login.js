@@ -24,6 +24,8 @@ import {
   BsInfoCircleFill,
 } from "react-icons/bs";
 import loginn from '../styles/Login.module.css'
+import { GoArrowLeft } from "react-icons/go";
+
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
@@ -59,6 +61,9 @@ const login = () => {
   const [mobile, setMobile] = useState();
   const [validateMobile, setValidateMobile] = useState();
   const [isValidNumber, setIsValidNumber] = useState();
+
+
+  
 
   const router = useRouter();
 
@@ -236,38 +241,52 @@ const login = () => {
   }, [status]);
 
 
-
+  const gotoHome = () =>{
+    router.push('/');
+  } 
 
   return (
     <>
       <Head>
         <title>Login</title>
       </Head>
-      <div className="mybody">
-      <a href="/" className="a d-none d-md-block">
-              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid" />
-            </a>
+      <div className="mybody ">
+        <div className="d-flex flex-row  loginarrow justify-content-between mx-auto">
+          <div className=" flex-grow-1">
+        
+          <GoArrowLeft className="text-3xl cursor-pointer enlarge" onClick={gotoHome}/>
+          
+          </div>
+          <div className=" flex-grow-1">
+         
+              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid cursor-pointer enlarge"  onClick={gotoHome} />
+          
+          </div>
+        {/*
+   */}
+            </div>
         <div className={`container  ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
           <div class="form-container sign-up-container" className={loginn["form-container"]}>
-            <form className="loginform" onSubmit={registerSubmitHandler}>
+            <form className="loginform " onSubmit={registerSubmitHandler}>
               <h1 className="myh1">Create Account</h1>
               <div class="social-container">
                 <a href="#" className="social mya"><i class="fab fa-facebook-f"></i></a>
                 <a  className="social mya"><i class="fab fa-google-plus-g"></i></a>
                 <a href="#" className="social mya"><i class="fab fa-linkedin-in"></i></a>
               </div>
-              <span className="myspan">or use your email for registration</span>
+              {/* <span className="myspan">or use your email for registration</span> */}
               <input id="fullname" onChange={(e) => handleInputChange(e)} className="logininput rounded " type="text" placeholder="Name" pattern="^[a-zA-Z ]+$" required />
               <input id="email" onChange={(e) => handleInputChange(e)} required className="logininput rounded" type="email" placeholder="Email" />
               <input
+          
                 onBlur={(e) => validateNumber(e)}
-                className="logininput rounded"
+                className="logininput rounded  w-full"
                 id="mobile"
                 placeholder="Mobile"
                 pattern="^[0-9]{8,15$}"
                 // title="Do not add country code"
                 required
-                style={{ width: '285px' }} // Adjust the width value as needed
+               // Adjust the width value as needed
               />
 
               {isValidNumber && (
@@ -322,17 +341,17 @@ const login = () => {
                     className="text-lg text-gray-500 mr-2 cursor-pointer absolute right-0 top-3"
                   />
                 )} */}
-              <button className="loginbutton mybtn" type="submit">Sign Up</button>
+              <button className="loginbutton mybtn btn btn-primary"  type="submit">Sign Up</button>
             </form>
           </div>
           <div class="form-container sign-in-container">
             <form className="loginform" method="post" onSubmit={loginHandler}>
               <h1 className="myh1" >Sign in</h1>
-              <div class="social-container">
+              {/* <div class="social-container"> */}
               
-                <a  className="social mya login-with-google-btn cursor-pointer" onClick={() => signIn("google")}>Sign In with Google</a>
+                {/* <a  className="social mya login-with-google-btn cursor-pointer" onClick={() => signIn("google")}>Sign In with Google</a> */}
               
-              </div>
+              {/* </div> */}
               <span className="myspan">or use your account</span>
               <input id="email" name="email" value={loginDetails.email} onChange={inputHandler} className="logininput rounded" required type="email" placeholder="Email" />
               {/* {passwordVisible ? (
@@ -348,7 +367,7 @@ const login = () => {
                 )} */}
               <input className="logininput rounded" id="password" name="password" value={loginDetails.password} onChange={inputHandler} required type={passwordVisible ? "text" : "password"} placeholder="Password" />
               <a className="mya cursor-pointer" href="forgot-password">Forgot your password?</a>
-              <button className="loginbutton mybtn" type="submit">Sign In</button>
+              <button className="loginbutton mybtn btn btn-primary" type="submit">Sign In</button>
             </form>
           </div>
           <div class="overlay-container">
@@ -356,12 +375,12 @@ const login = () => {
               <div class="overlay-panel overlay-left">
                 <h1 className="myh1">Welcome to Apneehatti!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <button className="loginbutton mybtn" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
+                <button className="loginbutton mybtn btn btn-primary" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
               </div>
               <div class="overlay-panel overlay-right">
                 <h1 className="myh1">Welcome Back</h1>
                 <p className="myp">Enter your personal details and start journey with us</p>
-                <button className="loginbutton mybtn" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+                <button className="loginbutton mybtn btn btn-primary" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
               </div>
             </div>
           </div>
