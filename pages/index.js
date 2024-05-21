@@ -209,6 +209,12 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
 
   const topDealSlider = useRef();
+  const handloomsSlider = useRef();
+  const skinCareandBeautySlider = useRef();
+  const healthCareSlider = useRef();
+  const handcraftsSlider = useRef();
+  const organiSlider  = useRef();
+
   const trendingProductSlider = useRef();
   const bestSellerSlider = useRef();
   let { newArrival, topDeals, trendingProducts, bestSellers, loading } =
@@ -256,15 +262,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
   useEffect(() => {
     dispatch(fetchFeaturedProducts());
-    const fetchData = async () => {
-      // Your data fetching logic here
-      // For example, setting copiedTopDeals after fetching data
-      const newCopiedTopDeals = [bestSellers[0], ...topDeals]; // Assuming topDeals and bestSellers are already defined
-      setCopiedTopDeals(newCopiedTopDeals);
+    
 
-    };
-
-    fetchData(); // Call the fetchData function when the component mounts
+     // Call the fetchData function when the component mounts
   }, []);
 
 
@@ -389,7 +389,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto ">
                     <Slider
-                      ref={(slider) => (newArrivalSlider.current = slider)}
+                      ref={newArrivalSlider}
                       {...settings}
                     >
                       {!loading && newArrival.length > 0
@@ -548,9 +548,9 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
               </div>
 
-              <div className="relative">
+              {/* <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => newArrivalSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -567,18 +567,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => newArrivalSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                      <button onClick={() => newArrivalSlider.current.slickNext()}>
                         <HiArrowCircleRight className="text-3xl" />
                       </button>
                     </div>
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (newArrivalSlider.current = slider)}
                       {...settings}
                     >
                       {!loading && newArrival.length > 0
@@ -603,15 +603,15 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => newArrivalSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+              </div> */}
 
               <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => handloomsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -628,7 +628,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => handloomsSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
@@ -639,7 +639,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (handloomsSlider.current = slider)}
                       {...settings}
                     >
                       {!loading && products1.length > 0
@@ -664,7 +664,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => handloomsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
@@ -674,7 +674,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
           
               <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -691,18 +691,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                      <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
                         <HiArrowCircleRight className="text-3xl" />
                       </button>
                     </div>
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (skinCareandBeautySlider.current = slider)}
                       {...settings}
                     >
                       {!loading && products2.length > 0
@@ -727,7 +727,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
@@ -738,7 +738,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               
               <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => handcraftsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -755,18 +755,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => handcraftsSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                      <button onClick={() => handcraftsSlider.current.slickNext()}>
                         <HiArrowCircleRight className="text-3xl" />
                       </button>
                     </div>
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (handcraftsSlider.current = slider)}
                       {...settings}
                     >
                       {!loading && products3.length > 0
@@ -791,7 +791,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => handcraftsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
@@ -802,7 +802,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               
               <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => organiSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -819,18 +819,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => organiSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                      <button onClick={() => organiSlider.current.slickNext()}>
                         <HiArrowCircleRight className="text-3xl" />
                       </button>
                     </div>
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (organiSlider.current = slider)}
                       {...settings}
                     >
                       {!loading && products4.length > 0
@@ -855,7 +855,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => organiSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
@@ -867,7 +867,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               
               <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
+              <button onClick={() => healthCareSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
@@ -884,18 +884,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
                     </div>
                     <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                      <button onClick={() => healthCareSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
 
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
+                      <button onClick={() => healthCareSlider.current.slickNext()}>
                         <HiArrowCircleRight className="text-3xl" />
                       </button>
                     </div>
                   </div>
                   <div className="w-10/12 md:w-full  mx-auto">
                     <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
+                      ref={(slider) => (healthCareSlider.current = slider)}
                       {...settings}
                     >
                       {!loading && products5.length > 0
@@ -920,7 +920,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                   </div>
                 </div>
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => healthCareSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>

@@ -13,6 +13,7 @@ const ImageCarousel = () => {
     <a href='/' className=''>
             
     <Carousel className='mx-4'
+    
       autoPlay={true}
       interval={3000} // Auto-play interval in milliseconds (3 seconds)
       infiniteLoop={true} // Infinite loop

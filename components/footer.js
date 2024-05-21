@@ -7,14 +7,14 @@ import Link from "next/link";
 import { useMemo } from "react";
 import FooterSection from "./footerSection";
 import { FacebookIcon, LinkedinIcon, TwitterIcon } from "react-share";
-import { BsInstagram,BsFacebook,BsTwitter,BsLinkedin,BsGoogle } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGoogle } from "react-icons/bs";
 import { FaArrowUp } from 'react-icons/fa';
 
 import { Divider } from "@mui/material";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faFacebookF, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { FaFacebook,FaInbox,FaInstagram,FaLinkedin,faInstagram,faLinkedinIn,faTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInbox, FaInstagram, FaLinkedin, faInstagram, faLinkedinIn, faTwitter } from 'react-icons/fa';
 
 
 
@@ -40,67 +40,73 @@ const Footer = ({ categories }) => {
   //     return null;
   //   }, [categories]);
   const [isMounted, setIsMounted] = useState(false);
-  
-    const handleScrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // Smooth scroll animation
-      });
-    };
-  
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scroll animation
+    });
+  };
+
 
   useEffect(() => {
     // Set isMounted to true when component mounts (client-side)
     setIsMounted(true);
   }, []);
   return (
-    <div>   
-      <div className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"  onClick={handleScrollToTop}>
-      Back to Top <span>  <FaArrowUp /></span>
+    <div>
+      <div className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover" onClick={handleScrollToTop}>
+        Back to Top <span>  <FaArrowUp /></span>
       </div>
-    <div className="  text-white" style={{ backgroundColor: "#191919", display: "flex", flexDirection: "row", justifyContent: "space-around", height: "211px" }}>
-      <div className="mt-5 d-flex flex-column">
-        <div style={{ fontFamily: "Jockey One" }}>HELP</div>
-        <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Shipping Policy</a>
-        <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Return Policy</a>
-        <a href="/policy" style={{ color: "#7A7A7A" }} className="underlinee">Cancellation Policy</a>
-        <a href="/FAQs" style={{ color: "#7A7A7A" }} className="underlinee">FAQ</a>
-      </div>
-      <div className="mt-5 d-none d-md-block">
-        <div style={{ fontFamily: "Jockey One" }}>CONTACT US</div>
-        <div style={{ color: "#7A7A7A" }}>Mobile +91 <span></span>7876752516</div>
-        <div style={{ color: "#7A7A7A" }}>Email:support@anpneehatti.com</div>
-      </div>
-      <div className="mt-5 d-flex flex-column">
-        <div style={{ fontFamily: "Jockey One" }}>TOP CATEGORIES</div>
-        <a href="/search?category=Handlooms" style={{ color: "#7A7A7A" }} className="underlinee">Handlooms</a>
-        <a href="/search?category=Skincare-and-Beauty" style={{ color: "#7A7A7A" }} className="underlinee">Skincare & Beauty</a>
-        <a href="/search?category=Handcrafts" style={{ color: "#7A7A7A" }} className="underlinee">Handcrafts</a>
-        <a href="/search?category=Organic-Food-Products" style={{ color: "#7A7A7A" }} className="underlinee">Organic Food Products</a>
-        <a href="/search?category=Health-Care" style={{ color: "#7A7A7A" }} className="underlinee">Health Care</a>
-      </div>
-      <div className="mt-5">
-        <div className="mb-1" style={{ fontFamily: 'Jockey One' }}>FOLLOW APNEEHATTI</div>
-          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
+      <div className="footer  text-white  " style={{ backgroundColor: "#191919" }}>
+      <div className="mt-2 d-flex flex-column item-center justify-content-center">
+      <div style={{ fontFamily: "Jockey One" }}>HELP</div>
+      <a href="/policy" style={{ color: "#7A7A7A" }} className="d-block underlinee   ">Shipping Policy</a>
+      <a href="/policy" style={{ color: "#7A7A7A" }} className="d-block underlinee  ">Return Policy</a>
+      <a href="/policy" style={{ color: "#7A7A7A" }} className="d-block underlinee   ">Cancellation Policy</a>
+      <a href="/FAQs" style={{ color: "#7A7A7A" }} className="d-block underlinee  ">FAQ</a>
+    </div>
+        <div className="mt-2 d-flex flex-column">
+          <div style={{ fontFamily: "Jockey One" }}>CONTACT US</div>
+          <div style={{ color: "#7A7A7A" }}  className="d-block underlinee  ">Mobile +91 <span></span>7876752516</div>
+          <div style={{ color: "#7A7A7A" }}  className="d-block underlinee ">Email:support@anpneehatti.com</div>
+        </div>
+        <div className="mt-2 d-flex flex-column ">
+          <div style={{ fontFamily: "Jockey One" }}>TOP CATEGORIES</div>
+          
+            <a href="/search?category=Handlooms" style={{ color: "#7A7A7A" }}  className="d-block underlinee  ">Handlooms</a>
+         
+            <a href="/search?category=Skincare-and-Beauty" style={{ color: "#7A7A7A" }}  className="d-block underlinee  ">Skincare & Beauty</a>
+       
+            <a href="/search?category=Handcrafts" style={{ color: "#7A7A7A" }}  className="d-block underlinee   ">Handcrafts</a>
+       
+            <a href="/search?category=Organic-Food-Products" style={{ color: "#7A7A7A" }} className="d-block underlinee ">Organic Food Products</a>
+        
+            <a href="/search?category=Health-Care" style={{ color: "#7A7A7A" }}  className="d-block underlinee ">Health Care</a>
+      
+        </div>
+        <div className="mt-2 mx-20" >
+          <div className="mb-1 text-center" style={{ fontFamily: 'Jockey One' }}>FOLLOW APNEEHATTI</div>
+          <div className=" mx-0" style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
             <a href="https://www.facebook.com/Apneehatti-103048901780149">
               <BsFacebook size={20} />
             </a>
-            <a  href="https://twitter.com/ApneeHatti">
+            <a href="https://twitter.com/ApneeHatti">
               <BsInstagram size={20} />
             </a>
-            <a  href="https://twitter.com/ApneeHatti">
+            <a href="https://twitter.com/ApneeHatti">
               <BsTwitter size={20} />
             </a>
-            <a   href="https://www.linkedin.com/company/apneehatti">
+            <a href="https://www.linkedin.com/company/apneehatti">
               <BsLinkedin size={20} />
             </a>
           </div>
           <div className="mt-10  align-item-center d-flex flex-row justify-content-center cursor-pointer">Certificates</div>
-      
+
+        </div>
+
       </div>
-     
-    </div>
-    
+
     </div>
 
     // <footer className="hidden   md:block  text-center border-t-4 border-green-400 shadow-2xl shadow-green-400 ">
