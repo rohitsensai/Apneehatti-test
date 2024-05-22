@@ -411,7 +411,7 @@ const ProductDetail = ({
           <div className=" lg:grid grid-cols-2  relative " >
             <div className="relative " >
               <div
-                className="flex w-full  lg:sticky lg:top-35 mt-2   overflow-y-auto imageidv  "
+                className="flex   lg:sticky lg:top-35 mt-2   overflow-y-auto imageidv   "
                 id="1"
               >
 
@@ -432,7 +432,7 @@ const ProductDetail = ({
                       <Image
                         src={mainImg}
                         // onMouseMove={imageMagnify}
-                        width={600}
+                        width={900}
                         height={740}
                         id="bigImg"
                         className="border"

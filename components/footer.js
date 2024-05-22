@@ -91,7 +91,7 @@ const Footer = ({ categories }) => {
             <a href="https://www.facebook.com/Apneehatti-103048901780149">
               <BsFacebook size={20} />
             </a>
-            <a href="https://twitter.com/ApneeHatti">
+            <a href="https://www.instagram.com/apneehatti_official">
               <BsInstagram size={20} />
             </a>
             <a href="https://twitter.com/ApneeHatti">

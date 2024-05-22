@@ -215,6 +215,8 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
   const handcraftsSlider = useRef();
   const organiSlider  = useRef();
 
+
+
   const trendingProductSlider = useRef();
   const bestSellerSlider = useRef();
   let { newArrival, topDeals, trendingProducts, bestSellers, loading } =
@@ -225,10 +227,13 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
   var settings = {
     arrows: false,
     dots: false,
+    // pauseOnHover:true,
     infinite: true,
-    speed: 500,
+    speed: 300,
+    autoplay:true,
+    autoplaySpeed: 6000,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
@@ -238,6 +243,8 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
           slidesToScroll: 3,
           infinite: true,
           dots: true,
+          // autoplay:true,
+          // speed: 8000
         },
       },
       {
@@ -262,7 +269,14 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
   useEffect(() => {
     dispatch(fetchFeaturedProducts());
-    
+    newArrivalSlider.current.slickPlay();
+    bestSellerSlider.current.slickPlay();
+    handcraftsSlider.current.slickPlay();
+    handloomsSlider.current.slickPlay();
+    organiSlider.current.slickPlay();
+    skinCareandBeautySlider.current.slickPlay();
+    healthCareSlider.current.slickPlay();
+    topDealSlider.current.slickPlay();
 
      // Call the fetchData function when the component mounts
   }, []);

@@ -157,8 +157,32 @@ const Header = ({ categories }) => {
 
             {/* Search Form */}
 
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header["nav-link"]} ${header["a"]}`} href="/">
+                  <button type="button" class="btnn rounded">Shop</button>
+
+                </a>
+              </li>
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav - link} ${header.a}`} href="#">
+                  <button type="button" class="btnn  rounded">About Us</button>
+                </a>
+              </li>
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav - link} ${header.a}`} href="#">
+                  <button type="button" class="btnn rounded">Blog </button>
+                </a>
+              </li>
+              <li className="nav-item mx-2" class={header["nav-item"]}>
+                <a className={`${header.nav - link} ${header.a}`} href="/contact-us">
+                  <button type="button" class="btnn rounded">Contact</button>
+                </a>
+              </li>
+            </ul>
+
             <form
-              className={`d-flex align-items-center mx-30 my-2 my-md-0 ${isActive ? 'active' : ''}`}
+              className={`d-flex align-items-center  my-2 my-md-0 ${isActive ? 'active' : ''}`}
               id="search"
             // onClick={handleSearchClick}
             >
@@ -269,29 +293,7 @@ const Header = ({ categories }) => {
 
 
             {/* Navigation Links - Hidden on Small Screens */}
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
-              <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header["nav-link"]} ${header["a"]}`} href="/">
-                  <button type="button" class="btnn rounded">Shop</button>
-
-                </a>
-              </li>
-              <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="#">
-                  <button type="button" class="btnn  rounded">About Us</button>
-                </a>
-              </li>
-              <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="#">
-                  <button type="button" class="btnn rounded">Blog </button>
-                </a>
-              </li>
-              <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="/contact-us">
-                  <button type="button" class="btnn rounded">Contact</button>
-                </a>
-              </li>
-            </ul>
+           
 
 
             {/* Login Button - Always Visible */}
@@ -307,7 +309,35 @@ const Header = ({ categories }) => {
 
             {session && session.user && (
               <>
-                <ul className=" d-flex flex-row navbar-nav mx-2 text-white " id={header["pwc"]}>
+              <div className="d-flex flex-row ">
+                <div className="d-flex flex-column align-item-center  mx-2 cursor-pointer">
+                <FaUser className="text-white  " />
+                      <div className="" style={{ color: "white",fontSize:"16px",fontWeight:"bold" }}>Profile</div>
+                </div>
+                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer">
+                <FaHeart className="text-white" />
+                      <div className="text-white " style={{ color: "white",fontSize:"16px",fontWeight:"bold" }}>Wishlist</div>
+                </div>
+                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer">
+                <FaShoppingCart className="text-white" />
+                <button onClick={() => setIsOpen(!isOpen)}>
+                    
+
+                      <div className=" text-white " style={{ display: 'flex', alignItems: 'center' }}>
+                        <div className="d-flex flex-row align-items-center" style={{ color: "white",fontSize:"16px",fontWeight:"bold" }}>
+                          <span>Cart</span>
+                          <span>({cartItems.length})</span>
+                        </div>
+
+                      </div>
+
+                    </button>
+                </div>
+                <div className="d-flex flex-column align-item-center mx-2">
+                <SignOutConfirmation signOut={signOut} />
+                </div>
+              </div>
+                {/* <ul className=" d-flex flex-row navbar-nav mx-2 text-white " id={header["pwc"]}>
                   <li className={header["nav-item"]}>
                     <a className={header["nav-link"]} href="/myprofile">
                       <FaUser className="text-white" />
@@ -335,7 +365,7 @@ const Header = ({ categories }) => {
                     </button>
                   </li>
                   <SignOutConfirmation signOut={signOut} />
-                </ul>
+                </ul> */}
 
               </>
             )
