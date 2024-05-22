@@ -352,7 +352,7 @@ const login = () => {
                 {/* <a  className="social mya login-with-google-btn cursor-pointer" onClick={() => signIn("google")}>Sign In with Google</a> */}
               
               {/* </div> */}
-              <span className="myspan">or use your account</span>
+              {/* <span className="myspan">or use your account</span> */}
               <input id="email" name="email" value={loginDetails.email} onChange={inputHandler} className="logininput rounded" required type="email" placeholder="Email" />
               {/* {passwordVisible ? (
                   <BsFillEyeSlashFill

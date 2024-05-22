@@ -157,32 +157,32 @@ const Header = ({ categories }) => {
 
             {/* Search Form */}
 
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 border-border-danger" id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 " id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header["nav-link"]} ${header["a"]}`} href="/">
+                <a className={`${header["nav-link"]} ${header["greyonhover"]}`} href="/">
                   <button type="button" class="btnn rounded">Shop</button>
 
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="#">
+                <a className={`${header.nav - link} ${header["greyonhover"]}`} href="#">
                   <button type="button" class="btnn  rounded">About Us</button>
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="#">
+                <a className={`${header.nav - link} ${header["greyonhover"]}`} href="#">
                   <button type="button" class="btnn rounded">Blog </button>
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header.a}`} href="/contact-us">
+                <a className={`${header.nav - link} ${header["greyonhover"]}`} href="/contact-us">
                   <button type="button" class="btnn rounded">Contact</button>
                 </a>
               </li>
             </ul>
 
             <form
-              className={`d-flex align-items-center  my-2 my-md-0 ${isActive ? 'active' : ''}`}
+              className={`d-flex align-items-center  my-2 my-md-0  ${isActive ? 'active' : ''}`}
               id="search"
             // onClick={handleSearchClick}
             >
@@ -310,15 +310,15 @@ const Header = ({ categories }) => {
             {session && session.user && (
               <>
               <div className="d-flex flex-row ">
-                <div className="d-flex flex-column align-item-center  mx-2 cursor-pointer">
+              <div className={`d-flex flex-column align-items-center mx-2 cursor-pointer ${header["greyonhover"]}`}>
                 <FaUser className="text-white  " />
                       <div className="" style={{ color: "white",fontSize:"16px",fontWeight:"bold" }}>Profile</div>
                 </div>
-                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer">
+                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
                 <FaHeart className="text-white" />
                       <div className="text-white " style={{ color: "white",fontSize:"16px",fontWeight:"bold" }}>Wishlist</div>
                 </div>
-                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer">
+                <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
                 <FaShoppingCart className="text-white" />
                 <button onClick={() => setIsOpen(!isOpen)}>
                     

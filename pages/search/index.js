@@ -15,9 +15,6 @@ const Product = dynamic(() => import("../../components/card"));
 export async function getServerSideProps(context) {
   const { category, q } = context.query;
 
-  console.log("c",category)
-  console.log("q",q)
-
   const apiEndpoints = {
     all: "/api/products/list",
     category: category ? `/api/products/category/${category}` : null,
@@ -26,7 +23,7 @@ export async function getServerSideProps(context) {
 
   const endpoint =
     apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
+      category && category != "all" ? "category" : q ? "name" : "all"
     ];
   const url = process.env.HOST + endpoint;
   const dataPromises = endpoint
@@ -34,6 +31,7 @@ export async function getServerSideProps(context) {
     : [];
   const [res] = await Promise.all(dataPromises);
 
+  console.log("res",res)
 
   const filteredRes =
     res?.filter((item) => item?.category_id?.active && item?.active) || [];
@@ -55,8 +53,6 @@ const productScreen = ({ prod, pro_category, query }) => {
   const [max, setMax] = useState(maxProductPrice);
   const [discount, setDiscount] = useState(0);
   const [rating, setRating] = useState(0);
-  const [showFilters, setShowFilters] = useState(false);
-
 
   const sortBy = (sort) => {
     let sortedProducts = [...products];
@@ -130,9 +126,11 @@ const productScreen = ({ prod, pro_category, query }) => {
       <Head>
         <title>{!query ? pro_category : query}</title>
       </Head>
-      <div className=" " >
-     
-        <div className=" " >
+       <div className=" " >
+        <div className="w-1/5 hidden md:block ">
+        
+        </div>
+        <div className="  " >
           {/* <Breadcrumb
             aria-label="Solid background breadcrumb example"
             className="  dark:bg-gray-900"
@@ -150,22 +148,34 @@ const productScreen = ({ prod, pro_category, query }) => {
               </Breadcrumb.Item>
             )}
           </Breadcrumb> */}
-<div className="d-flex flex-row justify-content-between bg-transparent  rounded shadow-sm mb-4 fixed w-full z-20 px-3 mx-4 ">
-            {/* <div className="text-gray-500">Total {products.length} results</div> */}
-            <div>
-            <button
-              className="bg-gray-200 hover:bg-gray-300 text-black font-medium text-sm whitespace-nowrap py-2 px-3 border border-gray-300"
-              type="button"
-              onClick={() => setShowFilters(!showFilters)}
-              onMouseEnter={()  => setShowFilters(!showFilters)}
+          <div className="bg-white rounded shadow-sm mb-2  flex justify-between items-center ">
+            <div className="text-gray-500">Total {products.length} results</div>
+            <div className="hidden md:flex lg:w-1/5 items-center ">
+              <h5 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 border border-gray-300">
+                Sort by
+              </h5>
+              <select
+                onChange={(e) => sortBy(e.target.value)}
+                id="sort_by"
+                className="bg-gray-50 border-gray-300  cursor-pointer text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                defaultValue={"selected"}
+              >
+                <option>Default</option>
+
+                <option value="lth">Low to high</option>
+                <option value="htl">High to low</option>
+                <option value="a-z">A to Z</option>
+                <option value="z-a">Z to A</option>
+              </select>
+            </div>
+          </div>
+
+          {/* filter */}
+          <div className="d-flex flex-row align-items-start bg-white">
+            <div className=" w-1/3">
               
-             
-            >
-              Filters
-            </button>
-            {  showFilters && ( <div className="  hidden md:block mx-auto "    onMouseLeave={() => setShowFilters(!showFilters)}>
-          <div className="bg-white p-4 rounded shadow-sm">
-            <div className="flex justify-between items-center">
+              <div className="bg-white p-4 rounded s hadow-sm ">
+             <div className="flex justify-between items-center">
               <h1 className="font-medium text-md uppercase pb-3">Filter By</h1>
               <button
                 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 hover:bg-gray-300 border border-gray-300"
@@ -357,34 +367,11 @@ const productScreen = ({ prod, pro_category, query }) => {
                 </div>
               </div>
             </div>
+          </div> 
           </div>
-        </div>)}
-            </div>
-            
-            <div className="hidden md:flex lg:w-1/5 items-center mr-10">
-              <h5 className="font-medium text-sm text-black whitespace-nowrap py-2 px-3 bg-gray-200 border border-gray-300 m-2">
-                Sort by
-              </h5>
-              <select
-                onChange={(e) => sortBy(e.target.value)}
-                id="sort_by"
-                className="bg-gray-50 border-gray-300  cursor-pointer text-gray-900 text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-5"
-                defaultValue={"selected"}
-
-              >
-                <option>Default</option>
-
-                <option value="lth">Low to high</option>
-                <option value="htl">High to low</option>
-                <option value="a-z">A to Z</option>
-                <option value="z-a">Z to A</option>
-              </select>
-            </div>
-          </div>
-         
-
-          <AnimatePresence >
-            <div className="rounded grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4  z-index-1 bg-white mx-4">
+          <div className="">
+          <AnimatePresence>
+            <div className="bg-white grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 b">
               {products.length > 0 &&
                 products.map((item) => (
                   <Product
@@ -403,6 +390,8 @@ const productScreen = ({ prod, pro_category, query }) => {
                 ))}
             </div>
           </AnimatePresence>
+          </div>
+          </div>
         </div>
       </div>
       <BottomNavigation
