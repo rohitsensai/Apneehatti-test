@@ -172,7 +172,7 @@ const productScreen = ({ prod, pro_category, query }) => {
 
           {/* filter */}
           <div className="d-flex flex-row align-items-start bg-white">
-            <div className=" w-1/3">
+            <div className="hidden md:flex w-1/3 sticky top-40 z-5">
               
               <div className="bg-white p-4 rounded s hadow-sm ">
              <div className="flex justify-between items-center">
