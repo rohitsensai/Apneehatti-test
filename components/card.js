@@ -80,7 +80,7 @@ const Product = ({ product }) => {
     if (!session) {
       toast.warning("Please SignIn First");
     } else {
-     
+
       addToBasketAnimation();
       const data = await fetch(`/api/cart/${session.user.id}/add`, {
         headers: {
@@ -91,7 +91,7 @@ const Product = ({ product }) => {
       });
       if (data.ok) {
         const response = await data.json();
-       
+
         if (response) {
           const savedcart = response.items;
           const initialCartObj = {
@@ -112,11 +112,15 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border border-grey m-1 rounded" style={{ backgroundColor: "white" }}>
+    <div className="border  my-2 w-4/5 " style={{ backgroundColor: "white" }}>
       <div className="block bg-white overflow-hidden">
-        <div className="min-h-[320px] relative " style={{ backgroundColor: "#white" }}>
+        <div className="min-h-[320px] relative" style={{ backgroundColor: "white" }}>
           <div className="h-[220px] relative overflow-hidden group transition">
-            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}>
+            <div
+              className="position-absolute z-10 top-2 end-5"
+              onClick={whishlisthandler}
+              style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}
+            >
               <FaHeart size={12} style={{ color: "white" }} />
             </div>
 
@@ -129,16 +133,15 @@ const Product = ({ product }) => {
                 passHref
               >
                 <a target="_blank" rel="noopener noreferrer">
-                  <div className="relative mx-auto " style={{ width: "220px", height: "200px" }}>
+                  <div className="relative mx-auto  w-full h-full">
                     <img
                       src={image}
-                      width={320}
-                      height={240}
                       alt={alt_text}
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={image}
-                      
+                      className=" object-cover"
+                      style={{ maxWidth: "100%", maxHeight: "299px" }}
                     />
                   </div>
                 </a>
@@ -190,7 +193,7 @@ const Product = ({ product }) => {
         </div>
 
         {/* Add to Cart Button */}
-        <div className=" bg-white my-3">
+        {/* <div className=" bg-white my-3">
           <div className="d-flex justify-content-between button-wrapper px-2 bg-white ">
             <button
               onClick={(e) => {
@@ -204,7 +207,7 @@ const Product = ({ product }) => {
               </div>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
 

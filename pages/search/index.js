@@ -371,7 +371,7 @@ const productScreen = ({ prod, pro_category, query }) => {
           </div>
           <div className="">
           <AnimatePresence>
-            <div className="bg-white grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 b">
+            <div className="bg-white grid gap-1 xs:grid-cols-1 grid-cols-2 md:grid-cols-3 lg:grid-cols-5 b">
               {products.length > 0 &&
                 products.map((item) => (
                   <Product
