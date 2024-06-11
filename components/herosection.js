@@ -4,8 +4,8 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carous
 
 const ImageCarousel = () => {
   const images = [
-    '/images/banner/banner-9.jpg',
-    '/images/banner/banner1.jpeg',
+    '/images/banner/1.png',
+    
    
   ];
 

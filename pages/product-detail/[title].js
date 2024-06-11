@@ -570,7 +570,7 @@ const ProductDetail = ({
                     </h6>
                     <div className="text-sm font-medium  flex items-center space-x-1">
                       <h5 className="text-gray-700">
-                        Sold by{" "}
+                        Brand Name:{" "}
                         <span className="underline">
                           {product_data.brand_id?.name}
                         </span>
@@ -637,7 +637,7 @@ const ProductDetail = ({
                     onClick={(e) => {
                       add(product);
                     }}
-                    className="button"
+                    className="button button-add-to-cart"
                   >
                     <div className="d-flex flex-row">
                       <FaShoppingCart />

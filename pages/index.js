@@ -318,14 +318,14 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
               <div className="">
                 <img
-                  src="/images/banner/offer-1.png"
+                  src="/images/banner/offer-2.png"
                   width="100%"
                   alt=""
                 />
               </div>
               <div className="">
                 <img
-                  src="/images/banner/offer-2.png"
+                  src="/images/banner/offer-1.png"
                   width="100%"
                   alt=""
 
@@ -677,6 +677,19 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
               </div>
 
+              <div className="mx-4">
+              <a href="/">
+              <img
+                src="/images/banner/banner4.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+              </a>
+            </div>
+
 
           
               <div className="relative">
@@ -740,6 +753,19 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
               </div>
 
+
+              <div className="mx-4">
+              <a href="/">
+              <img
+                src="/images/banner/banner4.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+              </a>
+            </div>
 
 
               
@@ -805,6 +831,19 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
 
 
+              <div className="mx-4">
+              <a href="/">
+              <img
+                src="/images/banner/banner4.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+              </a>
+            </div>
+
 
               
               <div className="relative">
@@ -869,7 +908,18 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
 
 
-
+              <div className="mx-4">
+              <a href="/">
+              <img
+                src="/images/banner/banner4.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+              </a>
+            </div>
 
               
               <div className="relative">

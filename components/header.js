@@ -88,10 +88,13 @@ const Header = ({ categories }) => {
   };
 
   useEffect(() => {
+    if(searchKey == ' ') {
+      searchKey = '';
+    }
     const delayDebounceFn = setTimeout(() => {
       // Perform search operation here
       dispatch(fetchSearch(searchKey));
-    }, 300); // Adjust the debounce delay time according to your needs
+    }, 1000); // Adjust the debounce delay time according to your needs
     return () => clearTimeout(delayDebounceFn);
   }, [searchKey]);
 
@@ -128,12 +131,12 @@ const Header = ({ categories }) => {
     <>
 
       <div id={header["outer"]} className=" sticky top-0 z-20" >
-        <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
+        {/* <div className="flex p-2 items-center justify-center bg-green-400 px-4 text-sm font-medium text-white sm:px-6 lg:px-8 ">
           <p className="animate-pulse">
             Goodness of Himalayas at your Doorstep!
           </p>
-        </div>
-        <div style={{ backgroundColor: "grey" }} >
+        </div> */}
+        <div className="bg-white">
           <div id={header["sidebar"]}>
             <div class={header["toggle-btn"]} onClick={show}>
               <span></span>
@@ -157,7 +160,7 @@ const Header = ({ categories }) => {
 
             {/* Search Form */}
 
-            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center text-white justify-content-md-around mb-0 " id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
+            <ul className=" d-none d-md-flex list-unstyled align-items-center justify-content-center  justify-content-md-around mb-0 " id={header["bar"]} style={{ width: '40%', maxWidth: '800px' }}>
               <li className="nav-item mx-2" class={header["nav-item"]}>
                 <a className={`${header["nav-link"]} ${header["greyonhover"]}`} href="/">
                   <button type="button" class="btnn rounded">Shop</button>
@@ -378,6 +381,13 @@ const Header = ({ categories }) => {
       {!isCheckoutPage && (
       <div className="mx-4 bg-white pt-2 rounded " id={header["navbarNav1"]}>
         <ul className="navbar-nav d-flex flex-row justify-content-around" >
+        <li className={header["nav-item"]}>
+
+            <a class="nav-link" href="/search?category=all" >
+              <img className={header["cat-img"]} src="/images/logo/ApneeHatti_light.png"></img>
+              <div className={header["text"]}> All Products</div>
+            </a>
+          </li>
           <li className={header["nav-item"]}>
 
             <a class="nav-link" href="/search?category=Handlooms" >
