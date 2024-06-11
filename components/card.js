@@ -116,7 +116,7 @@ const Product = ({ product }) => {
       <div className="block bg-white overflow-hidden">
         <div className="min-h-[320px] relative " style={{ backgroundColor: "#white" }}>
           <div className="h-[220px] relative overflow-hidden group transition">
-            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "1px" }}>
+            <div className="position-absolute z-10 top-2 end-5" onClick={whishlisthandler} style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}>
               <FaHeart size={12} style={{ color: "white" }} />
             </div>
 
