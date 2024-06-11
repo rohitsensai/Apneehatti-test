@@ -251,7 +251,7 @@ const Header = ({ categories }) => {
 
               <div
                 className={`${searchKey
-                  ? "absolute top-0 mt-12  right-0 z-10 bg-white w-[600px]  border-l-4 border-green-400"
+                  ? "absolute top-10 mt-12  right-30 z-10 bg-white w-[600px]  border-l-4 border-green-400"
                   : "hidden"
                   }`}
               >
