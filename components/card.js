@@ -129,7 +129,7 @@ const Product = ({ product }) => {
                 passHref
               >
                 <a target="_blank" rel="noopener noreferrer">
-                  <div className="relative mx-auto rounded" style={{ width: "320px", height: "240px", overflow: "hidden" }}>
+                  <div className="relative mx-auto " style={{ width: "220px", height: "200px" }}>
                     <img
                       src={image}
                       width={320}
@@ -138,10 +138,7 @@ const Product = ({ product }) => {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL={image}
-                      style={{
-                        borderRadius: "25px", // Adjust the border radius as needed
-                        overflow: "hidden", // Clip content within the rounded corners
-                      }}
+                      
                     />
                   </div>
                 </a>

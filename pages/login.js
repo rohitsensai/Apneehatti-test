@@ -278,17 +278,14 @@ const login = () => {
               <input id="fullname" onChange={(e) => handleInputChange(e)} className="logininput rounded " type="text" placeholder="Name" pattern="^[a-zA-Z ]+$" required />
               <input id="email" onChange={(e) => handleInputChange(e)} required className="logininput rounded" type="email" placeholder="Email" />
               <input
-          
-                onBlur={(e) => validateNumber(e)}
-                className="logininput rounded  w-full"
-                id="mobile"
-                placeholder="Mobile"
-                pattern="^[0-9]{8,15$}"
-                // title="Do not add country code"
-                required
-               // Adjust the width value as needed
-              />
-
+                  onBlur={(e) => validateNumber(e)}
+                  id="mobile"
+                  className="bg-gray-50 border w-full logininput rounded"
+                  placeholder="Mobile"
+                  pattern="^[0-9]{8,15}$"
+                  title="Do not add country code"
+                  required
+                />
               {isValidNumber && (
                 <h1 className="bg-red-100 border border-red-400 mt-1 mx-auto p-1 text-center text-red-400 text-sm w w-full">
                   {isValidNumber}

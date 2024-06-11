@@ -34,7 +34,7 @@ const Footer = ({ categories }) => {
         <FaArrowUp size={36} />
       </div> */}
       <footer className="footer">
-        <div className="container">
+        <div className="containerfooter">
           <div className="footer_inner">
             <div className="c-footer">
               <div className="layout">
