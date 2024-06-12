@@ -194,7 +194,7 @@ const Header = ({ categories }) => {
             >
 
               <input
-                className="form-control custom-no-outline flex-grow-1"
+                className="form-control custom-no-outline "
                 class={header["form-control"]}
                 type="search"
                 placeholder="Search for Mountain Products"
@@ -254,7 +254,7 @@ const Header = ({ categories }) => {
 
               <div
                 className={`${searchKey
-                  ? "absolute top-10 mt-12  right-30 z-10 bg-white w-[600px]  border-l-4 border-green-400"
+                  ? "absolute sm:top-10 top-2 mt-12  right-30 z-10 bg-white w-[300px] sm:w-[600px]  border-l-4 border-green-400"
                   : "hidden"
                   }`}
               >
@@ -315,22 +315,22 @@ const Header = ({ categories }) => {
 
             {session && session.user && (
               <>
-                <div className="d-flex flex-row ">
+                <div className="d-flex flex-row sm:d-none" id="pwc">
                   <div className={`d-flex flex-column align-items-center mx-2 cursor-pointer ${header["greyonhover"]}`}>
-                    <FaUser className="text-white  " />
-                    <div className="" style={{ color: "white", fontSize: "16px", fontWeight: "bold" }}>Profile</div>
+                    <FaUser className=" " />
+                    <div className="" style={{ fontSize: "16px" }}>Profile</div>
                   </div>
                   <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
-                    <FaHeart className="text-white" />
-                    <div className="text-white " style={{ color: "white", fontSize: "16px", fontWeight: "bold" }}>Wishlist</div>
+                    <FaHeart className="" />
+                    <div className=" " style={{ fontSize: "16px" }}>Wishlist</div>
                   </div>
                   <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
-                    <FaShoppingCart className="text-white" />
+                    <FaShoppingCart className="" />
                     <button onClick={() => setIsOpen(!isOpen)}>
 
 
-                      <div className=" text-white " style={{ display: 'flex', alignItems: 'center' }}>
-                        <div className="d-flex flex-row align-items-center" style={{ color: "white", fontSize: "16px", fontWeight: "bold" }}>
+                      <div className=" " style={{ display: 'flex', alignItems: 'center' }}>
+                        <div className="d-flex flex-row align-items-center" style={{ fontSize: "16px" }}>
                           <span>Cart</span>
                           <span>({cartItems.length})</span>
                         </div>
@@ -339,7 +339,7 @@ const Header = ({ categories }) => {
 
                     </button>
                   </div>
-                  <div className="d-flex flex-column align-item-center mx-2">
+                  <div className="d-none d-sm-flex flex-column align-items-center mx-2">
                     <SignOutConfirmation signOut={signOut} />
                   </div>
                 </div>
@@ -381,7 +381,7 @@ const Header = ({ categories }) => {
           </header >
         </div >
       </div>
-      {!isCheckoutPage &&  !isBlogPage && !isAboutUsPage && !isContactUsPage && (
+      {!isCheckoutPage && !isBlogPage && !isAboutUsPage && !isContactUsPage && (
         <div className=" bg-white pt-2 rounded " id={header["navbarNav1"]}>
           <ul className="navbar-nav d-flex flex-row justify-content-around" >
             <li className={header["nav-item"]} >

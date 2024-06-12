@@ -76,10 +76,8 @@
   
   
   
-  #pwc .nav-item {
-    padding: 15px; /* Add padding to each nav item */
+
   
-  }
   
   .nav-link:hover {
     transform: scale(1.2); /* Scale up on hover */
@@ -93,9 +91,7 @@
     color: black; /* Adjust link color */
   }
   
-  #pwc .name {
-    font-size: 1lvw;
-  }
+ 
   
   #navbarNav1 div{
    
@@ -126,20 +122,9 @@
   
     
    
-     
-    #pwc {
-      justify-content: space-around; /* Align items evenly */
-    }
-  
-    #search{
-      border: 2px solid red;
-    }
-    #pwc .nav-item {
-      flex-basis: 30%; /* Each item takes 30% width on smaller screens */
-      text-align: center; /* Center align items */
-    }
-      
-     
+   
+   
+    
       #sidebar .toggle-btn{
           display:block; 
          

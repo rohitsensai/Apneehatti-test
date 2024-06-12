@@ -415,6 +415,9 @@ body {
   /* padding: 50px auto; */
 }
 
+#pwc{
+  display: none;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -461,6 +464,10 @@ body {
     /* border: 2px solid red; */
     margin-left: 40px;
     width: 100%;
+  }
+  #pwc{
+   
+    /* border:2px solid red; */
   }
   
 }
