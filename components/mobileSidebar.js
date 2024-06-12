@@ -184,6 +184,30 @@ const MobileSidebar = ({
               Help
             </h6>
             <div className="py-1 overflow-y-auto">
+            <Link href="/blog">
+                <h6
+                  onClick={() => setCloseSidebar(!closeSidebar)}
+                  className="mb-2 text-gray-500 capitalize p-2 border-b"
+                >
+                  Blogs
+                </h6>
+              </Link>
+              <Link href="/about-us">
+                <h6
+                  onClick={() => setCloseSidebar(!closeSidebar)}
+                  className="mb-2 text-gray-500 capitalize p-2 border-b"
+                >
+                  About us
+                </h6>
+              </Link>
+              <Link href="/contact-us">
+                <h6
+                  onClick={() => setCloseSidebar(!closeSidebar)}
+                  className="mb-2 text-gray-500 capitalize p-2 border-b"
+                >
+                  Contact Us
+                </h6>
+              </Link>
               <Link href="/policy">
                 <h6
                   onClick={() => setCloseSidebar(!closeSidebar)}
