@@ -26,7 +26,7 @@ const Footer = ({ categories }) => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       {/* <div
         className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"
         onClick={handleScrollToTop}

@@ -173,7 +173,7 @@ const Header = ({ categories }) => {
                 </a>
               </li>
               <li className="nav-item mx-2" class={header["nav-item"]}>
-                <a className={`${header.nav - link} ${header["greyonhover"]}`} href="#">
+                <a className={`${header.nav - link} ${header["greyonhover"]}`} href="/blog">
                   <button type="button" class="btnn rounded">Blog </button>
                 </a>
               </li>

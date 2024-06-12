@@ -1,88 +1,39 @@
-import React from 'react'
+import React from 'react';
+import Image from 'next/image'; // If you're using Next.js for optimized images
 
-function blog() {
-  return (
-    <div>
-        
-        <section class="section first-section">
-            <div class="container-fluid">
-                <div class="masonry-blog clearfix">
-                    <div class="left-side">
-                        <div class="masonry-box post-media">
-                             <img src="upload/blog_masonry_01.jpg" alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">Lifestyle</a></span>
-                                        <h4><a href="single.html" title="">The golden rules you need to know for a positive life</a></h4>
-                                        <small><a href="single.html" title="">24 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Amanda</a></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+const BlogLayout = () => {
+    return (
+        <div className='text-4xl text-center'>
+            Apneehatti's Blog 
+        <div className='border  mx-4 d-flex flex-wrap justify-content-between p-2'>
+            <div className='min-h-[500px] w-[500px] border'>
+            <div className="bg-image text-white" style={{ backgroundImage: `url('/images/blogs/4.png')`, height: '500px', backgroundSize: 'cover', backgroundPosition: 'center' }}>Blog</div>
+
+
+            </div>
+            <div className='min-h-[500px] w-[500px] border'>
+                <div className='min-h-[250px] border'>
+                <div className="bg-image" style={{ backgroundImage: `url('/images/blogs/1.png')`, height: '250px', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                </div >
+                <div className='min-h-[250px] border  d-flex flex-wrap p-2 justify-content-between'>
+                    <div className='border h-[250px] w-[400px] sm:w-[238px]'>
+                    <div className="bg-image" style={{ backgroundImage: `url('/images/blogs/2.png')`, height: '250px', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+                                
                     </div>
+                    <div className='border h-[250px] w-[400px] sm:w-[238px]'> 
+                    <div className="bg-image text-white" style={{ backgroundImage: `url('/images/blogs/6.png')`, height: '250px', backgroundSize: 'cover' }}>Blog </div>
 
-                    <div class="center-side">
-                        <div class="masonry-box post-media">
-                             <img src="upload/blog_masonry_02.jpg" alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                        <h4><a href="single.html" title="">5 places you should see</a></h4>
-                                        <small><a href="single.html" title="">24 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Amanda</a></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-box small-box post-media">
-                             <img src="upload/blog_masonry_03.jpg" alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                        <h4><a href="single.html" title="">Separate your place with exotic hotels</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="masonry-box small-box post-media">
-                             <img src="upload/blog_masonry_04.jpg" alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">Travel</a></span>
-                                        <h4><a href="single.html" title="">What you need to know for child health</a></h4>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="right-side hidden-md-down">
-                        <div class="masonry-box post-media">
-                             <img src="upload/blog_masonry_05.jpg" alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">Lifestyle</a></span>
-                                        <h4><a href="single.html" title="">The rules you need to know for a happy union</a></h4>
-                                        <small><a href="single.html" title="">03 July, 2017</a></small>
-                                        <small><a href="blog-author.html" title="">by Jessica</a></small>
-                                    </div>
-                                </div>
-                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-  )
-}
+            <div className="min-h-[500px] w-[500px] border">
+            <div className="bg-image" style={{ backgroundImage: `url('/images/blogs/5.png')`, height: '500px', backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
 
-export default blog
+            </div>
+
+        </div>
+        </div>
+    );
+};
+
+export default BlogLayout;
