@@ -26,7 +26,7 @@ const Footer = ({ categories }) => {
   }, []);
 
   return (
-    <div className="">
+    <div className="bg-white fcontainer w-full">
       {/* <div
         className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"
         onClick={handleScrollToTop}
@@ -34,11 +34,11 @@ const Footer = ({ categories }) => {
         <FaArrowUp size={36} />
       </div> */}
       <footer className="footer ">
-        <div className="containerfooter bg-white rounded">
+        <div className="containerfooter bg-white rounded  ">
           <div className="footer_inner">
             <div className="c-footer">
               <div className="layout ">
-                <div className="layout_item w-full my-2">
+                <div className="layout_item w-full ">
                   <div className="newsletter ">
                     <h3 className="newsletter_title ">
                       Get updates on Himalayas products you probably want to know about in your inbox.

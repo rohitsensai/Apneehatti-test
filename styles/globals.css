@@ -767,7 +767,7 @@ a {
   font-weight: 400;
   transition: border-bottom 0.3s ;
   /* border-bottom: 1px solid transparent; */
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
   display: inline-flex;
 }
 
@@ -794,14 +794,14 @@ ul {
   border: 0.1px solid rgba(233, 232, 232, 0.208);
   border-radius: 5px;
   padding: 2rem;
-  margin: 1rem 0;
+  margin: 0rem 0;
 }
-.footer {
+/* .footer {
   position: relative;
   display: flex;
   align-items: center;
   min-height: 100vh;
-}
+} */
 .containerfooter {
   max-width: 1200px;
   width: 100%;
@@ -837,4 +837,6 @@ form {
 .footer_copyright {
   color: var(--light);
 }
-
+.fcontainer{
+  margin-top: -25px;
+}

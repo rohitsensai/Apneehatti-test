@@ -4,7 +4,7 @@ import Image from 'next/image'; // If you're using Next.js for optimized images
 const BlogLayout = () => {
     return (
         <div className='text-4xl text-center'>
-            Apneehatti's Blog 
+           
         <div className='border  mx-4 d-flex flex-wrap justify-content-between p-2'>
             <div className='min-h-[500px]  border flex-grow-1 min-w-[350px]'>
             <div className="bg-image text-white" style={{ backgroundImage: `url('/images/blogs/4.png')`, height: '500px', backgroundSize: 'cover', backgroundPosition: 'center' }}>Blog</div>
