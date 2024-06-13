@@ -316,17 +316,29 @@ const Header = ({ categories }) => {
             {session && session.user && (
               <>
                 <div className="d-flex flex-row" id="pwc">
+                <Link 
+                      href="myprofile"
+                    >
                   <div className={`d-flex flex-column align-items-center cursor-pointer  mx-2${header["greyonhover"]} `}>
+                    
                     <FaUser className="" />
                     <div className="d-none d-sm-block" style={{ fontSize: "16px" }}>Profile</div>
+                    
                   </div>
+                  </Link>
+                  <Link
+                      href="wishlist"
+                    >
                   <div className="d-flex flex-column align-items-center cursor-pointer mx-2 ">
+                   
                     <FaHeart className="" />
                     <div className="d-none d-sm-block" style={{ fontSize: "16px" }}>Wishlist</div>
+                 
                   </div>
-                  <div className="d-flex flex-column align-item-center cursor-pointer ">
+                  </Link>
+                  <div className="d-flex flex-column align-item-center cursor-pointer " onClick={() => setIsOpen(!isOpen)}>
                     <FaShoppingCart className="" />
-                    <button className="d-none d-sm-block" onClick={() => setIsOpen(!isOpen)}>
+                    <button className="d-none d-sm-block" >
 
 
                       <div className=" " style={{ display: 'flex', alignItems: 'center' }}>
