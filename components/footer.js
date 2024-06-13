@@ -27,12 +27,12 @@ const Footer = ({ categories }) => {
 
   return (
     <div className="bg-white fcontainer w-full">
-      {/* <div
+      <div
         className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"
         onClick={handleScrollToTop}
       >
-        <FaArrowUp size={36} />
-      </div> */}
+        <FaArrowUp size={26} />
+      </div>
       <footer className="footer ">
         <div className="containerfooter bg-white rounded  ">
           <div className="footer_inner">
@@ -55,7 +55,9 @@ const Footer = ({ categories }) => {
                   </div>
                 </div>
 
-                <div className="layout_item  text-center">
+                <div className=" d-flex flex-row align-items-start w-full">
+
+                <div className="layout_item  text-center  item-start flex-grow-1">
                   <nav className="c-nav-tool">
                     <h4 className="c-nav-tool_title fw-bold mb-1">Menu</h4>
                     <ul className="c-nav-tool_list">
@@ -93,7 +95,7 @@ const Footer = ({ categories }) => {
                   </nav>
                 </div>
 
-                <div className="layout_item text-center">
+                <div className="layout_item text-center  flex-grow-1">
                   <nav className="c-nav-tool">
                     <h4 className="c-nav-tool_title fw-bold mb-1">Support</h4>
                     <ul className="c-nav-tool_list">
@@ -144,6 +146,8 @@ const Footer = ({ categories }) => {
                 </div>
               </div>
 
+              </div>
+
               <div className="layout c-2  d-flex justify-content-around">
                 <div className="layout_item ">
                   <ul className="flex">
@@ -170,15 +174,13 @@ const Footer = ({ categories }) => {
                   </ul>
                 </div>
                
-                <div className="scroll-to-top" onClick={handleScrollToTop}>
-                  <FaArrowUp size={12} />
-                </div>
+                
                 
               </div>
             </div>
           </div>
           <div className="footer_copyright">
-            <p>&copy; 2022 Apneehatti</p>
+            <p> @2024 Apneehatti, All Rights reserved.</p>
           </div>
         </div>
       </footer>

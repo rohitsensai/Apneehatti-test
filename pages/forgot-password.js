@@ -2,6 +2,7 @@ import { getSession } from "next-auth/react";
 import Head from "next/head";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Link from "next/link";
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
@@ -66,10 +67,18 @@ const ForgotPassword = () => {
             Forgot Password
           </h1>
           {emailSent ? (
-            <p className="text-center text-gray-500 bg-white border border-gray-300  p-4">
-              Check your email for otp (one time password) on how to reset your
-              password.
-            </p>
+            <div className="w-full text-center d-flex justify-content-center flex-column">
+              <p className="text-center text-gray-500 bg-white border border-gray-300  p-4">
+                Check your email for otp (one time password) on how to reset your
+                password.
+              </p>
+              
+              <button className="btn btn-primary mybtn text-white mybtn ">
+                <Link href="/login">
+                LOGIN 
+                </Link>
+              </button>
+            </div>
           ) : (
             <div className="p-4">
               <form onSubmit={handleSubmit}>
@@ -83,22 +92,27 @@ const ForgotPassword = () => {
                   />
                   {error ? <p>{error}</p> : null}
                 </div>
-                <button className="btn2 mb-3" type="submit">
-                  Reset Password
-                </button>
-                <div className="fw-bold cursor-pointer  py-2  px-1 font-medium mt-2  position-relative ">
-            <a href="/login">
-              SignIn
-            </a>
-          </div>
+                <div className="d-flex flex-row mt-4 justify-content-around w-full">
+                  <button className="btn btn-primary mybtn text-white mybtn" type="submit">
+                    Reset Password
+                  </button>
+                  <a href="/login">
+                    <button className="btn btn-primary mybtn text-white mybtn" >
+
+                      LOGIN
+
+                    </button>
+                  </a>
+                </div>
               </form>
             </div>
           )}
-         
+
         </div>
       </div>
     </>
   );
 };
+
 
 export default ForgotPassword;

@@ -315,22 +315,22 @@ const Header = ({ categories }) => {
 
             {session && session.user && (
               <>
-                <div className="d-flex flex-row sm:d-none" id="pwc">
-                  <div className={`d-flex flex-column align-items-center mx-2 cursor-pointer ${header["greyonhover"]}`}>
-                    <FaUser className=" " />
-                    <div className="" style={{ fontSize: "16px" }}>Profile</div>
+                <div className="d-flex flex-row" id="pwc">
+                  <div className={`d-flex flex-column align-items-center cursor-pointer  mx-2${header["greyonhover"]} `}>
+                    <FaUser className="" />
+                    <div className="d-none d-sm-block" style={{ fontSize: "16px" }}>Profile</div>
                   </div>
-                  <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
+                  <div className="d-flex flex-column align-items-center cursor-pointer mx-2 ">
                     <FaHeart className="" />
-                    <div className=" " style={{ fontSize: "16px" }}>Wishlist</div>
+                    <div className="d-none d-sm-block" style={{ fontSize: "16px" }}>Wishlist</div>
                   </div>
-                  <div className="d-flex flex-column align-item-center mx-2 cursor-pointer ">
+                  <div className="d-flex flex-column align-item-center cursor-pointer ">
                     <FaShoppingCart className="" />
-                    <button onClick={() => setIsOpen(!isOpen)}>
+                    <button className="d-none d-sm-block" onClick={() => setIsOpen(!isOpen)}>
 
 
                       <div className=" " style={{ display: 'flex', alignItems: 'center' }}>
-                        <div className="d-flex flex-row align-items-center" style={{ fontSize: "16px" }}>
+                        <div className="d-flex flex-row align-items-center  d-none d-sm-block" style={{ fontSize: "16px" }}>
                           <span>Cart</span>
                           <span>({cartItems.length})</span>
                         </div>
