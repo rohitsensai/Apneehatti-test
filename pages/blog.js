@@ -21,7 +21,7 @@ const BlogLayout = () => {
                                 
                     </div>
                     <div className='border h-[250px] flex-grow-1 min-w-[350px]'> 
-                    <div className="bg-image text-white" style={{ backgroundImage: `url('/images/blogs/6.png')`, height: '250px', backgroundSize: 'cover' }}>Blog </div>
+                    <div className="bg-image text-white" style={{ backgroundImage: `url('/images/blogs/3.jpg')`, height: '250px', backgroundSize: 'cover' }}>Blog </div>
 
                     </div>
                 </div>

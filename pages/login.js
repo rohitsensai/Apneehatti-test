@@ -224,21 +224,21 @@ const login = () => {
     setRetypePasswordVisible(!retypePasswordVisible);
   };
 
-  useEffect(() => {
-    if (status == "authenticated") {
-      router.push("/");
-    }
-    const intlTelInputScriptLoad = (iti) => {
-      const input = document.querySelector("#mobile");
-      iti = intlTelInput(input, {
-        initialCountry: "in",
-        // separateDialCode: true,
-        utilsScript: util,
-      });
-      setValidateMobile(iti);
-    };
-    intlTelInputScriptLoad(iti);
-  }, [status]);
+  // useEffect(() => {
+  //   if (status == "authenticated") {
+  //     router.push("/");
+  //   }
+  //   const intlTelInputScriptLoad = (iti) => {
+  //     const input = document.querySelector("#mobile");
+  //     iti = intlTelInput(input, {
+  //       initialCountry: "in",
+  //       // separateDialCode: true,
+  //       utilsScript: util,
+  //     });
+  //     setValidateMobile(iti);
+  //   };
+  //   intlTelInputScriptLoad(iti);
+  // }, [status]);
 
 
   const gotoHome = () =>{
@@ -250,7 +250,7 @@ const login = () => {
       <Head>
         <title>Login</title>
       </Head>
-      <div className="mybody ">
+      <div className="mybody " style={{backgroundImage:'url("/images/pictures/login.png")',backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
         <div className="d-flex flex-row  loginarrow justify-content-between mx-auto">
           <div className=" flex-grow-1">
         
@@ -258,9 +258,10 @@ const login = () => {
           
           </div>
           <div className=" flex-grow-1">
-         
-              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid cursor-pointer enlarge"  onClick={gotoHome} />
-          
+            <Link
+            href="/">
+              <img src="/images/logo/ApneeHatti_light.png" width={100} alt="Logo" className="img-fluid cursor-pointer enlarge"  />
+          </Link>
           </div>
         {/*
    */}
@@ -374,10 +375,12 @@ const login = () => {
                 <p>To keep connected with us please login with your personal info</p>
                 <button className="loginbutton mybtn btn btn-primary" class="ghost" id="signIn" onClick={handleSignUpClick}>Sign In</button>
               </div>
-              <div class="overlay-panel overlay-right">
-                <h1 className="myh1">Welcome Back</h1>
+              <div class="overlay-panel overlay-right  ">
+               
+                <h1 className="myh1  mt-0 position-relative">Welcome Back</h1>
                 <p className="myp">Enter your personal details and start journey with us</p>
                 <button className="loginbutton mybtn btn btn-primary" class="ghost" id="signUp" onClick={handleSignUpClick}>Sign Up</button>
+              
               </div>
             </div>
           </div>

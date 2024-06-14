@@ -57,11 +57,15 @@ const ForgotPassword = () => {
       <Head>
         <title>Forgot Password</title>
       </Head>
-      <div className=" flex flex-col items-center justify-center pb-40 pt-20">
-        <div className="bg-blue-100 rounded w-10/12 lg:w-1/3 p-4 border shadow-sm ">
+      <div className=" flex flex-col items-center justify-center pb-40 pt-20 my-0  " style={{
+        backgroundImage: "url('/images/pictures/forgotpassword.png')", backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        height: "100vh"
+      }}>
+        <div className="bg-white rounded w-10/12 lg:w-1/3 p-4 border shadow-sm ">
           <h1
-            className="text-center pb-3 text-4xl font-medium text-white
-          "
+            className="text-center pb-3 text-4xl font-medium"
             style={{ fontFamily: "fantasy" }}
           >
             Forgot Password
@@ -72,10 +76,10 @@ const ForgotPassword = () => {
                 Check your email for otp (one time password) on how to reset your
                 password.
               </p>
-              
+
               <button className="btn btn-primary mybtn text-white mybtn ">
                 <Link href="/login">
-                LOGIN 
+                  LOGIN
                 </Link>
               </button>
             </div>
@@ -92,17 +96,17 @@ const ForgotPassword = () => {
                   />
                   {error ? <p>{error}</p> : null}
                 </div>
-                <div className="d-flex flex-row mt-4 justify-content-around w-full">
-                  <button className="btn btn-primary mybtn text-white mybtn" type="submit">
+                <div className="d-flex flex-sm-row mt-4 justify-content-around w-full flex-column  min-h-[100px]">
+                  <button className="btn btn-primary mybtn text-white mybtn  " type="submit">
                     Reset Password
                   </button>
-                  <a href="/login">
-                    <button className="btn btn-primary mybtn text-white mybtn" >
+                  <Link href="/login">
+                    <button className="btn btn-primary mybtn text-white" >
 
                       LOGIN
 
                     </button>
-                  </a>
+                  </Link>
                 </div>
               </form>
             </div>

@@ -29,15 +29,18 @@ const Create = async (req, res) => {
   // Get user ID from token
   const token = req.headers.authorization.split(" ")[1];
   const token_data = await jwt.verify(token, process.env.JWT_KEY);
+  console.log("tkoen",token,token_data)
   let coupon_data;
   // Check for valid token
   if (!token_data.id) {
     res.status(401).json({ error: "Invalid token" });
   } else {
     // Check for valid order
+    console.log("shipping price",shipping_price)
     const cart = await Cart.find({ user_id: token_data.id });
 
     if (!cart) {
+      console.log("invalid order !cart")
       res.status(500).json({ error: "Invalid order" });
     } else {
       let order_total = Number(cart[0].subtotal);
@@ -53,13 +56,30 @@ const Create = async (req, res) => {
           order_total = order_total - coupon_data.flat_discount;
         }
       }
+    
       order_total += shipping_price;
+      console.log("order total",order_total,total)
       if (total != order_total) {
         return res
           .status(400)
           .json({ message: "Invalid Order. Please try again." });
       }
       // Create order
+
+      console.log("creating order...........")
+      console.log("body",req.body)
+      console.log(order_items)
+      console.log(payment_method)
+      console.log(payment_method)
+      console.log(Number(cart[0].subtotal))
+      console.log(discount)
+      console.log(order_total)
+      console.log(transaction_id)
+      console.log(transaction_id)
+      console.log(shipping_address)
+      console.log(courier_company_id)
+      console.log(coupon)
+      // console.log()
       const order = await Order.create({
         user_id,
         order_items,
@@ -75,7 +95,7 @@ const Create = async (req, res) => {
         coupon,
         total_weight,
       });
-
+      console.log("order",order)
       const ordered_obj = await Order.findById(order._id)
         .populate("shipping_address")
         .populate({ path: "user_id", select: "fullname email mobile" })
@@ -97,6 +117,8 @@ const Create = async (req, res) => {
       );
 
       const auth = await authResponse.json();
+
+      console.log("auth",auth)
 
       const initialDate = ordered_obj.createdAt;
       const dateObject = new Date(initialDate);
@@ -211,6 +233,8 @@ const Create = async (req, res) => {
           }
         );
       }
+
+      console.log("order _ id")
       // Return order ID
       return res.status(201).json({
         id: order._id,

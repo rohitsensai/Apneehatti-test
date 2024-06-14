@@ -617,6 +617,7 @@ const ProductDetail = ({
 
                       </div>
                 </div>
+
                 {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
                         <button
                           className=" uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
@@ -647,7 +648,7 @@ const ProductDetail = ({
                   </button>
                   <div
                     className="button button-buy-now"
-                    onClick={(e) => buynowhandler(e)}
+                    onClick={(e) => handleBuyNow(e)}
                   >
                     <div className="button-content">
                       BUY NOW

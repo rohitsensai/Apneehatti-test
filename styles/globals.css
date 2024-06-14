@@ -127,7 +127,8 @@ a {
 
 
 body {
-
+  margin: 0;
+  padding: 0;
   background:#d4d4d4;
   font-family: "Montserrat", sans-serif;
   
@@ -451,6 +452,13 @@ body {
   flex-direction: column;
   background-color: white;
 }
+
+.greyonhover:hover{
+  color:#ABA7A7
+}
+input:focus::placeholder {
+  color: transparent;
+}
 @media screen and (max-width: 768px) {
   .benefits{
     /* border: 2px solid red; */
@@ -505,7 +513,7 @@ h2 {
     font-weight: 100;
     line-height: 20px;
     letter-spacing: 0.5px;
-    margin: 20px 0 30px;
+    margin: 110px 0 30px;
 }
 
 .myspan {
@@ -748,8 +756,12 @@ h2 {
     display: none;
     border: 2px solid red;
   }
-  
-
+  .myp{
+    margin: 70px 0px;
+  }
+  .overlay-panel{
+    padding: 0 0;
+  }
 
 }
 

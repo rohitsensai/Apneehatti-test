@@ -33,7 +33,7 @@ function Testimonials() {
   };
 
     return (
-        <section class="py-10 bg-gray-50 sm:py-16 lg:py-10 mx-4 my-4 rounded">
+        <section class="py-10 bg-gray-50 sm:py-16 lg:py-10 mx-sm-4 my-4 rounded">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex flex-col items-center">
                 <div class="text-center">

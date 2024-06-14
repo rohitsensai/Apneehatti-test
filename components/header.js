@@ -398,43 +398,43 @@ const Header = ({ categories }) => {
           <ul className="navbar-nav d-flex flex-row justify-content-around" >
             <li className={header["nav-item"]} >
 
-              <a class="nav-link" href="/search?category=all" >
+              <a class="nav-link greyonhover" href="/search?category=all" >
                 <img className={header["cat-img"]} src="/images/logo/ApneeHatti_light.png"></img>
-                <div className={header["text"]}> All Products</div>
+                <div className="greyonhover" > All Products</div>
               </a>
             </li>
             <li className={header["nav-item"]}>
 
-              <a class="nav-link" href="/search?category=Handlooms" >
+              <a class="nav-link greyonhover" href="/search?category=Handlooms" >
                 <img className={header["cat-img"]} src="/images/pictures/category/1.jpg"></img>
-                <div className={header["text"]}> Handlooms</div>
+                <div className="greyonhover" > Handlooms</div>
               </a>
             </li>
             <li className={header["nav-item"]}>
-              <a class="nav-link" href="/search?category=Skincare-and-Beauty">
+              <a class="nav-link greyonhover" href="/search?category=Skincare-and-Beauty">
                 <img className={header["cat-img"]} src="/images/pictures/category/2.jpg"></img>
-                <div className={header["text"]}>  Skincare & Beauty</div>
+                <div className="greyonhover" >  Skincare & Beauty</div>
 
               </a>
             </li>
             <li className={header["nav-item"]}>
-              <a class="nav-link" href="/search?category=Handcrafts">
+              <a class="nav-link greyonhover" href="/search?category=Handcrafts">
                 <img className={header["cat-img"]} src="/images/pictures/category/3.jpeg"></img>
-                <div className={header["text"]}> Handcrafts</div>
+                <div className="greyonhover" > Handcrafts</div>
 
               </a>
             </li>
             <li className={header["nav-item"]}>
-              <a class="nav-link" href="/search?category=Organic-Food-Products">
+              <a class="nav-link greyonhover" href="/search?category=Organic-Food-Products">
                 <img className={header["cat-img"]} src="/images/pictures/category/4.jpeg"></img>
-                <div className={header["text"]}> Organic Food Porducts</div>
+                <div className="greyonhover" > Organic Food Porducts</div>
 
               </a>
             </li>
             <li className={header["nav-item"]}>
-              <a class="nav-link" href="/search?category=Health-Care">
+              <a class="nav-link greyonhover" href="/search?category=Health-Care">
                 <img className={header["cat-img"]} src="/images/pictures/category/5.jpeg"></img>
-                <div className={header["text"]}> Health Care</div>
+                <div className="greyonhover" > Health Care</div>
               </a>
             </li>
           </ul>

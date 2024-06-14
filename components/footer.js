@@ -11,8 +11,11 @@ import { BsInstagram, BsFacebook, BsTwitter, BsLinkedin, BsGoogle } from "react-
 import { FaArrowUp } from "react-icons/fa";
 import { Divider } from "@mui/material";
 
+
 const Footer = ({ categories }) => {
   const [isMounted, setIsMounted] = useState(false);
+  const [status,setStatus] = useState('')
+  const [email,setEmail] = useState("");
 
   const handleScrollToTop = () => {
     window.scrollTo({
@@ -20,10 +23,33 @@ const Footer = ({ categories }) => {
       behavior: "smooth", // Smooth scroll animation
     });
   };
+ 
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  const submithandler = async(event) => {
+      event.preventDefault();
+      console.log("email",email)
+      
+      const res = await fetch('/api/contact',{
+        method : 'POST',
+        headers:{
+          "Content-Type":"application/json"
+        },
+        body:JSON.stringify({email})
+      })
+
+    
+
+      if(res.ok){
+        
+        setStatus('Email Sent');
+
+      }else{
+        setStatus("Enter Valid Email")
+      }
+    
+  }
+
+ 
 
   return (
     <div className="bg-white fcontainer w-full">
@@ -31,7 +57,7 @@ const Footer = ({ categories }) => {
         className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"
         onClick={handleScrollToTop}
       >
-        <FaArrowUp size={26} />
+       <FaArrowUp size={16} />Click Here to reach top of the page <FaArrowUp size={16} />
       </div>
       <footer className="footer ">
         <div className="containerfooter bg-white rounded  ">
@@ -43,15 +69,15 @@ const Footer = ({ categories }) => {
                     <h3 className="newsletter_title ">
                       Get updates on Himalayas products you probably want to know about in your inbox.
                     </h3>
-                    <div  className=" d-flex item-center justify-content-center my-4">
-                      <input className="" type="text" placeholder="Email Address" />
-                      <button className="">
+                    <form  className=" d-flex item-center justify-content-center my-4">
+                      <input className="" value={email} onChange={(e) => setEmail(e.target.value)} type="text" placeholder="Email Address" />
+                      <button className="" onClick={(e) => submithandler(e)} type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                           <path fill="none" d="M0 0h24v24H0z" />
                           <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
                         </svg>
                       </button>
-                    </div>
+                    </form>
                   </div>
                 </div>
 

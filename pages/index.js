@@ -348,7 +348,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
 
 
-            <div className="mx-4">
+            <div className="mx-sm-4">
               <a href="/">
               <img
                 src="/images/banner/banner4.png"
@@ -363,8 +363,8 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
 
 
             <div className="">
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
+              <div className="relative ">
+                <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
               <button
                 onClick={() => {
                   newArrivalSlider.current.slickPrev();
@@ -373,7 +373,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className=" text-2xl " />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4">
+                <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2" style={{fontFamily: "Noto Sans"}}>
@@ -385,7 +385,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center border border-danger">
                       <button onClick={() => newArrivalSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -437,7 +437,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
                 </button>
                 </div>
-                <div className="py-2 px-2 md:p-8 rounded my-4 bg-white mx-4">
+                <div className="py-2 px-2 md:p-8 rounded my-sm-4 bg-white  mx-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -449,7 +449,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => topDealSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -500,7 +500,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -512,7 +512,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => bestSellerSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -622,7 +622,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -634,7 +634,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => handloomsSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -677,7 +677,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
               </div>
 
-              <div className="mx-4">
+              <div className="mx-sm-4">
               <a href="/">
               <img
                 src="/images/banner/banner4.png"
@@ -698,7 +698,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -710,7 +710,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -754,7 +754,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
 
 
-              <div className="mx-4">
+              <div className="mx-sm-4">
               <a href="/">
               <img
                 src="/images/banner/banner4.png"
@@ -775,7 +775,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -787,7 +787,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => handcraftsSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -831,7 +831,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
 
 
-              <div className="mx-4">
+              <div className="mx-sm-4">
               <a href="/">
               <img
                 src="/images/banner/banner4.png"
@@ -852,7 +852,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -864,7 +864,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => organiSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>
@@ -908,7 +908,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </div>
 
 
-              <div className="mx-4">
+              <div className="mx-sm-4">
               <a href="/">
               <img
                 src="/images/banner/banner4.png"
@@ -928,7 +928,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-4 my-4 ">
+                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
                   <div className="flex justify-between items-center ">
                     <div className="py-4" style={{ width: "100%" }}>
                       <h3 className="text-center text-2xl font-semibold uppercase mb-2">
@@ -940,7 +940,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
                       </h3>
 
                     </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
+                    <div className="md:hidden d-none w-20 flex justify-between items-center">
                       <button onClick={() => healthCareSlider.current.slickPrev()}>
                         <HiArrowCircleLeft className="text-3xl" />
                       </button>

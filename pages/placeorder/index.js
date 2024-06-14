@@ -107,6 +107,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   };
 
   const createOrderFun = async (address) => {
+    console.log("transaction id",address.transaction_id)
+    console.log("shippingprice",address.shipping_price)
     try {
       const res = await fetch(`/api/orders/create`, {
         headers: {
@@ -135,6 +137,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         toast.error(response.message);
       }
     } catch (error) {
+      console.log("error",error)
       toast.error("Something went wrong, try again");
     }
   };
@@ -352,8 +355,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
       <Head>
         <title>Checkout</title>
       </Head>
-      <div className="lg:grid grid-cols-2">
-        <div className="mx-5 my-5 lg:mx-20 lg:my-10 relative">
+      <div className="lg:grid grid-cols-2 bg-white border mx-0 mx-sm-40 rounded">
+        <div className="mx-5 my-5 lg:mx-20 lg:my-15 relative border  rounded ">
           <form onSubmit={(e) => handleInputChange(e)}>
             {savedAddress && savedAddress.length > 0 && toggleAddNewAddress ? (
               <div className="">
@@ -381,9 +384,9 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                     <label
                       htmlFor={item._id}
                       key={item._id}
-                      className="border shadow-lg p-5 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 text-justify w-full"
+                      className="border shadow-lg p-5 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 text-justify w-full rounded"
                     >
-                      <div className="flex justify-between items-center text-sm font-extrabold">
+                      <div className="flex justify-between items-center text-sm font-extrabold ">
                         <h5 className="flex gap-x-2 items-center">
                           <input
                             id={item._id}

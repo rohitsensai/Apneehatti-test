@@ -136,7 +136,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
 
             <button
               onClick={() => checkout()}
-              className=" p-2 my-2 uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
+              className=" p-2 my-2 uppercase transition-all duration-300 text-sm font-bold w-2/8 hover:bg-black hover:text-white mx-auto mt-2 border border-black"
               disabled={total == 0 ? true : false}
             >
               Checkout
