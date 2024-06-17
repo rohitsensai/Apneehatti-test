@@ -53,12 +53,7 @@ const Footer = ({ categories }) => {
 
   return (
     <div className="bg-white fcontainer w-full">
-      <div
-        className="d-flex flex-row justify-content-center bg-dark text-white cursor-pointer topmover"
-        onClick={handleScrollToTop}
-      >
-       <FaArrowUp size={16} />Click Here to reach top of the page <FaArrowUp size={16} />
-      </div>
+  
       <footer className="footer ">
         <div className="containerfooter bg-white rounded  ">
           <div className="footer_inner">

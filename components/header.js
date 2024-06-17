@@ -399,7 +399,7 @@ const Header = ({ categories }) => {
             <li className={header["nav-item"]} >
 
               <a class="nav-link greyonhover" href="/search?category=all" >
-                <img className={header["cat-img"]} src="/images/logo/ApneeHatti_light.png"></img>
+                <img alt="aLL PRODUCTS" className={header["cat-img"]} src="/images/pictures/category/all.jpg" style={{}}></img>
                 <div className="greyonhover" > All Products</div>
               </a>
             </li>

@@ -66,7 +66,7 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
 //   "type": "Single"
 // },
 export async function getServerSideProps() {
-  
+
 
 
   let category = "Handlooms";
@@ -115,89 +115,89 @@ export async function getServerSideProps() {
 
   let filteredRes2 =
     res?.filter((item) => item?.category_id?.active && item?.active) || [];
-    category = "Handcrafts";
-    q = null;
-  
-    apiEndpoints = {
-      all: "/api/products/list",
-      category: category ? `/api/products/category/${category}` : null,
-      name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-    };
-  
-    endpoint =
-      apiEndpoints[
-      category && category != "all" ? "category" : q ? "name" : "all"
-      ];
-    url = process.env.HOST + endpoint;
-    dataPromises = endpoint
-      ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-      : [];
-    [res] = await Promise.all(dataPromises);
-  
-  
-    let filteredRes3 =
-      res?.filter((item) => item?.category_id?.active && item?.active) || [];
+  category = "Handcrafts";
+  q = null;
 
-      category = "Organic-Food-Products";
-      q = null;
-    
-      apiEndpoints = {
-        all: "/api/products/list",
-        category: category ? `/api/products/category/${category}` : null,
-        name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-      };
-    
-      endpoint =
-        apiEndpoints[
-        category && category != "all" ? "category" : q ? "name" : "all"
-        ];
-      url = process.env.HOST + endpoint;
-      dataPromises = endpoint
-        ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-        : [];
-      [res] = await Promise.all(dataPromises);
-    
-    
-      let filteredRes4 =
-        res?.filter((item) => item?.category_id?.active && item?.active) || [];
-  
-        category = "Health-Care";
-        q = null;
-      
-        apiEndpoints = {
-          all: "/api/products/list",
-          category: category ? `/api/products/category/${category}` : null,
-          name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-        };
-      
-        endpoint =
-          apiEndpoints[
-          category && category != "all" ? "category" : q ? "name" : "all"
-          ];
-        url = process.env.HOST + endpoint;
-        dataPromises = endpoint
-          ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-          : [];
-        [res] = await Promise.all(dataPromises);
-      
-      
-        let filteredRes5 =
-          res?.filter((item) => item?.category_id?.active && item?.active) || [];
+  apiEndpoints = {
+    all: "/api/products/list",
+    category: category ? `/api/products/category/${category}` : null,
+    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+  };
+
+  endpoint =
+    apiEndpoints[
+    category && category != "all" ? "category" : q ? "name" : "all"
+    ];
+  url = process.env.HOST + endpoint;
+  dataPromises = endpoint
+    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+    : [];
+  [res] = await Promise.all(dataPromises);
+
+
+  let filteredRes3 =
+    res?.filter((item) => item?.category_id?.active && item?.active) || [];
+
+  category = "Organic-Food-Products";
+  q = null;
+
+  apiEndpoints = {
+    all: "/api/products/list",
+    category: category ? `/api/products/category/${category}` : null,
+    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+  };
+
+  endpoint =
+    apiEndpoints[
+    category && category != "all" ? "category" : q ? "name" : "all"
+    ];
+  url = process.env.HOST + endpoint;
+  dataPromises = endpoint
+    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+    : [];
+  [res] = await Promise.all(dataPromises);
+
+
+  let filteredRes4 =
+    res?.filter((item) => item?.category_id?.active && item?.active) || [];
+
+  category = "Health-Care";
+  q = null;
+
+  apiEndpoints = {
+    all: "/api/products/list",
+    category: category ? `/api/products/category/${category}` : null,
+    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
+  };
+
+  endpoint =
+    apiEndpoints[
+    category && category != "all" ? "category" : q ? "name" : "all"
+    ];
+  url = process.env.HOST + endpoint;
+  dataPromises = endpoint
+    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
+    : [];
+  [res] = await Promise.all(dataPromises);
+
+
+  let filteredRes5 =
+    res?.filter((item) => item?.category_id?.active && item?.active) || [];
   return {
     props: {
       pro_category: category || null,
       prod1: filteredRes1,
-      prod2:filteredRes2,
-      prod3:filteredRes3,
-      prod4:filteredRes4,
-      prod5:filteredRes5,
+      prod2: filteredRes2,
+      prod3: filteredRes3,
+      prod4: filteredRes4,
+      prod5: filteredRes5,
       query: q || null,
     },
   };
 }
 let socket;
 
-export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
+export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) {
   const [copiedTopDeals, setCopiedTopDeals] = useState([]);
   const dispatch = useDispatch();
   const newArrivalSlider = useRef();
@@ -213,7 +213,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
   const skinCareandBeautySlider = useRef();
   const healthCareSlider = useRef();
   const handcraftsSlider = useRef();
-  const organiSlider  = useRef();
+  const organiSlider = useRef();
 
 
 
@@ -230,7 +230,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
     // pauseOnHover:true,
     infinite: true,
     speed: 300,
-    autoplay:true,
+    autoplay: true,
     autoplaySpeed: 6000,
     slidesToShow: 5,
     slidesToScroll: 3,
@@ -278,7 +278,7 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
     healthCareSlider.current.slickPlay();
     topDealSlider.current.slickPlay();
 
-     // Call the fetchData function when the component mounts
+    // Call the fetchData function when the component mounts
   }, []);
 
 
@@ -290,68 +290,147 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
       <Head>
         <title>Apneehatti</title>
         <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-3/assets/css/contact-3.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-3/assets/css/contact-3.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-            <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-            <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-          </Head >
-          <div className="bg-grey;">
-            <Herosection />
-           
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
+      </Head >
+      <div className="bg-grey;">
+        <Herosection />
 
-            <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
-              <div className="">
-                <img
-                  src="/images/banner/offer-2.png"
-                  width="100%"
-                  alt=""
-                />
-              </div>
-              <div className="">
-                <img
-                  src="/images/banner/offer-1.png"
-                  width="100%"
-                  alt=""
 
-                />
-              </div>
-            
+        <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
+          <div className="">
+            <img
+              src="/images/banner/offer-2.png"
+              width="100%"
+              alt=""
+            />
+          </div>
+          <div className="">
+            <img
+              src="/images/banner/offer-1.png"
+              width="100%"
+              alt=""
+
+            />
+          </div>
+
+        </div>
+
+        <div className=" ">
+
+          <div className="py-4">
+            <h3 className="text-center text-2xl font-semibold uppercase  ">
+              Deals of the day
+            </h3>
+            <h3 className="text-center text-gray-500 " style={{fontSize:"14px"}}>
+              Upto 50% Off plus free shipping | Grab it Fast
+            </h3>
+          </div>
+
+        </div>
+
+
+        <div className="mx-sm-4">
+          <a href="/">
+            <img
+              src="/images/banner/new.png"
+              width="100%"
+              height="100%"
+              className="cursor-pointer h-full object-cover"
+              alt=""
+              id="dis-img"
+            />
+          </a>
+        </div>
+
+
+        <div className="">
+          <div className="relative ">
+            <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
+              <button
+                onClick={() => {
+                  newArrivalSlider.current.slickPrev();
+                }}
+              >
+                <MdArrowBackIos className=" text-2xl " />
+              </button>
             </div>
-
-            <div className=" ">
-
-                <div className="py-4">
-                  <h3 className="text-center text-2xl font-semibold uppercase  ">
-                    Deals of the day
+            <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2" >
+                    Latest new arrivalss
                   </h3>
-                  <h3 className="text-center text-gray-500">
-                    Upto 50% Off plus free shipping | Grab it Fast
+
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    We’re crushing on new arrivals + 30% off all full price!
                   </h3>
+
                 </div>
-           
+                <div className="md:hidden d-none w-20 flex justify-between items-center border border-danger">
+                  <button onClick={() => newArrivalSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+                  <button onClick={() => newArrivalSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto ">
+                <Slider
+                  ref={newArrivalSlider}
+                  {...settings}
+                >
+                  {!loading && newArrival.length > 0
+                    ? newArrival.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 1).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
             </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+              <button onClick={() => newArrivalSlider.current.slickNext()}>
+                <MdArrowForwardIos className="text-2xl" />
+              </button>
+            </div>
+          </div>
 
-
-            <div className="mx-sm-4">
+          <div className="mx-sm-4">
               <a href="/">
               <img
-                src="/images/banner/banner4.png"
+                src="/images/banner/3.png"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -361,201 +440,149 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
               </a>
             </div>
 
-
-            <div className="">
-              <div className="relative ">
-                <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button
-                onClick={() => {
-                  newArrivalSlider.current.slickPrev();
-                }}
-              >
-                <MdArrowBackIos className=" text-2xl " />
-              </button>
-            </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2" style={{fontFamily: "Noto Sans"}}>
-                        Latest new arrivalss
-                      </h3>
-
-                      <h3 className="text-center text-gray-500">
-                        We’re crushing on new arrivals + 30% off all full price!
-                      </h3>
-
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center border border-danger">
-                      <button onClick={() => newArrivalSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-                      <button onClick={() => newArrivalSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto ">
-                    <Slider
-                      ref={newArrivalSlider}
-                      {...settings}
-                    >
-                      {!loading && newArrival.length > 0
-                        ? newArrival.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 1).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
-                </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-               <button onClick={() => newArrivalSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-2xl" />
-              </button> 
-             </div> 
-              </div>
-
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-                <button
                 onClick={() => {
                   topDealSlider.current.slickPrev();
                 }}
               >
                 <MdArrowBackIos className="text-2xl" />
-                </button>
+              </button>
+            </div>
+            <div className="py-2 px-2 md:p-8 rounded my-sm-4 bg-white  mx-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    TOP SELLING PRODUCTS
+                  </h3>
+
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
+
                 </div>
-                <div className="py-2 px-2 md:p-8 rounded my-sm-4 bg-white  mx-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        TOP SELLING PRODUCTS
-                      </h3>
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => topDealSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
-
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => topDealSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => topDealSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-
-                  <div className="w-10/12 md:w-full  mx-auto" >
-                    <Slider
-                      ref={(slider) => (topDealSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && topDeals.length > 0
-                        ? [...topDeals, ...topDeals].map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 2).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-
-                    </Slider>
-                  </div>
+                  <button onClick={() => topDealSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+              </div>
+
+              <div className="w-10/12 md:w-full  mx-auto" >
+                <Slider
+                  ref={(slider) => (topDealSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && topDeals.length > 0
+                    ? [...topDeals, ...topDeals].map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 2).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => topDealSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+
+          <div className="mx-sm-4">
+              <a href="/">
+              <img
+                src="/images/banner/summer.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+              </a>
+            </div>
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        SUMMER SPECIALS
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    SUMMER SPECIALS
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (bestSellerSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && bestSellers.length > 0
-                        ? bestSellers.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => bestSellerSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => bestSellerSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (bestSellerSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && bestSellers.length > 0
+                    ? bestSellers.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
-              {/* <div className="relative">
+          {/* <div className="relative">
                 <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => newArrivalSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
@@ -616,384 +643,397 @@ export default function Home({ socket_URL,prod1,prod2,prod3,prod4,prod5 }) {
             </div>
               </div> */}
 
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+          <div className="mx-sm-4">
+            <a href="/">
+              <img
+                src="/images/banner/handlooms.png"
+                width="100%"
+                height="100%"
+                className="cursor-pointer h-full object-cover"
+                alt=""
+                id="dis-img"
+              />
+            </a>
+          </div>
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => handloomsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        Handlooms
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Handlooms
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => handloomsSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => bestSellerSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (handloomsSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && products1.length > 0
-                        ? products1.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => handloomsSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => bestSellerSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (handloomsSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && products1.length > 0
+                    ? products1.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => handloomsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
-              <div className="mx-sm-4">
-              <a href="/">
+          <div className="mx-sm-4">
+            <a href="/">
               <img
-                src="/images/banner/banner4.png"
+                src="/images/banner/skincare.png"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
                 alt=""
                 id="dis-img"
               />
-              </a>
-            </div>
+            </a>
+          </div>
 
 
-          
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        sKINCARE & BEAUTY
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    sKINCARE & BEAUTY
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (skinCareandBeautySlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && products2.length > 0
-                        ? products2.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (skinCareandBeautySlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && products2.length > 0
+                    ? products2.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
 
-              <div className="mx-sm-4">
-              <a href="/">
+          <div className="mx-sm-4">
+            <a href="/">
               <img
-                src="/images/banner/banner4.png"
+                src="/images/banner/handcrafts.png"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
                 alt=""
                 id="dis-img"
               />
-              </a>
-            </div>
+            </a>
+          </div>
 
 
-              
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => handcraftsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        Handcrafts
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Handcrafts
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => handcraftsSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => handcraftsSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (handcraftsSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && products3.length > 0
-                        ? products3.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => handcraftsSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => handcraftsSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (handcraftsSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && products3.length > 0
+                    ? products3.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => handcraftsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
 
-              <div className="mx-sm-4">
-              <a href="/">
+          <div className="mx-sm-4">
+            <a href="/">
               <img
-                src="/images/banner/banner4.png"
+                src="/images/banner/organics.png"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
                 alt=""
                 id="dis-img"
               />
-              </a>
-            </div>
+            </a>
+          </div>
 
 
-              
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => organiSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                      Organic fOOD PRODUCTS
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Organic fOOD PRODUCTS
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => organiSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => organiSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (organiSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && products4.length > 0
-                        ? products4.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => organiSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => organiSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (organiSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && products4.length > 0
+                    ? products4.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => organiSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
+          </div>
 
 
-              <div className="mx-sm-4">
-              <a href="/">
+          <div className="mx-sm-4">
+            <a href="/">
               <img
-                src="/images/banner/banner4.png"
+                src="/images/banner/healthcare.png"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
                 alt=""
                 id="dis-img"
               />
-              </a>
-            </div>
+            </a>
+          </div>
 
-              
-              <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+
+          <div className="relative">
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => healthCareSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
             </div>
-                <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        Health CARE
-                      </h3>
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    Health CARE
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden d-none w-20 flex justify-between items-center">
-                      <button onClick={() => healthCareSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => healthCareSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (healthCareSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && products5.length > 0
-                        ? products5.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => healthCareSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => healthCareSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (healthCareSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && products5.length > 0
+                    ? products5.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div>
+            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => healthCareSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div>
-              </div>
-
-
-
-            </div>
           </div>
-          <Benefits />
-          <Testimonials />
+
+
+
+        </div>
+      </div>
+      <Benefits />
+      <Testimonials />
 
 
 
 
 
-        </>
-        );
+    </>
+  );
 }

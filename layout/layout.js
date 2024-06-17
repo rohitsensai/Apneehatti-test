@@ -10,6 +10,9 @@ const Footer = dynamic(() => import("../components/footer"), { ssr: false });
 const Whatsapp = dynamic(() => import("../components/whatsapp"), {
   ssr: false,
 });
+const Top = dynamic(() => import("../components/top"),{
+  ssr:false,
+})
 
 
 const Layout = ({ children }) => {
@@ -32,6 +35,7 @@ const Layout = ({ children }) => {
       <div className="relative">
         {!isLoginPage && !isRegisterPage && !isForgetPasswordPage  && <Header categories={categories} />}
         {children}
+        <Top/>
         <Whatsapp />
         {!isLoginPage && !isRegisterPage && !isForgetPasswordPage  && <Footer categories={categories} />}
       </div>
