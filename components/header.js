@@ -10,6 +10,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { AnimatePresence, motion, transform } from "framer-motion";
 import CurrencyFormatter from "../helper/currencyFormatter";
 import MobileSidebar from "./mobileSidebar";
+import Login from './login'
 import Cart from "./cart";
 import { useRouter } from "next/router";
 import SignOutConfirmation from "./signOutConfimation";
@@ -22,6 +23,7 @@ import { link } from "fontawesome";
 const Header = ({ categories }) => {
   const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoginPage,setIsLoginPage] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [closeSidebar, setCloseSidebar] = useState(true);
   const [searchKey, setSearchKey] = useState();
@@ -36,12 +38,17 @@ const Header = ({ categories }) => {
   const handleSearchClick = () => {
     setIsActive(true); // Set isActive to true when the search form is clicked
   };
+  const handleLogin = () =>{
+    setIsLoginPage(!isLoginPage)
+  }
   useEffect(() => {
     if (status === 'loading') {
       // Session data is still loading
       setIsSessionLoaded(false); // Set session loaded state to false
     } else if (status === 'success' && session !== null) {
+      
       // Session data has been successfully loaded and is not null
+        setIsLoginPage(false)
       setIsSessionLoaded(true); // Set session loaded state to true
     }
   }, [status, session]);
@@ -100,23 +107,7 @@ const Header = ({ categories }) => {
 
 
   function show() {
-    // var element = document.getElementById('sidebar'),
-    //   style = window.getComputedStyle(element),
-    //   left = style.getPropertyValue('left');
-
-
-    // console.log(left)
-    // if (left == "-200px") {
-
-    //   document.getElementById('sidebar').classList.toggle('active');
-    //   document.getElementById('sidebar').style.left = '0';
-    //   document.getElementById('sidebar').style.top = '0'
-    //   document.getElementsByClassName('toggle-btn').display = 'none'
-    // }
-    // else {
-    //   document.getElementById('sidebar').style.left = '-200px';
-    //   document.getElementById('sidebar').style.top = '0'
-    // }
+    
     setCloseSidebar(!closeSidebar);
     console.log("closesidebar", closeSidebar)
 
@@ -305,11 +296,11 @@ const Header = ({ categories }) => {
             {/* Login Button - Always Visible */}
             <div className="mx-2">
               {session == null && (
-                <a href="/login" className={header["a"]}>
-                  <button className="btn btn-primary mybtn text-white" class={header.mybtn}>
+            
+                  <button className="btn btn-primary mybtn text-white" class={header.mybtn} onClick={handleLogin}>
                     LOGIN <FaUser style={{ marginLeft: '5px', color: "white" }} />
                   </button>
-                </a>
+               
               )}
             </div>
 
@@ -463,6 +454,15 @@ const Header = ({ categories }) => {
         status={status}
         signOut={signOut}
       />
+
+      {isLoginPage && !session &&
+        
+        <Login
+         
+          onClose={handleLogin}
+
+       
+      />}
 
 
 

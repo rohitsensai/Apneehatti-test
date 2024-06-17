@@ -250,7 +250,7 @@ const login = () => {
       <Head>
         <title>Login</title>
       </Head>
-      <div className="mybody " style={{backgroundImage:'url("/images/pictures/login.png")',backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+      <div className="mybody " style={{backgroundImage:'url("/images/pictures/login.jpg")',backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
         <div className="d-flex flex-row  loginarrow justify-content-between mx-auto">
           <div className=" flex-grow-1">
         

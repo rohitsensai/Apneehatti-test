@@ -58,7 +58,7 @@ const ForgotPassword = () => {
         <title>Forgot Password</title>
       </Head>
       <div className=" flex flex-col items-center justify-center pb-40 pt-20 my-0  " style={{
-        backgroundImage: "url('/images/pictures/forgotpassword.png')", backgroundSize: "cover",
+        backgroundImage: "url('/images/pictures/forgotpassword.jpg')", backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         height: "100vh"

@@ -351,7 +351,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
         <div className="mx-sm-4">
           <a href="/">
             <img
-              src="/images/banner/new.png"
+              src="/images/banner/new.jpg"
               width="100%"
               height="100%"
               className="cursor-pointer h-full object-cover"
@@ -364,7 +364,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
         <div className="">
           <div className="relative ">
-            <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
+            {/* <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
               <button
                 onClick={() => {
                   newArrivalSlider.current.slickPrev();
@@ -372,7 +372,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               >
                 <MdArrowBackIos className=" text-2xl " />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -420,17 +420,17 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => newArrivalSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="mx-sm-4">
               <a href="/">
               <img
-                src="/images/banner/3.png"
+                src="/images/banner/3.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -441,7 +441,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             </div>
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button
                 onClick={() => {
                   topDealSlider.current.slickPrev();
@@ -449,7 +449,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               >
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded my-sm-4 bg-white  mx-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -500,18 +500,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => topDealSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
 
           <div className="mx-sm-4">
               <a href="/">
               <img
-                src="/images/banner/summer.png"
+                src="/images/banner/summer.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -522,11 +522,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             </div>
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -575,11 +575,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => bestSellerSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* <div className="relative">
@@ -646,7 +646,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           <div className="mx-sm-4">
             <a href="/">
               <img
-                src="/images/banner/handlooms.png"
+                src="/images/banner/handlooms.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -657,11 +657,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           </div>
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => handloomsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -710,17 +710,17 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => handloomsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
           <div className="mx-sm-4">
             <a href="/">
               <img
-                src="/images/banner/skincare.png"
+                src="/images/banner/skincare.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -733,11 +733,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => skinCareandBeautySlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -786,18 +786,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => skinCareandBeautySlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
 
           <div className="mx-sm-4">
             <a href="/">
               <img
-                src="/images/banner/handcrafts.png"
+                src="/images/banner/handcrafts.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -810,11 +810,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => handcraftsSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -863,18 +863,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => handcraftsSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
 
           <div className="mx-sm-4">
             <a href="/">
               <img
-                src="/images/banner/organics.png"
+                src="/images/banner/organics.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -887,11 +887,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => organiSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -940,18 +940,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => organiSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
 
           <div className="mx-sm-4">
             <a href="/">
               <img
-                src="/images/banner/healthcare.png"
+                src="/images/banner/healthcare.jpg"
                 width="100%"
                 height="100%"
                 className="cursor-pointer h-full object-cover"
@@ -963,11 +963,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
 
           <div className="relative">
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
               <button onClick={() => healthCareSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
             <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
@@ -1016,11 +1016,11 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                 </Slider>
               </div>
             </div>
-            <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
               <button onClick={() => healthCareSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
-            </div>
+            </div> */}
           </div>
 
 
