@@ -73,7 +73,7 @@ export const cart = createSlice({
           },
           { total: 0 }
         );
-        return { ...state, total };
+        return { ...state, total};
       } else {
         return { ...state, total: 0, cartItems: [] };
       }

@@ -1,6 +1,6 @@
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash2 } from "react-icons/fi";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartTotal, clearCart, initialCart } from "../slices/cart";
 import CartItem from "./cartItem";
@@ -11,9 +11,10 @@ import EmptyCart from "./emptyCart";
 
 const Cart = ({ isOpen, setIsOpen, session, status }) => {
   const dispatch = useDispatch();
-  const { cartItems, total, subtotal, shipping } = useSelector(
+  const { cartItems, total, subtotal} = useSelector(
     (state) => state.cart
   );
+  const [shipping,setShipping] = useState(50)
   const router = useRouter();
 
   const checkout = () => {
@@ -121,7 +122,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
                   <span className="mr-2 lg:w-[100px] text-sm">Total</span>
                   <div className="text-left">
                     <span className="mx-1">:</span>
-                    <CurrencyFormatter price={total} />
+                    <CurrencyFormatter price={total + 50} />
                   </div>
                 </div>
               </div>

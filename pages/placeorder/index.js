@@ -48,9 +48,10 @@ export async function getServerSideProps({ req }) {
 }
 
 const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
-  const { cartItems, total, shipping, subtotal } = useSelector(
+  const { cartItems, total, subtotal } = useSelector(
     (state) => state.cart
   );
+  const [shipping,setShipping] = useState(50)
   const { data: session, status } = useSession();
   const router = useRouter();
   const Razorpay = useRazorpay();
