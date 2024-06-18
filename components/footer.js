@@ -13,7 +13,7 @@ import { Divider } from "@mui/material";
 
 
 const Footer = ({ categories }) => {
-  const [isMounted, setIsMounted] = useState(false);
+ 
   const [status,setStatus] = useState('')
   const [email,setEmail] = useState("");
 

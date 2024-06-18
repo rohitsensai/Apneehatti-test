@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   const isLoginPage = router.pathname  === '/login'
   const isRegisterPage = router.pathname  === '/register'
   const isForgetPasswordPage = router.pathname  === '/forgot-password'
- 
+  const isContactUsPage = router.pathname === '/contact-us'
 
   const dispatch = useDispatch();
   const { categories } = useSelector((state) => state.categories);
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         {children}
         <Top/>
         <Whatsapp />
-        {!isLoginPage && !isRegisterPage && !isForgetPasswordPage  && <Footer categories={categories} />}
+        {!isLoginPage && !isRegisterPage && !isForgetPasswordPage && !isContactUsPage && <Footer categories={categories} />}
       </div>
     </>
   );

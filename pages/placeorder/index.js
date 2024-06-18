@@ -129,6 +129,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         }),
       });
       const response = await res.json();
+      console.log("response",response)
       if (response.status == "ok" || response.id != undefined) {
         toast.success("Thank you for placing your order");
         clearCartFun();

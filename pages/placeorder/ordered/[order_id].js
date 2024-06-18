@@ -36,7 +36,7 @@ const OrderPage = ({ order, user, payment, socket_URL }) => {
       <Head>
         <title>Congratulations! Your order has been successfully placed.</title>
       </Head>
-      <div className="w-screen p-2 md:p-5 md:w-5/6 mx-auto">
+      <div className="w-screen p-2 md:p-5 mx-auto bg-white">
         <h1 className="text-center text-lg pt-2 md:py-2 font-medium capitalize">
           Thank You ! It's on the way...
         </h1>

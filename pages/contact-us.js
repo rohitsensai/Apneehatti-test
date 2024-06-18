@@ -9,7 +9,7 @@ function ContactUs() {
     </Head>
  
  
-<section class="bg-light w-full  rounded border-rounded ">
+<section class="bg-light w-full  rounded border-rounded my-10">
   <div class="containerr">
     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">

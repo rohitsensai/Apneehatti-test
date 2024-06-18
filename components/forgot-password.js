@@ -17,7 +17,7 @@ export async function getServerSideProps(context) {
   return { props: {} };
 }
 
-const ForgotPassword = () => {
+const ForgotPassword = ({onClose}) => {
   const [emailSent, setEmailSent] = useState(false);
   const [email, setEmail] = useState("");
   const [error, setError] = useState("");
@@ -55,13 +55,8 @@ const ForgotPassword = () => {
   return (
     <>
    
-      <div className=" flex flex-col items-center justify-center pb-40 pt-20 my-0  border border-danger" style={{
-        backgroundImage: "url('/images/pictures/forgotpassword.jpg')", backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-        height: "100vh"
-      }}>
-        <div className="bg-white rounded w-10/12 lg:w-1/3 p-4 border shadow-sm ">
+      <div className="fixed w-full my-0 z-10" style={{ backgroundColor: "rgba(0,0,0,0,5" }}>
+        <div className="bg-white  rounded w-10/12 lg:w-1/3 p-4 border  mx-auto shadow-sm ">
           <h1
             className="text-center pb-3 text-4xl font-medium"
             style={{ fontFamily: "fantasy" }}
@@ -75,10 +70,10 @@ const ForgotPassword = () => {
                 password.
               </p>
 
-              <button className="btn btn-primary mybtn text-white mybtn ">
-                <Link href="/login">
+              <button className="btn btn-primary mybtn text-white mybtn " onClick={onClose}>
+             
                   LOGIN
-                </Link>
+             
               </button>
             </div>
           ) : (
@@ -98,13 +93,13 @@ const ForgotPassword = () => {
                   <button className="btn btn-primary mybtn text-white mybtn  " type="submit">
                     Reset Password
                   </button>
-                  <Link href="/login">
-                    <button className="btn btn-primary mybtn text-white" >
+                  
+                    <button className="btn btn-primary mybtn text-white" onClick={onClose}>
 
                       LOGIN
 
                     </button>
-                  </Link>
+               
                 </div>
               </form>
             </div>

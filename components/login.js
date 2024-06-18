@@ -10,6 +10,7 @@ import { BsEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import Image from "next/image";
 import { FaArrowRight } from 'react-icons/fa';
 import { BsFacebook, BsLinkedin, BsGoogle } from "react-icons/bs";
+import ForgotPassword from "./forgot-password";
 
 import { useDispatch } from "react-redux";
 
@@ -25,7 +26,6 @@ import {
 } from "react-icons/bs";
 import loginn from '../styles/Login.module.css'
 import { GoArrowLeft } from "react-icons/go";
-
 
 export async function getServerSideProps(context) {
     const session = await getSession(context);
@@ -61,6 +61,8 @@ const login = ({ onClose }) => {
     const [mobile, setMobile] = useState();
     const [validateMobile, setValidateMobile] = useState();
     const [isValidNumber, setIsValidNumber] = useState();
+    const [isFogotPassword,setIsForgotPassword] = useState(false);
+
 
 
     const componentRef = useRef(null);
@@ -243,22 +245,12 @@ const login = ({ onClose }) => {
         setRetypePasswordVisible(!retypePasswordVisible);
     };
 
-    // useEffect(() => {
-    //   if (status == "authenticated") {
-    //     router.push("/");
-    //   }
-    //   const intlTelInputScriptLoad = (iti) => {
-    //     const input = document.querySelector("#mobile");
-    //     iti = intlTelInput(input, {
-    //       initialCountry: "in",
-    //       // separateDialCode: true,
-    //       utilsScript: util,
-    //     });
-    //     setValidateMobile(iti);
-    //   };
-    //   intlTelInputScriptLoad(iti);
-    // }, [status]);
+    const handleClick = () =>{
+        setIsForgotPassword(!isFogotPassword);
 
+    }
+
+    
 
     const gotoHome = () => {
         router.push('/');
@@ -268,8 +260,8 @@ const login = ({ onClose }) => {
 
 
         <>
-
-            <div className="mybody fixed d-flex flex-row mx-auto w-full my-0 py-0 top-0 z-10 border border-danger" style={{ backgroundColor: "rgba(0,0,0,0,5" }}>
+    {!isFogotPassword ?
+            (<div className="mybody fixed d-flex flex-row mx-auto w-full my-0 py-0 top-0 z-10 border border-danger" style={{ backgroundColor: "rgba(0,0,0,0,5" }}>
 
                 <div className={`container  ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
                     <div class="form-container sign-up-container" className={loginn["form-container"]}>
@@ -369,7 +361,7 @@ const login = ({ onClose }) => {
                   />
                 )} */}
                             <input className="logininput rounded" id="password" name="password" value={loginDetails.password} onChange={inputHandler} required type={passwordVisible ? "text" : "password"} placeholder="Password" />
-                            <a className="mya cursor-pointer" href="forgot-password">Forgot your password?</a>
+                            <div className=" cursor-pointer" onClick={handleClick}>Forgot your password?</div>
                             <button className="loginbutton mybtn btn btn-primary" type="submit">Sign In</button>
                         </form>
                     </div>
@@ -395,7 +387,11 @@ const login = ({ onClose }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>):
+            <ForgotPassword
+                onClose={handleClick}
+                />
+                            }
         </>
     );
 };
