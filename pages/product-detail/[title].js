@@ -489,7 +489,7 @@ const ProductDetail = ({
             <div className="relative overflow-y-auto font-serif rounded " id="2">
               <div
                 className={`${zoomIn ? "" : "hidden"
-                  }   top-0 fixed flex justify-center z-10 items-center border-2   `}
+                  }   top-0 fixed flex justify-center z-10 items-center   `}
                 id="zoomable_container"
                 style={{
                   width: "100%",
