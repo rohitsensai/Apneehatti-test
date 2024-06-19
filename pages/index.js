@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from 'next/image'
 import { AiFillSafetyCertificate } from "react-icons/ai";
 import { TbTruckDelivery } from "react-icons/tb";
 import {
@@ -37,34 +38,7 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
   ssr: false,
 });
 
-// {
-//   "id": 137963979,
-//   "sku": "1695042397112",
-//   "hsn": "",
-//   "name": "Chamba Chukh Red Chilli Chukh Garlic Flavour | Traditional Chamba Chukh with Garlic Flavour| ",
-//   "description": "",
-//   "category_code": "default",
-//   "category_name": "Default Category",
-//   "category_tax_code": "default",
-//   "image": "",
-//   "weight": "0.5 Kg",
-//   "size": "",
-//   "cost_price": "0.00",
-//   "mrp": "163.00",
-//   "tax_code": 0,
-//   "low_stock": 0,
-//   "ean": "",
-//   "upc": "",
-//   "isbn": "",
-//   "created_at": "18 Sep 2023 06:37 PM",
-//   "updated_at": "18 Sep 2023 06:37 PM",
-//   "quantity": 1,
-//   "color": "",
-//   "brand": "",
-//   "dimensions": "16 x 11 x 10 cm ",
-//   "status": "INACTIVE",
-//   "type": "Single"
-// },
+
 export async function getServerSideProps() {
 
 
@@ -340,7 +314,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             <h3 className="text-center text-2xl font-semibold uppercase  ">
               Deals of the day
             </h3>
-            <h3 className="text-center text-gray-500 " style={{fontSize:"14px"}}>
+            <h3 className="text-center text-gray-500 " style={{ fontSize: "14px" }}>
               Upto 50% Off plus free shipping | Grab it Fast
             </h3>
           </div>
@@ -348,18 +322,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
         </div>
 
 
-        <div className="mx-sm-4">
-          <a href="/">
-            <img
+
+
+        <div className="w-full ">
+            <Image
               src="/images/banner/new.jpg"
-              width="100%"
-              height="100%"
-              className="cursor-pointer h-full object-cover"
-              alt=""
-              id="dis-img"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="New banner"
+              loading="lazy"
             />
-          </a>
-        </div>
+          </div>
 
 
         <div className="">
@@ -380,7 +354,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     Latest new arrivalss
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     We’re crushing on new arrivals + 30% off all full price!
                   </h3>
 
@@ -427,18 +401,19 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             </div> */}
           </div>
 
-          <div className="mx-sm-4">
-              <a href="/">
-              <img
-                src="/images/banner/3.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-              </a>
-            </div>
+          
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/3.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt=" banner"
+              loading="lazy"
+            />
+          </div>
 
           <div className="relative">
             {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
@@ -457,7 +432,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     TOP SELLING PRODUCTS
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -508,18 +483,19 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           </div>
 
 
-          <div className="mx-sm-4">
-              <a href="/">
-              <img
-                src="/images/banner/summer.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-              </a>
-            </div>
+          
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/summer.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Summer banner"
+              loading="lazy"
+            />
+          </div>
 
           <div className="relative">
             {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
@@ -534,7 +510,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     SUMMER SPECIALS
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -643,17 +619,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             </div>
               </div> */}
 
-          <div className="mx-sm-4">
-            <a href="/">
-              <img
-                src="/images/banner/handlooms.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-            </a>
+
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/handlooms.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Handlooms banner"
+              loading="lazy"
+            />
           </div>
 
           <div className="relative">
@@ -669,7 +646,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     Handlooms
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -717,17 +694,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
             </div> */}
           </div>
 
-          <div className="mx-sm-4">
-            <a href="/">
-              <img
-                src="/images/banner/skincare.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-            </a>
+
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/skincare.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Skincare banner"
+              loading="lazy"
+            />
           </div>
 
 
@@ -745,7 +723,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     sKINCARE & BEAUTY
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -794,17 +772,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           </div>
 
 
-          <div className="mx-sm-4">
-            <a href="/">
-              <img
-                src="/images/banner/handcrafts.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-            </a>
+
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/handcrafts.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Handcrafts banner"
+              loading="lazy"
+            />
           </div>
 
 
@@ -822,7 +801,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     Handcrafts
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -871,17 +850,18 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           </div>
 
 
-          <div className="mx-sm-4">
-            <a href="/">
-              <img
-                src="/images/banner/organics.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-            </a>
+
+
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/organics.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Organics banner"
+              loading="lazy"
+            />
           </div>
 
 
@@ -899,7 +879,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     Organic fOOD PRODUCTS
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 
@@ -948,17 +928,16 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
           </div>
 
 
-          <div className="mx-sm-4">
-            <a href="/">
-              <img
-                src="/images/banner/healthcare.jpg"
-                width="100%"
-                height="100%"
-                className="cursor-pointer h-full object-cover"
-                alt=""
-                id="dis-img"
-              />
-            </a>
+
+          <div className="w-full ">
+            <Image
+              src="/images/banner/healthcare.jpg"
+              layout="responsive"
+              width={1840} // Use the actual width of your image
+              height={400} // Use the actual height of your image
+              alt="Healthcare banner"
+              loading="lazy"
+            />
           </div>
 
 
@@ -975,7 +954,7 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
                     Health CARE
                   </h3>
 
-                  <h3 className="text-center text-gray-500" style={{fontSize:"14px"}}>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
                     Grab It Fast | Sale Is Live
                   </h3>
 

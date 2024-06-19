@@ -29,50 +29,32 @@ const Product = ({ product }) => {
     }, 5000);
   };
 
-  const whishlisthandler = () => {
+  const whishlisthandler = async () => {
 
-    if (!session) {
-      toast.warning("Please Sign In First");
+    if(session){
+    console.log("inside wishlisthandler")
+    console.log(product.id)
+    const data = await fetch(`/api/users/product/addtowishlist`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${session && session.user.accessToken}`,
+      },
+      body: JSON.stringify({ id }),
+    });
 
+    const res = await data.json();
+    if (res.error) {
+      toast.error(res.error);
     } else {
-      router.push('/wishlist')
+      toast.success(res.message);
     }
+  }
+  else{
+    toast.warning("Please sign in first")
+  }
   };
-  const buynowhandler = async (product) => {
-
-
-
-    if (!session) {
-      toast.warning("Please Sign In First");
-
-    } else {
-      console.log("id", session.user.id)
-      console.log(product.id)
-      addToBasketAnimation();
-      const data = await fetch(`/api/cart/${session.user.id}/add`, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-        method: "POST",
-        body: JSON.stringify({ product_id: product.id, quantity: 1 }),
-      });
-      if (data.ok) {
-        const response = await data.json();
-        console.log("res", response)
-        if (response) {
-          const savedcart = response.items;
-          const initialCartObj = {
-            savedcart,
-            shipping: response.shipping,
-            subtotal: response.subtotal,
-            total: response.total,
-          };
-          dispatch(initialCart(initialCartObj));
-        }
-      }
-      router.push('/placeorder')
-    }
-  };
+ 
 
 
 
@@ -82,7 +64,7 @@ const Product = ({ product }) => {
     } else {
 
       addToBasketAnimation();
-      const data = await fetch(`/api/cart/${session.user.id}/add`, {
+      const data = await fetch(`${process.env.HOST}/api/cart/${session.user.id}/add`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -117,7 +99,7 @@ const Product = ({ product }) => {
         <div className="min-h-[320px] relative" style={{ backgroundColor: "white" }}>
           <div className="h-[220px] relative overflow-hidden group transition">
             <div
-              className="position-absolute z-10 top-2 end-5"
+              className="position-absolute z-10 top-2 end-5 heart"
               onClick={whishlisthandler}
               style={{ cursor: "pointer", backgroundColor: "red", borderRadius: "50%", padding: "8px" }}
             >

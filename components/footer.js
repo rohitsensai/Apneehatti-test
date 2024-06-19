@@ -55,8 +55,8 @@ const Footer = ({ categories }) => {
     <div className="bg-white fcontainer w-full">
   
       <footer className="footer ">
-        <div className="containerfooter bg-white rounded  ">
-          <div className="footer_inner">
+        <div className="containerfooter bg-white rounded w-full">
+          <div className="footer_inner ">
             <div className="c-footer">
               <div className="layout ">
                 <div className="layout_item w-full ">

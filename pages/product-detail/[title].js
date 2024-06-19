@@ -208,7 +208,7 @@ const ProductDetail = ({
   };
 
   const handleAddToWishlist = async (id) => {
-    const data = await fetch(`/api/users/product/addtowishlist`, {
+    const data = await fetch(`${process.env.HOST}/api/users/product/addtowishlist`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -387,37 +387,18 @@ const ProductDetail = ({
         <meta property="og:type" content="website" />
       </Head>
       <div className="min-w-screen">
-        {/* <Breadcrumb
-          aria-label="Solid background breadcrumb example"
-          className="bg-gray-50 py-3 px-5 dark:bg-gray-900 hidden md:block"
-        >
-          <Breadcrumb.Item icon={HiHome}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item>Search</Breadcrumb.Item>
-          <Breadcrumb.Item>Product</Breadcrumb.Item>
-          {product_data?.category_id.name && (
-            <Breadcrumb.Item className="capitalize" href="#">
-              {product_data?.category_id.name}
-            </Breadcrumb.Item>
-          )}
-          {product_data && (
-            <Breadcrumb.Item className="capitalize truncate " href="#">
-              {product_data.name}
-            </Breadcrumb.Item>
-          )}
-        </Breadcrumb> */}
 
-        {/* ProductDetail */}
-        <div className=" md:m-6 space-y-3 ">
+        <div className=" md:m-9 space-y-3 ">
           <div className=" lg:grid grid-cols-2  relative " >
             <div className="relative " >
               <div
-                className="flex   lg:sticky lg:top-35 mt-2   overflow-y-auto imageidv   "
+                className="flex   lg:sticky lg:top-35 mt-sm-2   overflow-y-auto imageidv   "
                 id="1"
               >
 
                 <div
                   className=" md:min-h-[550px] min-h-[400px]  relative flex justify-center items-center  overflow-hidden rounded"
-                  style={{}}
+
                 >
                   <div
                     className="rounded"
@@ -426,7 +407,7 @@ const ProductDetail = ({
                   >
                     <div
                       id="img_wrapper"
-                      className=" w-full h-full  justify-center items-center cursor-pointer mb-20 rounded bg-white "
+                      className=" w-full h-full  justify-center items-center cursor-pointer mb-sm-20 mb-1 rounded bg-white "
 
                     >
                       <Image
@@ -468,7 +449,7 @@ const ProductDetail = ({
                       id="lens"
                     ></div>
                     { /* Reviews*/}
-                    
+
 
                   </div>
 
@@ -498,124 +479,124 @@ const ProductDetail = ({
                 }}
               ></div>
 
-              <div className={`  w-4/5 lg:px-10 m-2 bg-white mx-auto rounded  `}>
+              <div className={`  w-sm-4/5 lg:px-10 m-sm-2 bg-white mx-auto rounded  `}>
                 <div className="rounded bg-white ">
-                <div className="space-y-2  p-4 border-gray-300 rounded bg-white rounded ">
-                  <h2 className="text-xl md:text-2xl font-semibold font-serif">
-                    {product_data.name}
-                  </h2>
-                </div>
-                <div className="space-y-2 md:space-y-0 md:flex gap-10 p-4 border-gray-300 rounded my-2 bg-white rounded">
-                  <div className=" space-y-2">
-                    <Link
-                      href={{
-                        pathname: "/search",
-                        query: { category: product_data.category_id.slug },
-                      }}
-                    >
-                      <p className="text-md text-blue-500 cursor-pointer ">
-                        Visit the {product_data.category_id.name}
-                      </p>
-                    </Link>
-                    <div className="flex gap-x-1 items-center">
-                      <h3 className="text-md font-medium">
-                        {product_data.rating}
-                      </h3>
-                      <Rating>
-                        {Array.from({ length: 5 }, (elem, index) => {
-                          return (
-                            <Rating.Star
-                              key={index}
-                              filled={
-                                product_data.rating > index ? true : false
-                              }
-                            />
-                          );
-                        })}
-                      </Rating>
-                      <h3 className="text-md ml-4 font-medium">
-                        {reviews.length} ratings
-                      </h3>
-                    </div>
+                  <div className="space-y-2  p-4 border-gray-300 rounded bg-white rounded ">
+                    <h2 className="text-xl md:text-2xl font-semibold font-serif">
+                      {product_data.name}
+                    </h2>
                   </div>
-                  <SocialShare
-                    url={`${host + router.asPath}`}
-                    quote={product_data.name}
-                  />
-                </div>
-                <div className="p-4 space-y-1 flex items-center gap-x-5 border-gray-300 rounded bg-white rounded">
-                  <div className="space-y-2">
-                    <div className="flex  items-end  space-x-2">
-                      {calculateDiscount(product_data.price, product_data.MRP) >
-                        0 && (
-                          <h4 className="text-md text-green-500 bg-green-100 p-2 border border-green-200">
-                            {calculateDiscount(
-                              product_data.price,
-                              product_data.MRP
-                            ) + "%"}
-                          </h4>
-                        )}
-                      <div className="mr-2 text-green-800 font-medium " >
-
-                        New Price:
-
+                  <div className="space-y-2 md:space-y-0 md:flex gap-10 p-4 border-gray-300 rounded my-2 bg-white rounded">
+                    <div className=" space-y-2">
+                      <Link
+                        href={{
+                          pathname: "/search",
+                          query: { category: product_data.category_id.slug },
+                        }}
+                      >
+                        <p className="text-md text-blue-500 cursor-pointer ">
+                          Visit the {product_data.category_id.name}
+                        </p>
+                      </Link>
+                      <div className="flex gap-x-1 items-center">
+                        <h3 className="text-md font-medium">
+                          {product_data.rating}
+                        </h3>
+                        <Rating>
+                          {Array.from({ length: 5 }, (elem, index) => {
+                            return (
+                              <Rating.Star
+                                key={index}
+                                filled={
+                                  product_data.rating > index ? true : false
+                                }
+                              />
+                            );
+                          })}
+                        </Rating>
+                        <h3 className="text-md ml-4 font-medium">
+                          {reviews.length} ratings
+                        </h3>
                       </div>
-                      <CurrencyFormatter price={product_data.price} />
                     </div>
-                    <h6 className="text-md  text-gray-400 ">
-                      M.R.P :{" "}
-                      <span className="line-through">
-                        <CurrencyFormatter price={product_data.MRP} />
-                      </span>
-                    </h6>
-                    <div className="text-sm font-medium  flex items-center space-x-1">
-                      <h5 className="text-gray-700">
-                        Sold by{" "}
-                        <span className="underline">
-                          {product_data.brand_id?.name}
+                    <SocialShare
+                      url={`${host + router.asPath}`}
+                      quote={product_data.name}
+                    />
+                  </div>
+                  <div className="p-4 space-y-1 flex items-center gap-x-5 border-gray-300 rounded bg-white rounded">
+                    <div className="space-y-2">
+                      <div className="flex  items-end  space-x-2">
+                        {calculateDiscount(product_data.price, product_data.MRP) >
+                          0 && (
+                            <h4 className="text-md text-green-500 bg-green-100 p-2 border border-green-200">
+                              {calculateDiscount(
+                                product_data.price,
+                                product_data.MRP
+                              ) + "%"}
+                            </h4>
+                          )}
+                        <div className="mr-2 text-green-800 font-medium " >
+
+                          New Price:
+
+                        </div>
+                        <CurrencyFormatter price={product_data.price} />
+                      </div>
+                      <h6 className="text-md  text-gray-400 ">
+                        M.R.P :{" "}
+                        <span className="line-through">
+                          <CurrencyFormatter price={product_data.MRP} />
                         </span>
-                      </h5>
-                    </div>
-
-                    <p className="text-sm  text-blue-500 cursor-pointer" onClick={openNewWindow}>
-                      Check Policy
-                    </p>
-
-                  </div>
-                  <div className="flex flex-1 max-w-[200px] items-center h-full text-primary font-medium p-2 my-2">
-                    {/* Minus icon */}
-                    <div
-                      onClick={() => minus(product_data._id)}
-                      className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
-                      style={{ width: '30px', height: '30px' }}
-                    >
-                      <IoMdRemove style={{ color: 'black', fontSize: '20px' }} />
-                    </div>
-
-                    {/* Quantity display */}
-                    <div className="flex justify-center items-center px-2">
-                      {cartItems.filter((item) => item.id === product_data._id).length > 0 ? (
-                        cartItems
-                          .filter((item) => item.id === product_data._id)
-                          .map((x) => (
-                            <span key={x.id}>{x.quantity || 0}</span>
-                          ))
-                      ) : (
-                        <span>0</span>
-                      )}
-                    </div>
-
-                    {/* Plus icon */}
-                    <div
-                      onClick={() => handleAddToCart(product_data._id)}
-                      className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
-                      style={{ width: '30px', height: '30px' }}
-                    >
-                      <IoMdAdd style={{ color: 'black', fontSize: '20px' }} />
-                    </div>
-                  </div>
-
+                      </h6>
+                      <div className="text-sm font-medium  flex items-center space-x-1">
+                        <h5 className="text-gray-700">
+                          Sold by{" "}
+                          <span className="underline">
+                            {product_data.brand_id?.name}
+                          </span>
+                        </h5>
                       </div>
+
+                      <p className="text-sm  text-blue-500 cursor-pointer" onClick={openNewWindow}>
+                        Check Policy
+                      </p>
+
+                    </div>
+                    <div className="flex flex-1 max-w-[200px] items-center h-full text-primary font-medium p-2 my-2">
+                      {/* Minus icon */}
+                      <div
+                        onClick={() => minus(product_data._id)}
+                        className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                        style={{ width: '30px', height: '30px' }}
+                      >
+                        <IoMdRemove style={{ color: 'black', fontSize: '20px' }} />
+                      </div>
+
+                      {/* Quantity display */}
+                      <div className="flex justify-center items-center px-2">
+                        {cartItems.filter((item) => item.id === product_data._id).length > 0 ? (
+                          cartItems
+                            .filter((item) => item.id === product_data._id)
+                            .map((x) => (
+                              <span key={x.id}>{x.quantity || 0}</span>
+                            ))
+                        ) : (
+                          <span>0</span>
+                        )}
+                      </div>
+
+                      {/* Plus icon */}
+                      <div
+                        onClick={() => handleAddToCart(product_data._id)}
+                        className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                        style={{ width: '30px', height: '30px' }}
+                      >
+                        <IoMdAdd style={{ color: 'black', fontSize: '20px' }} />
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
 
                 {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
@@ -679,7 +660,7 @@ const ProductDetail = ({
 
 
 
-                <p className=" my-4 ld:px-4 text-sm text-gray-500 text-justify leading-6 line-clamp-6  bg-white rounded">
+                <p className=" my-sm-4 my-1 ld:px-4 text-sm text-gray-500 text-justify leading-6 line-clamp-6  bg-white rounded">
                   <TextEditorView desc={product_data.desc} />
                   {/* {product_data.desc} */}
                 </p>
@@ -689,7 +670,7 @@ const ProductDetail = ({
           </div>
         </div>
       </div>
-      <div className="  mx-4  min-h-[200px]">
+      <div className="  mx-sm-4  min-h-[200px]">
         {/* Reviews */}
         <ProductReview
           reviews={reviews}
@@ -712,9 +693,9 @@ const ProductDetail = ({
       </div>
 
 
-      <Box sx={{  textAlign: 'center' }} className="mb-3 bg-white mx-4 rounded" >
-        <Typography  color="#000" sx={{ width: '100%', margin: 'auto' }}>
-          <span className="text-2xl" style={{  textTransform: 'capitalize' }}>Related Videos</span>
+      <Box sx={{ textAlign: 'center' }} className="d-none  mb-3 bg-white mx-sm-4 rounded" >
+        <Typography color="#000" sx={{ width: '100%', margin: 'auto' }}>
+          <span className="text-2xl" style={{ textTransform: 'capitalize' }}>Related Videos</span>
         </Typography>
         <Stack
           sx={{
@@ -729,17 +710,20 @@ const ProductDetail = ({
               justifyContent: 'center',
               textDecoration: 'none',
               margin: '10px',
-              padding: '10px',
+
               backgroundColor: '#f9f9f9',
               borderRadius: '8px',
-              maxWidth: '250px', // Set maximum width for uniformity
-              width: '200px', // Set fixed width to ensure uniform size
+              // Set maximum width for uniformity
+              width: 'fill', // Set fixed width to ensure uniform size
               height: '200px', // Set fixed height to ensure uniform size
               overflow: 'hidden', // Hide overflow to prevent size variations
             },
             '@media (max-width: 600px)': {
               flexDirection: 'column',
               alignItems: 'center',
+              margin: '0px 0px',
+              padding: '0px',
+              width: 'max-content',
             },
           }}
         >
@@ -769,7 +753,7 @@ const ProductDetail = ({
 
 
 
-      <div className="p-2 mx-4  min-h-[200px] ">
+      <div className="p-2 mx-sm-4  min-h-[200px] ">
         {/* Related Products */}
         <RelatedProduct relatedProducts={relatedProducts} category={category} />
       </div>

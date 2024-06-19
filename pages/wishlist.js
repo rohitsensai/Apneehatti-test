@@ -10,7 +10,7 @@ const WishlistCard = dynamic(() => import("../components/wishlistCard"), {
 
 export async function getServerSideProps(context) {
   const session = await getSession(context);
-  const data = await fetch(`https://apneehatti.com/api/users/wishlist`, {
+  const data = await fetch(`${process.env.HOST}/api/users/wishlist`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -49,9 +49,9 @@ const Wishlist = ({ wishlistPro }) => {
       <Head>
         <title>Wishlist</title>
       </Head>
-      <div className="container p-4 mx-auto">
-        <h1 className="text-xl font-semibold">Wishlist</h1>
-        <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 p-5">
+      <div className="container p-sm-2 w-full mx-auto">
+        <h1 className="text-xl font-semibold text-center">Wishlist</h1>
+        <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 ">
           {wishlistProduct.map((product) => (
             <WishlistCard
               key={product._id}

@@ -814,7 +814,7 @@ ul {
   min-height: 100vh;
 } */
 .containerfooter {
-  max-width: 1200px;
+  max-width: 2400px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
@@ -850,4 +850,9 @@ form {
 }
 .fcontainer{
   margin-top: -25px;
+}
+
+.heart:hover{
+  background-color: rgb(241, 233, 233);
+  /* border :2px solid green; */
 }

@@ -14,6 +14,8 @@ const addToWishlist = async (req, res) => {
   // Extract the product ID from the request body
   const { id } = req.body;
 
+  console.log("id",id)
+
   // Check if the token is valid
   if (token_data.id) {
     // Add the product ID to the user's wishlist and update the user document
