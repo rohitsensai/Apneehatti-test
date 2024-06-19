@@ -49,7 +49,7 @@ const Wishlist = ({ wishlistPro }) => {
       <Head>
         <title>Wishlist</title>
       </Head>
-      <div className="container p-sm-2 w-full mx-auto">
+      <div className="p-2 m-2 w-full mx-auto h-sm-[520px]">
         <h1 className="text-xl font-semibold text-center">Wishlist</h1>
         <div className="grid gap-2 grid-cols-1 md:grid-cols-3 lg:grid-cols-5 ">
           {wishlistProduct.map((product) => (

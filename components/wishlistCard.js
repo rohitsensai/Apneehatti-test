@@ -26,7 +26,7 @@ const wishlistCard = ({ product, removeFromWishlist }) => {
       exit={{ opacity: 0 }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="bg-white border border-gray-50 shadow group  overflow-hidden"
+      className="bg-white rounded shadow group  overflow-hidden"
     >
       <div className="h-[200px] mb-4 relative overflow-hidden group transition">
         <div className="w-full h-full flex justify-center items-center">

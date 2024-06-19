@@ -1,7 +1,8 @@
+import { placeOfWorship } from 'fontawesome';
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-
+import Image from 'next/image';
 const ImageCarousel = () => {
   const images = [
     '/images/banner/1.jpg',
@@ -23,7 +24,10 @@ const ImageCarousel = () => {
      
       {images.map((image, index) => (
         <div key={index}>
-          <img src={image} className='rounded' alt={`Slide ${index + 1}`} />
+          <img src={image} className='rounded' alt={`Slide ${index + 1}`} 
+            placeholder='blur'
+            blurDataURL={image}
+            />
         </div>
       ))}
      

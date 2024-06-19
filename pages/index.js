@@ -295,6 +295,9 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               src="/images/banner/offer-2.png"
               width="100%"
               alt=""
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="/images/banner/offer-2.png"
             />
           </div>
           <div className="">
@@ -302,6 +305,9 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               src="/images/banner/offer-1.png"
               width="100%"
               alt=""
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="/images/banner/offer-1.png"
 
             />
           </div>
@@ -332,6 +338,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="New banner"
               loading="lazy"
+              blurDataURL="/images/banner/new.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -412,6 +420,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt=" banner"
               loading="lazy"
+              blurDataURL="/images/banner/3.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -494,6 +504,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Summer banner"
               loading="lazy"
+              blurDataURL="/images/banner/summer.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -630,6 +642,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Handlooms banner"
               loading="lazy"
+              blurDataURL="/images/banner/handlooms.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -705,6 +719,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Skincare banner"
               loading="lazy"
+              blurDataURL="/images/banner/skincare.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -783,6 +799,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Handcrafts banner"
               loading="lazy"
+              blurDataURL="/images/banner/handcrafts.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -861,6 +879,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Organics banner"
               loading="lazy"
+              blurDataURL="/images/banner/organics.jpg"
+              placeholder="blur"
             />
           </div>
 
@@ -937,6 +957,8 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
               height={400} // Use the actual height of your image
               alt="Healthcare banner"
               loading="lazy"
+              blurDataURL="/images/banner/healthcare.jpg"
+              placeholder="blur"
             />
           </div>
 

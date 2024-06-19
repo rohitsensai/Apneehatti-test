@@ -119,6 +119,7 @@ const Header = ({ categories }) => {
   const isBlogPage = router.pathname.startsWith("/blog")
   const isAboutUsPage = router.pathname.startsWith("/about-us")
   const isContactUsPage = router.pathname.startsWith("/contact-us")
+  const isWishlistPage = router.pathname.startsWith("/wishlist")
 
 
   return (
@@ -384,7 +385,7 @@ const Header = ({ categories }) => {
           </header >
         </div >
       </div>
-      {!isCheckoutPage && !isBlogPage && !isAboutUsPage && !isContactUsPage && (
+      {!isCheckoutPage && !isBlogPage && !isAboutUsPage && !isContactUsPage && !isWishlistPage && (
         <div className=" bg-white pt-2 rounded " id={header["navbarNav1"]}>
           <ul className="navbar-nav d-flex flex-row justify-content-around" >
             <li className={header["nav-item"]} >

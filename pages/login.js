@@ -23,7 +23,7 @@ import {
 
   BsInfoCircleFill,
 } from "react-icons/bs";
-import loginn from '../styles/Login.module.css'
+
 import { GoArrowLeft } from "react-icons/go";
 
 

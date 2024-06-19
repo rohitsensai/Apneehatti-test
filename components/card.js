@@ -64,7 +64,7 @@ const Product = ({ product }) => {
     } else {
 
       addToBasketAnimation();
-      const data = await fetch(`${process.env.HOST}/api/cart/${session.user.id}/add`, {
+      const data = await fetch(`/api/cart/${session.user.id}/add`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -94,7 +94,7 @@ const Product = ({ product }) => {
     }
   };
   return (
-    <div className="border  my-2  " style={{ backgroundColor: "white" }}>
+    <div className="border my-2  " style={{ backgroundColor: "white" }}>
       <div className="block bg-white overflow-hidden">
         <div className="min-h-[320px] relative" style={{ backgroundColor: "white" }}>
           <div className="h-[220px] relative overflow-hidden group transition">
