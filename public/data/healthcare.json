@@ -1,0 +1,428 @@
+[
+    {
+        "_id": "6479de8e2016d6747435dbe4",
+        "name": "Shug Shi Herbal Foot Soak | Reduce Stress and Anxiety | Better Sleep",
+        "desc": "{\"blocks\":[{\"key\":\"ce3eb\",\"text\":\"Ingredient: Juniper, Cedar, Rhododendron, Ginger, Pink Salt\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ivni\",\"text\":\"Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fqmn\",\"text\":\"Reduce stress and anxiety \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a88i0\",\"text\":\"Keep the Body warm\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"buagi\",\"text\":\"Relieve joint pain and swelling \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84bss\",\"text\":\"Ease sore muscles and blood circulation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"auoff\",\"text\":\"Better sleep\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8m0g\",\"text\":\"How to use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j4k1\",\"text\":\"Boil 1 liter of water in  a kettle/pot . When water boils, add 01 Herbal foot Soak fitter bag into kettle/pot. Reduce heat, cover and simmer for 5 minutes. The pour the herbal water into  a bucket. Mix warm water with the herbal water untill well-blend for use. Have a seat soak your feet in the herbal water for 15 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685708428259.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685708428295.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685708428299.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685708428301.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685708428304.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685708428315.webp"
+        ],
+        "price": 443,
+        "MRP": 449,
+        "rating": 0,
+        "SKU": "1685708430774",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "647096758efac111e4d6ec91",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-06-02T12:20:30.793Z",
+        "updatedAt": "2023-07-05T07:05:57.996Z",
+        "__v": 0,
+        "alt_text": " Herbal Foot Soak . Apneehatti"
+    },
+    {
+        "_id": "647744e6d441842b1a80ccce",
+        "name": "Menzang 2 Foot Soak + Bath | Keep the Body Warm | Better Sleep",
+        "desc": "{\"blocks\":[{\"key\":\"2bic5\",\"text\":\"3 Foot Soak Fiter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":22,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c3p1g\",\"text\":\"2 Bath Filter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cev7d\",\"text\":\"Shug shi Harbal Foot Soak\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":25,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6onf3\",\"text\":\"Ingredients: Juniper , Cedar, Rhododendron, Ginger\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d04u1\",\"text\":\"Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":9,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpc57\",\"text\":\"Reduce stress and anxiety\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ihqa\",\"text\":\"Keep the body warm\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76tpg\",\"text\":\"Relieve joint pain and swelling \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1fs1h\",\"text\":\"Ease sore muscles and blood circulation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b1j4f\",\"text\":\"Better sleep\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2p1b5\",\"text\":\"How to use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":11,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3m0cm\",\"text\":\"Boil 1 liter of water in a kettle /pot. When water boils , add 01 Herbal foot Soak filter bag into the kettle /pot. Reduce heat, cover and simmer for 5 minutes. Then pour the herbal water into a bucket. Mix warm water with the herbal water until wellblend for use. Have  a seat, soak your feet in the herbal water for 15  minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dv3q\",\"text\":\"Menzom Lude Herbal Bath\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":23,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4obpk\",\"text\":\"Ingredient:  Juniper , Cedar, Musk Rose, Mugwort, Rhododendron, GInger, Pink Salt.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74ru5\",\"text\":\"Benefits: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"acobv\",\"text\":\"Good for body healing\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2om9g\",\"text\":\"Relieve joint pain and swelling\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1vaks\",\"text\":\"Ease  sore muscles and blood circualtion\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6s1r6\",\"text\":\"Rejuvenate skin\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f39d\",\"text\":\"Decrease stress and relaxation \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8h0mm\",\"text\":\"Better sleep\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cobq\",\"text\":\"How to Use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":11,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c475a\",\"text\":\"Boil 2 liter of water in a pot . When water boils, add 01 Herbal Bath filter bag in to the pot. Reduce heat, Cover and simmer for 5-7 minutes. Mix warm water with the herbal water until well-blend for use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685541235028.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685541234994.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685541235013.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685541235016.webp"
+        ],
+        "price": 532,
+        "MRP": 539,
+        "rating": 0,
+        "SKU": "1685538022024",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "647096758efac111e4d6ec91",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-05-31T13:00:22.035Z",
+        "updatedAt": "2023-07-05T07:00:31.857Z",
+        "__v": 0,
+        "alt_text": "  Foot Soak and Bath . Apneehatti"
+    },
+    {
+        "_id": "65293ea06f75450060143052",
+        "name": "Vanilla Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"5u85b\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"bv2kh\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8o934\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"fs8gj\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":15,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":15,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8kbu5\",\"text\":\"Embrace the comforting warmth of our Vanilla Serenity Aromatherapy Candle, meticulously crafted to infuse your surroundings with the soothing and delightful essence of vanilla. This hand-poured candle is thoughtfully created to elevate your senses, enveloping you in an atmosphere of tranquility and coziness.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d9lej\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atf7\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"94ojq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1klaf\",\"text\":\"Natural Vanilla Essence: Our candle is enriched with 100% pure vanilla essence, sourced from the finest vanilla pods, ensuring an authentic and opulent fragrance that captures the true essence of this cherished orchid.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1gu07\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78e3c\",\"text\":\"Extended Burn Time: Each candle provides an extended burn time of approximately 50 hours, offering you ample hours of relaxation and sensory indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dnn7v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2c18d\",\"text\":\"Natural Soy Wax Blend: We utilize a premium blend of natural soy wax and a lead-free cotton wick, guaranteeing a clean, even burn, devoid of harmful chemicals or toxins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b5t10\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"elitg\",\"text\":\"Exquisite Glass Jar Design: The candle is elegantly presented in a glass jar that complements any decor while safeguarding the integrity of the fragrance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q730\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5i4b\",\"text\":\"Artisanal Craftsmanship: Every candle is carefully hand-poured by skilled artisans, ensuring a high-quality product that meets our stringent standards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqltb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4mpdj\",\"text\":\"Mood-Enhancing Properties: Vanilla is celebrated for its calming and soothing properties. Allow the inviting aroma to cultivate an environment of relaxation, promoting a sense of well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697201822753.webp"
+        ],
+        "alt_text": "Vanilla Aromatherapy Candle | Handmade Aroma Candle ",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697201824969",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T12:57:04.979Z",
+        "updatedAt": "2023-10-13T12:57:04.979Z",
+        "__v": 0
+    },
+    {
+        "_id": "65292d16386143db9269dcc7",
+        "name": "Pine Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"cmlan\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"6bakv\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8v4om\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"brpc3\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8elfk\",\"text\":\"The strong, fresh, woody scent of Pine essential oil has a refreshing, invigorating, and empowering aroma. This oil has a calming scent when diffused, and is highly effective when used in massage. Pine's invigorating and calming aroma makes it ideal to use for cleaning purposes. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":279,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":279,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":279,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":279,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1697197333470.webp"
+        ],
+        "alt_text": "Pine Aromatherapy Candle | Handmade Aroma Candle",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697197334658",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T11:42:14.659Z",
+        "updatedAt": "2023-10-13T11:51:09.720Z",
+        "__v": 0
+    },
+    {
+        "_id": "6529366c9072da9d4e1955bf",
+        "name": "Eucalyptus Wood Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"24fmb\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8ng20\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"96itb\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"46tnc\",\"text\":\"About Product : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":15,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":15,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"fjn5c\",\"text\":\"Eucalyptus aromatherapy candles are candles that are infused with eucalyptus essential oil, which is derived from the leaves of the eucalyptus tree. These candles are designed to release the refreshing and invigorating scent of eucalyptus when lit, creating a calming and uplifting ambiance in the surrounding environment.\\n\\nThe use of eucalyptus in aromatherapy is believed to have various benefits. Eucalyptus essential oil is known for its soothing properties and is often used to help alleviate respiratory issues, such as coughs and congestion. It is also believed to have antibacterial and antiviral properties, making it a popular choice for candles used during cold and flu seasons. Additionally, eucalyptus is known for its fresh and revitalizing scent, which can help to promote mental clarity and relaxation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":322,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":324,\"length\":494,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":322,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":324,\"length\":494,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":322,\"style\":\"fontsize-14\"},{\"offset\":324,\"length\":494,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":322,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":324,\"length\":494,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1697199723150.webp"
+        ],
+        "alt_text": "Eucalyptus Wood Aromatherapy Candle | Handmade Aroma Candle ",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697199724340",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T12:22:04.342Z",
+        "updatedAt": "2023-10-13T12:22:04.342Z",
+        "__v": 0
+    },
+    {
+        "_id": "6478633d466bb361d676b396",
+        "name": "Drib-Sang Cleansing Incense  | Good for Religious Offering | Protect from Bad Spirits | 40 g",
+        "desc": "{\"blocks\":[{\"key\":\"fk129\",\"text\":\"Net Weight: 40g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":11,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"clhn1\",\"text\":\"05x4 Incense Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4hfa\",\"text\":\"Ingredients:  Mugwort, Juniper, Rhodedendron, etc.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":12,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"38g82\",\"text\":\"Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":9,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ddi6\",\"text\":\"Good for religious offering\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c8h7j\",\"text\":\"Purify and eliminate negative energies\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"en5s0\",\"text\":\"Protect from bad spirits\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tncf\",\"text\":\"Freshen air avoid contagious diseases.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cs5lt\",\"text\":\"How to use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1pfn\",\"text\":\"Choose a clean place indoor or outdoor. Keep an incense burner or a plate /bowls (optional ) Flat in your place. Place 01 Incense bag in/on your burner. Make a small fire by a lighter/match.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2vcpl\",\"text\":\"Warning:  Please Do not hold Incense bag on your hand when you make a fire. The bag can burn quickly so it is UNSAFE for you.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685611323163.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685611323198.webp"
+        ],
+        "price": 384,
+        "MRP": 389,
+        "rating": 0,
+        "SKU": "1685611325577",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "647096758efac111e4d6ec91",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-06-01T09:22:05.582Z",
+        "updatedAt": "2023-07-05T07:04:41.659Z",
+        "__v": 0,
+        "alt_text": " Cleansing Incense . Apneehatti"
+    },
+    {
+        "_id": "652923985b92c33fe203eac6",
+        "name": "Sandal Wood  Aromatherapy Candle | Handmade Aroma Candle  | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles |  150 g",
+        "desc": "{\"blocks\":[{\"key\":\"bhkb8\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2e35\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"55j30\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ns24\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"365rr\",\"text\":\"Kankshi Sandalwood aromatherapy candles are candles infused with the scent of sandalwood essential oil, which is derived from the wood of the sandalwood tree. Sandalwood has been used for centuries in various cultures for its therapeutic properties, including its calming and grounding effects on the mind and body. Sandalwood aromatherapy candles are popular for creating a relaxing and peaceful atmosphere, and are often used during meditation, yoga, or for general relaxation and stress relief.\\n\\nThe soft, warm, and woody scent of sandalwood is believed to have several benefits when used in aromatherapy candles. Some potential benefits of sandalwood aromatherapy candles include: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":497,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":499,\"length\":185,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":497,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":499,\"length\":185,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":497,\"style\":\"fontsize-14\"},{\"offset\":499,\"length\":185,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":497,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":499,\"length\":185,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dtvij\",\"text\":\"Benefits :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7hvjj\",\"text\":\"Relaxation and stress relief: Sandalwood is known for its calming properties and can help relax the mind and body, reducing stress and anxiety.\\n\\nPromoting focus and concentration: The grounding scent of sandalwood can help improve focus and concentration, making it ideal for use during work or study sessions.\\n\\nEnhancing mood: Sandalwood is often associated with positive emotions and can help uplift mood and promote a sense of well-being.\\n\\nSupporting sleep: The calming properties of sandalwood can also help improve sleep quality by promoting relaxation and reducing stress. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":143,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":145,\"length\":165,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":312,\"length\":129,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":443,\"length\":135,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":143,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":145,\"length\":165,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":312,\"length\":129,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":443,\"length\":135,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":143,\"style\":\"fontsize-14\"},{\"offset\":145,\"length\":165,\"style\":\"fontsize-14\"},{\"offset\":312,\"length\":129,\"style\":\"fontsize-14\"},{\"offset\":443,\"length\":135,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":143,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":145,\"length\":165,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":312,\"length\":129,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":443,\"length\":135,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":0,\"length\":29,\"style\":\"BOLD\"},{\"offset\":145,\"length\":34,\"style\":\"BOLD\"},{\"offset\":312,\"length\":16,\"style\":\"BOLD\"},{\"offset\":443,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697194901955.webp"
+        ],
+        "alt_text": "Sandal Wood  Aromatherapy Candle | Handmade Aroma Candle ",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697194904899",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T11:01:44.909Z",
+        "updatedAt": "2023-10-13T11:08:06.954Z",
+        "__v": 0
+    },
+    {
+        "_id": "65213c09f176c8ea3fb03829",
+        "name": "Apna Kangra Tulsi Ark- 100% Natural | Immunity Booster | Prevents Viral Fever | Removes Toxins from Body | Prevent Cough and Cold | Kill Stomach Worms | 30ml |",
+        "desc": "{\"blocks\":[{\"key\":\"6i3eq\",\"text\":\"Weight: 30 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"67ob9\",\"text\":\"Item Form : Drop\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":16,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":16,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":16,\"style\":\"fontsize-11pt\"},{\"offset\":0,\"length\":16,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":0,\"length\":16,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"11.25pt\"}},{\"key\":\"7qcl4\",\"text\":\"Brand : Vishav Pujita\\nDiet Type :Vegetarian\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":21,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":22,\"length\":21,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":21,\"style\":\"bgcolor-transparent\"},{\"offset\":22,\"length\":21,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":21,\"style\":\"fontsize-11pt\"},{\"offset\":22,\"length\":21,\"style\":\"fontsize-11pt\"},{\"offset\":0,\"length\":21,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":22,\"length\":21,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":0,\"length\":43,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"687d0\",\"text\":\"Material Feature : Natural\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":26,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":26,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":26,\"style\":\"fontsize-11pt\"},{\"offset\":0,\"length\":26,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":0,\"length\":26,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tfva\",\"text\":\"Number of Items : 1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":19,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":19,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":19,\"style\":\"fontsize-11pt\"},{\"offset\":0,\"length\":19,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":0,\"length\":19,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"21flk\",\"text\":\"About Product :\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":15,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":15,\"style\":\"fontsize-14pt\"},{\"offset\":0,\"length\":15,\"style\":\"fontfamily-Arial, sans-serif\"},{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8jbf\",\"text\":\"100% Natural: Pure and unadulterated, our Tulsi Ark is derived from the sacred basil plant, ensuring you receive the full spectrum of natural goodness without any artificial additives.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":184,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":184,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":184,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":184,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"es6uk\",\"text\":\"Immunity Booster: Tulsi Ark is a potent immune system enhancer, fortifying your body's defenses and helping it resist various infections and diseases.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":150,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":150,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":150,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":150,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"61gn8\",\"text\":\"Prevents Viral Fever: The antiviral properties of Tulsi Ark make it an effective shield against viral infections, reducing the risk of fever caused by viruses.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":159,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":159,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":159,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":159,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"47id\",\"text\":\"Removes Toxins from Body: This herbal elixir acts as a natural detoxifier, aiding in the elimination of toxins from the body and promoting overall wellness.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":156,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":156,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":156,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":156,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4i88s\",\"text\":\"Prevents Cough and Cold: Tulsi Ark is known for its anti-inflammatory and antibacterial properties, making it an excellent remedy to prevent and alleviate cough and cold symptoms.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":179,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":179,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":179,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":179,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6n6ms\",\"text\":\"Embrace the holistic benefits of our Tulsi Ark, a natural powerhouse that not only supports your immune system but also safeguards your well-being from various health challenges. Elevate your health with the purity and potency of Tulsi in every drop.\\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":250,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":250,\"style\":\"bgcolor-transparent\"},{\"offset\":0,\"length\":250,\"style\":\"fontsize-12pt\"},{\"offset\":0,\"length\":250,\"style\":\"fontfamily-Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"98j49\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1696676870549.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1696676870574.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1696676870578.webp"
+        ],
+        "alt_text": "Apna Kangra Tulsi Ark- 100% Natural",
+        "price": 99,
+        "MRP": 100,
+        "rating": 0,
+        "SKU": "1696676873078",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652137b6f61a6b9da043c852",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-07T11:07:53.086Z",
+        "updatedAt": "2023-10-07T11:07:53.086Z",
+        "__v": 0
+    },
+    {
+        "_id": "65292a02386143db9269dcc3",
+        "name": "Lemon Grass Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"84of2\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"fuj9m\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"349of\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"ef846\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbn04\",\"text\":\"Lemongrass aromatherapy candles are candles that are made with the essential oil of lemongrass. Lemongrass is a tropical grass that has a fresh, lemony scent and is commonly used in cooking and herbal medicine.\\n\\nAromatherapy candles are designed to create a relaxing and calming atmosphere by releasing fragrances that can help alleviate stress, anxiety, and other emotional issues. Lemongrass aromatherapy candles are particularly useful for this purpose because the scent of lemongrass is known to have a calming effect on the mind and body.\\n\\nIn addition to their calming properties, lemongrass aromatherapy candles are also said to have antibacterial and anti-inflammatory effects, which can help improve respiratory function and promote relaxation.\\n\\nTo use a lemongrass aromatherapy candle, simply light the candle and let it burn for a few minutes to release the scent. It's best to use the candle in a quiet, relaxing environment, such as a bedroom or living room, to maximize its benefits. Always follow the manufacturer's instructions for safe use of the candle \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":210,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":212,\"length\":331,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":545,\"length\":207,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":754,\"length\":315,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":210,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":212,\"length\":331,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":545,\"length\":207,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":754,\"length\":315,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":210,\"style\":\"fontsize-14\"},{\"offset\":212,\"length\":331,\"style\":\"fontsize-14\"},{\"offset\":545,\"length\":207,\"style\":\"fontsize-14\"},{\"offset\":754,\"length\":315,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":210,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":212,\"length\":331,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":545,\"length\":207,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":754,\"length\":315,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697196543601.webp"
+        ],
+        "alt_text": "Lemon Grass Aromatherapy Candle | Handmade Aroma Candle",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697196546029",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T11:29:06.036Z",
+        "updatedAt": "2023-10-13T11:29:06.036Z",
+        "__v": 0
+    },
+    {
+        "_id": "65292b542947706e2993ef32",
+        "name": "Rose Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"9ugod\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"b6hs3\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"b0v04\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"e5en9\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8b5ai\",\"text\":\"When it comes to relaxation and self-care, there's nothing quite like lighting a candle and letting the soothing scents wash over you. And when it comes to calming and comforting fragrances, fewents are as beloved as rose. That's why a rose aromatherapy candle is the perfect addition to any self-care routine.\\n\\nNot only does the sweet, floral scent of rose promote feelings of relaxation and tranquility, it's also known for its mood-boosting properties. Whether you're feeling stressed, anxious, or just need a little pick-me-up, lighting a rose-scented candle can help you feel more centered and grounded.\\n\\nBut not all rose candles are created equal. To ensure you're getting the most out of your aromatherapy experience, look for candles made with high-quality, natural ingredients. Soy wax, cotton wicks, and essential oils are all great choices for a clean-burning candle that won't release harmful chemicals into your home.\\n\\nSo the next time you need a little extra dose of calm and comfort, reach for a rose aromatherapy candle and let the sweet, floral scent transport you to a place of peace and relaxation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":310,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":312,\"length\":296,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":610,\"length\":320,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":932,\"length\":185,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":310,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":312,\"length\":296,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":610,\"length\":320,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":932,\"length\":185,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":310,\"style\":\"fontsize-14\"},{\"offset\":312,\"length\":296,\"style\":\"fontsize-14\"},{\"offset\":610,\"length\":320,\"style\":\"fontsize-14\"},{\"offset\":932,\"length\":185,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":310,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":312,\"length\":296,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":610,\"length\":320,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":932,\"length\":185,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697196881806.webp"
+        ],
+        "alt_text": "Rose Aromatherapy Candle | Handmade Aroma Candle",
+        "price": 396,
+        "MRP": 399,
+        "rating": 0,
+        "SKU": "1697196884265",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T11:34:44.273Z",
+        "updatedAt": "2023-10-13T11:34:44.273Z",
+        "__v": 0
+    },
+    {
+        "_id": "6477292b54955d71d23c8884",
+        "name": "Khen Nyi Herbal Steam | Relax , Exfoliate, Tigten Pores | Cure headaches",
+        "desc": "{\"blocks\":[{\"key\":\"doe8q\",\"text\":\"06 Filter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":14,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"5k4n8\",\"text\":\"Ingredients: Mugwort, Mint, Ginger\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":34,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":34,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":34,\"style\":\"fontfamily-Roboto, sans-serif\"},{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"left\"}},{\"key\":\"56pj4\",\"text\":\"Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":9,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":9,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":9,\"style\":\"fontfamily-Roboto, sans-serif\"},{\"offset\":0,\"length\":9,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"dji93\",\"text\":\"Reduce colds\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":12,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":12,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":12,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"bd4u3\",\"text\":\"Cure headaches\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":14,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":14,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":14,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"25l3o\",\"text\":\"Fever\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":5,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":5,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":5,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"767g0\",\"text\":\"Flu and sinus disease\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":21,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":21,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":21,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"2e5i4\",\"text\":\"Prevent and treat respiatroy diseases\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":37,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":37,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":37,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"fjli9\",\"text\":\"Relax , exfoliate, tigten pores.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":32,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":32,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":32,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"margin-left\":\"1.5em\"}},{\"key\":\"2bk7a\",\"text\":\"How to Use\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":10,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":10,\"style\":\"fontfamily-Roboto, sans-serif\"},{\"offset\":0,\"length\":10,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"f86a\",\"text\":\"Boil 500ml of water in a kettle/pot . When water boil ,add 01 herbal steam filter bag in the kettle/pot. Reduce heat, coverand simmer of 5 minutes. You can pour the herbals water in to a bowl (optional) Have a seat, use a clean towel to cover your head, keep your face at least 15 cm above hot water. Steam your face with the herbal water for 8-10 minutes. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":356,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":356,\"style\":\"fontsize-medium\"},{\"offset\":0,\"length\":356,\"style\":\"fontfamily-Roboto, sans-serif\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685530921260.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685530921294.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685530921311.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685530921314.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685530921316.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685530921319.webp"
+        ],
+        "price": 325,
+        "MRP": 329,
+        "rating": 0,
+        "SKU": "1685530923694",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64451ef29c002a06f696b087",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-05-31T11:02:03.703Z",
+        "updatedAt": "2023-07-05T06:58:08.703Z",
+        "__v": 0,
+        "alt_text": "Herbal Steam . Apneehatti"
+    },
+    {
+        "_id": "65293cf071a6db1bd3756c0e",
+        "name": "Jasmine Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"5u85b\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"bv2kh\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8o934\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"fs8gj\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":15,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":15,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8kbu5\",\"text\":\"Unwind and envelop yourself in the exquisite allure of our Jasmine Bliss Aromatherapy Candle. This hand-poured candle is meticulously crafted to infuse your space with the calming and enchanting essence of jasmine. With its delicate floral notes and soothing properties, this candle is designed to elevate your senses and create a serene ambiance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4rd9\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"au2hg\",\"text\":\"Pure Jasmine Essential Oil: Our candle is infused with 100% pure jasmine essential oil sourced from the finest blooms, ensuring an authentic and potent fragrance that captures the true essence of this revered flower.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8lmj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffo0v\",\"text\":\"Long-Lasting Burn Time: Each candle boasts a generous burn time of approximately 50 hours, providing you with hours of tranquil moments and sensory indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esrsp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vej7\",\"text\":\"Natural Soy Wax Blend: We use a premium blend of natural soy wax and a lead-free cotton wick, ensuring a clean and even burn, free from harmful chemicals or toxins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1q3nk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2j47h\",\"text\":\"Elegant Glass Jar: The candle is housed in a beautifully designed glass jar, which not only complements any decor but also protects the integrity of the fragrance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hof2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ikc0\",\"text\":\"Handcrafted with Care: Every candle is carefully hand-poured by skilled artisans, guaranteeing a high-quality product that meets our exacting standards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bsfqj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5p2pt\",\"text\":\"Mood-Enhancing Properties: Jasmine is renowned for its mood-lifting and stress-reducing properties. Allow the soothing aroma to promote relaxation, alleviate anxiety, and foster a sense of well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697201389383.webp"
+        ],
+        "alt_text": "Jasmine Aromatherapy Candle | Handmade Aroma Candle",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697201392301",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T12:49:52.314Z",
+        "updatedAt": "2023-10-13T12:49:52.314Z",
+        "__v": 0
+    },
+    {
+        "_id": "65292eed386143db9269dccb",
+        "name": "Lavender Wood Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"dkrl\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"67qlr\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"4rcqg\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"e6235\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cla2o\",\"text\":\"Lavender originated from the Latin verb “Lavare” which means “to wash”. It’s word origin holds true in the ways that we use Lavender today.\\nIn ancient Egypt, Lavender was used during the mummification process to perfume the corpse. On the other hand Ancient Greek quickly notices Lavender’s medicinal properties using it to ease ailments including headaches and indigestion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":139,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":140,\"length\":234,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":139,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":140,\"length\":234,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":139,\"style\":\"fontsize-14\"},{\"offset\":140,\"length\":234,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":139,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":140,\"length\":234,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1697197804212.webp"
+        ],
+        "alt_text": "Lavender Wood Aromatherapy Candle | Handmade Aroma Candle",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697197805330",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T11:50:05.332Z",
+        "updatedAt": "2023-10-13T11:50:05.332Z",
+        "__v": 0
+    },
+    {
+        "_id": "652934eb9072da9d4e1955bd",
+        "name": "Frankincense Aromatherapy Candle | Handmade Aroma Candle | Natural Aroma Candle | Stress Relief Aromatherapy Relaxation Candles Aromatherapy Candles | 150 g",
+        "desc": "{\"blocks\":[{\"key\":\"24fmb\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":18,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":18,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":18,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":18,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"8ng20\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":35,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":35,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":35,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":35,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"96itb\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":38,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":38,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":38,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":38,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"46tnc\",\"text\":\"About Product : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"color-rgb(107,114,128)\"},{\"offset\":0,\"length\":15,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":15,\"style\":\"fontfamily-ui-serif, Georgia, Cambria, \\\"Times New Roman\\\", Times, serif\"},{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{\"text-align\":\"start\"}},{\"key\":\"fjn5c\",\"text\":\"Frankincense aromatherapy candles are candles that are infused with frankincense essential oil, which is derived from the resin of the Boswellia tree. Frankincense has been used for centuries for its aromatic properties and is believed to have numerous health benefits, including reducing stress and anxiety, promoting relaxation, and improving spiritual awareness.\\n\\nFrankincense aromatherapy candles typically feature a soft, warm, and slightly sweet scent that can create a calming and meditative atmosphere in any \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":365,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":367,\"length\":149,\"style\":\"color-rgb(0,0,0)\"},{\"offset\":0,\"length\":365,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":367,\"length\":149,\"style\":\"bgcolor-rgb(255,255,255)\"},{\"offset\":0,\"length\":365,\"style\":\"fontsize-14\"},{\"offset\":367,\"length\":149,\"style\":\"fontsize-14\"},{\"offset\":0,\"length\":365,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"},{\"offset\":367,\"length\":149,\"style\":\"fontfamily--apple-system, BlinkMacSystemFont, \\\"Segoe UI\\\", Roboto, Helvetica, Arial, sans-serif\"}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1697199336212.webp"
+        ],
+        "alt_text": "Frankincense Aromatherapy Candle | Handmade Aroma Candle ",
+        "price": 396,
+        "MRP": 400,
+        "rating": 0,
+        "SKU": "1697199339107",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652924c827cc3c23602463f8",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-10-13T12:15:39.116Z",
+        "updatedAt": "2023-10-13T12:15:39.116Z",
+        "__v": 0
+    },
+    {
+        "_id": "6477236e5a15dc83f66fdb14",
+        "name": "Menzang 1 Steam + Food Soak | Reduce Colds | Flu and Sinus Disease",
+        "desc": "{\"blocks\":[{\"key\":\"ert2o\",\"text\":\"3 steam Filter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":19,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4gfik\",\"text\":\"2 Foot soak filter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":23,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3isu6\",\"text\":\"Herbal Steam\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":12,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs2jc\",\"text\":\"Ingredients: Mugwort, Mint, Ginger\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ndcj\",\"text\":\"Benefits: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":9,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cph00\",\"text\":\"Cure headaches\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6nt7\",\"text\":\"Fever\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3fgg\",\"text\":\"Flu and sinus disease\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jgtm\",\"text\":\"Prevent and treat respiatroy diseases\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4v6pd\",\"text\":\"Relax , exfoliate, tigten pores.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8jm7\",\"text\":\"How to Use\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cok9h\",\"text\":\"Boil 500ml of water in a kettle/pot . When water boil ,add 01 herbal steam filter bag in the kettle/pot. Reduce heat, coverand simmer of 5 minutes. You can pour the herbals water in to a bowl (optional) Have a seat, use a clean towel to cover your head, keep your face at least 15 cm above hot water. Steam your face with the herbal water for 8-10 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dstp6\",\"text\":\"Herbal Foot Soak\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":16,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eli60\",\"text\":\"Ingredients: Juniper, Cedar, Rhododendron, Ginger, Pink Salt\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":13,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fi0gq\",\"text\":\"Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":9,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5us6r\",\"text\":\"Reduces stess and anxiety\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei2n3\",\"text\":\"Keep the body warm\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6s47u\",\"text\":\"Relieve joint pain and swelling \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60hvg\",\"text\":\"Ease sore muscles and blood circulation \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bi4l6\",\"text\":\"Better sleep\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4p6ee\",\"text\":\"How to use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":11,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"avoa6\",\"text\":\"Boil 1 liter of water in a kettle/pot. When water boild, add 01 Herbal foot soak fiter bag in to the kettle/pot . Reduce heat, cover and simmer for 5 minutes. Then pour the herbal water into a bucket. Mix warm water with the herbal water until well-blend for use. Have a seat, soak your feet in the herbal water for 15 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685529452212.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685529452249.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685529452265.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685529452269.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685529452271.webp"
+        ],
+        "price": 395,
+        "MRP": 399,
+        "rating": 0,
+        "SKU": "1685529454801",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "647096758efac111e4d6ec91",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-05-31T10:37:34.812Z",
+        "updatedAt": "2023-07-05T06:56:11.935Z",
+        "__v": 0,
+        "alt_text": "Menzang Steam and Food Soak . Apneehatti"
+    },
+    {
+        "_id": "6477507a7465e26896e2fd0f",
+        "name": "Menzom Lude Herbal Bath | Good For Body Healing | Decrease Stress and Relaxation | 125 g",
+        "desc": "{\"blocks\":[{\"key\":\"3j0an\",\"text\":\"Net Weight: 125g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":16,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rfas\",\"text\":\"05 Filter Bags\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a99tq\",\"text\":\"Ingredients: Juniper, Cedar, Musk Rose, Mugwart, Rhododendron, Ginger, Pink Salt.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":12,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bntb\",\"text\":\"Benefits: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8t61b\",\"text\":\"Good For body healing\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ckn1m\",\"text\":\"Relieve joint pain and swelling\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4rnkq\",\"text\":\"Ease sore muscles and blood circulation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3103k\",\"text\":\"Rejuvenate skin\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lftu\",\"text\":\"Decrease stress and relaxation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2t2oa\",\"text\":\"Better sleep\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfhss\",\"text\":\"How to use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5barq\",\"text\":\"Boil 2 liter fo water in pot . When water boils, add 01 Herbal Bath filter bag into the pot. Reduce heat, cover and simmer for 5-7 minutes. Mix warm water with the herbal water until well-blend for use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1685540983665.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983703.jpg",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983707.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983718.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983720.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983723.webp",
+            "https://apneehatti.s3.amazonaws.com/image-1685540983726.webp"
+        ],
+        "price": 503,
+        "MRP": 509,
+        "rating": 0,
+        "SKU": "1685540986613",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64451ef29c002a06f696b087",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2023-05-31T13:49:46.624Z",
+        "updatedAt": "2023-07-05T07:03:11.644Z",
+        "__v": 0,
+        "alt_text": "Herbal Bath . Apneehatti"
+    }
+]

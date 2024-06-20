@@ -24,6 +24,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchFeaturedProducts } from "../slices/product";
 import Script from "next/script";
 
+
+
 const Herosection = dynamic(() => import("../components/herosection"), {
   ssr: false,
 });
@@ -39,147 +41,17 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
 });
 
 
-export async function getServerSideProps() {
-
-
-
-  let category = "Handlooms";
-
-  let q = null;
-
-  let apiEndpoints = {
-    all: "/api/products/list",
-    category: category ? `/api/products/category/${category}` : null,
-    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-  };
-
-  let endpoint =
-    apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
-    ];
-  let url = process.env.HOST + endpoint;
-  let dataPromises = endpoint
-    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-    : [];
-  let [res] = await Promise.all(dataPromises);
-
-
-  let filteredRes1 =
-    res?.filter((item) => item?.category_id?.active && item?.active) || [];
-
-  category = "Skincare-and-Beauty";
-  q = null;
-
-  apiEndpoints = {
-    all: "/api/products/list",
-    category: category ? `/api/products/category/${category}` : null,
-    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-  };
-
-  endpoint =
-    apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
-    ];
-  url = process.env.HOST + endpoint;
-  dataPromises = endpoint
-    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-    : [];
-  [res] = await Promise.all(dataPromises);
-
-
-  let filteredRes2 =
-    res?.filter((item) => item?.category_id?.active && item?.active) || [];
-  category = "Handcrafts";
-  q = null;
-
-  apiEndpoints = {
-    all: "/api/products/list",
-    category: category ? `/api/products/category/${category}` : null,
-    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-  };
-
-  endpoint =
-    apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
-    ];
-  url = process.env.HOST + endpoint;
-  dataPromises = endpoint
-    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-    : [];
-  [res] = await Promise.all(dataPromises);
-
-
-  let filteredRes3 =
-    res?.filter((item) => item?.category_id?.active && item?.active) || [];
-
-  category = "Organic-Food-Products";
-  q = null;
-
-  apiEndpoints = {
-    all: "/api/products/list",
-    category: category ? `/api/products/category/${category}` : null,
-    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-  };
-
-  endpoint =
-    apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
-    ];
-  url = process.env.HOST + endpoint;
-  dataPromises = endpoint
-    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-    : [];
-  [res] = await Promise.all(dataPromises);
-
-
-  let filteredRes4 =
-    res?.filter((item) => item?.category_id?.active && item?.active) || [];
-
-  category = "Health-Care";
-  q = null;
-
-  apiEndpoints = {
-    all: "/api/products/list",
-    category: category ? `/api/products/category/${category}` : null,
-    name: q ? `/api/products/name/${encodeURIComponent(q.trim())}` : null,
-  };
-
-  endpoint =
-    apiEndpoints[
-    category && category != "all" ? "category" : q ? "name" : "all"
-    ];
-  url = process.env.HOST + endpoint;
-  dataPromises = endpoint
-    ? [fetch(url).then((res) => (res.status == 200 ? res.json() : []))]
-    : [];
-  [res] = await Promise.all(dataPromises);
-
-
-  let filteredRes5 =
-    res?.filter((item) => item?.category_id?.active && item?.active) || [];
-  return {
-    props: {
-      pro_category: category || null,
-      prod1: filteredRes1,
-      prod2: filteredRes2,
-      prod3: filteredRes3,
-      prod4: filteredRes4,
-      prod5: filteredRes5,
-      query: q || null,
-    },
-  };
-}
 let socket;
 
-export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) {
+export default function Home({ socket_URL}) {
   const [copiedTopDeals, setCopiedTopDeals] = useState([]);
   const dispatch = useDispatch();
   const newArrivalSlider = useRef();
-  const [products1, setProducts1] = useState(prod1 || []);
-  const [products2, setProducts2] = useState(prod2 || []);
-  const [products3, setProducts3] = useState(prod3 || []);
-  const [products4, setProducts4] = useState(prod4 || []);
-  const [products5, setProducts5] = useState(prod5 || []);
+  const [products1, setProducts1] = useState( []);
+  const [products2, setProducts2] = useState( []);
+  const [products3, setProducts3] = useState([]);
+  const [products4, setProducts4] = useState( []);
+  const [products5, setProducts5] = useState([]);
 
 
   const topDealSlider = useRef();
@@ -254,6 +126,48 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
 
     // Call the fetchData function when the component mounts
   }, []);
+  useEffect(() => {
+    // Function to fetch JSON data
+    async function fetchData() {
+      try {
+        let response = await fetch('/data/handlooms.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        let jsonData = await response.json();
+        setProducts1(jsonData);
+        response = await fetch('/data/skincare.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        jsonData = await response.json();
+        setProducts2(jsonData);
+        response = await fetch('/data/handcrafts.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        jsonData = await response.json();
+        setProducts3(jsonData);
+        response = await fetch('/data/organics.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        jsonData = await response.json();
+        setProducts4(jsonData);
+         response = await fetch('/data/healthcare.json');
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+         jsonData = await response.json();
+        setProducts5(jsonData);
+      } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+      }
+    }
+
+    // Call the function to fetch data
+    fetchData();
+  }, []);
 
 
 
@@ -269,21 +183,6 @@ export default function Home({ socket_URL, prod1, prod2, prod3, prod4, prod5 }) 
         />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-        <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/contacts/contact-3/assets/css/contact-3.css" />
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Jockey+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </Head >
       <div className="bg-grey;">
         <Herosection />
