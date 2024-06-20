@@ -4,10 +4,7 @@ const withTM = require("next-transpile-modules")(["react-draft-wysiwyg"]);
 const nextConfig = withTM({
   reactStrictMode: true,
   images: {
-  
-
     domains: [
-      
       "apneehatti.s3.ap-south-1.amazonaws.com",
       "apneehatti.s3.amazonaws.com",
     ],
@@ -18,4 +15,3 @@ const nextConfig = withTM({
 });
 
 module.exports = nextConfig;
-
