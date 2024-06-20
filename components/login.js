@@ -261,7 +261,7 @@ const login = ({ onClose }) => {
 
         <>
     {!isFogotPassword ?
-            (<div className="mybody fixed d-flex flex-row mx-auto w-full my-0 py-0 top-0 z-10 border border-danger" style={{ backgroundColor: "rgba(0,0,0,0,5" }}>
+            (<div className="mybody fixed d-flex flex-row mx-auto w-full my-0 py-0 top-0 z-10 " style={{ backgroundColor: "rgba(0,0,0,0,5" }}>
 
                 <div className={`container  ${isSignUpActive ? 'right-panel-active' : ''}`} class={loginn["container"]} id="container" >
                     <div class="form-container sign-up-container" className={loginn["form-container"]}>
