@@ -1,32 +1,5 @@
 [
     {
-        "_id": "66649206d52eaa78f2a6e3dc",
-        "name": "Chamba Rumal - Parrot Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"3sv1g\",\"text\":\"Size: 14 X 14 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72aag\",\"text\":\"Fabric : Cotton Colth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"332tv\",\"text\":\" Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vom\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60ucm\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"18u3p\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Parrot embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"134j7\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hqa7\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Parrot hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136093.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136101.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136090.png"
-        ],
-        "alt_text": "Chamba Rumal - Parrot Hand Embroidered Handkerchief",
-        "price": 450,
-        "MRP": 450,
-        "rating": 0,
-        "SKU": "1717867014076",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "6502c03ee173ad30bb50fdbc",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:54.090Z",
-        "updatedAt": "2024-06-15T14:18:57.500Z",
-        "__v": 0
-    },
-    {
         "_id": "66649204d52eaa78f2a6e3d4",
         "name": "Chamba Rumal - Radha and Krishna in Garden Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
         "desc": "{\"blocks\":[{\"key\":\"1fofe\",\"text\":\"Size: 16 X 16 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9hpof\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cspbo\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ques\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eh1n3\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ab98f\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Radha and Krishna in Garden embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fm1le\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gfav\",\"text\":\"Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Radha and Krishna in Garden hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication. Note:- Picture for illustration purposes only\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -54,6 +27,33 @@
         "__v": 0
     },
     {
+        "_id": "66649206d52eaa78f2a6e3dc",
+        "name": "Chamba Rumal - Parrot Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"3sv1g\",\"text\":\"Size: 14 X 14 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72aag\",\"text\":\"Fabric : Cotton Colth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"332tv\",\"text\":\" Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vom\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60ucm\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"18u3p\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Parrot embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"134j7\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hqa7\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Parrot hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136093.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136101.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718461136090.png"
+        ],
+        "alt_text": "Chamba Rumal - Parrot Hand Embroidered Handkerchief",
+        "price": 450,
+        "MRP": 450,
+        "rating": 0,
+        "SKU": "1717867014076",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "6502c03ee173ad30bb50fdbc",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:54.090Z",
+        "updatedAt": "2024-06-15T14:18:57.500Z",
+        "__v": 0
+    },
+    {
         "_id": "66649232d52eaa78f2a6e4ba",
         "name": "Traditional Sandals - Kusha Grass Sleeper - Handcrafted Sleeper - Color - Red and Green",
         "desc": "{\"blocks\":[{\"key\":\"4149m\",\"text\":\"Size: 5 Material : Kusha Grass Slipper Class : Organic Color: Red and Green thread use Made on pre-order. It may take 7 days to prepare. Product Description   Indulge in comfort and style with our Handmade Grass Slippers and Sandals. Crafted with care and precision, these unique footwear pieces are a true testament to the artistry of handcrafting.  Our Handmade Slippers and Sandals are expertly crafted using natural grass, offering not just footwear, but a touch of nature to your every step. Every pair reflects the dedication of skilled artisans who meticulously weave each strand of grass in the traditional manner.  Experience the perfect blend of comfort, style, and sustainability with our Handmade Grass Slippers and Sandals. These eco-friendly footwear options not only provide a comfortable fit but also make a statement about your commitment to traditional craftsmanship and natural living.  Step out in confidence with footwear that's as unique as you are. Elevate your fashion game with Handmade Grass Slippers and Sandals that showcase authenticity and eco-consciousness. Choose our Handmade Slippers and Sandals today and embrace the comfort and charm of handcrafted, grass-made footwear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -77,26 +77,28 @@
         "__v": 0
     },
     {
-        "_id": "6664922ed52eaa78f2a6e4aa",
-        "name": "Traditional Sandals - Kusha Grass Sleeper - Handcrafted Sleeper - Color - White and Brown",
-        "desc": "{\"blocks\":[{\"key\":\"3o9u7\",\"text\":\"Size: 5 Material : Kusha Garss Slipper Class: Organic Color: White and Brown threas use Made on pre-order. It may take 7 days to prepare. Product Description   Indulge in comfort and style with our Handmade Grass Slippers and Sandals. Crafted with care and precision, these unique footwear pieces are a true testament to the artistry of handcrafting.  Our Handmade Slippers and Sandals are expertly crafted using natural grass, offering not just footwear, but a touch of nature to your every step. Every pair reflects the dedication of skilled artisans who meticulously weave each strand of grass in the traditional manner.  Experience the perfect blend of comfort, style, and sustainability with our Handmade Grass Slippers and Sandals. These eco-friendly footwear options not only provide a comfortable fit but also make a statement about your commitment to traditional craftsmanship and natural living.  Step out in confidence with footwear that's as unique as you are. Elevate your fashion game with Handmade Grass Slippers and Sandals that showcase authenticity and eco-consciousness. Choose our Handmade Slippers and Sandals today and embrace the comfort and charm of handcrafted, grass-made footwear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 598,
-        "MRP": 599,
+        "_id": "666491fad52eaa78f2a6e3a0",
+        "name": "Chamba Thaal with Traditional Doli - GI Tag - Metal Handicraft | Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"36iel\",\"text\":\"Dimensions: 15 inches diameter \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3u9sl\",\"text\":\"Material: Brass \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5askr\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqrna\",\"text\":\" About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ca5hg\",\"text\":\"The Handcrafted Chamba Thaal is a traditional plate of great cultural significance, originating from the vibrant Chamba district in Himachal Pradesh, India. This exquisite Thaal showcases exceptional craftsmanship and embodies the rich artistic heritage of the region. Skilled artisans meticulously handcraft each Chamba Thaal, utilizing high-quality materials such as brass or copper. The plate is adorned with intricate engravings, detailed patterns, and captivating motifs inspired by nature, mythology, and local traditions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3oer2\",\"text\":\"These artistic elements reflect the cultural heritage and artistic prowess of the Chamba region. The Chamba Thaal serves both as a functional serving plate and as a remarkable piece of art. Its spacious circular design allows for the presentation of a variety of delicacies during special occasions, festivals, and weddings. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dq7p5\",\"text\":\"It becomes the centerpiece of the dining experience, enhancing the visual appeal and adding a touch of elegance to the table setting. Beyond its practicality, the Handcrafted Chamba Thaal symbolizes the cultural identity and legacy of Himachal Pradesh. It is cherished as a precious heirloom, often passed down through generations as a symbol of tradition, heritage, and familial pride. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43q86\",\"text\":\"The Handcrafted Chamba Thaal showcases the extraordinary skill and artistry of Himachal Pradesh's artisans. Each plate is a unique masterpiece, reflecting the rich cultural narratives and artistic expressions of the Chamba region. By using the Chamba Thaal, individuals not only elevate their dining experiences but also contribute to the preservation and celebration of the vibrant cultural heritage of Himachal Pradesh.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ro3g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718343692780.png"
+        ],
+        "alt_text": "Chamba Thaal with Traditional Doli",
+        "price": 3899,
+        "MRP": 3900,
         "rating": 0,
-        "SKU": "1717867054820",
+        "SKU": "1717867002402",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
             "active": true
         },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
+        "brand_id": "644b41530db008ac91ebccc6",
+        "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:34.825Z",
-        "updatedAt": "2024-06-08T17:17:34.825Z",
+        "createdAt": "2024-06-08T17:16:42.415Z",
+        "updatedAt": "2024-06-14T05:41:35.243Z",
         "__v": 0
     },
     {
@@ -123,54 +125,26 @@
         "__v": 0
     },
     {
-        "_id": "66649208d52eaa78f2a6e3e8",
-        "name": "Chamba Rumal - Radha Rani Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Radha Dress Color- Green - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"4bi93\",\"text\":\"Size: 14 X 14\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cu5bb\",\"text\":\" Radha Dress Color: Green \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csfrd\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aujqa\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3edoo\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8eo94\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e63j0\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Radha Rani embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8pon6\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72jbb\",\"text\":\"Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Radha Rani hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41m2i\",\"text\":\"Apneehatti\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "6664922ed52eaa78f2a6e4aa",
+        "name": "Traditional Sandals - Kusha Grass Sleeper - Handcrafted Sleeper - Color - White and Brown",
+        "desc": "{\"blocks\":[{\"key\":\"3o9u7\",\"text\":\"Size: 5 Material : Kusha Garss Slipper Class: Organic Color: White and Brown threas use Made on pre-order. It may take 7 days to prepare. Product Description   Indulge in comfort and style with our Handmade Grass Slippers and Sandals. Crafted with care and precision, these unique footwear pieces are a true testament to the artistry of handcrafting.  Our Handmade Slippers and Sandals are expertly crafted using natural grass, offering not just footwear, but a touch of nature to your every step. Every pair reflects the dedication of skilled artisans who meticulously weave each strand of grass in the traditional manner.  Experience the perfect blend of comfort, style, and sustainability with our Handmade Grass Slippers and Sandals. These eco-friendly footwear options not only provide a comfortable fit but also make a statement about your commitment to traditional craftsmanship and natural living.  Step out in confidence with footwear that's as unique as you are. Elevate your fashion game with Handmade Grass Slippers and Sandals that showcase authenticity and eco-consciousness. Choose our Handmade Slippers and Sandals today and embrace the comfort and charm of handcrafted, grass-made footwear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
-        "alt_text": "Chamba Rumal - Radha Rani - Dress Color - Green",
-        "price": 450,
-        "MRP": 450,
+        "alt_text": "",
+        "price": 598,
+        "MRP": 599,
         "rating": 0,
-        "SKU": "1717867016744",
+        "SKU": "1717867054820",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
             "active": true
         },
-        "brand_id": "6502c03ee173ad30bb50fdbc",
-        "featured": "false",
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:56.750Z",
-        "updatedAt": "2024-06-15T14:16:06.484Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649203d52eaa78f2a6e3d0",
-        "name": "Chamba Rumal - Gaddi and Gaddan in Himalaya Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"btcn5\",\"text\":\"Size: 16 X 16 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aad1a\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu6cb\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21a5j\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4iv6k\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8kr0\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Gaddi and Gaddan in Himalaya embroidery, a symbol of love and devotion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68oma\",\"text\":\" Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ctmeu\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Gaddi and Gaddan in Himalaya8500 hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication. Note:- Picture for illustration purposes only\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718459892559.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718459892544.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718459892541.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718459892526.png"
-        ],
-        "alt_text": "Chamba Rumal - Gaddi and Gaddan",
-        "price": 8500,
-        "MRP": 8500,
-        "rating": 0,
-        "SKU": "1717867011618",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "6502c03ee173ad30bb50fdbc",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:51.629Z",
-        "updatedAt": "2024-06-15T14:03:41.813Z",
+        "createdAt": "2024-06-08T17:17:34.825Z",
+        "updatedAt": "2024-06-08T17:17:34.825Z",
         "__v": 0
     },
     {
@@ -224,6 +198,29 @@
         "__v": 0
     },
     {
+        "_id": "66649208d52eaa78f2a6e3e8",
+        "name": "Chamba Rumal - Radha Rani Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Radha Dress Color- Green - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"4bi93\",\"text\":\"Size: 14 X 14\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cu5bb\",\"text\":\" Radha Dress Color: Green \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csfrd\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aujqa\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3edoo\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8eo94\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e63j0\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Radha Rani embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8pon6\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72jbb\",\"text\":\"Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Radha Rani hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41m2i\",\"text\":\"Apneehatti\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "Chamba Rumal - Radha Rani - Dress Color - Green",
+        "price": 450,
+        "MRP": 450,
+        "rating": 0,
+        "SKU": "1717867016744",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "6502c03ee173ad30bb50fdbc",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:56.750Z",
+        "updatedAt": "2024-06-15T14:16:06.484Z",
+        "__v": 0
+    },
+    {
         "_id": "66649231d52eaa78f2a6e4b6",
         "name": "Handmade Hand Purse - 2 - Handcraft Hand Bags - Kushagrass Handcrafted Purse - Handmade Purses - Apneehatti",
         "desc": "{\"blocks\":[{\"key\":\"5v245\",\"text\":\"MATERIAL : GRASS AND THREAD AND BEADS Size: Length: 6 Inch, Height: 5 inch CLOUR : Multi Category : WOMEN HAND BAG OR PURSE  Made on pre-order. It may take 7 days to prepare. Product Description  Elevate Your Style with Handmade Himachal Grass Purse: Eco-Friendly Elegance Handmade Grass Purse: Introducing our exquisite Handmade Grass Purse, a true testament to the artistry and craftsmanship of the women from Himachal Pradesh. Eco-Friendly Elegance: Crafted with love and care, these purses are not just accessories; they are a commitment to eco-friendliness. Made from natural fibers, they embody sustainability. Himachal Heritage: By choosing our Grass Purse, you support the heritage and empowerment of the skilled women weavers in Himachal Pradesh. Natural Fiber Beauty: Each purse is a work of art, combining the rustic charm of natural grass with intricate beadwork for a unique and stylish look. Sustainable Fashion: Carry your essentials in a purse that reflects your values â€“ one that's made from organic materials and embraces sustainability. Elevate your style with the timeless elegance of our Handmade Himachal Grass Purse. Experience the artistry, tradition, and eco-friendly beauty crafted by the skilled women of Himachal Pradesh. Make a fashion statement while making a difference today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -244,6 +241,34 @@
         "active": true,
         "createdAt": "2024-06-08T17:17:37.491Z",
         "updatedAt": "2024-06-08T17:17:37.491Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649203d52eaa78f2a6e3d0",
+        "name": "Chamba Rumal - Gaddi and Gaddan in Himalaya Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"btcn5\",\"text\":\"Size: 16 X 16 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aad1a\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu6cb\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21a5j\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4iv6k\",\"text\":\" Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8kr0\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Gaddi and Gaddan in Himalaya embroidery, a symbol of love and devotion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68oma\",\"text\":\" Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ctmeu\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Gaddi and Gaddan in Himalaya8500 hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication. Note:- Picture for illustration purposes only\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718459892559.png",
+            "https://apneehatti.s3.amazonaws.com/image-1718459892544.png",
+            "https://apneehatti.s3.amazonaws.com/image-1718459892541.png",
+            "https://apneehatti.s3.amazonaws.com/image-1718459892526.png"
+        ],
+        "alt_text": "Chamba Rumal - Gaddi and Gaddan",
+        "price": 8500,
+        "MRP": 8500,
+        "rating": 0,
+        "SKU": "1717867011618",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "6502c03ee173ad30bb50fdbc",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:51.629Z",
+        "updatedAt": "2024-06-15T14:03:41.813Z",
         "__v": 0
     },
     {
@@ -269,6 +294,125 @@
         "active": true,
         "createdAt": "2024-06-08T17:17:59.502Z",
         "updatedAt": "2024-06-14T14:25:36.050Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649246d52eaa78f2a6e51c",
+        "name": "Divine Connection 70g - Natural Dhoop - Hint of Sandal ",
+        "desc": "{\"blocks\":[{\"key\":\"f41r4\",\"text\":\"Weight: 70g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5m7fq\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1eugn\",\"text\":\"DRY DHOOP STICKS All-natural raw material Without bamboo sticks Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718375079334.png"
+        ],
+        "alt_text": "Divine Connection Dhoop 70g",
+        "price": 90,
+        "MRP": 90,
+        "rating": 0,
+        "SKU": "1717867078788",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "64cf571203545d29576f85d9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:58.791Z",
+        "updatedAt": "2024-06-14T14:24:41.835Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649203d52eaa78f2a6e3ce",
+        "name": "Pine Tray - Pine Needle Tray with Handle - Handcrafted Tray - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"76bvm\",\"text\":\"Dimension - 27x24x3.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82ucb\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e8cp\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42v0r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6713\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle tray, lovingly crafted by skilled Himachali women artisans nestled in the serene landscapes of the Himalayas. Each tray is not just a product but a story woven with care, tradition, and empowerment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1t8m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dcp8\",\"text\":\"Sourced from the lush pine forests surrounding their villages, the pine needles used in crafting these trays are carefully selected for their quality and strength. With deft hands and generations of wisdom passed down, the women artisans skillfully weave together these natural fibers, creating a masterpiece of rustic elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7bj1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ogt4\",\"text\":\"Every tray bears the unique touch of its creator, showcasing the rich cultural heritage and craftsmanship of the Himalayan region. The intricate patterns and designs reflect the harmony between tradition and innovation, making each piece a true work of art.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"baabp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8a5\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Needle tray embodies a deeper significance â€“ it represents a journey of empowerment for the women artisans. By harnessing their skills and preserving traditional techniques, they not only sustain their families but also contribute to the preservation of their cultural identity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dr31\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vo0\",\"text\":\"Perfect for serving breakfast in bed, organizing your desk, or displaying cherished items, this tray seamlessly blends functionality with cultural richness. Its durable construction ensures longevity, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"44r8q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qfig\",\"text\":\"Bring a piece of the Himalayas into your home and support women artisans with our Handcrafted Pine Needle tray â€“ where tradition, craftsmanship, and empowerment intertwine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 1799,
+        "MRP": 1800,
+        "rating": 0,
+        "SKU": "1717867011215",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:51.236Z",
+        "updatedAt": "2024-06-08T17:16:51.236Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649205d52eaa78f2a6e3da",
+        "name": "Chamba Rumal - Radhai Rani Embroidered Handkerchief - Chamba Handkerchief - Embroidery Handkerchief - Radha Dress Color -Yellow - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"31il9\",\"text\":\"Size: 14 X 14\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7n73p\",\"text\":\"Radha Dress Color: Yellow\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74o1m\",\"text\":\"Fabric: Cotton Cloth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e34l5\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r2nr\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l6e5\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfjsj\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"epmbk\",\"text\":\"Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion. Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7okda\",\"text\":\"Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Radha Rani hand-embroidered handkerchiefs. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cougi\",\"text\":\"Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cktdi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718460830581.png"
+        ],
+        "alt_text": "Chamba Rumal - Radhai Rani - Dress Color - Yellow",
+        "price": 450,
+        "MRP": 450,
+        "rating": 0,
+        "SKU": "1717867013661",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "6502c03ee173ad30bb50fdbc",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:53.676Z",
+        "updatedAt": "2024-06-15T14:13:52.203Z",
+        "__v": 0
+    },
+    {
+        "_id": "6664922ed52eaa78f2a6e4a6",
+        "name": "Handmade Hand Purse - Handcraft Hand Bags - Kushagrass Handcrafted Purse - Handmade Purses - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"3uvca\",\"text\":\"MATERIAL : GRASS AND THREAD AND BEADS Size: Base: 4 inch, Length: 8 Inch, Height: 4 inch CLOUR : Multi Category : WOMEN HAND BAG OR PURSE  Made on pre-order. It may take 7 days to prepare. Product Description Elevate Your Style with Handmade Himachal Grass Purse: Eco-Friendly Elegance Handmade Grass Purse: Introducing our exquisite Handmade Grass Purse, a true testament to the artistry and craftsmanship of the women from Himachal Pradesh. Eco-Friendly Elegance: Crafted with love and care, these purses are not just accessories; they are a commitment to eco-friendliness. Made from natural fibers, they embody sustainability. Himachal Heritage: By choosing our Grass Purse, you support the heritage and empowerment of the skilled women weavers in Himachal Pradesh. Natural Fiber Beauty: Each purse is a work of art, combining the rustic charm of natural grass with intricate beadwork for a unique and stylish look. Sustainable Fashion: Carry your essentials in a purse that reflects your values â€“ one that's made from organic materials and embraces sustainability. Elevate your style with the timeless elegance of our Handmade Himachal Grass Purse. Experience the artistry, tradition, and eco-friendly beauty crafted by the skilled women of Himachal Pradesh. Make a fashion statement while making a difference today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 1499,
+        "MRP": 1500,
+        "rating": 0,
+        "SKU": "1717867054023",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:34.028Z",
+        "updatedAt": "2024-06-08T17:17:34.028Z",
+        "__v": 0
+    },
+    {
+        "_id": "6664922ed52eaa78f2a6e4a8",
+        "name": "Pooja Thaali -1 - Pooja Ki Thaali - Handmade Kusha Grass Pooja Thaali - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"abhdl\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description Handwoven Puja Thaali, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the tranquil valleys of Himachal Pradesh. Elevate your spiritual rituals and infuse your sacred space with rustic elegance, all while making an eco-conscious choice. Discover this one-of-a-kind tokri, available exclusively at apneehatti.com  Why Our Handwoven Puja Thaali is a Sacred Essential:  Spiritual Artistry: Each tokri is a testament to the timeless craftsmanship of Himachal Pradesh. Our skilled artisans pour their devotion into hand-weaving these baskets, ensuring you receive a piece of heritage and spirituality.  Eco-Conscious Excellence: We take pride in using sustainably sourced Darbha and Kusha Grass, making our Pooja Thaali a spiritual and green choice. You're not just enhancing your sacred space; you're nurturing Mother Earth.  Divine Elegance: The natural textures and earthy hues of Darbha and Kusha Grass create a serene and sacred ambiance in your worship area. Elevate your daily rituals with this exquisite tokri, adding a touch of divine charm.  Spiritual Versatility: Our Handwoven Pooja Thaali is designed to hold an array of sacred items for your rituals, from incense sticks and flowers to holy offerings. It's also a stunning altar decoration, radiating positive energy.  Blessed Uniqueness: Just like the sacred landscapes of Himachal Pradesh, each thaali is unique, featuring its own character and design variations. You're acquiring a truly distinctive piece for your spiritual practice.  Enduring Blessings: Crafted with spiritual devotion, our Pooja Thaali is not just visually appealing; it's sturdy and enduring, ensuring it serves your spiritual needs for years to come.  Transform your spiritual practice into a natural masterpiece with our Handwoven Pooja Thaali . At apneehatti.com, we offer more than just products; we share the essence of Himachal's natural beauty, cultural heritage, and spiritual significance with you.  Experience the tranquillity of Darbha and Kusha Grass by adding this unique Pooja Thaali to your spiritual journey today! Click here to order now and elevate your sacred space with sustainable serenity and divine blessings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 1499,
+        "MRP": 1500,
+        "rating": 0,
+        "SKU": "1717867054412",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:34.423Z",
+        "updatedAt": "2024-06-08T17:17:34.423Z",
         "__v": 0
     },
     {
@@ -315,150 +459,6 @@
         "active": true,
         "createdAt": "2024-06-08T17:17:32.789Z",
         "updatedAt": "2024-06-08T17:17:32.789Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649203d52eaa78f2a6e3ce",
-        "name": "Pine Tray - Pine Needle Tray with Handle - Handcrafted Tray - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"76bvm\",\"text\":\"Dimension - 27x24x3.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82ucb\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e8cp\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42v0r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6713\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle tray, lovingly crafted by skilled Himachali women artisans nestled in the serene landscapes of the Himalayas. Each tray is not just a product but a story woven with care, tradition, and empowerment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1t8m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dcp8\",\"text\":\"Sourced from the lush pine forests surrounding their villages, the pine needles used in crafting these trays are carefully selected for their quality and strength. With deft hands and generations of wisdom passed down, the women artisans skillfully weave together these natural fibers, creating a masterpiece of rustic elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7bj1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ogt4\",\"text\":\"Every tray bears the unique touch of its creator, showcasing the rich cultural heritage and craftsmanship of the Himalayan region. The intricate patterns and designs reflect the harmony between tradition and innovation, making each piece a true work of art.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"baabp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8a5\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Needle tray embodies a deeper significance â€“ it represents a journey of empowerment for the women artisans. By harnessing their skills and preserving traditional techniques, they not only sustain their families but also contribute to the preservation of their cultural identity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dr31\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vo0\",\"text\":\"Perfect for serving breakfast in bed, organizing your desk, or displaying cherished items, this tray seamlessly blends functionality with cultural richness. Its durable construction ensures longevity, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"44r8q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qfig\",\"text\":\"Bring a piece of the Himalayas into your home and support women artisans with our Handcrafted Pine Needle tray â€“ where tradition, craftsmanship, and empowerment intertwine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1799,
-        "MRP": 1800,
-        "rating": 0,
-        "SKU": "1717867011215",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:51.236Z",
-        "updatedAt": "2024-06-08T17:16:51.236Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922ed52eaa78f2a6e4a8",
-        "name": "Pooja Thaali -1 - Pooja Ki Thaali - Handmade Kusha Grass Pooja Thaali - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"abhdl\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description Handwoven Puja Thaali, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the tranquil valleys of Himachal Pradesh. Elevate your spiritual rituals and infuse your sacred space with rustic elegance, all while making an eco-conscious choice. Discover this one-of-a-kind tokri, available exclusively at apneehatti.com  Why Our Handwoven Puja Thaali is a Sacred Essential:  Spiritual Artistry: Each tokri is a testament to the timeless craftsmanship of Himachal Pradesh. Our skilled artisans pour their devotion into hand-weaving these baskets, ensuring you receive a piece of heritage and spirituality.  Eco-Conscious Excellence: We take pride in using sustainably sourced Darbha and Kusha Grass, making our Pooja Thaali a spiritual and green choice. You're not just enhancing your sacred space; you're nurturing Mother Earth.  Divine Elegance: The natural textures and earthy hues of Darbha and Kusha Grass create a serene and sacred ambiance in your worship area. Elevate your daily rituals with this exquisite tokri, adding a touch of divine charm.  Spiritual Versatility: Our Handwoven Pooja Thaali is designed to hold an array of sacred items for your rituals, from incense sticks and flowers to holy offerings. It's also a stunning altar decoration, radiating positive energy.  Blessed Uniqueness: Just like the sacred landscapes of Himachal Pradesh, each thaali is unique, featuring its own character and design variations. You're acquiring a truly distinctive piece for your spiritual practice.  Enduring Blessings: Crafted with spiritual devotion, our Pooja Thaali is not just visually appealing; it's sturdy and enduring, ensuring it serves your spiritual needs for years to come.  Transform your spiritual practice into a natural masterpiece with our Handwoven Pooja Thaali . At apneehatti.com, we offer more than just products; we share the essence of Himachal's natural beauty, cultural heritage, and spiritual significance with you.  Experience the tranquillity of Darbha and Kusha Grass by adding this unique Pooja Thaali to your spiritual journey today! Click here to order now and elevate your sacred space with sustainable serenity and divine blessings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1499,
-        "MRP": 1500,
-        "rating": 0,
-        "SKU": "1717867054412",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:34.423Z",
-        "updatedAt": "2024-06-08T17:17:34.423Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922ed52eaa78f2a6e4a6",
-        "name": "Handmade Hand Purse - Handcraft Hand Bags - Kushagrass Handcrafted Purse - Handmade Purses - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"3uvca\",\"text\":\"MATERIAL : GRASS AND THREAD AND BEADS Size: Base: 4 inch, Length: 8 Inch, Height: 4 inch CLOUR : Multi Category : WOMEN HAND BAG OR PURSE  Made on pre-order. It may take 7 days to prepare. Product Description Elevate Your Style with Handmade Himachal Grass Purse: Eco-Friendly Elegance Handmade Grass Purse: Introducing our exquisite Handmade Grass Purse, a true testament to the artistry and craftsmanship of the women from Himachal Pradesh. Eco-Friendly Elegance: Crafted with love and care, these purses are not just accessories; they are a commitment to eco-friendliness. Made from natural fibers, they embody sustainability. Himachal Heritage: By choosing our Grass Purse, you support the heritage and empowerment of the skilled women weavers in Himachal Pradesh. Natural Fiber Beauty: Each purse is a work of art, combining the rustic charm of natural grass with intricate beadwork for a unique and stylish look. Sustainable Fashion: Carry your essentials in a purse that reflects your values â€“ one that's made from organic materials and embraces sustainability. Elevate your style with the timeless elegance of our Handmade Himachal Grass Purse. Experience the artistry, tradition, and eco-friendly beauty crafted by the skilled women of Himachal Pradesh. Make a fashion statement while making a difference today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1499,
-        "MRP": 1500,
-        "rating": 0,
-        "SKU": "1717867054023",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:34.028Z",
-        "updatedAt": "2024-06-08T17:17:34.028Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649205d52eaa78f2a6e3da",
-        "name": "Chamba Rumal - Radhai Rani Embroidered Handkerchief - Chamba Handkerchief - Embroidery Handkerchief - Radha Dress Color -Yellow - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"31il9\",\"text\":\"Size: 14 X 14\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7n73p\",\"text\":\"Radha Dress Color: Yellow\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74o1m\",\"text\":\"Fabric: Cotton Cloth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e34l5\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r2nr\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l6e5\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfjsj\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously Radha Rani-embroidered by skilled artisans. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"epmbk\",\"text\":\"Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion. Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7okda\",\"text\":\"Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Radha Rani hand-embroidered handkerchiefs. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cougi\",\"text\":\"Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cktdi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718460830581.png"
-        ],
-        "alt_text": "Chamba Rumal - Radhai Rani - Dress Color - Yellow",
-        "price": 450,
-        "MRP": 450,
-        "rating": 0,
-        "SKU": "1717867013661",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "6502c03ee173ad30bb50fdbc",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:53.676Z",
-        "updatedAt": "2024-06-15T14:13:52.203Z",
-        "__v": 0
-    },
-    {
-        "_id": "666491fbd52eaa78f2a6e3a4",
-        "name": "Chamba Thaal with Small Ransingha Musical Instrument - GI Tag - Metal Handicraft - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"49r66\",\"text\":\"Dimensions: 11 Inches diameter \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2n6k3\",\"text\":\"Material: Brass \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bn9u\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21q6p\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clpj2\",\"text\":\"The Handcrafted Chamba Thaal is a traditional plate of great cultural significance, originating from the vibrant Chamba district in Himachal Pradesh, India. This exquisite Thaal showcases exceptional craftsmanship and embodies the rich artistic heritage of the region. Skilled artisans meticulously handcraft each Chamba Thaal, utilizing high-quality materials such as brass or copper. The plate is adorned with intricate engravings, detailed patterns, and captivating motifs inspired by nature, mythology, and local traditions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"875kd\",\"text\":\"These artistic elements reflect the cultural heritage and artistic prowess of the Chamba region. The Chamba Thaal serves both as a functional serving plate and as a remarkable piece of art. Its spacious circular design allows for the presentation of a variety of delicacies during special occasions, festivals, and weddings. It becomes the centerpiece of the dining experience, enhancing the visual appeal and adding a touch of elegance to the table setting. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5eso\",\"text\":\"Beyond its practicality, the Handcrafted Chamba Thaal symbolizes the cultural identity and legacy of Himachal Pradesh. It is cherished as a precious heirloom, often passed down through generations as a symbol of tradition, heritage, and familial pride. The Handcrafted Chamba Thaal showcases the extraordinary skill and artistry of Himachal Pradesh's artisans.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvhnc\",\"text\":\" Each plate is a unique masterpiece, reflecting the rich cultural narratives and artistic expressions of the Chamba region. By using the Chamba Thaal, individuals not only elevate their dining experiences but also contribute to the preservation and celebration of the vibrant cultural heritage of Himachal Pradesh.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ljt6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718088414224.png"
-        ],
-        "alt_text": "Chamba Thaal Ransingha",
-        "price": 2599,
-        "MRP": 2600,
-        "rating": 0,
-        "SKU": "1717867003226",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b41530db008ac91ebccc6",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:43.242Z",
-        "updatedAt": "2024-06-14T05:44:07.266Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649246d52eaa78f2a6e51c",
-        "name": "Divine Connection 70g - Natural Dhoop - Hint of Sandal ",
-        "desc": "{\"blocks\":[{\"key\":\"f41r4\",\"text\":\"Weight: 70g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5m7fq\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1eugn\",\"text\":\"DRY DHOOP STICKS All-natural raw material Without bamboo sticks Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718375079334.png"
-        ],
-        "alt_text": "Divine Connection Dhoop 70g",
-        "price": 90,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867078788",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "64cf571203545d29576f85d9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:58.791Z",
-        "updatedAt": "2024-06-14T14:24:41.835Z",
         "__v": 0
     },
     {
@@ -535,6 +535,31 @@
         "__v": 0
     },
     {
+        "_id": "666491fbd52eaa78f2a6e3a4",
+        "name": "Chamba Thaal with Small Ransingha Musical Instrument - GI Tag - Metal Handicraft - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"49r66\",\"text\":\"Dimensions: 11 Inches diameter \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2n6k3\",\"text\":\"Material: Brass \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bn9u\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21q6p\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clpj2\",\"text\":\"The Handcrafted Chamba Thaal is a traditional plate of great cultural significance, originating from the vibrant Chamba district in Himachal Pradesh, India. This exquisite Thaal showcases exceptional craftsmanship and embodies the rich artistic heritage of the region. Skilled artisans meticulously handcraft each Chamba Thaal, utilizing high-quality materials such as brass or copper. The plate is adorned with intricate engravings, detailed patterns, and captivating motifs inspired by nature, mythology, and local traditions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"875kd\",\"text\":\"These artistic elements reflect the cultural heritage and artistic prowess of the Chamba region. The Chamba Thaal serves both as a functional serving plate and as a remarkable piece of art. Its spacious circular design allows for the presentation of a variety of delicacies during special occasions, festivals, and weddings. It becomes the centerpiece of the dining experience, enhancing the visual appeal and adding a touch of elegance to the table setting. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5eso\",\"text\":\"Beyond its practicality, the Handcrafted Chamba Thaal symbolizes the cultural identity and legacy of Himachal Pradesh. It is cherished as a precious heirloom, often passed down through generations as a symbol of tradition, heritage, and familial pride. The Handcrafted Chamba Thaal showcases the extraordinary skill and artistry of Himachal Pradesh's artisans.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvhnc\",\"text\":\" Each plate is a unique masterpiece, reflecting the rich cultural narratives and artistic expressions of the Chamba region. By using the Chamba Thaal, individuals not only elevate their dining experiences but also contribute to the preservation and celebration of the vibrant cultural heritage of Himachal Pradesh.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ljt6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718088414224.png"
+        ],
+        "alt_text": "Chamba Thaal Ransingha",
+        "price": 2599,
+        "MRP": 2600,
+        "rating": 0,
+        "SKU": "1717867003226",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b41530db008ac91ebccc6",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:43.242Z",
+        "updatedAt": "2024-06-14T05:44:07.266Z",
+        "__v": 0
+    },
+    {
         "_id": "66649204d52eaa78f2a6e3d6",
         "name": "Chamba Rumal Radha Rani Handmade Embroidered Handkerchief - Chamba Handkerchief - Radha Rani Dress Color - Red - Apneehatti",
         "desc": "{\"blocks\":[{\"key\":\"c6oi4\",\"text\":\"Size: 14 X 14 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fc71\",\"text\":\"Radha Dress Color: Red \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"adl4b\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dsthi\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7j0hs\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3c72c\",\"text\":\" Product Description :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eka08\",\"text\":\" Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8lad\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9bfi3\",\"text\":\"Experience the artistry and tradition with every use of our Flower hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs â€“ a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"98s9d\",\"text\":\"Apneehatti\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -559,29 +584,6 @@
         "active": true,
         "createdAt": "2024-06-08T17:16:52.858Z",
         "updatedAt": "2024-06-15T14:11:40.877Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649225d52eaa78f2a6e476",
-        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Purple Color - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"2732i\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 149,
-        "MRP": 150,
-        "rating": 0,
-        "SKU": "1717867045744",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:25.746Z",
-        "updatedAt": "2024-06-08T17:17:25.746Z",
         "__v": 0
     },
     {
@@ -631,15 +633,15 @@
         "__v": 0
     },
     {
-        "_id": "66649230d52eaa78f2a6e4b2",
-        "name": "Pen Stand - Pen Holder - Handcrafed Pen Stand - Kushagrass Pen Stand - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"csdl4\",\"text\":\"Material : Kusha Grass and Thread Color: Beige Size: Base: 3 Inch , Height: 5 Inch Care: Wash and sun dry Made on pre-order. It may take 7 days to prepare. Product Description    Elevate your workspace with our Handmade Organic Pen Holder, a unique piece meticulously crafted by talented women from Himachal Pradesh using traditional techniques. This exquisite pen holder embodies both functionality and eco-friendliness, making it a must-have addition to your desk. Our Pen Holder is handcrafted from natural grass, offering a touch of nature to your workspace. Each piece is a testament to the rich heritage of Himachal craftsmanship and the dedication of local women who bring their artistry to life. Organize your pens, pencils, and other stationery items in style while supporting sustainable living. This Pen Holder not only adds an organic charm to your desk but also showcases your commitment to traditional craftsmanship and women empowerment. Make a statement in your office or home with this eco-conscious, handmade Pen Holder. Enhance your workspace with a touch of Himachal's cultural heritage while staying organized and environmentally conscious. Elevate your desk decor with a piece that tells a story and contributes to a brighter future. Choose our Handmade Organic Pen Holder today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649225d52eaa78f2a6e476",
+        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Purple Color - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"2732i\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 499,
-        "MRP": 500,
+        "price": 149,
+        "MRP": 150,
         "rating": 0,
-        "SKU": "1717867056645",
+        "SKU": "1717867045744",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -649,8 +651,33 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:36.648Z",
-        "updatedAt": "2024-06-08T17:17:36.648Z",
+        "createdAt": "2024-06-08T17:17:25.746Z",
+        "updatedAt": "2024-06-08T17:17:25.746Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649246d52eaa78f2a6e51a",
+        "name": "Combo of Kaya and Shuddhi Incense - Hint of Rose - Hint of Chandan",
+        "desc": "{\"blocks\":[{\"key\":\"f8859\",\"text\":\"One Pack- Kaya \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etiu1\",\"text\":\"One Pack - Shuddhi \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ao5fm\",\"text\":\"Weight: 40g Each and 25 Sticks Each \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rrg2\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fm8kc\",\"text\":\"All-natural raw material With bamboo sticks Plant based essential oils used for Incense. Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375294320.png"
+        ],
+        "alt_text": "Combo of Kaya and Shuddhi Incense",
+        "price": 70,
+        "MRP": 70,
+        "rating": 0,
+        "SKU": "1717867078380",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "64cf571203545d29576f85d9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:58.384Z",
+        "updatedAt": "2024-06-14T14:28:15.831Z",
         "__v": 0
     },
     {
@@ -677,28 +704,26 @@
         "__v": 0
     },
     {
-        "_id": "66649246d52eaa78f2a6e51a",
-        "name": "Combo of Kaya and Shuddhi Incense - Hint of Rose - Hint of Chandan",
-        "desc": "{\"blocks\":[{\"key\":\"f8859\",\"text\":\"One Pack- Kaya \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etiu1\",\"text\":\"One Pack - Shuddhi \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ao5fm\",\"text\":\"Weight: 40g Each and 25 Sticks Each \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rrg2\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fm8kc\",\"text\":\"All-natural raw material With bamboo sticks Plant based essential oils used for Incense. Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375294320.png"
-        ],
-        "alt_text": "Combo of Kaya and Shuddhi Incense",
-        "price": 70,
-        "MRP": 70,
+        "_id": "66649230d52eaa78f2a6e4b2",
+        "name": "Pen Stand - Pen Holder - Handcrafed Pen Stand - Kushagrass Pen Stand - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"csdl4\",\"text\":\"Material : Kusha Grass and Thread Color: Beige Size: Base: 3 Inch , Height: 5 Inch Care: Wash and sun dry Made on pre-order. It may take 7 days to prepare. Product Description    Elevate your workspace with our Handmade Organic Pen Holder, a unique piece meticulously crafted by talented women from Himachal Pradesh using traditional techniques. This exquisite pen holder embodies both functionality and eco-friendliness, making it a must-have addition to your desk. Our Pen Holder is handcrafted from natural grass, offering a touch of nature to your workspace. Each piece is a testament to the rich heritage of Himachal craftsmanship and the dedication of local women who bring their artistry to life. Organize your pens, pencils, and other stationery items in style while supporting sustainable living. This Pen Holder not only adds an organic charm to your desk but also showcases your commitment to traditional craftsmanship and women empowerment. Make a statement in your office or home with this eco-conscious, handmade Pen Holder. Enhance your workspace with a touch of Himachal's cultural heritage while staying organized and environmentally conscious. Elevate your desk decor with a piece that tells a story and contributes to a brighter future. Choose our Handmade Organic Pen Holder today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 499,
+        "MRP": 500,
         "rating": 0,
-        "SKU": "1717867078380",
+        "SKU": "1717867056645",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
             "active": true
         },
-        "brand_id": "64cf571203545d29576f85d9",
-        "featured": "false",
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:58.384Z",
-        "updatedAt": "2024-06-14T14:28:15.831Z",
+        "createdAt": "2024-06-08T17:17:36.648Z",
+        "updatedAt": "2024-06-08T17:17:36.648Z",
         "__v": 0
     },
     {
@@ -750,52 +775,6 @@
         "active": true,
         "createdAt": "2024-06-08T17:16:53.252Z",
         "updatedAt": "2024-06-15T14:02:39.781Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922fd52eaa78f2a6e4ae",
-        "name": "Serve Tray - Handmade Kusha Grass Serve Tray - Round Serve Tray - Made of Darbha and Kusha Grass - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"5b233\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : Base : 7 inch , Height: 2.5 inch No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description: Handwoven Serve Plate, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the pristine valleys of Himachal Pradesh. Elevate your dining experience and embrace eco-friendly elegance with this trending eco-friendly serve plate, available exclusively at apneehatti.com  Why Choose Our Handwoven Serve Plate?  Eco-Conscious Luxury: Our serve plate is crafted from sustainably sourced Darbha and Kusha Grass, making it the epitome of eco-friendly dining. Join the green movement with this sustainable choice.  Natural Aesthetic: The organic textures and earthy hues of Darbha and Kusha Grass infuse your dining table with rustic elegance. Embrace the trending trend of natural materials in home decor.  Versatile Design: Our Handwoven Serve Plate is not just visually appealing; it's designed for versatility. Use it to serve a variety of dishes, from appetisers and salads to main courses and desserts.  Trending Eco-Fashion: As sustainability gains momentum, our serve plate aligns perfectly with the trending keywords of \\\"eco-friendly,\\\" \\\"natural,\\\" and \\\"sustainable,\\\" adding a touch of ethical fashion to your table.  One-of-a-Kind: Just like the breathtaking landscapes of Himachal Pradesh, each serve plate is unique, featuring its own character and design variations. It's a trending statement piece for your dining experience.  Durability and Longevity: Crafted for everyday use, our serve plate is not only trendy but also sturdy and built to last, ensuring it continues to grace your dining table for years to come.  Elevate your dining table into a trending masterpiece with our Handwoven Serve Plate. At Apneehatti, we offer more than just products; we offer trending sustainable styles that align with modern values.  Experience the beauty of Darbha and Kusha Grass by adding this unique serve plate to your collection today! Click here to order now and stay ahead of the trends with eco-friendly elegance at your table.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 699,
-        "MRP": 700,
-        "rating": 0,
-        "SKU": "1717867055649",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:35.664Z",
-        "updatedAt": "2024-06-08T17:17:35.664Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649231d52eaa78f2a6e4b8",
-        "name": "Traditional Sandals - Kusha Grass Sleeper - Handcrafted Sleeper - Color - Green and Blue",
-        "desc": "{\"blocks\":[{\"key\":\"7osqh\",\"text\":\"Size: 5 Material : Kusha Grass Slipper Class: Organic Color: Green and Blue thread use Made on pre-order. It may take 7 days to prepare. Product Description   Indulge in comfort and style with our Handmade Grass Slippers and Sandals. Crafted with care and precision, these unique footwear pieces are a true testament to the artistry of handcrafting.  Our Handmade Slippers and Sandals are expertly crafted using natural grass, offering not just footwear, but a touch of nature to your every step. Every pair reflects the dedication of skilled artisans who meticulously weave each strand of grass in the traditional manner.  Experience the perfect blend of comfort, style, and sustainability with our Handmade Grass Slippers and Sandals. These eco-friendly footwear options not only provide a comfortable fit but also make a statement about your commitment to traditional craftsmanship and natural living.  Step out in confidence with footwear that's as unique as you are. Elevate your fashion game with Handmade Grass Slippers and Sandals that showcase authenticity and eco-consciousness. Choose our Handmade Slippers and Sandals today and embrace the comfort and charm of handcrafted, grass-made footwear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 999,
-        "MRP": 1000,
-        "rating": 0,
-        "SKU": "1717867057901",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:37.907Z",
-        "updatedAt": "2024-06-08T17:17:37.907Z",
         "__v": 0
     },
     {
@@ -872,6 +851,75 @@
         "__v": 0
     },
     {
+        "_id": "66649231d52eaa78f2a6e4b8",
+        "name": "Traditional Sandals - Kusha Grass Sleeper - Handcrafted Sleeper - Color - Green and Blue",
+        "desc": "{\"blocks\":[{\"key\":\"7osqh\",\"text\":\"Size: 5 Material : Kusha Grass Slipper Class: Organic Color: Green and Blue thread use Made on pre-order. It may take 7 days to prepare. Product Description   Indulge in comfort and style with our Handmade Grass Slippers and Sandals. Crafted with care and precision, these unique footwear pieces are a true testament to the artistry of handcrafting.  Our Handmade Slippers and Sandals are expertly crafted using natural grass, offering not just footwear, but a touch of nature to your every step. Every pair reflects the dedication of skilled artisans who meticulously weave each strand of grass in the traditional manner.  Experience the perfect blend of comfort, style, and sustainability with our Handmade Grass Slippers and Sandals. These eco-friendly footwear options not only provide a comfortable fit but also make a statement about your commitment to traditional craftsmanship and natural living.  Step out in confidence with footwear that's as unique as you are. Elevate your fashion game with Handmade Grass Slippers and Sandals that showcase authenticity and eco-consciousness. Choose our Handmade Slippers and Sandals today and embrace the comfort and charm of handcrafted, grass-made footwear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 999,
+        "MRP": 1000,
+        "rating": 0,
+        "SKU": "1717867057901",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:37.907Z",
+        "updatedAt": "2024-06-08T17:17:37.907Z",
+        "__v": 0
+    },
+    {
+        "_id": "6664922fd52eaa78f2a6e4ae",
+        "name": "Serve Tray - Handmade Kusha Grass Serve Tray - Round Serve Tray - Made of Darbha and Kusha Grass - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"5b233\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : Base : 7 inch , Height: 2.5 inch No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description: Handwoven Serve Plate, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the pristine valleys of Himachal Pradesh. Elevate your dining experience and embrace eco-friendly elegance with this trending eco-friendly serve plate, available exclusively at apneehatti.com  Why Choose Our Handwoven Serve Plate?  Eco-Conscious Luxury: Our serve plate is crafted from sustainably sourced Darbha and Kusha Grass, making it the epitome of eco-friendly dining. Join the green movement with this sustainable choice.  Natural Aesthetic: The organic textures and earthy hues of Darbha and Kusha Grass infuse your dining table with rustic elegance. Embrace the trending trend of natural materials in home decor.  Versatile Design: Our Handwoven Serve Plate is not just visually appealing; it's designed for versatility. Use it to serve a variety of dishes, from appetisers and salads to main courses and desserts.  Trending Eco-Fashion: As sustainability gains momentum, our serve plate aligns perfectly with the trending keywords of \\\"eco-friendly,\\\" \\\"natural,\\\" and \\\"sustainable,\\\" adding a touch of ethical fashion to your table.  One-of-a-Kind: Just like the breathtaking landscapes of Himachal Pradesh, each serve plate is unique, featuring its own character and design variations. It's a trending statement piece for your dining experience.  Durability and Longevity: Crafted for everyday use, our serve plate is not only trendy but also sturdy and built to last, ensuring it continues to grace your dining table for years to come.  Elevate your dining table into a trending masterpiece with our Handwoven Serve Plate. At Apneehatti, we offer more than just products; we offer trending sustainable styles that align with modern values.  Experience the beauty of Darbha and Kusha Grass by adding this unique serve plate to your collection today! Click here to order now and stay ahead of the trends with eco-friendly elegance at your table.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 699,
+        "MRP": 700,
+        "rating": 0,
+        "SKU": "1717867055649",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:35.664Z",
+        "updatedAt": "2024-06-08T17:17:35.664Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649202d52eaa78f2a6e3c8",
+        "name": "Hancrafted Tray - Pine Tray - Pine Needle Tray without Handle - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"cuu0\",\"text\":\"Dimension: 30 X 25 x 4.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vsqe\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jn41\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eunug\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle tray, lovingly crafted by skilled Himachali women artisans nestled in the serene landscapes of the Himalayas. Each tray is not just a product but a story woven with care, tradition, and empowerment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5v8f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bf4n\",\"text\":\"Sourced from the lush pine forests surrounding their villages, the pine needles used in crafting these trays are carefully selected for their quality and strength. With deft hands and generations of wisdom passed down, the women artisans skillfully weave together these natural fibers, creating a masterpiece of rustic elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31av\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"co0u\",\"text\":\"Every tray bears the unique touch of its creator, showcasing the rich cultural heritage and craftsmanship of the Himalayan region. The intricate patterns and designs reflect the harmony between tradition and innovation, making each piece a true work of art.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pd9f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64a7v\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Needle tray embodies a deeper significance â€“ it represents a journey of empowerment for the women artisans. By harnessing their skills and preserving traditional techniques, they not only sustain their families but also contribute to the preservation of their cultural identity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bha3q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nv9l\",\"text\":\"Perfect for serving breakfast in bed, organizing your desk, or displaying cherished items, this tray seamlessly blends functionality with cultural richness. Its durable construction ensures longevity, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b09qo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31ssh\",\"text\":\"Bring a piece of the Himalayas into your home and support women artisans with our Handcrafted Pine Needle tray â€“ where tradition, craftsmanship, and empowerment intertwine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 1599,
+        "MRP": 1600,
+        "rating": 0,
+        "SKU": "1717867010191",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:50.207Z",
+        "updatedAt": "2024-06-08T17:16:50.207Z",
+        "__v": 0
+    },
+    {
         "_id": "66649206d52eaa78f2a6e3e0",
         "name": "Chamba Rumal - Flower Hand Embroidered Handkerchief - 2 - Chamba Handkerchief - Hand Embroidered - Apneehatti",
         "desc": "{\"blocks\":[{\"key\":\"931ma\",\"text\":\"Size: 10 X 10 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6t5lm\",\"text\":\"Fabric : Cotton Colth and Slik Thread \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2dem\",\"text\":\"Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr9fp\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bqir\",\"text\":\"Product Description :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e7jal\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans.  Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bc7rq\",\"text\":\" Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh.  Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d65v5\",\"text\":\"Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Flower hand-embroidered handkerchiefs.  Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"197gu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -943,15 +991,15 @@
         "__v": 0
     },
     {
-        "_id": "66649202d52eaa78f2a6e3c8",
-        "name": "Hancrafted Tray - Pine Tray - Pine Needle Tray without Handle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"cuu0\",\"text\":\"Dimension: 30 X 25 x 4.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vsqe\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jn41\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eunug\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle tray, lovingly crafted by skilled Himachali women artisans nestled in the serene landscapes of the Himalayas. Each tray is not just a product but a story woven with care, tradition, and empowerment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5v8f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bf4n\",\"text\":\"Sourced from the lush pine forests surrounding their villages, the pine needles used in crafting these trays are carefully selected for their quality and strength. With deft hands and generations of wisdom passed down, the women artisans skillfully weave together these natural fibers, creating a masterpiece of rustic elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31av\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"co0u\",\"text\":\"Every tray bears the unique touch of its creator, showcasing the rich cultural heritage and craftsmanship of the Himalayan region. The intricate patterns and designs reflect the harmony between tradition and innovation, making each piece a true work of art.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pd9f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64a7v\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Needle tray embodies a deeper significance â€“ it represents a journey of empowerment for the women artisans. By harnessing their skills and preserving traditional techniques, they not only sustain their families but also contribute to the preservation of their cultural identity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bha3q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nv9l\",\"text\":\"Perfect for serving breakfast in bed, organizing your desk, or displaying cherished items, this tray seamlessly blends functionality with cultural richness. Its durable construction ensures longevity, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b09qo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31ssh\",\"text\":\"Bring a piece of the Himalayas into your home and support women artisans with our Handcrafted Pine Needle tray â€“ where tradition, craftsmanship, and empowerment intertwine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649201d52eaa78f2a6e3c2",
+        "name": "Flower Pot - Handcrafted Flower Pot - Flower Pots - Pot Decoration - Handmade Pine Needle Flower Pot - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"bfs9o\",\"text\":\"Dimension: 11cm X 10cm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmhdd\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"773oa\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nc7\",\"text\":\"Introducing our captivating Handcrafted Pine Flower Pot, a stunning blend of natural beauty and artisanal craftsmanship, skillfully crafted by Himachali women artisans nestled amidst the breathtaking Himalayan landscapes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11bro\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"336oq\",\"text\":\"Each flower pot is a masterpiece born from the hands of talented artisans who draw inspiration from their rich cultural heritage and the abundant natural resources that surround them. Sourced from sustainable pine forests, the raw materials are meticulously selected for their quality and eco-friendliness.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"293vk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"adms3\",\"text\":\"Using age-old techniques passed down through generations, the women artisans deftly weave together the pine needles, infusing each pot with a unique charm and character. The intricate patterns and designs evoke the serenity of the mountains, adding a touch of rustic elegance to any space.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b6e7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"enn9h\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Flower Pot carries a deeper significance â€“ it symbolizes empowerment and resilience. By honing their craft and preserving traditional techniques, the women artisans not only sustain their families but also celebrate their cultural heritage.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6pjbs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6oujp\",\"text\":\"Versatile and durable, this flower pot is perfect for showcasing your favorite plants and flowers, whether indoors or outdoors. Its sturdy construction ensures longevity, allowing you to enjoy the beauty of nature in your home for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cvqv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei29a\",\"text\":\"Embrace the spirit of the Himalayas and support women artisans with our Handcrafted Pine Flower Pot â€“ where tradition, craftsmanship, and sustainability intertwine to create something truly extraordinary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 1599,
-        "MRP": 1600,
+        "price": 899,
+        "MRP": 900,
         "rating": 0,
-        "SKU": "1717867010191",
+        "SKU": "1717867009093",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -961,35 +1009,8 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:50.207Z",
-        "updatedAt": "2024-06-08T17:16:50.207Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649207d52eaa78f2a6e3e2",
-        "name": "Chamba Rumal - Flower Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"d482d\",\"text\":\"Size: 10 X 10 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dn1pp\",\"text\":\"Fabric : Cotton Colth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7skbs\",\"text\":\" Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei4ge\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1g1th\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fbbg\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qget\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"22v3s\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Flower hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs  a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7njf6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150337.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150340.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150334.png"
-        ],
-        "alt_text": "Chamba Rumal - Flower Hand Embroidered Handkerchief ",
-        "price": 300,
-        "MRP": 300,
-        "rating": 0,
-        "SKU": "1717867015305",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "6502c03ee173ad30bb50fdbc",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:55.321Z",
-        "updatedAt": "2024-06-15T14:35:51.653Z",
+        "createdAt": "2024-06-08T17:16:49.104Z",
+        "updatedAt": "2024-06-08T17:16:49.104Z",
         "__v": 0
     },
     {
@@ -1016,15 +1037,15 @@
         "__v": 0
     },
     {
-        "_id": "66649201d52eaa78f2a6e3c2",
-        "name": "Flower Pot - Handcrafted Flower Pot - Flower Pots - Pot Decoration - Handmade Pine Needle Flower Pot - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"bfs9o\",\"text\":\"Dimension: 11cm X 10cm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmhdd\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"773oa\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nc7\",\"text\":\"Introducing our captivating Handcrafted Pine Flower Pot, a stunning blend of natural beauty and artisanal craftsmanship, skillfully crafted by Himachali women artisans nestled amidst the breathtaking Himalayan landscapes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11bro\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"336oq\",\"text\":\"Each flower pot is a masterpiece born from the hands of talented artisans who draw inspiration from their rich cultural heritage and the abundant natural resources that surround them. Sourced from sustainable pine forests, the raw materials are meticulously selected for their quality and eco-friendliness.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"293vk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"adms3\",\"text\":\"Using age-old techniques passed down through generations, the women artisans deftly weave together the pine needles, infusing each pot with a unique charm and character. The intricate patterns and designs evoke the serenity of the mountains, adding a touch of rustic elegance to any space.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b6e7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"enn9h\",\"text\":\"Beyond its aesthetic appeal, our Handcrafted Pine Flower Pot carries a deeper significance â€“ it symbolizes empowerment and resilience. By honing their craft and preserving traditional techniques, the women artisans not only sustain their families but also celebrate their cultural heritage.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6pjbs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6oujp\",\"text\":\"Versatile and durable, this flower pot is perfect for showcasing your favorite plants and flowers, whether indoors or outdoors. Its sturdy construction ensures longevity, allowing you to enjoy the beauty of nature in your home for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cvqv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei29a\",\"text\":\"Embrace the spirit of the Himalayas and support women artisans with our Handcrafted Pine Flower Pot â€“ where tradition, craftsmanship, and sustainability intertwine to create something truly extraordinary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "6664922fd52eaa78f2a6e4ac",
+        "name": "Pooja Thaali -2 - Pooja Ki Thaali - Handmade Kusha Grass Pooja Thaali - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"9ao7p\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description Handwoven Puja Thaali, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the tranquil valleys of Himachal Pradesh. Elevate your spiritual rituals and infuse your sacred space with rustic elegance, all while making an eco-conscious choice. Discover this one-of-a-kind tokri, available exclusively at apneehatti.com Why Our Handwoven Puja Thaali is a Sacred Essential: Spiritual Artistry: Each Thaali is a testament to the timeless craftsmanship of Himachal Pradesh. Our skilled artisans pour their devotion into hand-weaving these baskets, ensuring you receive aa piece of heritage and spirituality. Eco-Conscious Excellence: We take pride in using sustainably sourced Darbha and Kusha Grass, making our Pooja Thaali a spiritual and green choice. You're not just enhancing your sacred space; you're nurturing Mother Earth. Divine Elegance: The natural textures and earthy hues of Darbha and Kusha Grass create a serene and sacred ambiance in your worship area. Elevate your daily rituals with this exquisite tokri, adding a touch of divine charm. Spiritual Versatility: Our Handwoven Pooja Thaali is designed to hold an array of sacred items for your rituals, from incense sticks and flowers to holy offerings. It's also a stunning altar decoration, radiating positive energy. Blessed Uniqueness: Just like the sacred landscapes of Himachal Pradesh, each thaali is unique, featuring its own character and design variations. You're acquiring a truly distinctive piece for your spiritual practice. Enduring Blessings: Crafted with spiritual devotion, our Pooja Thaali is not just visually appealing; it's sturdy and enduring, ensuring it serves your spiritual needs for years to come. Transform your spiritual practice into a natural masterpiece with our Handwoven Pooja Thaali . At apneehatti.com, we offer more than just products; we share the essence of Himachal's natural beauty, cultural heritage, and spiritual significance with you. Experience the tranquillity of Darbha and Kusha Grass by adding this unique Pooja Thaali to your spiritual journey today! Click here to order now and elevate your sacred space with sustainable serenity and divine blessings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 899,
-        "MRP": 900,
+        "price": 1198,
+        "MRP": 1199,
         "rating": 0,
-        "SKU": "1717867009093",
+        "SKU": "1717867055239",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -1034,8 +1055,8 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:49.104Z",
-        "updatedAt": "2024-06-08T17:16:49.104Z",
+        "createdAt": "2024-06-08T17:17:35.258Z",
+        "updatedAt": "2024-06-08T17:17:35.258Z",
         "__v": 0
     },
     {
@@ -1085,97 +1106,30 @@
         "__v": 0
     },
     {
-        "_id": "6664922fd52eaa78f2a6e4ac",
-        "name": "Pooja Thaali -2 - Pooja Ki Thaali - Handmade Kusha Grass Pooja Thaali - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"9ao7p\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 Made on pre-order. It may take 7 days to prepare. Product Description Handwoven Puja Thaali, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the tranquil valleys of Himachal Pradesh. Elevate your spiritual rituals and infuse your sacred space with rustic elegance, all while making an eco-conscious choice. Discover this one-of-a-kind tokri, available exclusively at apneehatti.com Why Our Handwoven Puja Thaali is a Sacred Essential: Spiritual Artistry: Each Thaali is a testament to the timeless craftsmanship of Himachal Pradesh. Our skilled artisans pour their devotion into hand-weaving these baskets, ensuring you receive aa piece of heritage and spirituality. Eco-Conscious Excellence: We take pride in using sustainably sourced Darbha and Kusha Grass, making our Pooja Thaali a spiritual and green choice. You're not just enhancing your sacred space; you're nurturing Mother Earth. Divine Elegance: The natural textures and earthy hues of Darbha and Kusha Grass create a serene and sacred ambiance in your worship area. Elevate your daily rituals with this exquisite tokri, adding a touch of divine charm. Spiritual Versatility: Our Handwoven Pooja Thaali is designed to hold an array of sacred items for your rituals, from incense sticks and flowers to holy offerings. It's also a stunning altar decoration, radiating positive energy. Blessed Uniqueness: Just like the sacred landscapes of Himachal Pradesh, each thaali is unique, featuring its own character and design variations. You're acquiring a truly distinctive piece for your spiritual practice. Enduring Blessings: Crafted with spiritual devotion, our Pooja Thaali is not just visually appealing; it's sturdy and enduring, ensuring it serves your spiritual needs for years to come. Transform your spiritual practice into a natural masterpiece with our Handwoven Pooja Thaali . At apneehatti.com, we offer more than just products; we share the essence of Himachal's natural beauty, cultural heritage, and spiritual significance with you. Experience the tranquillity of Darbha and Kusha Grass by adding this unique Pooja Thaali to your spiritual journey today! Click here to order now and elevate your sacred space with sustainable serenity and divine blessings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1198,
-        "MRP": 1199,
-        "rating": 0,
-        "SKU": "1717867055239",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:35.258Z",
-        "updatedAt": "2024-06-08T17:17:35.258Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649225d52eaa78f2a6e472",
-        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Pink Color - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"8mv76\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 299,
+        "_id": "66649207d52eaa78f2a6e3e2",
+        "name": "Chamba Rumal - Flower Hand Embroidered Handkerchief - Chamba Handkerchief - Hand Embroidered Handkerchief - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"d482d\",\"text\":\"Size: 10 X 10 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dn1pp\",\"text\":\"Fabric : Cotton Colth and Slik Thread\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7skbs\",\"text\":\" Wash care: Hand Wash \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei4ge\",\"text\":\"Made on pre-order. It may take 7 days to prepare. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1g1th\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fbbg\",\"text\":\"Elevate your style and embrace the rich heritage of Himachal Pradesh with our exquisite Chamba Rumal handkerchiefs. These handcrafted gems are a testament to the artistry and tradition of the region, meticulously hand-embroidered by skilled artisans. Each Chamba handkerchief tells a story with its intricate Flower embroidery, a symbol of love and devotion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qget\",\"text\":\"Made with passion and precision, these handkerchiefs are not just accessories but pieces of art that connect you to the cultural roots of Himachal Pradesh. Our commitment to preserving this unique craft ensures that you own a piece of history while adding a touch of elegance to your attire.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"22v3s\",\"text\":\" Carry a piece of Himachal Pradesh's culture and heritage with you wherever you go. Experience the artistry and tradition with every use of our Flower hand-embroidered handkerchiefs. Cherish the timeless beauty of Himachal Pradesh and make a statement with Chamba Rumal handkerchiefs  a blend of art, culture, and sophistication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7njf6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150337.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150340.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718462150334.png"
+        ],
+        "alt_text": "Chamba Rumal - Flower Hand Embroidered Handkerchief ",
+        "price": 300,
         "MRP": 300,
         "rating": 0,
-        "SKU": "1717867045109",
+        "SKU": "1717867015305",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
             "active": true
         },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:25.111Z",
-        "updatedAt": "2024-06-08T17:17:25.111Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649247d52eaa78f2a6e51e",
-        "name": "Shuddhi Incense - Bamboo Based Incense Sticks - Hint of Chandan - Pack of 2",
-        "desc": "{\"blocks\":[{\"key\":\"5qqua\",\"text\":\"Pack of 2 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6c97u\",\"text\":\"Weight: 40g Each and 25 Sticks Each\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ecbkf\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3kvmo\",\"text\":\"All-natural raw material With bamboo sticks Plant based essential oils used for Incense. Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375368597.png"
-        ],
-        "alt_text": "Shuddhi Incense",
-        "price": 70,
-        "MRP": 70,
-        "rating": 0,
-        "SKU": "1717867079171",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "64cf571203545d29576f85d9",
+        "brand_id": "6502c03ee173ad30bb50fdbc",
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:59.175Z",
-        "updatedAt": "2024-06-14T14:29:30.059Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922cd52eaa78f2a6e49e",
-        "name": "Chapatti Box - 2 -Hot Case - Handmade Chapatti Box - Kusha Grass Chapatti Box - Apneehatti|",
-        "desc": "{\"blocks\":[{\"key\":\"1ah51\",\"text\":\"Material : Straw and tread , Organic non toxic easy to clean Instruction : Wash with soap and dry in sun Size: Base: 8 inch, Height: 4 inch Color: Multi Colour Food Storage : DRY FOOD Storage box  Made on pre-order. It may take 7 days to prepare. About Product: Elevate Your Dining with Himachal's Finest Handmade Grass Chapati Box  Introducing our exquisite Handmade Grass Chapati Box, lovingly crafted in the picturesque Himachal region. This artisanal masterpiece seamlessly combines tradition, craftsmanship, and practicality, making it an essential addition to your dining experience.  Keywords: Handmade Chapati Box, Himachal Craftsmanship, Grass Hot Box, Artisanal Casserole, Natural Fiber Chapati Storage, Handwoven Bread Basket  Product Features:  Himachal Craftsmanship: Handcrafted by skilled artisans in the scenic Himachal region, this chapati box reflects the rich cultural heritage and artistry of the area. Eco-Friendly: Made from natural grass, this chapati box is not only a sustainable choice but also adds a touch of nature's beauty to your dining table. Exceptional Heat Retention: The grass construction ensures outstanding heat retention, keeping your chapatis and other dishes piping hot for longer. Versatile Casserole: Beyond chapatis, use it as a versatile casserole to keep your favorite dishes warm and ready for serving. Charming Table Centerpiece: The handwoven design exudes rustic charm, making it an attractive centerpiece for your dining table. Easy Maintenance: Cleaning is a breeze; a quick wipe with a damp cloth keeps it looking fresh and ready for your next meal. Unique Artisanal Touch: Each chapati box is a one-of-a-kind creation, adding a unique, handcrafted touch to your dining experience. Elevate your dining experience with the authenticity and craftsmanship of Himachal's finest Handmade Grass Chapati Box. Bring a piece of Himachal's beauty to your table today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1499,
-        "MRP": 1500,
-        "rating": 0,
-        "SKU": "1717867052382",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:32.388Z",
-        "updatedAt": "2024-06-08T17:17:32.388Z",
+        "createdAt": "2024-06-08T17:16:55.321Z",
+        "updatedAt": "2024-06-15T14:35:51.653Z",
         "__v": 0
     },
     {
@@ -1234,15 +1188,15 @@
         "__v": 0
     },
     {
-        "_id": "66649200d52eaa78f2a6e3c0",
-        "name": "Fruit Basket - Pine Needle Fruit Basked - Handcrafted Fruit Basket - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"9dtg\",\"text\":\"Dimension: 26cm X 6cm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73lvm\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d37i\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9f10j\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle Fruit Basket, a fusion of natural elegance and artisanal craftsmanship meticulously woven by Himachali women artisans amidst the majestic Himalayan landscapes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aofp8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl8nt\",\"text\":\"Each basket is a testament to the rich cultural heritage and sustainable practices of the region, crafted with care and expertise using locally sourced pine needles. Carefully selected for their strength and flexibility, these pine needles are skillfully intertwined by talented artisans, resulting in a beautifully intricate design that reflects the beauty of nature.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66fcq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"854v8\",\"text\":\"Beyond its stunning appearance, our Handcrafted Pine Needle Fruit Basket carries a deeper significance â€“ it embodies the spirit of empowerment and resilience. By honing their craft and preserving traditional techniques, the women artisans not only provide for their families but also celebrate their cultural identity with pride.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr41i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dh9u\",\"text\":\"Perfect for displaying fresh fruits or serving as a centerpiece on your dining table, each basket adds a touch of rustic charm to any space. Its sturdy construction ensures durability, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92rj2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5pgl5\",\"text\":\"Embrace the beauty of the Himalayas and support women artisans with our Handcrafted Pine Needle Fruit Basket â€“ where tradition, craftsmanship, and empowerment come together to create something truly extraordinary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649225d52eaa78f2a6e472",
+        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Pink Color - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"8mv76\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 1999,
-        "MRP": 2000,
+        "price": 299,
+        "MRP": 300,
         "rating": 0,
-        "SKU": "1717867008669",
+        "SKU": "1717867045109",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -1252,8 +1206,56 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:48.686Z",
-        "updatedAt": "2024-06-08T17:16:48.686Z",
+        "createdAt": "2024-06-08T17:17:25.111Z",
+        "updatedAt": "2024-06-08T17:17:25.111Z",
+        "__v": 0
+    },
+    {
+        "_id": "6664922cd52eaa78f2a6e49e",
+        "name": "Chapatti Box - 2 -Hot Case - Handmade Chapatti Box - Kusha Grass Chapatti Box - Apneehatti|",
+        "desc": "{\"blocks\":[{\"key\":\"1ah51\",\"text\":\"Material : Straw and tread , Organic non toxic easy to clean Instruction : Wash with soap and dry in sun Size: Base: 8 inch, Height: 4 inch Color: Multi Colour Food Storage : DRY FOOD Storage box  Made on pre-order. It may take 7 days to prepare. About Product: Elevate Your Dining with Himachal's Finest Handmade Grass Chapati Box  Introducing our exquisite Handmade Grass Chapati Box, lovingly crafted in the picturesque Himachal region. This artisanal masterpiece seamlessly combines tradition, craftsmanship, and practicality, making it an essential addition to your dining experience.  Keywords: Handmade Chapati Box, Himachal Craftsmanship, Grass Hot Box, Artisanal Casserole, Natural Fiber Chapati Storage, Handwoven Bread Basket  Product Features:  Himachal Craftsmanship: Handcrafted by skilled artisans in the scenic Himachal region, this chapati box reflects the rich cultural heritage and artistry of the area. Eco-Friendly: Made from natural grass, this chapati box is not only a sustainable choice but also adds a touch of nature's beauty to your dining table. Exceptional Heat Retention: The grass construction ensures outstanding heat retention, keeping your chapatis and other dishes piping hot for longer. Versatile Casserole: Beyond chapatis, use it as a versatile casserole to keep your favorite dishes warm and ready for serving. Charming Table Centerpiece: The handwoven design exudes rustic charm, making it an attractive centerpiece for your dining table. Easy Maintenance: Cleaning is a breeze; a quick wipe with a damp cloth keeps it looking fresh and ready for your next meal. Unique Artisanal Touch: Each chapati box is a one-of-a-kind creation, adding a unique, handcrafted touch to your dining experience. Elevate your dining experience with the authenticity and craftsmanship of Himachal's finest Handmade Grass Chapati Box. Bring a piece of Himachal's beauty to your table today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 1499,
+        "MRP": 1500,
+        "rating": 0,
+        "SKU": "1717867052382",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:32.388Z",
+        "updatedAt": "2024-06-08T17:17:32.388Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649247d52eaa78f2a6e51e",
+        "name": "Shuddhi Incense - Bamboo Based Incense Sticks - Hint of Chandan - Pack of 2",
+        "desc": "{\"blocks\":[{\"key\":\"5qqua\",\"text\":\"Pack of 2 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6c97u\",\"text\":\"Weight: 40g Each and 25 Sticks Each\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ecbkf\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3kvmo\",\"text\":\"All-natural raw material With bamboo sticks Plant based essential oils used for Incense. Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375368597.png"
+        ],
+        "alt_text": "Shuddhi Incense",
+        "price": 70,
+        "MRP": 70,
+        "rating": 0,
+        "SKU": "1717867079171",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "64cf571203545d29576f85d9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:59.175Z",
+        "updatedAt": "2024-06-14T14:29:30.059Z",
         "__v": 0
     },
     {
@@ -1307,40 +1309,15 @@
         "__v": 0
     },
     {
-        "_id": "66649245d52eaa78f2a6e518",
-        "name": "Peaceful Orchard 70g - Natural Dhoop - Hint of Clary Sag ",
-        "desc": "{\"blocks\":[{\"key\":\"38r8l\",\"text\":\"Weight: 70g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fus6t\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bhd2a\",\"text\":\"DRY DHOOP STICKS All-natural raw material Without bamboo sticks Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375024787.png"
-        ],
-        "alt_text": "Peaceful Orchard Dhoop",
-        "price": 90,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867077971",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "64cf571203545d29576f85d9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:57.975Z",
-        "updatedAt": "2024-06-14T14:23:46.412Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922dd52eaa78f2a6e4a4",
-        "name": "Beaded Bead Earrings with Kusha Grass - 3 - Handmade Earring - Handmade Kusha Grass Earring - Color - Blue -Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"b25p2\",\"text\":\"Category : Jewelry Earing Color : Blue Quantity : Pair Material: Kusha Grass and thread Made on pre-order. It may take 7 days to prepare. Product Description Introducing Our Exquisite Handmade Beaded Earrings from the Heart of Himachal Elevate your style with our stunning collection of Handmade Beaded Earrings for Women, lovingly crafted by Himachal's skilled artisans. Each piece is a masterpiece, a blend of tradition and contemporary elegance. Whether you're looking for timeless Traditional Jhumkas or a unique pair of Fancy Handmade Earrings, we have something to delight every fashion enthusiast. Handmade Jhumkas: A Glimpse of Tradition Our Handmade Jhumkas capture the essence of Himachal's rich cultural heritage. Meticulously designed and handcrafted by Himachal women, these earrings showcase the artistry that has been passed down through generations. With intricate beadwork and vibrant colors, they add a touch of tradition to any outfit. Traditional Jhumka Earrings: Timeless Elegance Indulge in the timeless charm of our Traditional Jhumka Earrings. These are more than just accessories; they are a symbol of grace and sophistication. Crafted with precision and care, these pieces are a testament to the enduring beauty of traditional craftsmanship. Fancy Handmade Earrings: Unleash Your Creativity For those seeking something unique, our collection of Fancy Handmade Earrings offers a burst of creativity. Each piece is a work of art, showcasing the artisan's innovation and dedication. Whether you prefer intricate bead patterns, contemporary designs, or a blend of both, our handmade earrings allow you to express your individual style. Why Choose Our Handmade Earrings? Ethical Craftsmanship: Our earrings are lovingly made by Himachal women, providing them with fair employment opportunities and preserving traditional craft. Unmatched Quality: We use the finest materials and meticulous craftsmanship to ensure the durability and longevity of our earrings. Unique Designs: Our collection is a fusion of tradition and modernity, offering you an exclusive range of options. Perfect for Every Occasion: Whether it's a casual day out or a special event, our handmade earrings are versatile and suitable for any occasion. Elevate your style with our Handmade Beaded Earrings for Women. Browse our collection today and own a piece of Himachal's cultural legacy while adding a touch of elegance to your attire. Embrace tradition, celebrate creativity, and adorn yourself with our exquisite handmade earrings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649200d52eaa78f2a6e3c0",
+        "name": "Fruit Basket - Pine Needle Fruit Basked - Handcrafted Fruit Basket - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"9dtg\",\"text\":\"Dimension: 26cm X 6cm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73lvm\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d37i\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9f10j\",\"text\":\"Introducing our exquisite Handcrafted Pine Needle Fruit Basket, a fusion of natural elegance and artisanal craftsmanship meticulously woven by Himachali women artisans amidst the majestic Himalayan landscapes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aofp8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl8nt\",\"text\":\"Each basket is a testament to the rich cultural heritage and sustainable practices of the region, crafted with care and expertise using locally sourced pine needles. Carefully selected for their strength and flexibility, these pine needles are skillfully intertwined by talented artisans, resulting in a beautifully intricate design that reflects the beauty of nature.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66fcq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"854v8\",\"text\":\"Beyond its stunning appearance, our Handcrafted Pine Needle Fruit Basket carries a deeper significance â€“ it embodies the spirit of empowerment and resilience. By honing their craft and preserving traditional techniques, the women artisans not only provide for their families but also celebrate their cultural identity with pride.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr41i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dh9u\",\"text\":\"Perfect for displaying fresh fruits or serving as a centerpiece on your dining table, each basket adds a touch of rustic charm to any space. Its sturdy construction ensures durability, allowing you to enjoy its beauty for years to come.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92rj2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5pgl5\",\"text\":\"Embrace the beauty of the Himalayas and support women artisans with our Handcrafted Pine Needle Fruit Basket â€“ where tradition, craftsmanship, and empowerment come together to create something truly extraordinary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 499,
-        "MRP": 500,
+        "price": 1999,
+        "MRP": 2000,
         "rating": 0,
-        "SKU": "1717867053597",
+        "SKU": "1717867008669",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -1350,31 +1327,8 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:33.612Z",
-        "updatedAt": "2024-06-08T17:17:33.612Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664922dd52eaa78f2a6e4a2",
-        "name": "Flower Pot - Hand Made Flower Pot - Handcrafted Kusha Grass Flower Pot - Home Decor Item Made of Dry Grass - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"as1uo\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 piece of Flower Pot  Made on pre-order. It may take 7 days to prepare. About Product: Charm of our exclusive Handmade Flower Pot, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the lush valleys of Himachal Pradesh. Elevate your gardening and home decor game with this eco-friendly wonder, available only at Apneehatti.com Charm of our exclusive Handmade Flower Pot, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the lush valleys of Himachal Pradesh. Elevate your gardening and home decor game with this eco-friendly wonder, available only at Apneehatti.com Why Choose Our Handmade Flower Pot?  Artisanal Luxury: Each Handmade Flower Pot is a work of art, lovingly hand-woven by skilled artisans from Himachal Pradesh. You're not just getting a pot; you're acquiring a piece of heritage and culture.  Eco-Conscious Elegance: We take pride in using sustainably sourced Darbha and Kusha Grass, making our flower pots an eco-conscious choice. You can beautify your space guilt-free, knowing you're supporting Mother Nature.  Natural Aesthetic: The raw beauty of Darbha and Kusha Grass infuses your surroundings with an earthy, rustic charm. Each pot showcases the natural appeal of these organic materials, making your space truly unique.  Versatile Design: Available in various sizes, our Handmade Flower Pot accommodates a wide array of plants, from succulents and herbs to vibrant blossoms. It's your canvas to craft the garden of your dreams.  Unique and One-of-a-Kind: Since every pot is handcrafted, you're getting an exclusive piece with its own character and design quirks. No two pots are alike, making your purchase truly special.  Built to Last: Our Handmade Flower Pots are not just pretty faces; they're durable and built to withstand the test of time, ensuring your green companions flourish year after year.  Elevate your gardening experience and be a part of Himachal's rich tradition by bringing home our Handmade Flower Pot. At Apneehatti, we're not just selling products; we're sharing a piece of Himachal's natural beauty and cultural heritage with you.  Embrace the artistry of Darbha and Kusha Grass now! Simply click here to place your order and let the essence of Himachal Pradesh adorn your living space with elegance.    Artisanal Luxury: Each Handmade Flower Pot is a work of art, lovingly hand-woven by skilled artisans from Himachal Pradesh. You're not just getting a pot; you're acquiring a piece of heritage and culture.  Eco-Conscious Elegance: We take pride in using sustainably sourced Darbha and Kusha Grass, making our flower pots an eco-conscious choice. You can beautify your space guilt-free, knowing you're supporting Mother Nature.  Natural Aesthetic: The raw beauty of Darbha and Kusha Grass infuses your surroundings with an earthy, rustic charm. Each pot showcases the natural appeal of these organic materials, making your space truly unique.  Versatile Design: Available in various sizes, our Handmade Flower Pot accommodates a wide array of plants, from succulents and herbs to vibrant blossoms. It's your canvas to craft the garden of your dreams.  Unique and One-of-a-Kind: Since every pot is handcrafted, you're getting an exclusive piece with its own character and design quirks. No two pots are alike, making your purchase truly special.  Built to Last: Our Handmade Flower Pots are not just pretty faces; they're durable and built to withstand the test of time, ensuring your green companions flourish year after year.  Elevate your gardening experience and be a part of Himachal's rich tradition by bringing home our Handmade Flower Pot. At Apneehatti, we're not just selling products; we're sharing a piece of Himachal's natural beauty and cultural heritage with you.  Embrace the artistry of Darbha and Kusha Grass now! Simply click here to place your order and let the essence of Himachal Pradesh adorn your living space with elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 1199,
-        "MRP": 1200,
-        "rating": 0,
-        "SKU": "1717867053191",
-        "category_id": {
-            "_id": "644132d476fb670dd86bae47",
-            "name": "Handcrafts",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:33.206Z",
-        "updatedAt": "2024-06-08T17:17:33.206Z",
+        "createdAt": "2024-06-08T17:16:48.686Z",
+        "updatedAt": "2024-06-08T17:16:48.686Z",
         "__v": 0
     },
     {
@@ -1401,40 +1355,40 @@
         "__v": 0
     },
     {
-        "_id": "666491fad52eaa78f2a6e3a0",
-        "name": "Chamba Thaal with Traditional Doli - GI Tag - Metal Handicraft | Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"36iel\",\"text\":\"Dimensions: 15 inches diameter \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3u9sl\",\"text\":\"Material: Brass \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5askr\",\"text\":\"Made on pre-order. It may take 7 days to prepare.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqrna\",\"text\":\" About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ca5hg\",\"text\":\"The Handcrafted Chamba Thaal is a traditional plate of great cultural significance, originating from the vibrant Chamba district in Himachal Pradesh, India. This exquisite Thaal showcases exceptional craftsmanship and embodies the rich artistic heritage of the region. Skilled artisans meticulously handcraft each Chamba Thaal, utilizing high-quality materials such as brass or copper. The plate is adorned with intricate engravings, detailed patterns, and captivating motifs inspired by nature, mythology, and local traditions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3oer2\",\"text\":\"These artistic elements reflect the cultural heritage and artistic prowess of the Chamba region. The Chamba Thaal serves both as a functional serving plate and as a remarkable piece of art. Its spacious circular design allows for the presentation of a variety of delicacies during special occasions, festivals, and weddings. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dq7p5\",\"text\":\"It becomes the centerpiece of the dining experience, enhancing the visual appeal and adding a touch of elegance to the table setting. Beyond its practicality, the Handcrafted Chamba Thaal symbolizes the cultural identity and legacy of Himachal Pradesh. It is cherished as a precious heirloom, often passed down through generations as a symbol of tradition, heritage, and familial pride. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43q86\",\"text\":\"The Handcrafted Chamba Thaal showcases the extraordinary skill and artistry of Himachal Pradesh's artisans. Each plate is a unique masterpiece, reflecting the rich cultural narratives and artistic expressions of the Chamba region. By using the Chamba Thaal, individuals not only elevate their dining experiences but also contribute to the preservation and celebration of the vibrant cultural heritage of Himachal Pradesh.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ro3g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649245d52eaa78f2a6e518",
+        "name": "Peaceful Orchard 70g - Natural Dhoop - Hint of Clary Sag ",
+        "desc": "{\"blocks\":[{\"key\":\"38r8l\",\"text\":\"Weight: 70g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fus6t\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bhd2a\",\"text\":\"DRY DHOOP STICKS All-natural raw material Without bamboo sticks Chemical Free, No Charcoal No DEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718343692780.png"
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375024787.png"
         ],
-        "alt_text": "Chamba Thaal with Traditional Doli",
-        "price": 3899,
-        "MRP": 3900,
+        "alt_text": "Peaceful Orchard Dhoop",
+        "price": 90,
+        "MRP": 90,
         "rating": 0,
-        "SKU": "1717867002402",
+        "SKU": "1717867077971",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
             "active": true
         },
-        "brand_id": "644b41530db008ac91ebccc6",
+        "brand_id": "64cf571203545d29576f85d9",
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:42.415Z",
-        "updatedAt": "2024-06-14T05:41:35.243Z",
+        "createdAt": "2024-06-08T17:17:57.975Z",
+        "updatedAt": "2024-06-14T14:23:46.412Z",
         "__v": 0
     },
     {
-        "_id": "66649223d52eaa78f2a6e46c",
-        "name": "Pine Earring | Grey | Handcrafted | Aesthetically Pleasing | Durability",
-        "desc": "{\"blocks\":[{\"key\":\"2e4j1\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "6664922dd52eaa78f2a6e4a2",
+        "name": "Flower Pot - Hand Made Flower Pot - Handcrafted Kusha Grass Flower Pot - Home Decor Item Made of Dry Grass - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"as1uo\",\"text\":\"Material Used : Combination of grasses and threads Grass type : Darbha and Kusha Grass Size : No.of items : 1 piece of Flower Pot  Made on pre-order. It may take 7 days to prepare. About Product: Charm of our exclusive Handmade Flower Pot, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the lush valleys of Himachal Pradesh. Elevate your gardening and home decor game with this eco-friendly wonder, available only at Apneehatti.com Charm of our exclusive Handmade Flower Pot, a true masterpiece meticulously crafted from the finest Darbha and Kusha Grass sourced from the lush valleys of Himachal Pradesh. Elevate your gardening and home decor game with this eco-friendly wonder, available only at Apneehatti.com Why Choose Our Handmade Flower Pot?  Artisanal Luxury: Each Handmade Flower Pot is a work of art, lovingly hand-woven by skilled artisans from Himachal Pradesh. You're not just getting a pot; you're acquiring a piece of heritage and culture.  Eco-Conscious Elegance: We take pride in using sustainably sourced Darbha and Kusha Grass, making our flower pots an eco-conscious choice. You can beautify your space guilt-free, knowing you're supporting Mother Nature.  Natural Aesthetic: The raw beauty of Darbha and Kusha Grass infuses your surroundings with an earthy, rustic charm. Each pot showcases the natural appeal of these organic materials, making your space truly unique.  Versatile Design: Available in various sizes, our Handmade Flower Pot accommodates a wide array of plants, from succulents and herbs to vibrant blossoms. It's your canvas to craft the garden of your dreams.  Unique and One-of-a-Kind: Since every pot is handcrafted, you're getting an exclusive piece with its own character and design quirks. No two pots are alike, making your purchase truly special.  Built to Last: Our Handmade Flower Pots are not just pretty faces; they're durable and built to withstand the test of time, ensuring your green companions flourish year after year.  Elevate your gardening experience and be a part of Himachal's rich tradition by bringing home our Handmade Flower Pot. At Apneehatti, we're not just selling products; we're sharing a piece of Himachal's natural beauty and cultural heritage with you.  Embrace the artistry of Darbha and Kusha Grass now! Simply click here to place your order and let the essence of Himachal Pradesh adorn your living space with elegance.    Artisanal Luxury: Each Handmade Flower Pot is a work of art, lovingly hand-woven by skilled artisans from Himachal Pradesh. You're not just getting a pot; you're acquiring a piece of heritage and culture.  Eco-Conscious Elegance: We take pride in using sustainably sourced Darbha and Kusha Grass, making our flower pots an eco-conscious choice. You can beautify your space guilt-free, knowing you're supporting Mother Nature.  Natural Aesthetic: The raw beauty of Darbha and Kusha Grass infuses your surroundings with an earthy, rustic charm. Each pot showcases the natural appeal of these organic materials, making your space truly unique.  Versatile Design: Available in various sizes, our Handmade Flower Pot accommodates a wide array of plants, from succulents and herbs to vibrant blossoms. It's your canvas to craft the garden of your dreams.  Unique and One-of-a-Kind: Since every pot is handcrafted, you're getting an exclusive piece with its own character and design quirks. No two pots are alike, making your purchase truly special.  Built to Last: Our Handmade Flower Pots are not just pretty faces; they're durable and built to withstand the test of time, ensuring your green companions flourish year after year.  Elevate your gardening experience and be a part of Himachal's rich tradition by bringing home our Handmade Flower Pot. At Apneehatti, we're not just selling products; we're sharing a piece of Himachal's natural beauty and cultural heritage with you.  Embrace the artistry of Darbha and Kusha Grass now! Simply click here to place your order and let the essence of Himachal Pradesh adorn your living space with elegance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
-        "price": 299,
-        "MRP": 300,
+        "price": 1199,
+        "MRP": 1200,
         "rating": 0,
-        "SKU": "1717867043767",
+        "SKU": "1717867053191",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -1444,8 +1398,54 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:23.771Z",
-        "updatedAt": "2024-06-08T17:17:23.771Z",
+        "createdAt": "2024-06-08T17:17:33.206Z",
+        "updatedAt": "2024-06-08T17:17:33.206Z",
+        "__v": 0
+    },
+    {
+        "_id": "6664922dd52eaa78f2a6e4a4",
+        "name": "Beaded Bead Earrings with Kusha Grass - 3 - Handmade Earring - Handmade Kusha Grass Earring - Color - Blue -Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"b25p2\",\"text\":\"Category : Jewelry Earing Color : Blue Quantity : Pair Material: Kusha Grass and thread Made on pre-order. It may take 7 days to prepare. Product Description Introducing Our Exquisite Handmade Beaded Earrings from the Heart of Himachal Elevate your style with our stunning collection of Handmade Beaded Earrings for Women, lovingly crafted by Himachal's skilled artisans. Each piece is a masterpiece, a blend of tradition and contemporary elegance. Whether you're looking for timeless Traditional Jhumkas or a unique pair of Fancy Handmade Earrings, we have something to delight every fashion enthusiast. Handmade Jhumkas: A Glimpse of Tradition Our Handmade Jhumkas capture the essence of Himachal's rich cultural heritage. Meticulously designed and handcrafted by Himachal women, these earrings showcase the artistry that has been passed down through generations. With intricate beadwork and vibrant colors, they add a touch of tradition to any outfit. Traditional Jhumka Earrings: Timeless Elegance Indulge in the timeless charm of our Traditional Jhumka Earrings. These are more than just accessories; they are a symbol of grace and sophistication. Crafted with precision and care, these pieces are a testament to the enduring beauty of traditional craftsmanship. Fancy Handmade Earrings: Unleash Your Creativity For those seeking something unique, our collection of Fancy Handmade Earrings offers a burst of creativity. Each piece is a work of art, showcasing the artisan's innovation and dedication. Whether you prefer intricate bead patterns, contemporary designs, or a blend of both, our handmade earrings allow you to express your individual style. Why Choose Our Handmade Earrings? Ethical Craftsmanship: Our earrings are lovingly made by Himachal women, providing them with fair employment opportunities and preserving traditional craft. Unmatched Quality: We use the finest materials and meticulous craftsmanship to ensure the durability and longevity of our earrings. Unique Designs: Our collection is a fusion of tradition and modernity, offering you an exclusive range of options. Perfect for Every Occasion: Whether it's a casual day out or a special event, our handmade earrings are versatile and suitable for any occasion. Elevate your style with our Handmade Beaded Earrings for Women. Browse our collection today and own a piece of Himachal's cultural legacy while adding a touch of elegance to your attire. Embrace tradition, celebrate creativity, and adorn yourself with our exquisite handmade earrings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 499,
+        "MRP": 500,
+        "rating": 0,
+        "SKU": "1717867053597",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:33.612Z",
+        "updatedAt": "2024-06-08T17:17:33.612Z",
+        "__v": 0
+    },
+    {
+        "_id": "66649226d52eaa78f2a6e478",
+        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Color White - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"6r5se\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [],
+        "alt_text": "",
+        "price": 299,
+        "MRP": 300,
+        "rating": 0,
+        "SKU": "1717867046039",
+        "category_id": {
+            "_id": "644132d476fb670dd86bae47",
+            "name": "Handcrafts",
+            "active": true
+        },
+        "brand_id": "644b449d58d0862748791c87",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:26.043Z",
+        "updatedAt": "2024-06-08T17:17:26.043Z",
         "__v": 0
     },
     {
@@ -1476,15 +1476,15 @@
         "__v": 0
     },
     {
-        "_id": "66649226d52eaa78f2a6e478",
-        "name": "Handmade Earrings - Pine Needle Earrings -Pine Earring - Color White - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"6r5se\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649223d52eaa78f2a6e46c",
+        "name": "Pine Earring | Grey | Handcrafted | Aesthetically Pleasing | Durability",
+        "desc": "{\"blocks\":[{\"key\":\"2e4j1\",\"text\":\"Made on pre-order. It may take 7 days to prepare. About Product : These are the handmade dangling earning made beautifully out of natural material.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [],
         "alt_text": "",
         "price": 299,
         "MRP": 300,
         "rating": 0,
-        "SKU": "1717867046039",
+        "SKU": "1717867043767",
         "category_id": {
             "_id": "644132d476fb670dd86bae47",
             "name": "Handcrafts",
@@ -1494,8 +1494,8 @@
         "featured": "new_arrival",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:26.043Z",
-        "updatedAt": "2024-06-08T17:17:26.043Z",
+        "createdAt": "2024-06-08T17:17:23.771Z",
+        "updatedAt": "2024-06-08T17:17:23.771Z",
         "__v": 0
     }
 ]

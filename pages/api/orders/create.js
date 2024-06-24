@@ -66,19 +66,7 @@ const Create = async (req, res) => {
       }
       // Create order
 
-      console.log("creating order...........")
-      console.log("body",req.body)
-      console.log(order_items)
-      console.log(payment_method)
-      console.log(payment_method)
-      console.log(Number(cart[0].subtotal))
-      console.log(discount)
-      console.log(order_total)
-      console.log(transaction_id)
-      console.log(transaction_id)
-      console.log(shipping_address)
-      console.log(courier_company_id)
-      console.log(coupon)
+      
       // console.log()
       const order = await Order.create({
         user_id,
