@@ -74,16 +74,16 @@ const ProductReview = ({
                   Edit Review
                 </button>
               ) : (
-                <button
+                <div
                   onClick={() => {
                     session && session.user
                       ? setReviewModalOpen(!reviewModalOpen)
                       : router.push("/login");
                   }}
-                  className=" px-10 py-2 rounded uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
+                  className=" px-10 py-2 rounded uppercase  text-sm font-bold w-full mt-2 border border-black cursor-pointer"
                 >
                   Write Review
-                </button>
+                </div>
               )}
             </div>
           </div>

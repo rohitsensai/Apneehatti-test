@@ -467,7 +467,7 @@ const ProductDetail = ({
             </div>
 
 
-            <div className="relative overflow-y-auto font-serif rounded " id="2">
+            <div className="relative overflow-y-auto font-serif rounded  mx-2 h-[760px] bg-white" id="2">
               <div
                 className={`${zoomIn ? "" : "hidden"
                   }   top-0 fixed flex justify-center z-10 items-center   `}
@@ -599,21 +599,6 @@ const ProductDetail = ({
                   </div>
                 </div>
 
-                {/* <div className="grid grid-cols-1  md:grid-cols-2 gap-x-4 font-sans ">
-                        <button
-                          className=" uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
-                          onClick={() => handleAddToWishlist(product_data._id)}
-                        >
-                          Add to Wishlist
-                        </button>
-                        <button
-                          className="uppercase transition-all duration-300 hover:bg-pink-600 hover:text-white text-sm font-bold w-full  border-2 border-pink-500 text-pink-500"
-                          onClick={() => handleAddToCart(product_data._id)}
-                        >
-                          Add to bag
-                        </button>
-                      </div>
-                       */}
                 <div className="d-flex justify-content-between mt-6 button-wrapper  ">
                   <button
                     onClick={(e) => {

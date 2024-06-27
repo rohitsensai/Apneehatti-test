@@ -52,7 +52,7 @@ const Footer = ({ categories }) => {
  
 
   return (
-    <div className="bg-white fcontainer w-full">
+    <div className="bg-white fcontainer w-full border-top border-black">
   
       <footer className="footer ">
         <div className="containerfooter bg-white rounded w-full">

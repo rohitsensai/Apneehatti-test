@@ -473,9 +473,9 @@ input:focus::placeholder {
     margin-left: 40px;
     width: 80%;
   }
-  #pwc{
-   
-    /* border:2px solid red; */
+  .mybtn{
+    font-size: 10px;
+    padding: 8px 15px;
   }
   
 }

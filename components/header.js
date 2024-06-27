@@ -146,7 +146,7 @@ const Header = ({ categories }) => {
             </ul>
           </div>
 
-          <header className="container-fluid d-flex flex-row align-items-center justify-content-between  " class={header["container-fluid"]} id={header["header"]}>
+          <header className="shadow container-fluid d-flex flex-row align-items-center justify-content-between  " class={header["container-fluid"]} id={header["header"]}>
 
             {/* Logo - Hidden on Small Screens */}
             <a href="/" className="a d-none d-md-block">
@@ -307,7 +307,7 @@ const Header = ({ categories }) => {
 
             {session && session.user && (
               <>
-                <div className="d-flex flex-row" id="pwc">
+                <div className="d-flex flex-row " id="pwc">
                 <Link 
                       href="myprofile"
                     >
@@ -347,35 +347,7 @@ const Header = ({ categories }) => {
                     <SignOutConfirmation signOut={signOut} />
                   </div>
                 </div>
-                {/* <ul className=" d-flex flex-row navbar-nav mx-2 text-white " id={header["pwc"]}>
-                  <li className={header["nav-item"]}>
-                    <a className={header["nav-link"]} href="/myprofile">
-                      <FaUser className="text-white" />
-                      <div className="name btnn rounded" style={{ color: "white" }}>Profile</div>
-                    </a>
-                  </li>
-                  <li className={header["nav-item"]}>
-                    <a className={header["nav-link"]} href="/wishlist">
-                      <FaHeart className="text-white" />
-                      <div className="name text-white btnn rounded" style={{}}>Wishlist</div>
-                    </a>
-                  </li>
-                  <li className={header["nav-item"]}>
-                    <button onClick={() => setIsOpen(!isOpen)} className={header["nav-link"]}>
-                      <FaShoppingCart className="text-white" />
-
-                      <div className="name text-white btnn rounded" style={{ display: 'flex', alignItems: 'center' }}>
-                        <div className="d-flex flex-row align-items-center">
-                          <span>Cart</span>
-                          <span>({cartItems.length})</span>
-                        </div>
-
-                      </div>
-
-                    </button>
-                  </li>
-                  <SignOutConfirmation signOut={signOut} />
-                </ul> */}
+               
 
               </>
             )

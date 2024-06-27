@@ -36,13 +36,13 @@ const OrderPage = ({ order, user, payment, socket_URL }) => {
       <Head>
         <title>Congratulations! Your order has been successfully placed.</title>
       </Head>
-      <div className="w-screen p-2 md:p-5 mx-auto bg-white">
+      <div className="w-screen p-2 md:p-5 mx-auto bg-white ">
         <h1 className="text-center text-lg pt-2 md:py-2 font-medium capitalize">
           Thank You ! It's on the way...
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className="pb-5 pt-2 md:p-5">
-            <div className="border-b-2 p-4">
+          <div className="pb-5 pt-2 md:p-5 ">
+            <div className="border-b-2 p-4 shadow">
               <h1 className="capitalize font-medium text-lg">
                 Your Order was placed successfully.
               </h1>
@@ -62,7 +62,7 @@ const OrderPage = ({ order, user, payment, socket_URL }) => {
                 </h5>
               </div>
             </div>
-            <div className="border-b-2 p-4">
+            <div className="border-b-2 p-4 shadow">
               <h1 className="capitalize font-medium text-lg">
                 Shipping Details.
               </h1>
@@ -90,7 +90,7 @@ const OrderPage = ({ order, user, payment, socket_URL }) => {
                 </h5>
               </div>{" "}
             </div>
-            <div className="border-b-2 p-4">
+            <div className="border-b-2 p-4 shadow">
               <h1 className="capitalize font-medium text-lg">
                 Payment Details.
               </h1>
@@ -119,7 +119,7 @@ const OrderPage = ({ order, user, payment, socket_URL }) => {
               </div>
             </div>
           </div>
-          <div className="px-3 md:px-5 py-8">
+          <div className="px-3 md:px-5 py-8 shadow">
             <h1 className="capitalize font-medium text-lg">Order Summary</h1>
             <h5 className="text-sm">Arrives between 5 to 6 days.</h5>
             {order &&

@@ -1,6 +1,6 @@
 import { IoMdArrowForward } from "react-icons/io";
 import { FiTrash2 } from "react-icons/fi";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { cartTotal, clearCart, initialCart } from "../slices/cart";
 import CartItem from "./cartItem";
@@ -11,10 +11,9 @@ import EmptyCart from "./emptyCart";
 
 const Cart = ({ isOpen, setIsOpen, session, status }) => {
   const dispatch = useDispatch();
-  const { cartItems, total, subtotal} = useSelector(
+  const { cartItems, total, subtotal, shipping } = useSelector(
     (state) => state.cart
   );
-  const [shipping,setShipping] = useState(50)
   const router = useRouter();
 
   const checkout = () => {
@@ -28,6 +27,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
 
   const initialCartLoad = async () => {
     const data = await fetch(`/api/cart/${session.user.id}`);
+    console.log(data);
     if (data.ok) {
       const response = await data.json();
       if (response) {
@@ -63,7 +63,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
       <div
         className={`${
           isOpen ? "right-0" : "-right-full"
-        }  w-full bg-white fixed top-0 bottom-0 shadow-2xl  transition-all duration-300 z-40 px-4 lg:px-[20px]`}
+        }  w-full bg-white fixed top-0 bottom-0 shadow-2xl md:w-[35vw] xl:max-w-[30vw] transition-all duration-300 z-40 px-4 lg:px-[20px]`}
       >
         <div className="flex flex-col  h-[75%] overflow-y-auto overflow-x-hidden ">
           <div className="flex items-center py-3 justify-between   border-b">
@@ -122,7 +122,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
                   <span className="mr-2 lg:w-[100px] text-sm">Total</span>
                   <div className="text-left">
                     <span className="mx-1">:</span>
-                    <CurrencyFormatter price={total + 50} />
+                    <CurrencyFormatter price={total} />
                   </div>
                 </div>
               </div>
@@ -137,7 +137,7 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
 
             <button
               onClick={() => checkout()}
-              className=" p-2 my-2 uppercase transition-all duration-300 text-sm font-bold w-2/8 hover:bg-black hover:text-white mx-auto mt-2 border border-black"
+              className=" p-2 my-2 uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
               disabled={total == 0 ? true : false}
             >
               Checkout

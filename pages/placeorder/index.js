@@ -51,7 +51,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   const { cartItems, total, subtotal } = useSelector(
     (state) => state.cart
   );
-  const [shipping,setShipping] = useState(50)
+  const [shipping, setShipping] = useState(50)
   const { data: session, status } = useSession();
   const router = useRouter();
   const Razorpay = useRazorpay();
@@ -108,8 +108,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   };
 
   const createOrderFun = async (address) => {
-    console.log("transaction id",address.transaction_id)
-    console.log("shippingprice",address.shipping_price)
+    console.log("transaction id", address.transaction_id)
+    console.log("shippingprice", address.shipping_price)
     try {
       const res = await fetch(`/api/orders/create`, {
         headers: {
@@ -130,7 +130,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         }),
       });
       const response = await res.json();
-      console.log("response",response)
+      console.log("response", response)
       if (response.status == "ok" || response.id != undefined) {
         toast.success("Thank you for placing your order");
         clearCartFun();
@@ -139,7 +139,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         toast.error(response.message);
       }
     } catch (error) {
-      console.log("error",error)
+      console.log("error", error)
       toast.error("Something went wrong, try again");
     }
   };
@@ -358,7 +358,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         <title>Checkout</title>
       </Head>
       <div className="lg:grid grid-cols-2 bg-white border mx-0 mx-sm-40 rounded">
-        <div className="mx-5 my-5 lg:mx-20 lg:my-15 relative border  rounded ">
+        <div className="mx-5 my-5 lg:mx-20 lg:my-15 relative   rounded ">
           <form onSubmit={(e) => handleInputChange(e)}>
             {savedAddress && savedAddress.length > 0 && toggleAddNewAddress ? (
               <div className="">
@@ -373,8 +373,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                       }
                     >
                       {savedAddress &&
-                      savedAddress.length > 0 &&
-                      !toggleAddNewAddress
+                        savedAddress.length > 0 &&
+                        !toggleAddNewAddress
                         ? "Back to saved address"
                         : "Add new address"}
                     </button>
@@ -605,7 +605,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </button>
               )}
             </div>
-            <div className="">
+            <div className="rounded shadow">
               <h4 className="text-lg  py-5">Payment Details</h4>
               <div className="grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-2">
                 <div className="flex items-center ">
@@ -655,39 +655,15 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
               </div>
             </div>
             <div className="my-10 flex items-end justify-end">
-              <button
-                type="submit"
-                disabled={disableBtn}
-                className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-              >
-                Checkout
-                <svg
-                  aria-hidden="true"
-                  className="ml-2 -mr-1 w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>{" "}
-                </svg>
-              </button>
+
             </div>
           </form>
         </div>
 
         <div className="hidden lg:block p-16">
-          <div className="mb-3">
-            <h5 className="mb-1  font-medium">Amount due</h5>
-            <h2 className=" text-3xl  font-extrabold ">
-              <CurrencyFormatter price={address.total} />
-            </h2>
-          </div>
+
           <div
-            className="mb-3 max-h-[500px] overflow-y-scroll "
+            className="mb-3 max-h-[500px] overflow-y-scroll shadow"
             id="scrollbar_container"
           >
             {cartItems.length > 0 &&
@@ -695,7 +671,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 <div className="p-4 flex justify-between" key={item.id}>
                   <div className="flex w-full gap-x-4 items-start">
                     <div className=" bg-white  rounded p-2 flex justify-center items-center">
-                      <div className="relative h-16 w-24">
+                      <div className="relative h-16 w-24 ">
                         <Image
                           src={item.thumbnail}
                           layout="fill"
@@ -724,8 +700,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </div>
               ))}
           </div>
-          <div className="mt-6">
-            <div className="py-4 leading-8 border-r-0 border-l-0 border border-black ">
+          <div className="mt-6 shadow rounded mx-44 px-20">
+            <div className="py-4 leading-8">
               <div className="flex justify-between items-center ">
                 <h5 className="">Subtotal</h5>
                 <h5 className="">
@@ -735,7 +711,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
               <div className="flex justify-between items-center ">
                 <h5 className="">Discount</h5>
                 <h5 className="">
-                  - &nbsp;
+                   &nbsp;
                   <CurrencyFormatter price={discount} />
                 </h5>
               </div>
@@ -753,6 +729,28 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 {" "}
                 <CurrencyFormatter price={address.total} />
               </h5>
+            </div>
+            <div className="d-flex flex-row justify-content-center ">
+              <button
+                type="submit"
+                disabled={disableBtn}
+                className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+              >
+                Checkout
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-5 h-5"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>{" "}
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -897,7 +895,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                                   var country_code = e.target.value;
                                   setCountryCode(
                                     countryState.states[
-                                      country_code.split(",")[0]
+                                    country_code.split(",")[0]
                                     ]
                                   );
                                 }}
