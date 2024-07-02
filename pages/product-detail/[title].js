@@ -495,12 +495,12 @@ const ProductDetail = ({
 
               <div className={`  w-sm-4/5 lg:px-10 m-sm-2 bg-white mx-auto rounded  `}>
                 <div className="rounded bg-white ">
-                  <div className="space-y-2  p-4 border-gray-300 rounded bg-white rounded ">
+                  <div className="space-y-2  p-4 border-gray-300 rounded bg-white  ">
                     <h2 className="text-xl md:text-2xl font-semibold font-serif">
                       {product_data.name}
                     </h2>
                   </div>
-                  <div className="space-y-2 md:space-y-0 md:flex gap-10 p-4 border-gray-300 rounded my-2 bg-white rounded">
+                  <div className="space-y-2 md:space-y-0 md:flex gap-10 p-4 border-gray-300  my-2 bg-white rounded">
                     <div className=" space-y-2">
                       <Link
                         href={{
@@ -538,7 +538,7 @@ const ProductDetail = ({
                       quote={product_data.name}
                     />
                   </div>
-                  <div className="p-4 space-y-1 flex items-center gap-x-5 border-gray-300 rounded bg-white rounded">
+                  <div className="p-4 space-y-1 flex items-center gap-x-5 border-gray-300 rounded bg-white">
                     <div className="space-y-2">
                       <div className="flex  items-end  space-x-2">
                         {calculateDiscount(product_data.price, product_data.MRP) >

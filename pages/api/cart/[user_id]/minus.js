@@ -22,6 +22,8 @@ const minusItem = async (req, res) => {
       }
     );
 
+    console.log("product=",product)
+
     const itemTotalPrice = Number(product.price) * Number(quantity);
 
     product = { ...product.toObject() };

@@ -12,6 +12,8 @@ import { toast } from "react-toastify";
 import countryState from "../../database/country-states.json";
 import Head from "next/head";
 import { clearCart } from "../../slices/cart";
+import { IoMdAdd, IoMdRemove } from "react-icons/io";
+import { initialCart } from "../../slices/cart";
 
 export async function getServerSideProps({ req }) {
   // Check if the user is authenticated, if not redirect to login page
@@ -106,6 +108,56 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
       method: "Delete",
     });
   };
+
+  
+  const minus = async (id) => {
+    console.log("id=",id)
+    const data = await fetch(`/api/cart/${session.user.id}/minus`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify({ product_id: id, quantity: 1 }),
+    });
+
+    if (data.ok) {
+      const response = await data.json();
+      if (response) {
+        const savedcart = response.items;
+        const initialCartObj = {
+          savedcart,
+          shipping: response.shipping,
+          subtotal: response.subtotal,
+          total: response.total,
+        };
+        dispatch(initialCart(initialCartObj));
+      }
+    }
+  };
+
+  const add = async (id) => {
+    const data = await fetch(`/api/cart/${session.user.id}/add`, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+      body: JSON.stringify({ product_id: id, quantity: 1 }),
+    });
+    if (data.ok) {
+      const response = await data.json();
+      if (response) {
+        const savedcart = response.items;
+        const initialCartObj = {
+          savedcart,
+          shipping: response.shipping,
+          subtotal: response.subtotal,
+          total: response.total,
+        };
+        dispatch(initialCart(initialCartObj));
+      }
+    }
+  };
+
 
   const createOrderFun = async (address) => {
     console.log("transaction id", address.transaction_id)
@@ -592,21 +644,21 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 name="discount"
                 onChange={(e) => setCoupon_code(e.target.value)}
                 id="discount"
-                className=" border-0 border-gray-300 placeholder:text-green-500 placeholder:font-medium text-sm rounded-lg focus:ring-green-500 focus:shadow focus:border  focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
+                className="text-center border-0 border-gray-300 placeholder:text-green-500 placeholder:font-medium text-sm rounded-lg focus:ring-green-500 focus:shadow focus:border  focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
                 placeholder="Add promotional code"
               />
               {showCouponField && (
                 <button
                   type="button"
                   onClick={isCouponValid}
-                  className=" w-44 absolute rounded-lg top-[3px] right-0 text-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-1.5 mr-2  dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+                  className=" w-44 absolute rounded-lg top-[3px] right-0 text-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 mr-2  dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
                 >
                   Apply
                 </button>
               )}
             </div>
-            <div className="rounded shadow">
-              <h4 className="text-lg  py-5">Payment Details</h4>
+            <div className="rounded shadow px-5 py-2 ">
+              <h4 className="text-lg py-4 ">Payment Details</h4>
               <div className="grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-2">
                 <div className="flex items-center ">
                   <input
@@ -654,13 +706,37 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </div>
               </div>
             </div>
-            <div className="my-10 flex items-end justify-end">
+            <div className=" flex items-end justify-end">
 
             </div>
           </form>
+
+        </div>
+        <div className="d-flex d-sm-none flex-row justify-center align-items-center">
+          <button
+            type="submit"
+            disabled={disableBtn}
+            className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+          >
+            Checkout
+            <svg
+              aria-hidden="true"
+              className="ml-2 -mr-1 w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              ></path>{" "}
+            </svg>
+          </button>
+
         </div>
 
-        <div className="hidden lg:block p-16">
+        <div className="hidden lg:block p-16 ">
 
           <div
             className="mb-3 max-h-[500px] overflow-y-scroll shadow"
@@ -668,9 +744,9 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
           >
             {cartItems.length > 0 &&
               cartItems.map((item) => (
-                <div className="p-4 flex justify-between" key={item.id}>
-                  <div className="flex w-full gap-x-4 items-start">
-                    <div className=" bg-white  rounded p-2 flex justify-center items-center">
+                <div className="py-2 flex justify-between bg-white border-2 border-black my-2 rounded" key={item.id}>
+                  <div className="flex w-full justify-between items-start">
+                    <div className=" bg-white  rounded  flex justify-between ">
                       <div className="relative h-16 w-24 ">
                         <Image
                           src={item.thumbnail}
@@ -683,25 +759,46 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                         />
                       </div>
                     </div>
-                    <div className="px-2 py-1 w-full">
+                    <div className="px-2 py-1 w-full d-flex flex-column ">
                       <h5 className="capitalize line-clamp-2 font-medium text-sm mb-1">
                         {item.title}
                       </h5>
-                      <h5 className="text-sm font-light">
-                        Qty {item.quantity}
-                      </h5>
-                    </div>
-                    <div>
-                      <h4 className=" font-medium">
+                      <h4 className="d-flex justify-content-start flex-row  w-full font-medium">
                         <CurrencyFormatter price={item.price * item.quantity} />
                       </h4>
                     </div>
+                    <div className="flex flex-1   items-center h-full text-primary font-medium  mx-2">
+                      {/* Minus icon */}
+                      <div
+                        onClick={() => minus(item.id)}
+                        className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                        style={{ width: '30px', height: '30px' }}
+                      >
+                        <IoMdRemove style={{ color: 'black', fontSize: '20px' }} />
+                      </div>
+
+                      {/* Quantity display */}
+                      <div className="mx-2">
+                     {item.quantity}
+                     </div>
+                      {/* Plus icon */}
+                      <div
+                        onClick={() => add(item.id)}
+                        className="flex justify-center items-center cursor-pointer rounded-full bg-gray-300"
+                        style={{ width: '30px', height: '30px' }}
+                      >
+                        <IoMdAdd style={{ color: 'black', fontSize: '20px' }} />
+                      </div>
+                    </div>
+
+
                   </div>
                 </div>
               ))}
           </div>
-          <div className="mt-6 shadow rounded mx-44 px-20">
-            <div className="py-4 leading-8">
+          <div className="mt-6 shadow rounded bg-white  border-2 border-black px-2">
+            <h2 style={{fontWeight:"800"}}>Payment Details</h2>
+            <div className="py-2 leading-8">
               <div className="flex justify-between items-center ">
                 <h5 className="">Subtotal</h5>
                 <h5 className="">
@@ -711,7 +808,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
               <div className="flex justify-between items-center ">
                 <h5 className="">Discount</h5>
                 <h5 className="">
-                   &nbsp;
+                  &nbsp;
                   <CurrencyFormatter price={discount} />
                 </h5>
               </div>
@@ -723,37 +820,41 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </h5>
               </div>
             </div>
-            <div className="flex font-medium justify-between items-center mt-3">
-              <h5 className="font-semibold">Total</h5>
-              <h5 className="font-semibold">
+            <div className="flex font-medium justify-between items-center ">
+              <h4 className="font-semibold">Total</h4>
+              <h4 className="font-bold">
                 {" "}
                 <CurrencyFormatter price={address.total} />
-              </h5>
+              </h4>
             </div>
-            <div className="d-flex flex-row justify-content-center ">
-              <button
-                type="submit"
-                disabled={disableBtn}
-                className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-              >
-                Checkout
-                <svg
-                  aria-hidden="true"
-                  className="ml-2 -mr-1 w-5 h-5"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>{" "}
-                </svg>
-              </button>
-            </div>
+
           </div>
+          <div className="d-flex flex-row justify-content-center  w-full my-2">
+            <button
+              type="submit"
+              disabled={disableBtn}
+              className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+            >
+              Checkout
+              <svg
+                aria-hidden="true"
+                className="ml-2 -mr-1 w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                ></path>{" "}
+              </svg>
+            </button>
+
+          </div>
+
         </div>
+
         <Modal
           show={editAddressModalOpen}
           size="2xl"
