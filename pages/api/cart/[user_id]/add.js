@@ -12,7 +12,7 @@ const addItem = async (req, res) => {
 
     let cart = await Cart.findOne({ user_id });
 
-    console.log("cart",cart)
+    
     let product = await Product.findOne(
       { _id: product_id },
       {
@@ -26,7 +26,7 @@ const addItem = async (req, res) => {
       }
     );
 
-    console.log({ product });
+    
     if (!cart) {
       cart = new Cart({
         user_id,
@@ -57,7 +57,7 @@ const addItem = async (req, res) => {
     const existingCartItem = cart.items.find(
       (item) => item.id.toString() == product_id
     );
-    console.log({ existingCartItem });
+    
     if (existingCartItem) {
       existingCartItem.quantity += quantity;
       existingCartItem.total += itemTotalPrice;
@@ -66,7 +66,7 @@ const addItem = async (req, res) => {
       //   product,
       //   total: itemTotalPrice,
       // };
-      console.log(renamed_product);
+     
       cart.items.push(renamed_product);
     }
 
@@ -84,7 +84,7 @@ const addItem = async (req, res) => {
     await cart.save();
     res.json(cart);
   } catch (err) {
-    console.log({ err });
+    
     res.status(500).json({ error: "Internal server error" });
   }
 };
