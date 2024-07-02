@@ -137,8 +137,9 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
 
             <button
               onClick={() => checkout()}
-              className=" p-2 my-2 uppercase transition-all duration-300 hover:bg-black hover:text-white text-sm font-bold w-full mt-2 border-2 border-black"
+              className=" p-2 my-2 uppercase transition-all duration-300 text-sm font-bold w-full mt-2 "
               disabled={total == 0 ? true : false}
+              style={{border:"2px solid black"}}
             >
               Checkout
             </button>

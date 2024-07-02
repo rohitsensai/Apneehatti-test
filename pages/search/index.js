@@ -131,7 +131,7 @@ const productScreen = ({ prod, pro_category, query }) => {
         
         </div>
         <div className="  " >
-          {/* <Breadcrumb
+          <Breadcrumb
             aria-label="Solid background breadcrumb example"
             className="  dark:bg-gray-900"
           >
@@ -147,7 +147,7 @@ const productScreen = ({ prod, pro_category, query }) => {
                 {query}
               </Breadcrumb.Item>
             )}
-          </Breadcrumb> */}
+          </Breadcrumb>
           <div className="bg-white rounded shadow-sm mb-2  flex justify-between items-center ">
             <div className="text-gray-500">Total {products.length} results</div>
             <div className="hidden md:flex lg:w-1/5 items-center ">

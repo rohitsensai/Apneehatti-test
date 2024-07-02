@@ -68,6 +68,7 @@ export async function getServerSideProps({ query }) {
       relatedProducts: relatedProducts ? relatedProducts.slice(0, 10) : [],
       pro_review: pro_review.message ? [] : pro_review,
       host: process.env.HOST,
+      product_id: product_id
     },
   };
 }
@@ -78,6 +79,7 @@ const ProductDetail = ({
   pro_review,
   category,
   host,
+  product_id
 }) => {
   const dispatch = useDispatch();
   const [mainImg, setMainImg] = useState(
@@ -267,7 +269,7 @@ const ProductDetail = ({
           "Content-Type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify({ product_id: id, quantity: 1 }),
+        body: JSON.stringify({ product_id: product_id, quantity: 1 }),
       });
       if (data.ok) {
         const response = await data.json();
@@ -294,7 +296,7 @@ const ProductDetail = ({
           "Content-Type": "application/json",
         },
         method: "POST",
-        body: JSON.stringify({ product_id: id, quantity: 1 }),
+        body: JSON.stringify({ product_id: product_id, quantity: 1 }),
       });
       if (data.ok) {
         const response = await data.json();
@@ -386,9 +388,30 @@ const ProductDetail = ({
         <meta property="og:image:alt" content={product_data.alt_text} />
         <meta property="og:type" content="website" />
       </Head>
+
+      <Breadcrumb
+        aria-label="Solid background breadcrumb example"
+        className="bg-gray-50 py-3 px-5 dark:bg-gray-900 hidden md:block"
+      >
+        <Breadcrumb.Item icon={HiHome}>Home</Breadcrumb.Item>
+        <Breadcrumb.Item>Search</Breadcrumb.Item>
+        <Breadcrumb.Item>Product</Breadcrumb.Item>
+        {product_data?.category_id.name && (
+          <Breadcrumb.Item className="capitalize" href="#">
+            {product_data?.category_id.name}
+          </Breadcrumb.Item>
+        )}
+        {product_data && (
+          <Breadcrumb.Item className="capitalize truncate " href="#">
+            {product_data.name}
+          </Breadcrumb.Item>
+        )}
+      </Breadcrumb>
+
+
       <div className="min-w-screen">
 
-        <div className=" md:m-9 space-y-3 ">
+        <div className=" md:m-3 space-y-3 ">
           <div className=" lg:grid grid-cols-2  relative " >
             <div className="relative " >
               <div
@@ -467,17 +490,8 @@ const ProductDetail = ({
             </div>
 
 
-            <div className="relative overflow-y-auto font-serif rounded  mx-2 h-[760px] bg-white" id="2">
-              <div
-                className={`${zoomIn ? "" : "hidden"
-                  }   top-0 fixed flex justify-center z-10 items-center   `}
-                id="zoomable_container"
-                style={{
-                  width: "100%",
-                  height: "100%",
-                  maxHeight: "650px",
-                }}
-              ></div>
+            <div className="relative overflow-y-auto font-serif rounded my-2 mx-2 h-[770px] bg-white" id="2">
+
 
               <div className={`  w-sm-4/5 lg:px-10 m-sm-2 bg-white mx-auto rounded  `}>
                 <div className="rounded bg-white ">
@@ -602,7 +616,7 @@ const ProductDetail = ({
                 <div className="d-flex justify-content-between mt-6 button-wrapper  ">
                   <button
                     onClick={(e) => {
-                      add(product);
+                      handleAddToCart(e);
                     }}
                     className="button"
                   >
