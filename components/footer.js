@@ -93,25 +93,12 @@ const Footer = ({ categories }) => {
                       </li>
                       <li>
                       <span className="hover-underline">
-                        <Link href="about-us" className="c-link">
+                        <Link href="about-us" className="c-link ">
                           About Us
                           </Link>
                           </span>
                       </li>
-                      <li>
-                      <span className="hover-underline">
-                        <Link href="/blogs/community" className="c-link">
-                          Community
-                        </Link>
-                        </span>
-                      </li>
-                      <li>
-                      <span className="hover-underline">
-                        <a href="#" className="c-link">
-                          Vibes
-                        </a>
-                        </span>
-                      </li>
+                    
                     </ul>
                   </nav>
                 </div>
@@ -120,13 +107,7 @@ const Footer = ({ categories }) => {
                   <nav className="c-nav-tool">
                     <h4 className="c-nav-tool_title fw-bold mb-1">Support</h4>
                     <ul className="c-nav-tool_list">
-                      <li className="c-nav-tool_item">
-                      <span className="hover-underline">
-                        <Link href="/pages/shipping-returns" className="c-link">
-                          Shipping &amp; Returns
-                        </Link>
-                        </span>
-                      </li>
+                     
                       <li className="c-nav-tool_item">
                       <span className="hover-underline">
                         <Link href="/FAQs" className="c-link">
