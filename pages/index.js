@@ -258,7 +258,7 @@ export default function Home({ socket_URL}) {
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2" >
-                    Latest new arrivalss
+                    Latest new arrivals
                   </h3>
 
                   <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
@@ -338,7 +338,7 @@ export default function Home({ socket_URL}) {
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                    TOP SELLING PRODUCTS
+                    TOP DEALS
                   </h3>
 
                   <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
@@ -469,66 +469,61 @@ export default function Home({ socket_URL}) {
             </div> */}
           </div>
 
-          {/* <div className="relative">
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => newArrivalSlider.current.slickPrev()}>
+          <div className="relative">
+            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
+              <button onClick={() => bestSellerSlider.current.slickPrev()}>
                 <MdArrowBackIos className="text-2xl" />
               </button>
-            </div>
-                <div className="py-2 px-2 md:p-8 border bg-white rounded mx-4 my-4border  bg-white mx-4 my-4 ">
-                  <div className="flex justify-between items-center ">
-                    <div className="py-4" style={{ width: "100%" }}>
-                      <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                        Handpicks for You
-                      </h3>
+            </div> */}
+            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+              <div className="flex justify-between items-center ">
+                <div className="py-4" style={{ width: "100%" }}>
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
+                    TOP SELLING PRODUCTS
+                  </h3>
 
-                      <h3 className="text-center text-gray-500">
-                        Grab It Fast | Sale Is Live
-                      </h3>
+                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
+                    Grab It Fast | Sale Is Live
+                  </h3>
 
-                    </div>
-                    <div className="md:hidden w-20 flex justify-between items-center">
-                      <button onClick={() => newArrivalSlider.current.slickPrev()}>
-                        <HiArrowCircleLeft className="text-3xl" />
-                      </button>
-
-                      <button onClick={() => newArrivalSlider.current.slickNext()}>
-                        <HiArrowCircleRight className="text-3xl" />
-                      </button>
-                    </div>
-                  </div>
-                  <div className="w-10/12 md:w-full  mx-auto">
-                    <Slider
-                      ref={(slider) => (newArrivalSlider.current = slider)}
-                      {...settings}
-                    >
-                      {!loading && newArrival.length > 0
-                        ? newArrival.map((item) => (
-                          <Product
-                            key={item._id}
-                            product={{
-                              id: item._id,
-                              title: item.name,
-                              price: item.price,
-                              MRP: item.MRP,
-                              category: item.category_id.name,
-                              image: item.images[0],
-                              alt_text: item.alt_text,
-                            }}
-                          />
-                        ))
-                        : Array.from({ length: 5 }, (_, i) => i + 4).map((i) => (
-                          <ProductSkeleton key={i} />
-                        ))}
-                    </Slider>
-                  </div>
                 </div>
-                <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => newArrivalSlider.current.slickNext()}>
-                <MdArrowForwardIos className="text-2xl" />
-              </button>
+                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                  <button onClick={() => trendingProductSlider.current.slickPrev()}>
+                    <HiArrowCircleLeft className="text-3xl" />
+                  </button>
+
+                  <button onClick={() => trendingProductSlider.current.slickNext()}>
+                    <HiArrowCircleRight className="text-3xl" />
+                  </button>
+                </div>
+              </div>
+              <div className="w-10/12 md:w-full  mx-auto">
+                <Slider
+                  ref={(slider) => (trendingProductSlider.current = slider)}
+                  {...settings}
+                >
+                  {!loading && trendingProducts.length > 0
+                    ? trendingProducts.map((item) => (
+                      <Product
+                        key={item._id}
+                        product={{
+                          id: item._id,
+                          title: item.name,
+                          price: item.price,
+                          MRP: item.MRP,
+                          category: item.category_id.name,
+                          image: item.images[0],
+                          alt_text: item.alt_text,
+                        }}
+                      />
+                    ))
+                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
+                      <ProductSkeleton key={i} />
+                    ))}
+                </Slider>
+              </div>
+            </div> 
             </div>
-              </div> */}
 
 
 
