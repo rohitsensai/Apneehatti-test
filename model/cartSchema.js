@@ -49,7 +49,7 @@ const cartSchema = new Schema(
         },
       },
     ],
-    shipping: { type: Number, default: 50 },
+    shipping: { type: Number, default: 0 },
     subtotal: { type: Number, required: true },
     total: { type: Number, required: true },
   },

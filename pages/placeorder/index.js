@@ -15,6 +15,7 @@ import { clearCart } from "../../slices/cart";
 import { IoMdAdd, IoMdRemove } from "react-icons/io";
 import { initialCart } from "../../slices/cart";
 
+
 export async function getServerSideProps({ req }) {
   // Check if the user is authenticated, if not redirect to login page
   const session = await getSession({ req });
@@ -22,7 +23,7 @@ export async function getServerSideProps({ req }) {
     return {
       redirect: {
         permanent: false,
-        destination: "/login",
+        destination: "/",
       },
     };
   }
@@ -53,7 +54,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   const { cartItems, total, subtotal } = useSelector(
     (state) => state.cart
   );
-  const [shipping, setShipping] = useState(50)
+  const [shipping, setShipping] = useState(0)
+  
   const { data: session, status } = useSession();
   const router = useRouter();
   const Razorpay = useRazorpay();
@@ -80,6 +82,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     discount: 0,
   };
   const [address, setAddress] = useState(initialValues);
+  const [pickedaddress, setPickedaddress] = useState("");
   const [coupon_code, setCoupon_code] = useState("");
   const [discount, setDiscount] = useState(0);
   const [savedAddress, setSavedAddress] = useState(saved_address);
@@ -109,9 +112,9 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     });
   };
 
-  
+
   const minus = async (id) => {
-    console.log("id=",id)
+    console.log("id=", id)
     const data = await fetch(`/api/cart/${session.user.id}/minus`, {
       headers: {
         "Content-Type": "application/json",
@@ -174,7 +177,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
           order_items: cartItems,
           payment_method: address.payment_method,
           shipping_price: address.shipping_price,
-          total: address.total,
+          total: address.total + address.shipping_price,
           transaction_id: address.transaction_id,
           shipping_address: address.shipping_address,
           coupon: address.coupon ? address.coupon : null,
@@ -310,6 +313,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   };
 
   const updateAddress = async (id, e) => {
+    e.preventDefault();
     setEditAddressModalOpen(false);
     const formData = new FormData(e.target);
     formData.append("user_id", address.user_id);
@@ -402,7 +406,27 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
         : createOrder();
       setFormSubmitted(false);
     }
+
+
   }, [formSubmitted]);
+
+  useEffect(() => {
+    const state = pickedaddress.state;
+    const pincode = pickedaddress.postal_code
+    const newShippingPrice = (state === 'Himachal Pradesh') ? 50 : 70;
+    setAddress(prevAddress => ({
+      ...prevAddress,
+      shipping_price: newShippingPrice
+    }));
+  }, [pickedaddress])
+  console.log("picked=", pickedaddress)
+
+  useEffect(() => {
+    if(session === null){
+      router.push('/');
+    }
+  },[session])
+
 
   return (
     <>
@@ -433,12 +457,13 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                   </div>
                 </div>
 
-                <div className="p-2 mb-2 grid grid-cols-1 md:grid-cols-2 gap-2 items-start">
+                <div className="p-2 mb-2 grid grid-cols-1 md:grid-cols-2 gap-2 items-start ">
                   {savedAddress.map((item) => (
                     <label
                       htmlFor={item._id}
                       key={item._id}
                       className="border shadow-lg p-5 focus:outline-none focus:ring focus:ring-green-300 focus:bg-green-100 text-justify w-full rounded"
+                      onClick={() => setPickedaddress(item)}
                     >
                       <div className="flex justify-between items-center text-sm font-extrabold ">
                         <h5 className="flex gap-x-2 items-center">
@@ -706,35 +731,36 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </div>
               </div>
             </div>
-            <div className=" flex items-end justify-end">
+            <div className=" flex items-end justify-end py-4">
+              <div className="d-flex  flex-row justify-center align-items-center">
+                <button
+                  type="submit"
+                  disabled={disableBtn}
+                  className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+                >
+                  Checkout
+                  <svg
+                    aria-hidden="true"
+                    className="ml-2 -mr-1 w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    ></path>{" "}
+                  </svg>
+                </button>
 
+              </div>
             </div>
+
           </form>
 
         </div>
-        <div className="d-flex d-sm-none flex-row justify-center align-items-center">
-          <button
-            type="submit"
-            disabled={disableBtn}
-            className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-          >
-            Checkout
-            <svg
-              aria-hidden="true"
-              className="ml-2 -mr-1 w-5 h-5"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              ></path>{" "}
-            </svg>
-          </button>
 
-        </div>
 
         <div className="hidden lg:block p-16 ">
 
@@ -779,8 +805,8 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
 
                       {/* Quantity display */}
                       <div className="mx-2">
-                     {item.quantity}
-                     </div>
+                        {item.quantity}
+                      </div>
                       {/* Plus icon */}
                       <div
                         onClick={() => add(item.id)}
@@ -797,7 +823,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
               ))}
           </div>
           <div className="mt-6 shadow rounded bg-white  border-2 border-black px-2">
-            <h2 style={{fontWeight:"800"}}>Payment Details</h2>
+            <h2 style={{ fontWeight: "800" }}>Payment Details</h2>
             <div className="py-2 leading-8">
               <div className="flex justify-between items-center ">
                 <h5 className="">Subtotal</h5>
@@ -824,34 +850,12 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
               <h4 className="font-semibold">Total</h4>
               <h4 className="font-bold">
                 {" "}
-                <CurrencyFormatter price={address.total} />
+                <CurrencyFormatter price={address.total + address.shipping_price} />
               </h4>
             </div>
 
           </div>
-          <div className="d-flex flex-row justify-content-center  w-full my-2">
-            <button
-              type="submit"
-              disabled={disableBtn}
-              className="flex items-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-            >
-              Checkout
-              <svg
-                aria-hidden="true"
-                className="ml-2 -mr-1 w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                ></path>{" "}
-              </svg>
-            </button>
 
-          </div>
 
         </div>
 

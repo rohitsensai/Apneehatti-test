@@ -43,14 +43,14 @@ const ProductSkeleton = dynamic(() => import("../components/cardSkeleton"), {
 
 let socket;
 
-export default function Home({ socket_URL}) {
+export default function Home({ socket_URL }) {
   const [copiedTopDeals, setCopiedTopDeals] = useState([]);
   const dispatch = useDispatch();
   const newArrivalSlider = useRef();
-  const [products1, setProducts1] = useState( []);
-  const [products2, setProducts2] = useState( []);
+  const [products1, setProducts1] = useState([]);
+  const [products2, setProducts2] = useState([]);
   const [products3, setProducts3] = useState([]);
-  const [products4, setProducts4] = useState( []);
+  const [products4, setProducts4] = useState([]);
   const [products5, setProducts5] = useState([]);
 
 
@@ -154,11 +154,11 @@ export default function Home({ socket_URL}) {
         }
         jsonData = await response.json();
         setProducts4(jsonData);
-         response = await fetch('/data/healthcare.json');
+        response = await fetch('/data/healthcare.json');
         if (!response.ok) {
           throw new Error('Network response was not ok ' + response.statusText);
         }
-         jsonData = await response.json();
+        jsonData = await response.json();
         setProducts5(jsonData);
       } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
@@ -230,17 +230,17 @@ export default function Home({ socket_URL}) {
 
 
         <div className="w-full ">
-            <Image
-              src="/images/banner/new.jpg"
-              layout="responsive"
-              width={1840} // Use the actual width of your image
-              height={400} // Use the actual height of your image
-              alt="New banner"
-              loading="lazy"
-              blurDataURL="/images/banner/new.jpg"
-              placeholder="blur"
-            />
-          </div>
+          <Image
+            src="/images/banner/new.jpg"
+            layout="responsive"
+            width={1840} // Use the actual width of your image
+            height={400} // Use the actual height of your image
+            alt="New banner"
+            loading="lazy"
+            blurDataURL="/images/banner/new.jpg"
+            placeholder="blur"
+          />
+        </div>
 
 
         <div className="">
@@ -308,7 +308,7 @@ export default function Home({ socket_URL}) {
             </div> */}
           </div>
 
-          
+
 
 
           <div className="w-full ">
@@ -392,7 +392,7 @@ export default function Home({ socket_URL}) {
           </div>
 
 
-          
+
 
 
           <div className="w-full ">
@@ -408,37 +408,40 @@ export default function Home({ socket_URL}) {
             />
           </div>
 
-          <div className="relative">
-            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-2xl" />
+          <div className="relative ">
+            {/* <div className=" hidden md:flex  cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10 h-44  ">
+              <button
+                onClick={() => {
+                  newArrivalSlider.current.slickPrev();
+                }}
+              >
+                <MdArrowBackIos className=" text-2xl " />
               </button>
             </div> */}
-            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
+            <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
               <div className="flex justify-between items-center ">
                 <div className="py-4" style={{ width: "100%" }}>
-                  <h3 className="text-center text-2xl font-semibold uppercase mb-2">
-                    SUMMER SPECIALS
+                  <h3 className="text-center text-2xl font-semibold uppercase mb-2" >
+                    Summer Special
                   </h3>
 
                   <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
-                    Grab It Fast | Sale Is Live
+                    We’re crushing on new arrivals + 30% off all full price!
                   </h3>
 
                 </div>
-                <div className="md:hidden d-none w-20 flex justify-between items-center">
+                <div className="md:hidden d-none w-20 flex justify-between items-center border border-danger">
                   <button onClick={() => bestSellerSlider.current.slickPrev()}>
                     <HiArrowCircleLeft className="text-3xl" />
                   </button>
-
                   <button onClick={() => bestSellerSlider.current.slickNext()}>
                     <HiArrowCircleRight className="text-3xl" />
                   </button>
                 </div>
               </div>
-              <div className="w-10/12 md:w-full  mx-auto">
+              <div className="w-10/12 md:w-full  mx-auto ">
                 <Slider
-                  ref={(slider) => (bestSellerSlider.current = slider)}
+                  ref={bestSellerSlider}
                   {...settings}
                 >
                   {!loading && bestSellers.length > 0
@@ -463,41 +466,40 @@ export default function Home({ socket_URL}) {
               </div>
             </div>
             {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute right-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickNext()}>
+              <button onClick={() => newArrivalSlider.current.slickNext()}>
                 <MdArrowForwardIos className="text-2xl" />
               </button>
             </div> */}
           </div>
 
           <div className="relative">
-            {/* <div className=" hidden md:flex p-2 cursor-pointer  justify-center items-center  absolute left-0 top-44 z-10  h-44  ">
-              <button onClick={() => bestSellerSlider.current.slickPrev()}>
-                <MdArrowBackIos className="text-2xl" />
-              </button>
-            </div> */}
-            <div className="py-2 px-2 md:p-8 rounded bg-white  mx-sm-4  my-sm-4 ">
-              <div className="flex justify-between items-center ">
-                <div className="py-4" style={{ width: "100%" }}>
+            {/* Arrow buttons for larger screens */}
+            {/* <div className="hidden md:flex p-2 cursor-pointer justify-center items-center absolute left-0 top-44 z-10 h-44">
+        <button onClick={() => bestSellerSlider.current.slickPrev()}>
+          <MdArrowBackIos className="text-2xl" />
+        </button>
+      </div> */}
+            <div className="py-2 px-2 md:p-8 rounded bg-white mx-sm-4 my-sm-4">
+              <div className="flex justify-between items-center">
+                <div className="py-4 w-full">
                   <h3 className="text-center text-2xl font-semibold uppercase mb-2">
                     TOP SELLING PRODUCTS
                   </h3>
-
-                  <h3 className="text-center text-gray-500" style={{ fontSize: "14px" }}>
+                  <h3 className="text-center text-gray-500 text-sm">
                     Grab It Fast | Sale Is Live
                   </h3>
-
                 </div>
+                {/* Arrow buttons for smaller screens */}
                 <div className="md:hidden d-none w-20 flex justify-between items-center">
                   <button onClick={() => trendingProductSlider.current.slickPrev()}>
                     <HiArrowCircleLeft className="text-3xl" />
                   </button>
-
                   <button onClick={() => trendingProductSlider.current.slickNext()}>
                     <HiArrowCircleRight className="text-3xl" />
                   </button>
                 </div>
               </div>
-              <div className="w-10/12 md:w-full  mx-auto">
+              <div className="w-10/12 md:w-full mx-auto">
                 <Slider
                   ref={(slider) => (trendingProductSlider.current = slider)}
                   {...settings}
@@ -517,13 +519,11 @@ export default function Home({ socket_URL}) {
                         }}
                       />
                     ))
-                    : Array.from({ length: 5 }, (_, i) => i + 3).map((i) => (
-                      <ProductSkeleton key={i} />
-                    ))}
+                    : Array.from({ length: 5 }, (_, i) => <ProductSkeleton key={i} />)}
                 </Slider>
               </div>
-            </div> 
             </div>
+          </div>
 
 
 

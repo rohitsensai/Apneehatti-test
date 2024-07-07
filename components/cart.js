@@ -101,14 +101,14 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
             <div className="flex w-full leading-6 pt-4 justify-between items-center">
               {/* total */}
               <div className="uppercase font-medium">
-                <div className="flex  items-center">
+                {/* <div className="flex  items-center">
                   {" "}
                   <span className="mr-2 lg:w-[100px] text-sm">Shipping</span>
                   <div className="text-left">
                     <span className="mx-1">:</span>
                     {<CurrencyFormatter price={shipping} />}
                   </div>
-                </div>
+                </div> */}
                 <div className="flex items-center">
                   {" "}
                   <span className="mr-2 lg:w-[100px] text-sm">Subtotal</span>
@@ -117,14 +117,14 @@ const Cart = ({ isOpen, setIsOpen, session, status }) => {
                     <CurrencyFormatter price={subtotal} />
                   </div>
                 </div>
-
+{/* 
                 <div className="flex  items-center">
                   <span className="mr-2 lg:w-[100px] text-sm">Total</span>
                   <div className="text-left">
                     <span className="mx-1">:</span>
                     <CurrencyFormatter price={total} />
                   </div>
-                </div>
+                </div> */}
               </div>
               {/* clear cart icon */}
               <button
