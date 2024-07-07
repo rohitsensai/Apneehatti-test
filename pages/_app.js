@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
   let persistor = persistStore(store);
   const [isLoading, setIsLoading] = useState(false);
 
+
   const AppLoadingOverlay = () => {
     if (isLoading) {
       return (
