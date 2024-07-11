@@ -9,8 +9,8 @@ function ContactUs() {
     </Head>
  
  
-<div class="border border-danger mx-auto bg-light   rounded border-rounded my-10" style={{width:"100%"}}>
-  <div class="containerr">
+<div class=" mx-auto bg-light   rounded border-rounded my-10" style={{width:"100%"}}>
+  <div class="container">
     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">
         <div class="row justify-content-xl-center">
