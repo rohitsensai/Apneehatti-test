@@ -14,9 +14,13 @@ import { FaShoppingCart, FaHeart } from 'react-icons/fa';
 const Product = ({ product }) => {
   const router = useRouter();
   const dispatch = useDispatch();
-  const { id, image, category, title, price, MRP, rating, alt_text } = product;
+  let { id, image, category, title, price, MRP, rating, alt_text } = product;
   const [added, setAdded] = useState(false);
   const { data: session, status } = useSession();
+
+  if(image == "") image = null;
+
+  console.log(image)
 
 
 

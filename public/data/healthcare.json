@@ -1,292 +1,5 @@
 [
     {
-        "_id": "66649229d52eaa78f2a6e48e",
-        "name": "Pine Aromatherapy Candle - 40hrs Burn Time -Handmade Aroma Candle - Natural Aroma Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"alvck\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"572i2\",\"text\":\"Burn Time: 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"asb2h\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa14f\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6aqp\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9e79p\",\"text\":\"The strong, fresh, woody scent of Pine essential oil has a refreshing, invigorating, and empowering aroma. This oil has a calming scent when diffused, and is highly effective when used in massage. Pine's invigorating and calming aroma makes it ideal to use for cleaning purposes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718352230134.png"
-        ],
-        "alt_text": "Pine Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867049770",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:29.774Z",
-        "updatedAt": "2024-06-14T08:03:51.493Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649241d52eaa78f2a6e502",
-        "name": "GILOY POWDER | Giloy Powder Benefits | Giloy Powder for Immunity | Giloy Powder for Detox | Giloy Stem Powder Ayurvedic",
-        "desc": "{\"blocks\":[{\"key\":\"e888s\",\"text\":\"Weight: 100 g Product Description:   Reveal the Remarkable Benefits of Organic Giloy Stem Powder for Your Health and Well-Being Are you in pursuit of a natural way to fortify your health and well-being? Your search comes to fruition with our premium Organic Giloy Stem Powder. Abundant with an array of advantages, this Giloy powder is a versatile addition to your daily health regimen.  Giloy Powder Benefits:  Immune Fortification: Harness the immune-boosting properties of Giloy powder to strengthen your body's defense against illnesses. Detoxification: Promote detoxification and purification of your body with Giloy, flushing out harmful toxins. Fever Management: Giloy is renowned for its fever-reducing capabilities and is a trusted remedy in Ayurveda. Digestive Harmony: Relieve digestive discomfort and enhance gut health with the soothing effects of Giloy. Anti-Inflammatory: Giloy's anti-inflammatory properties help alleviate various health issues. Anti-Aging: Experience the age-defying effects of Giloy, maintaining youthful vitality. Why Choose Our Organic Giloy Stem Powder?  Our Giloy powder is meticulously sourced from premium organic Giloy stems and processed with utmost care to preserve its innate purity. It is entirely free from additives and chemicals, standing as a genuinely potent dietary supplement.  Unlock the holistic potential of Giloy, deeply rooted in Ayurvedic wisdom. Elevate your health and wellness naturally with our premium product. Discover the difference today!  Where to Buy Giloy Powder?  You can conveniently purchase our high-quality Organic Giloy Stem Powder right here, embracing the myriad benefits it offers. Join those who have harnessed the power of Giloy for their health and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 89,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867073059",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:53.067Z",
-        "updatedAt": "2024-06-08T17:17:53.067Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649244d52eaa78f2a6e510",
-        "name": "Arjun Ki chaal Powder | Arjun Bark Powder | 100% Natural | Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"3215d\",\"text\":\"Quantity  : 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"au6v1\",\"text\":\"Special Feature : 100% Organic \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"er05m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8a8mb\",\"text\":\"Item Form  : Powder \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4et8u\",\"text\":\"About this item:-\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47io7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ce7qr\",\"text\":\"Arjuna bark powder is derived from the Terminalia arjuna tree and offers various potential health benefits. It provides cardiovascular support by helping lower blood pressure and reduce cholesterol levels, reducing the risk of heart diseases. Additionally, it contains antioxidants that combat free radicals, reducing oxidative stress and the risk of chronic diseases. Arjuna may improve blood circulation by dilating blood vessels, aiding individuals with circulation issues. Its anti-inflammatory properties can alleviate swelling and inflammation, benefiting those with conditions like arthritis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ntlh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ev8f\",\"text\":\"Furthermore, Arjuna bark powder may positively impact liver health and aid in detoxification. It acts as a digestive aid by stimulating digestive enzyme production for those with digestive concerns. The powder exhibits antibacterial properties to help combat infections and may possess adaptogenic qualities to assist the body in coping with stress and anxiety. Additionally, it supports respiratory health and may alleviate symptoms of respiratory conditions. Some also use it topically to promote wound healing and address various skin ailments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92kq1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eeh7g\",\"text\":\"Prior to using Arjuna bark powder for medicinal purposes, it's essential to consult a healthcare professional to ensure it's safe and suitable for your specific health needs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cq12\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40aer\",\"text\":\"How to use:- \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7b0sk\",\"text\":\"Consume 3 grams daily, either two hours after eating or following the guidance of a medical professional. Allow it some time to dissolve in water, and we recommend mixing it with water before your meals, allowing it to sit. After your meals, give it another stir and then ingest it. Alternatively, you may choose to blend this powder with tea or milk.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 99,
-        "MRP": 100,
-        "rating": 0,
-        "SKU": "1717867076331",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:56.350Z",
-        "updatedAt": "2024-06-08T17:17:56.350Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649227d52eaa78f2a6e47e",
-        "name": "Jasmine Aromatherapy Candle 150g - Jasmine Scented - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"9ovti\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73gjp\",\"text\":\"Burn Time : 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6b222\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dsi1u\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"emgl6\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bie5n\",\"text\":\"Unwind and envelop yourself in the exquisite allure of our Jasmine Bliss Aromatherapy Candle. This hand-poured candle is meticulously crafted to infuse your space with the calming and enchanting essence of jasmine. With its delicate floral notes and soothing properties, this candle is designed to elevate your senses and create a serene ambiance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"54gjm\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jcnd\",\"text\":\"Pure Jasmine Essential Oil: Our candle is infused with 100% pure jasmine essential oil sourced from the finest blooms, ensuring an authentic and potent fragrance that captures the true essence of this revered flower.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1qdfi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c40ll\",\"text\":\"Long-Lasting Burn Time: Each candle boasts a generous burn time of approximately 50 hours, providing you with hours of tranquil moments and sensory indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amj7o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61tv4\",\"text\":\"Natural Soy Wax Blend: We use a premium blend of natural soy wax and a lead-free cotton wick, ensuring a clean and even burn, free from harmful chemicals or toxins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ic27\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6d0t0\",\"text\":\"Elegant Glass Jar: The candle is housed in a beautifully designed glass jar, which not only complements any decor but also protects the integrity of the fragrance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1l3r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fs66c\",\"text\":\"Handcrafted with Care: Every candle is carefully hand-poured by skilled artisans, guaranteeing a high-quality product that meets our exacting standards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ajqnj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4to66\",\"text\":\"Mood-Enhancing Properties: Jasmine is renowned for its mood-lifting and stress-reducing properties. Allow the soothing aroma to promote relaxation, alleviate anxiety, and foster a sense of well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718350553757.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718350553752.png"
-        ],
-        "alt_text": "Jasmine Aromatherapy Candle 150g",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867047055",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:27.076Z",
-        "updatedAt": "2024-06-14T07:35:56.511Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649242d52eaa78f2a6e508",
-        "name": "Arjun Ki chaal Powder | 100% Natural Crop | Atjun Tree Bark Powder (100grm)",
-        "desc": "{\"blocks\":[{\"key\":\"sg7b\",\"text\":\"Quantity : 100g Special Feature : 100% Organic Product Benefits : Protect Heart due to its cardioprotective property, Maintain Blood Pressure Item Form : Powder About this item:-  Arjuna bark powder is derived from the Terminalia arjuna tree and offers various potential health benefits. It provides cardiovascular support by helping lower blood pressure and reduce cholesterol levels, reducing the risk of heart diseases. Additionally, it contains antioxidants that combat free radicals, reducing oxidative stress and the risk of chronic diseases. Arjuna may improve blood circulation by dilating blood vessels, aiding individuals with circulation issues. Its anti-inflammatory properties can alleviate swelling and inflammation, benefiting those with conditions like arthritis.  Furthermore, Arjuna bark powder may positively impact liver health and aid in detoxification. It acts as a digestive aid by stimulating digestive enzyme production for those with digestive concerns. The powder exhibits antibacterial properties to help combat infections and may possess adaptogenic qualities to assist the body in coping with stress and anxiety. Additionally, it supports respiratory health and may alleviate symptoms of respiratory conditions. Some also use it topically to promote wound healing and address various skin ailments.  Prior to using Arjuna bark powder for medicinal purposes, it's essential to consult a healthcare professional to ensure it's safe and suitable for your specific health needs.  How to use:- Consume 3 grams daily, either two hours after eating or following the guidance of a medical professional. Allow it some time to dissolve in water, and we recommend mixing it with water before your meals, allowing it to sit. After your meals, give it another stir and then ingest it. Alternatively, you may choose to blend this powder with tea or milk.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 99,
-        "MRP": 100,
-        "rating": 0,
-        "SKU": "1717867074594",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:54.603Z",
-        "updatedAt": "2024-06-08T17:17:54.603Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649245d52eaa78f2a6e514",
-        "name": "JAMUN POWDER - 100g | Organic Jamun Seed Powder | Jamun Powder Benefits | Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"2if4v\",\"text\":\"Weight: 100 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r1ld\",\"text\":\"Product Description\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"crvvl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4kepr\",\"text\":\"Uncover the Rich Benefits of Organic Jamun Seed Powder for Your Health and Wellness\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5455h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1leq0\",\"text\":\"Are you in search of a natural way to support your overall health and wellness? Your quest finds its answer with our premium Organic Jamun Seed Powder. Enriched with numerous advantages, this Jamun powder is a versatile addition to your daily health routine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pdno\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0ln5\",\"text\":\"Jamun Powder Benefits:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ajca6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egknr\",\"text\":\"Blood Sugar Control: Embrace the remarkable blood sugar-controlling properties of Jamun powder. It aids in regulating glucose levels, promoting stable blood sugar for a healthier life.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8np2j\",\"text\":\"Digestive Wellness: Soothe your digestive system and say farewell to discomfort with Jamun powder's digestive health benefits.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"25pla\",\"text\":\"Antioxidant Power: Harness the antioxidant-rich properties of Jamun, combating oxidative stress and promoting overall well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"anbf2\",\"text\":\"Heart Health: Support a healthy heart with the cardiovascular benefits of Jamun powder.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b846e\",\"text\":\"Immune Support: Boost your immune system naturally with Jamun's immune-enhancing properties, protecting you from common illnesses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ba6k\",\"text\":\"Skin Care: Achieve radiant and youthful skin with Jamun's skin-nourishing effects, fighting premature aging signs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6diod\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b21jt\",\"text\":\"Why Opt for Our Organic Jamun Seed Powder?\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8s5u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"305eu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41dk7\",\"text\":\"Our Jamun powder is meticulously sourced from premium organic Jamun seeds and processed with utmost care to retain its innate purity. It is free from additives and chemicals, standing as a genuinely potent dietary supplement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d81f3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8202u\",\"text\":\"Unlock the holistic potential of Jamun, a gem in Ayurvedic wisdom. Enhance your health and wellness naturally with our premium product. Experience the difference today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bd2u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqiq6\",\"text\":\"Where to Buy Jamun Powder?\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fd8j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"db4kf\",\"text\":\"You can conveniently purchase our high-quality Organic Jamun Seed Powder right here, embracing the myriad benefits it offers. Join those who have harnessed the power of Jamun for their health and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jej\",\"text\":\"Apneehatti\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 99,
-        "MRP": 100,
-        "rating": 0,
-        "SKU": "1717867077155",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:57.175Z",
-        "updatedAt": "2024-06-08T17:17:57.175Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649227d52eaa78f2a6e480",
-        "name": "Lemon Grass Aromatherapy Candle -150g -Aroma Lemongrass - Handmade Aroma Candle - Natural Aroma Candle - Lemon Grass Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"47fav\",\"text\":\"Net Weight : 150g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rpeo\",\"text\":\"Burn Time : 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fekp\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bfmuh\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"630i7\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":15,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kub\",\"text\":\"Lemongrass aromatherapy candles are candles that are made with the essential oil of lemongrass. Lemongrass is a tropical grass that has a fresh, lemony scent and is commonly used in cooking and herbal medicine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d879d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jeib\",\"text\":\"Aromatherapy candles are designed to create a relaxing and calming atmosphere by releasing fragrances that can help alleviate stress, anxiety, and other emotional issues. Lemongrass aromatherapy candles are particularly useful for this purpose because the scent of lemongrass is known to have a calming effect on the mind and body.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d9g6g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dohbo\",\"text\":\"In addition to their calming properties, lemongrass aromatherapy candles are also said to have antibacterial and anti-inflammatory effects, which can help improve respiratory function and promote relaxation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"51m7i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"560bo\",\"text\":\"To use a lemongrass aromatherapy candle, simply light the candle and let it burn for a few minutes to release the scent. It's best to use the candle in a quiet, relaxing environment, such as a bedroom or living room, to maximize its benefits. Always follow the manufacturer's instructions for safe use of the candle\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718350605065.png"
-        ],
-        "alt_text": "Lemon Grass Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867047391",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:27.406Z",
-        "updatedAt": "2024-06-14T07:49:02.074Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649243d52eaa78f2a6e50a",
-        "name": "Haritaki Powder - 100 g | Pure Powder | Natural Haitaki Powder | Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"bus3\",\"text\":\"Weight: 100g Special Feature : 100% Organic Product Benefits : Good For Skin And Hair , Promotes Digestion, Enhances Weight Loss, Manages Item Form : Powder About this item:- Haritaki is very nutritious, containing essential vitamins, minerals, and proteins. It is a source of vitamin C, Manganese, selenian, potassium, iron and copper. It also contains plant chemicals like- Tannic acid, gallic acid, palmitic acid, stearic acid and behenic acid. 100% Pure and Natural: Our Haritaki Powder is derived from the highest-quality Terminalia chebula fruits and is meticulously processed to offer you the purest form of this remarkable herb.  A Multitude of Health Benefits: Haritaki is renowned for its extensive health advantages, ranging from supporting digestive health to revitalising the mind and body.  Benefits:  Gut Health: Haritaki's digestive properties make it an effective tool for promoting a healthy digestive system, relieving constipation, and nurturing overall gut well-being.  Natural Detoxification: Harnessing its natural detoxifying properties, Haritaki aids in expelling harmful toxins from the body and purifying the digestive tract.  Immune Resilience: Rich in antioxidants, Haritaki bolsters the immune system, empowering your body to fend off illnesses effectively.  Mental Clarity and Memory: Often referred to as a \\\"brain tonic\\\" in Ayurveda, Haritaki enhances mental acuity, memory retention, and cognitive function.  Inflammation Management: Haritaki's anti-inflammatory attributes assist in reducing bodily inflammation, potentially alleviating conditions like arthritis and joint discomfort.  Skin Radiance: Some users apply Haritaki externally to improve skin conditions such as acne and eczema, benefiting from its natural healing properties.  Weight Wellness: Haritaki may contribute to weight management by stimulating a healthy metabolism and facilitating effective digestion.  How to Use Into Your Routine:  Blend 1-2 teaspoons of Haritaki Powder into warm water, honey, or your preferred beverage. Consume it during your morning or evening routine to reap its full spectrum of benefits. Alternatively, use it as an ingredient in smoothies, herbal teas, or traditional Ayurvedic recipes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5e7ko\",\"text\":\"Apneehatti\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 89,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867075110",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:55.126Z",
-        "updatedAt": "2024-06-08T17:17:55.126Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649226d52eaa78f2a6e47a",
-        "name": "Vanilla Aromatherapy Candle 150g - Vanilla Candle - Vanilla Aromatherapy Candle - Handmade Aroma Candle - Natural Aroma Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"b1i0u\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tl6o\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31hiq\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e02m0\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"16acb\",\"text\":\"Embrace the comforting warmth of our Vanilla Serenity Aromatherapy Candle, meticulously crafted to infuse your surroundings with the soothing and delightful essence of vanilla. This hand-poured candle is thoughtfully created to elevate your senses, enveloping you in an atmosphere of tranquility and coziness.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avu2c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfb28\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"89va3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"et0c9\",\"text\":\"Natural Vanilla Essence: Our candle is enriched with 100% pure vanilla essence, sourced from the finest vanilla pods, ensuring an authentic and opulent fragrance that captures the true essence of this cherished orchid.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3ttv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ausm\",\"text\":\"Extended Burn Time: Each candle provides an extended burn time of approximately 50 hours, offering you ample hours of relaxation and sensory indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dumqq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2v8jt\",\"text\":\"Natural Soy Wax Blend: We utilize a premium blend of natural soy wax and a lead-free cotton wick, guaranteeing a clean, even burn, devoid of harmful chemicals or toxins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3gljn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lm6o\",\"text\":\"Exquisite Glass Jar Design: The candle is elegantly presented in a glass jar that complements any decor while safeguarding the integrity of the fragrance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aom77\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ker3\",\"text\":\"Artisanal Craftsmanship: Every candle is carefully hand-poured by skilled artisans, ensuring a high-quality product that meets our stringent standards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2o83h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4c79k\",\"text\":\"Mood-Enhancing Properties: Vanilla is celebrated for its calming and soothing properties. Allow the inviting aroma to cultivate an environment of relaxation, promoting a sense of well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718350401425.png"
-        ],
-        "alt_text": "Vanilla Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867046341",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:26.360Z",
-        "updatedAt": "2024-06-14T07:33:24.265Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649243d52eaa78f2a6e50c",
-        "name": "BITTER GOURD POWDER | Organic Bitter Gourd Extract | Bitter Gourd Powder Benefits | Bitter Gourd Powder for Blood Sugar |",
-        "desc": "{\"blocks\":[{\"key\":\"969gl\",\"text\":\"Weight: 100 g Product Description  Uncover the Healthful Benefits of Organic Bitter Gourd Powder for Your Well-Being  Are you seeking a natural way to enhance your health and well-being? Look no further than our premium Organic Bitter Gourd Powder. Packed with numerous health advantages, this Bitter Gourd powder is a versatile addition to your daily wellness routine.  Bitter Gourd Powder Benefits:  Blood Sugar Control: Manage blood sugar levels effectively with Bitter Gourd powder, supporting a healthier lifestyle. Weight Management: Bitter Gourd is known for aiding in weight loss by promoting metabolism and reducing appetite. Digestive Health: Experience digestive harmony with the soothing effects of Bitter Gourd, alleviating discomfort. Skin Nourishment: Achieve healthier skin with Bitter Gourd's antioxidant properties, combating aging signs. Immune Support: Boost your immune system naturally with Bitter Gourd, protecting you from common illnesses. Liver Health: Promote liver function and detoxification with Bitter Gourd's natural detoxifying properties.  Why Opt for Our Organic Bitter Gourd Powder?  Our Bitter Gourd powder is meticulously sourced from premium organic Bitter Gourd extracts and processed with utmost care to retain its innate purity. It is entirely free from additives and chemicals, standing as a genuinely potent dietary supplement.  Unlock the holistic potential of Bitter Gourd, deeply rooted in Ayurvedic wisdom. Enhance your health and well-being naturally with our premium product. Experience the difference today!  Where to Buy Bitter Gourd Powder?  You can conveniently purchase our high-quality Organic Bitter Gourd Powder right here, embracing the multitude of benefits it offers. Join those who have harnessed the power of Bitter Gourd for their well-being and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 89,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867075515",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:55.526Z",
-        "updatedAt": "2024-06-08T17:17:55.526Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649243d52eaa78f2a6e50e",
-        "name": "Harad Powder - 100g - Haritaki Powder -Haritaki Churna - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"ac653\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fuuc\",\"text\":\"Special Feature : 100% Organic \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2u0vc\",\"text\":\"About Product:\\\"Harad Powder, derived from the dried fruit of the Terminalia chebula tree, has been cherished in traditional Ayurvedic medicine for its wide array of health benefits. Known for its potent antioxidant properties,  Packed with essential nutrients and minerals, our Harad Powder is meticulously sourced and finely ground to ensure maximum potency. Incorporate this versatile powder into your daily routine by adding it to smoothies, teas, or culinary dishes for a natural boost to your wellness journey. Experience the purity and effectiveness of Harad Powder today!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 89,
-        "MRP": 90,
-        "rating": 0,
-        "SKU": "1717867075923",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:55.935Z",
-        "updatedAt": "2024-06-08T17:17:55.935Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649228d52eaa78f2a6e486",
-        "name": "Lemon Aromatherapy Candle - 40hrs Burn Time - Lemon Scented Candle - Lemon Aromatherapy Candle -",
-        "desc": "{\"blocks\":[{\"key\":\"ep3pn\",\"text\":\"Weight : 150g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4csgm\",\"text\":\"Burn Time : 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"731gq\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"440df\",\"text\":\"Introducing our Handmade Lemon Aromatherapy Candle, a delightful fusion of natural ingredients and invigorating citrus fragrance to uplift your senses and elevate your space. Crafted with care and attention to detail, our candle is designed to bring the refreshing essence of lemon into your home, providing a blissful escape from the everyday hustle and bustle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2r7c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13i4o\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4s3rg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8kbf5\",\"text\":\"Pure Lemon Essential Oil: Our candle is infused with pure lemon essential oil, sourced from premium-grade citrus fruits. This ensures an authentic and long-lasting lemon scent that fills your room with its bright, zesty aroma.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cprc\",\"text\":\"Natural Soy Wax: We use 100% natural soy wax in our candles, making them clean-burning and eco-friendly. Soy wax burns more evenly and cleanly than traditional paraffin wax, ensuring a healthier and more sustainable candle experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40jag\",\"text\":\"Lead-Free Cotton Wick: Our candles feature a lead-free cotton wick, providing a clean and steady flame that enhances the overall burning experience. The wick is carefully selected to minimize smoke and soot, allowing you to enjoy the pure fragrance of lemon without any unwanted residues.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rh9n\",\"text\":\"Handmade with Care: Each candle is lovingly handcrafted by skilled artisans, ensuring attention to detail and quality craftsmanship in every step of the production process. Our commitment to handmade excellence results in a superior product that reflects our dedication to providing you with the best aromatherapy experience possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brm75\",\"text\":\"Long-Lasting Scent: With a generous amount of lemon essential oil infused into every candle, our aromatherapy candles offer a long-lasting scent that fills your space with freshness and vitality. Whether you're unwinding after a busy day or hosting guests, our candles create an inviting ambiance that uplifts the mood and rejuvenates the spirit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ojof\",\"text\":\"Versatile Aromatherapy Benefits: Lemon essential oil is known for its versatile aromatherapy benefits, including stress relief, mood enhancement, and mental clarity. Whether used during meditation, yoga practice, or simply as a daily indulgence, our lemon aromatherapy candle offers a holistic approach to well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718351446293.png"
-        ],
-        "alt_text": "Lemon Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867048333",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:28.347Z",
-        "updatedAt": "2024-06-14T07:50:47.525Z",
-        "__v": 0
-    },
-    {
         "_id": "66649242d52eaa78f2a6e506",
         "name": "ASHWAGANDHA POWDER | Ashwagandha Powder Benefits | Ashwagandha Powder for Stress | Ashwagandha Powder for Sleep |",
         "desc": "{\"blocks\":[{\"key\":\"a4us6\",\"text\":\"Weight: 100 g Product Description  Experience the Potent Benefits of Organic Ashwagandha Root Powder for Your Health and Well-Being  Are you in search of a natural solution to boost your overall health and well-being? Your quest ends here with our premium Organic Ashwagandha Root Powder. Brimming with a multitude of advantages, this Ashwagandha powder is a versatile addition to your daily health regimen.  Ashwagandha Powder Benefits:  Stress Reduction: Harness the remarkable stress-reducing properties of Ashwagandha powder. It aids in calming your mind, promoting relaxation, and alleviating stress-related symptoms. Enhanced Sleep: Experience peaceful and rejuvenating sleep with Ashwagandha powder for sleep. It helps regulate your sleep cycle, ensuring you wake up refreshed. Energy Boost: Revitalize your body and mind with Ashwagandha's natural energy-boosting properties, combating fatigue and enhancing vitality. Immune Support: Fortify your immune system naturally with Ashwagandha powder, shielding your body from various ailments. Mood Elevation: Elevate your mood and mental well-being with Ashwagandha, a trusted Ayurvedic remedy for centuries. Joint Health: Promote joint flexibility and overall musculoskeletal health with Ashwagandha's anti-inflammatory properties.  Why Opt for Our Organic Ashwagandha Root Powder?  Our Ashwagandha powder is sourced with utmost care from premium organic Ashwagandha roots, preserving its natural purity. Free from additives and chemicals, it stands as a genuinely potent dietary supplement.  Unlock the holistic potential of Ashwagandha, steeped in centuries of Ayurvedic wisdom. Elevate your health and well-being naturally with our premium product. Discover the difference today!  Where to Buy Ashwagandha Powder?  You can conveniently purchase our high-quality Organic Ashwagandha Root Powder right here, embracing the multitude of benefits it offers. Join those who have harnessed the power of Ashwagandha for their well-being and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
@@ -306,129 +19,9 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:54.100Z",
-        "updatedAt": "2024-06-08T17:17:54.100Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649240d52eaa78f2a6e500",
-        "name": "Ashwgandha Powder - 100g - Organic Ashwgandha Powder - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"2a4et\",\"text\":\"Weight : 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bv0n9\",\"text\":\"(If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65tfl\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3st2n\",\"text\":\"Introducing our Ashwagandha Powder, a premium botanical supplement carefully crafted to support your journey towards holistic wellness. Sourced from the lush fields of organic farms, our Ashwagandha Powder encapsulates the essence of this revered adaptogenic herb, cherished for centuries in Ayurvedic tradition for its remarkable health benefits.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 159,
-        "MRP": 160,
-        "rating": 0,
-        "SKU": "1717867072665",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:52.673Z",
-        "updatedAt": "2024-06-08T17:17:52.673Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649244d52eaa78f2a6e512",
-        "name": "Jamun Powder - 100 g - Organic Jamun Seed Powder - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"26k4\",\"text\":\"Weight: 100 g Product Description  :Introducing our premium Jamun Powder, a natural powerhouse packed with the goodness of Jamun fruit, scientifically known as Syzygium cumini. Sourced from the finest Jamun fruits, our powder is carefully processed to retain its nutritional potency and distinct flavor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 99,
-        "MRP": 100,
-        "rating": 0,
-        "SKU": "1717867076738",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:56.740Z",
-        "updatedAt": "2024-06-08T17:17:56.740Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649229d52eaa78f2a6e48c",
-        "name": "Frankincense Aromatherpay Candle -40hrs Burn Time - Candle Frankincense - Frankincense Aromatherapy Candle - Handmade Aroma Candle - Natural Aroma Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"ao86f\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tk0v\",\"text\":\"Burn Time: 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ati4v\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7sacb\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3evo0\",\"text\":\"About Product : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0v4t\",\"text\":\"Frankincense aromatherapy candles are candles that are infused with frankincense essential oil, which is derived from the resin of the Boswellia tree. Frankincense has been used for centuries for its aromatic properties and is believed to have numerous health benefits, including reducing stress and anxiety, promoting relaxation, and improving spiritual awareness.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3bhm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dot57\",\"text\":\"Frankincense aromatherapy candles typically feature a soft, warm, and slightly sweet scent that can create a calming and meditative atmosphere in any\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718352078988.png"
-        ],
-        "alt_text": "Frankincense Aromatherpay Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867049460",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:29.465Z",
-        "updatedAt": "2024-06-14T08:01:20.509Z",
-        "__v": 0
-    },
-    {
-        "_id": "666491fdd52eaa78f2a6e3ae",
-        "name": "Tulsi Ark 30ml - Tulsi ka Ark - Basil Ark - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"3es1u\",\"text\":\"Weight: 30 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ul57\",\"text\":\"  Type :Vegetarian \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d2r49\",\"text\":\"Material Feature : Natural \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dn1g\",\"text\":\"Number of Items : 1 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6qjnj\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak506\",\"text\":\"100% Natural: Pure and unadulterated, our Tulsi Ark is derived from the sacred basil plant, ensuring you receive the full spectrum of natural goodness without any artificial additives.  Immunity Booster: Tulsi Ark is a potent immune system enhancer, fortifying your body's defenses and helping it resist various infections and diseases.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82pcs\",\"text\":\"Prevents Viral Fever: The antiviral properties of Tulsi Ark make it an effective shield against viral infections, reducing the risk of fever caused by viruses.  Removes Toxins from Body: This herbal elixir acts as a natural detoxifier, aiding in the elimination of toxins from the body and promoting overall wellness.  Prevents Cough and Cold: Tulsi Ark is known for its anti-inflammatory and antibacterial properties, making it an excellent remedy to prevent and alleviate cough and cold symptoms. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l4tc\",\"text\":\" Embrace the holistic benefits of our Tulsi Ark, a natural powerhouse that not only supports your immune system but also safeguards your well-being from various health challenges. Elevate your health with the purity and potency of Tulsi in every drop\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718113716485.png"
-        ],
-        "alt_text": "Tulsi Ark 30ml",
-        "price": 150,
-        "MRP": 150,
-        "rating": 0,
-        "SKU": "1717867005266",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652137b6f61a6b9da043c852",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:45.274Z",
-        "updatedAt": "2024-06-11T13:48:39.485Z",
-        "__v": 0
-    },
-    {
-        "_id": "66649227d52eaa78f2a6e482",
-        "name": "Orange Aromatherapy Candle - 40hrs Burn Time - Orange and Candle - Orange Aromatherapy Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"eujcn\",\"text\":\"Weight: 150g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":8,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f3pij\",\"text\":\"Burn Time: 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":10,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d7f0s\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"offset\":0,\"length\":14,\"style\":\"BOLD\"}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jcpv\",\"text\":\"Indulge your senses with our Handmade Orange Aromatherapy Candle, a delightful addition to any space. Crafted with care and attention to detail, this candle is infused with the vibrant essence of fresh oranges, creating a warm and inviting atmosphere in your home.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ct65a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"235ml\",\"text\":\"Each candle is meticulously hand-poured using premium quality soy wax, ensuring a clean and long-lasting burn. The natural cotton wick adds to the eco-friendly nature of our product, providing a steady flame and minimizing soot and smoke.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"818f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fljlp\",\"text\":\"The uplifting aroma of orange essential oil fills the air, evoking feelings of joy and vitality. Whether you're looking to unwind after a long day or create a welcoming ambiance for guests, our Orange Aromatherapy Candle is the perfect choice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nbh4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu8ud\",\"text\":\"Packaged in a chic and recyclable glass jar, it makes for a thoughtful gift for friends, family, or yourself. Bring the essence of sunshine and positivity into your home with our Handmade Orange Aromatherapy Candle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718350663374.png"
-        ],
-        "alt_text": "Orange Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
-        "rating": 0,
-        "SKU": "1717867047721",
-        "category_id": {
-            "_id": "64785e092fda48934d12332f",
-            "name": "Health Care",
-            "active": true
-        },
-        "brand_id": "652924c827cc3c23602463f8",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:27.730Z",
-        "updatedAt": "2024-06-14T07:37:44.863Z",
-        "__v": 0
+        "updatedAt": "2024-07-09T07:59:29.830Z",
+        "__v": 0,
+        "main_image": null
     },
     {
         "_id": "66649228d52eaa78f2a6e48a",
@@ -452,16 +45,46 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:28.995Z",
-        "updatedAt": "2024-06-14T07:59:38.258Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:09.383Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718351976951.png"
+    },
+    {
+        "_id": "66649243d52eaa78f2a6e50c",
+        "name": "Bitter Gourd Powder 100g - Organic Bitter Gourd Extract - Bitter Gourd Powder Benefits - Bitter Gourd Powder for Blood Sugar |",
+        "desc": "{\"blocks\":[{\"key\":\"969gl\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4a1dq\",\"text\":\"Product Description :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12c7d\",\"text\":\" Uncover the Healthful Benefits of Organic Bitter Gourd Powder for Your Well-Being  Are you seeking a natural way to enhance your health and well-being? Look no further than our premium Organic Bitter Gourd Powder. Packed with numerous health advantages, this Bitter Gourd powder is a versatile addition to your daily wellness routine.  Bitter Gourd Powder Benefits:  Blood Sugar Control: Manage blood sugar levels effectively with Bitter Gourd powder, supporting a healthier lifestyle. Weight Management: Bitter Gourd is known for aiding in weight loss by promoting metabolism and reducing appetite. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9mrmu\",\"text\":\"Digestive Health: Experience digestive harmony with the soothing effects of Bitter Gourd, alleviating discomfort. Skin Nourishment: Achieve healthier skin with Bitter Gourd's antioxidant properties, combating aging signs. Immune Support: Boost your immune system naturally with Bitter Gourd, protecting you from common illnesses. Liver Health: Promote liver function and detoxification with Bitter Gourd's natural detoxifying properties.  Why Opt for Our Organic Bitter Gourd Powder?  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdj2j\",\"text\":\"Our Bitter Gourd powder is meticulously sourced from premium organic Bitter Gourd extracts and processed with utmost care to retain its innate purity. It is entirely free from additives and chemicals, standing as a genuinely potent dietary supplement.  Unlock the holistic potential of Bitter Gourd, deeply rooted in Ayurvedic wisdom. Enhance your health and well-being naturally with our premium product. Experience the difference today!  Where to Buy Bitter Gourd Powder?  You can conveniently purchase our high-quality Organic Bitter Gourd Powder right here, embracing the multitude of benefits it offers. Join those who have harnessed the power of Bitter Gourd for their well-being and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719215882420.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719215882424.png"
+        ],
+        "alt_text": "Bitter Gourd Powder 100g",
+        "price": 90,
+        "MRP": 90,
+        "rating": 0,
+        "SKU": "1717867075515",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:55.526Z",
+        "updatedAt": "2024-07-08T07:40:29.256Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719215882420.png"
     },
     {
         "_id": "66649245d52eaa78f2a6e516",
-        "name": "AMLA POWDER | GOOSEBERRY POWDER | Organic Amla powder | Amla powder supplement | Amla powder for Ayurvedic remedies |",
-        "desc": "{\"blocks\":[{\"key\":\"2nua2\",\"text\":\"Weight: 100 g Product Description    Discover the Power of Organic Amla Powder for Your Health and Beauty  Are you searching for a natural way to enhance your overall well-being and beauty regimen? Look no further than our premium Organic Amla Powder. Packed with numerous benefits, this Amla powder is a versatile addition to your daily routine.  Amla Powder Benefits:  Hair Care: Rejuvenate your locks with Amla powder for hair. It promotes hair growth, prevents dandruff, and adds a healthy shine. Skin Nourishment: Achieve a radiant complexion with Amla powder for skin. Its antioxidant properties combat aging, leaving your skin refreshed and youthful. Weight Management: Amla powder supports your weight loss journey by aiding in digestion and boosting metabolism. Immunity Boost: Strengthen your immune system naturally with Amla powder, a rich source of Vitamin C. Eye Health: Enhance your eyesight and prevent eye-related issues by incorporating Amla powder into your daily diet. Digestive Health: Say goodbye to acidity and digestive discomfort with Amla powder's soothing effects. Diabetes Management: Maintain stable blood sugar levels with the help of Amla powder's anti-diabetic properties.   Why Choose Our Organic Amla Powder?  Our Amla powder is sourced from the finest organic Amla fruits and processed with care to preserve its natural goodness. Free from additives and chemicals, it's a pure and potent dietary supplement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 89,
+        "name": "Amla Powder 100g - Gooseberry Powder - Organic Amla Powder - Amla Powder Supplement - Amla Powder for Ayurvedic Remedies ",
+        "desc": "{\"blocks\":[{\"key\":\"2nua2\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6omql\",\"text\":\"Product Description :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"48j67\",\"text\":\"Discover the Power of Organic Amla Powder for Your Health and Beauty  Are you searching for a natural way to enhance your overall well-being and beauty regimen? Look no further than our premium Organic Amla Powder. Packed with numerous benefits, this Amla powder is a versatile addition to your daily routine.  Amla Powder Benefits:  Hair Care: Rejuvenate your locks with Amla powder for hair. It promotes hair growth, prevents dandruff, and adds a healthy shine. Skin Nourishment: Achieve a radiant complexion with Amla powder for your skin. Its antioxidant properties combat aging, leaving your skin refreshed and youthful. Weight Management: Amla powder supports your weight loss journey by aiding digestion and boosting metabolism. Immunity Boost: Strengthen your immune system naturally with Amla powder, a rich source of Vitamin C. Eye Health: Enhance your eyesight and prevent eye-related issues by incorporating Amla powder into your daily diet. Digestive Health: Say goodbye to acidity and digestive discomfort with Amla powder's soothing effects. Diabetes Management: Maintain stable blood sugar levels with the help of Amla powder's anti-diabetic properties.   Why Choose Our Organic Amla Powder?  Our Amla powder is sourced from the finest organic Amla fruits and processed with care to preserve its natural goodness. Free from additives and chemicals, it's a pure and potent dietary supplement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719217304307.png"
+        ],
+        "alt_text": "Amla Powder 100g",
+        "price": 90,
         "MRP": 90,
         "rating": 0,
         "SKU": "1717867077592",
@@ -471,25 +94,26 @@
             "active": true
         },
         "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
+        "featured": "false",
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:57.601Z",
-        "updatedAt": "2024-06-08T17:17:57.601Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:30.188Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719217304307.png"
     },
     {
-        "_id": "66649226d52eaa78f2a6e47c",
-        "name": "Eucalyptus Aromatherapy Candle 150g - Candles with Eucalyptus - Eucalyptus Wood Aromatherapy - Natural Aroma Candle - Handmade Aroma Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"7qth9\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6v970\",\"text\":\"Burn Time: 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csspi\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dicuq\",\"text\":\"Made With : Soy Wax  and Essential Oil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9kpc\",\"text\":\"About Product : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eil3a\",\"text\":\"Eucalyptus aromatherapy candles are candles that are infused with eucalyptus essential oil, which is derived from the leaves of the eucalyptus tree. These candles are designed to release the refreshing and invigorating scent of eucalyptus when lit, creating a calming and uplifting ambiance in the surrounding environment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5d77d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1gd6h\",\"text\":\"The use of eucalyptus in aromatherapy is believed to have various benefits. Eucalyptus essential oil is known for its soothing properties and is often used to help alleviate respiratory issues, such as coughs and congestion. It is also believed to have antibacterial and antiviral properties, making it a popular choice for candles used during cold and flu seasons. Additionally, eucalyptus is known for its fresh and revitalizing scent, which can help to promote mental clarity and relaxation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649228d52eaa78f2a6e486",
+        "name": "Lemon Aromatherapy Candle - 40hrs Burn Time - Lemon Scented Candle - Lemon Aromatherapy Candle -",
+        "desc": "{\"blocks\":[{\"key\":\"ep3pn\",\"text\":\"Weight : 150g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4csgm\",\"text\":\"Burn Time : 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"731gq\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"440df\",\"text\":\"Introducing our Handmade Lemon Aromatherapy Candle, a delightful fusion of natural ingredients and invigorating citrus fragrance to uplift your senses and elevate your space. Crafted with care and attention to detail, our candle is designed to bring the refreshing essence of lemon into your home, providing a blissful escape from the everyday hustle and bustle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2r7c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13i4o\",\"text\":\"Key Features:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4s3rg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8kbf5\",\"text\":\"Pure Lemon Essential Oil: Our candle is infused with pure lemon essential oil, sourced from premium-grade citrus fruits. This ensures an authentic and long-lasting lemon scent that fills your room with its bright, zesty aroma.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cprc\",\"text\":\"Natural Soy Wax: We use 100% natural soy wax in our candles, making them clean-burning and eco-friendly. Soy wax burns more evenly and cleanly than traditional paraffin wax, ensuring a healthier and more sustainable candle experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40jag\",\"text\":\"Lead-Free Cotton Wick: Our candles feature a lead-free cotton wick, providing a clean and steady flame that enhances the overall burning experience. The wick is carefully selected to minimize smoke and soot, allowing you to enjoy the pure fragrance of lemon without any unwanted residues.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rh9n\",\"text\":\"Handmade with Care: Each candle is lovingly handcrafted by skilled artisans, ensuring attention to detail and quality craftsmanship in every step of the production process. Our commitment to handmade excellence results in a superior product that reflects our dedication to providing you with the best aromatherapy experience possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brm75\",\"text\":\"Long-Lasting Scent: With a generous amount of lemon essential oil infused into every candle, our aromatherapy candles offer a long-lasting scent that fills your space with freshness and vitality. Whether you're unwinding after a busy day or hosting guests, our candles create an inviting ambiance that uplifts the mood and rejuvenates the spirit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ojof\",\"text\":\"Versatile Aromatherapy Benefits: Lemon essential oil is known for its versatile aromatherapy benefits, including stress relief, mood enhancement, and mental clarity. Whether used during meditation, yoga practice, or simply as a daily indulgence, our lemon aromatherapy candle offers a holistic approach to well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718350483737.png"
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718351446293.png"
         ],
-        "alt_text": "Eucalyptus Aromatherapy Candle 150g",
+        "alt_text": "Lemon Aromatherapy Candle",
         "price": 400,
         "MRP": 400,
         "rating": 0,
-        "SKU": "1717867046679",
+        "SKU": "1717867048333",
         "category_id": {
             "_id": "64785e092fda48934d12332f",
             "name": "Health Care",
@@ -499,9 +123,10 @@
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:26.685Z",
-        "updatedAt": "2024-06-14T07:34:44.975Z",
-        "__v": 0
+        "createdAt": "2024-06-08T17:17:28.347Z",
+        "updatedAt": "2024-07-08T07:40:08.799Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718351446293.png"
     },
     {
         "_id": "66649248d52eaa78f2a6e522",
@@ -525,8 +150,35 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:18:00.021Z",
-        "updatedAt": "2024-06-14T14:26:17.526Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:32.083Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718375176204.png"
+    },
+    {
+        "_id": "666491fdd52eaa78f2a6e3ae",
+        "name": "Tulsi Ark 30ml - Tulsi ka Ark - Basil Ark - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"3es1u\",\"text\":\"Weight: 30 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ul57\",\"text\":\"  Type :Vegetarian \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d2r49\",\"text\":\"Material Feature : Natural \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dn1g\",\"text\":\"Number of Items : 1 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6qjnj\",\"text\":\"About Product :  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak506\",\"text\":\"100% Natural: Pure and unadulterated, our Tulsi Ark is derived from the sacred basil plant, ensuring you receive the full spectrum of natural goodness without any artificial additives.  Immunity Booster: Tulsi Ark is a potent immune system enhancer, fortifying your body's defenses and helping it resist various infections and diseases.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82pcs\",\"text\":\"Prevents Viral Fever: The antiviral properties of Tulsi Ark make it an effective shield against viral infections, reducing the risk of fever caused by viruses.  Removes Toxins from Body: This herbal elixir acts as a natural detoxifier, aiding in the elimination of toxins from the body and promoting overall wellness.  Prevents Cough and Cold: Tulsi Ark is known for its anti-inflammatory and antibacterial properties, making it an excellent remedy to prevent and alleviate cough and cold symptoms. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l4tc\",\"text\":\" Embrace the holistic benefits of our Tulsi Ark, a natural powerhouse that not only supports your immune system but also safeguards your well-being from various health challenges. Elevate your health with the purity and potency of Tulsi in every drop\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719733602004.png"
+        ],
+        "alt_text": "Tulsi Ark 30ml",
+        "price": 150,
+        "MRP": 150,
+        "rating": 0,
+        "SKU": "1717867005266",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "652137b6f61a6b9da043c852",
+        "featured": "trending_products",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:45.274Z",
+        "updatedAt": "2024-07-08T07:39:16.392Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719733602004.png"
     },
     {
         "_id": "66649228d52eaa78f2a6e484",
@@ -550,8 +202,89 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:28.037Z",
-        "updatedAt": "2024-06-14T07:48:06.689Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:08.500Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718351285155.png"
+    },
+    {
+        "_id": "66649243d52eaa78f2a6e50a",
+        "name": "Haritaki Powder 100g - Pure Powder - Natural Haitaki Powder - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"bus3\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak099\",\"text\":\"Special Feature : 100% Organic Product Benefits : Good For Skin And Hair , Promotes Digestion, Enhances Weight Loss, Manages Item Form : Powder\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qcu6\",\"text\":\"About this item:- \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tduu\",\"text\":\"Haritaki is very nutritious, containing essential vitamins, minerals, and proteins. It is a source of vitamin C, Manganese, selenian, potassium, iron and copper. It also contains plant chemicals like- Tannic acid, gallic acid, palmitic acid, stearic acid and behenic acid. 100% Pure and Natural: Our Haritaki Powder is derived from the highest-quality Terminalia chebula fruits and is meticulously processed to offer you the purest form of this remarkable herb.  A Multitude of Health Benefits: Haritaki is renowned for its extensive health advantages, ranging from supporting digestive health to revitalising the mind and body.  Benefits:  Gut Health: Haritaki's digestive properties make it an effective tool for promoting a healthy digestive system, relieving constipation, and nurturing overall gut well-being.  Natural Detoxification: Harnessing its natural detoxifying properties, Haritaki aids in expelling harmful toxins from the body and purifying the digestive tract.  Immune Resilience: Rich in antioxidants, Haritaki bolsters the immune system, empowering your body to fend off illnesses effectively.  Mental Clarity and Memory: Often referred to as a \\\"brain tonic\\\" in Ayurveda, Haritaki enhances mental acuity, memory retention, and cognitive function.  Inflammation Management: Haritaki's anti-inflammatory attributes assist in reducing bodily inflammation, potentially alleviating conditions like arthritis and joint discomfort.  Skin Radiance: Some users apply Haritaki externally to improve skin conditions such as acne and eczema, benefiting from its natural healing properties.  Weight Wellness: Haritaki may contribute to weight management by stimulating a healthy metabolism and facilitating effective digestion.  How to Use Into Your Routine:  Blend 1-2 teaspoons of Haritaki Powder into warm water, honey, or your preferred beverage. Consume it during your morning or evening routine to reap its full spectrum of benefits. Alternatively, use it as an ingredient in smoothies, herbal teas, or traditional Ayurvedic recipes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5e7ko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719215576953.png"
+        ],
+        "alt_text": "Haritaki Powder  100 g",
+        "price": 90,
+        "MRP": 90,
+        "rating": 0,
+        "SKU": "1717867075110",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:55.126Z",
+        "updatedAt": "2024-07-08T07:40:28.963Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719215576953.png"
+    },
+    {
+        "_id": "66649244d52eaa78f2a6e512",
+        "name": "Jamun Powder 100g - Organic Jamun Seed Powder - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"26k4\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"boalj\",\"text\":\"Product Description  :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6j531\",\"text\":\"Introducing our premium Jamun Powder, a natural powerhouse packed with the goodness of Jamun fruit, scientifically known as Syzygium cumini. Sourced from the finest Jamun fruits, our powder is carefully processed to retain its nutritional potency and distinct flavor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719216081421.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719216081437.png"
+        ],
+        "alt_text": "Jamun Powder 100g",
+        "price": 100,
+        "MRP": 100,
+        "rating": 0,
+        "SKU": "1717867076738",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:56.740Z",
+        "updatedAt": "2024-07-08T07:40:29.901Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719216081421.png"
+    },
+    {
+        "_id": "66649244d52eaa78f2a6e510",
+        "name": "Arjun Ki chaal Powder 100g - Arjun Bark Powder - 100% Natural - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"3215d\",\"text\":\"Quantity  : 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"au6v1\",\"text\":\"Special Feature : 100% Organic \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"er05m\",\"text\":\"Item Form  : Powder \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4et8u\",\"text\":\"About this item:-\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47io7\",\"text\":\"Arjuna bark powder is derived from the Terminalia arjuna tree and offers various potential health benefits. It provides cardiovascular support by helping lower blood pressure and reduce cholesterol levels, reducing the risk of heart diseases. Additionally, it contains antioxidants that combat free radicals, reducing oxidative stress and the risk of chronic diseases. Arjuna may improve blood circulation by dilating blood vessels, aiding individuals with circulation issues. Its anti-inflammatory properties can alleviate swelling and inflammation, benefiting those with conditions like arthritis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ntlh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ev8f\",\"text\":\"Furthermore, Arjuna bark powder may positively impact liver health and aid in detoxification. It acts as a digestive aid by stimulating digestive enzyme production for those with digestive concerns. The powder exhibits antibacterial properties to help combat infections and may possess adaptogenic qualities to assist the body in coping with stress and anxiety. Additionally, it supports respiratory health and may alleviate symptoms of respiratory conditions. Some also use it topically to promote wound healing and address various skin ailments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92kq1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eeh7g\",\"text\":\"Prior to using Arjuna bark powder for medicinal purposes, it's essential to consult a healthcare professional to ensure it's safe and suitable for your specific health needs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cq12\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40aer\",\"text\":\"How to use:- \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7b0sk\",\"text\":\"Consume 3 grams daily, either two hours after eating or following the guidance of a medical professional. Allow it some time to dissolve in water, and we recommend mixing it with water before your meals, allowing it to sit. After your meals, give it another stir and then ingest it. Alternatively, you may choose to blend this powder with tea or milk.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719214909768.png",
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719214909772.png"
+        ],
+        "alt_text": "Arjun Ki chaal Powder 100g",
+        "price": 100,
+        "MRP": 100,
+        "rating": 0,
+        "SKU": "1717867076331",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "new_arrival",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:56.350Z",
+        "updatedAt": "2024-07-08T07:40:29.584Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1719214909768.png"
     },
     {
         "_id": "66649228d52eaa78f2a6e488",
@@ -576,16 +309,46 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:28.685Z",
-        "updatedAt": "2024-06-14T07:52:20.190Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:09.079Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718351537436.png"
+    },
+    {
+        "_id": "66649241d52eaa78f2a6e502",
+        "name": "Giloy Powder 100g - Giloy Powder Benefits - Giloy Powder for Immunity - Giloy Powder for Detox - Giloy Stem Powder Ayurvedic",
+        "desc": "{\"blocks\":[{\"key\":\"e888s\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1olin\",\"text\":\"Product Description:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l792\",\"text\":\" Reveal the Remarkable Benefits of Organic Giloy Stem Powder for Your Health and Well-Being Are you in pursuit of a natural way to fortify your health and well-being? Your search comes to fruition with our premium Organic Giloy Stem Powder. Abundant with an array of advantages, this Giloy powder is a versatile addition to your daily health regimen. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdg2n\",\"text\":\" Giloy Powder Benefits:  Immune Fortification: Harness the immune-boosting properties of Giloy powder to strengthen your body's defense against illnesses. Detoxification: Promote detoxification and purification of your body with Giloy, flushing out harmful toxins. Fever Management: Giloy is renowned for its fever-reducing capabilities and is a trusted remedy in Ayurveda. Digestive Harmony: Relieve digestive discomfort and enhance gut health with the soothing effects of Giloy. Anti-Inflammatory: Giloy's anti-inflammatory properties help alleviate various health issues. Anti-Aging: Experience the age-defying effects of Giloy, maintaining youthful vitality. Why Choose Our Organic Giloy Stem Powder?  Our Giloy powder is meticulously sourced from premium organic Giloy stems and processed with utmost care to preserve its innate purity. It is entirely free from additives and chemicals, standing as a genuinely potent dietary supplement.  Unlock the holistic potential of Giloy, deeply rooted in Ayurvedic wisdom. Elevate your health and wellness naturally with our premium product. Discover the difference today!  Where to Buy Giloy Powder?  You can conveniently purchase our high-quality Organic Giloy Stem Powder right here, embracing the myriad benefits it offers. Join those who have harnessed the power of Giloy for their health and vitality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719213867343.png",
+            "https://apneehatti.s3.amazonaws.com/image-1719213867352.png"
+        ],
+        "alt_text": "Giloy Powder",
+        "price": 90,
+        "MRP": 90,
+        "rating": 0,
+        "SKU": "1717867073059",
+        "category_id": {
+            "_id": "64785e092fda48934d12332f",
+            "name": "Health Care",
+            "active": true
+        },
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "top_deals",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:53.067Z",
+        "updatedAt": "2024-07-08T07:40:28.020Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719213867343.png"
     },
     {
         "_id": "66649241d52eaa78f2a6e504",
-        "name": "NEEM POWDER | Organic Neem Leaf Powder | Neem Powder Benefits | Neem Powder for Skin | Neem Powder for Hair | Neem Leaf Powder Ayurvedic Remedy",
-        "desc": "{\"blocks\":[{\"key\":\"2p7u6\",\"text\":\"Weight: 100 g Product Description :  Unlock the Potent Benefits of Organic Neem Leaf Powder for Your Health and Beauty  Are you on the quest for a natural, holistic approach to elevate your well-being and beauty regimen? Look no further than our premium Organic Neem Leaf Powder. Bursting with an array of benefits, this Neem powder is a versatile addition to your daily wellness routine.  Neem Powder Benefits:  Skin Revival: Discover Neem powder's remarkable benefits for your skin. Its potent antioxidants combat aging signs, leaving your skin rejuvenated and radiant. Hair Transformation: Embrace the beauty of your hair with Neem powder for hair. It promotes hair growth, battles dandruff, and imparts a lustrous sheen. Oral Care: Harness the natural antibacterial properties of Neem powder for improved oral hygiene and gum health. Digestive Harmony: Bid adieu to digestive discomfort as Neem powder soothes your gastrointestinal tract and promotes digestive wellness. Immune Fortification: Boost your immunity with Neem powder's immune-enhancing properties, safeguarding your health. Ayurvedic Remedies: Neem powder has been a cornerstone in Ayurvedic remedies for centuries, revered for its holistic healing potential.  Why Opt for Our Organic Neem Leaf Powder?  Our Neem powder is meticulously sourced from premium organic Neem leaves and processed with utmost care to retain its innate purity. Completely devoid of additives and chemicals, it stands as a genuine and powerful dietary supplement.  Experience the holistic magic of Neem powder, backed by centuries of Ayurvedic wisdom. Elevate your health and beauty regimen naturally with our premium product. Uncover the difference today!  Where to Buy Neem Powder?  You can conveniently purchase our high-quality Organic Neem Leaf Powder right here, embracing the myriad benefits it offers. Join the league of those who have unlocked the potential of Neem for their well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [],
-        "alt_text": "",
-        "price": 79,
+        "name": "Neem Powder 100g - Organic Neem Leaf Powder - Neem Powder Benefits - Neem Powder for Skin - Neem Powder for Hair - Neem Leaf Powder Ayurvedic Remedy",
+        "desc": "{\"blocks\":[{\"key\":\"2p7u6\",\"text\":\"Weight: 100g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak18n\",\"text\":\"Product Description : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"15mt1\",\"text\":\" Unlock the Potent Benefits of Organic Neem Leaf Powder for Your Health and Beauty  Are you on the quest for a natural, holistic approach to elevate your well-being and beauty regimen? Look no further than our premium Organic Neem Leaf Powder. Bursting with an array of benefits, this Neem powder is a versatile addition to your daily wellness routine.  Neem Powder Benefits:  Skin Revival: Discover Neem powder's remarkable benefits for your skin. Its potent antioxidants combat aging signs, leaving your skin rejuvenated and radiant. Hair Transformation: Embrace the beauty of your hair with Neem powder for hair. It promotes hair growth, battles dandruff, and imparts a lustrous sheen. Oral Care: Harness the natural antibacterial properties of Neem powder for improved oral hygiene and gum health. Digestive Harmony: Bid adieu to digestive discomfort as Neem powder soothes your gastrointestinal tract and promotes digestive wellness. Immune Fortification: Boost your immunity with Neem powder's immune-enhancing properties, safeguarding your health. Ayurvedic Remedies: Neem powder has been a cornerstone in Ayurvedic remedies for centuries, revered for its holistic healing potential.  Why Opt for Our Organic Neem Leaf Powder?  Our Neem powder is meticulously sourced from premium organic Neem leaves and processed with utmost care to retain its innate purity. Completely devoid of additives and chemicals, it stands as a genuine and powerful dietary supplement.  Experience the holistic magic of Neem powder, backed by centuries of Ayurvedic wisdom. Elevate your health and beauty regimen naturally with our premium product. Uncover the difference today!  Where to Buy Neem Powder?  You can conveniently purchase our high-quality Organic Neem Leaf Powder right here, embracing the myriad benefits it offers. Join the league of those who have unlocked the potential of Neem for their well-being.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719214639368.png"
+        ],
+        "alt_text": "Neem Powder 100g",
+        "price": 80,
         "MRP": 80,
         "rating": 0,
         "SKU": "1717867073619",
@@ -594,38 +357,40 @@
             "name": "Health Care",
             "active": true
         },
-        "brand_id": "644b449d58d0862748791c87",
-        "featured": "new_arrival",
+        "brand_id": "64fc46f622663b4bcdde5191",
+        "featured": "false",
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:53.628Z",
-        "updatedAt": "2024-06-08T17:17:53.628Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:28.365Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719214639368.png"
     },
     {
-        "_id": "6664922ad52eaa78f2a6e490",
-        "name": "Rose Aromatherapy Candle - 40hrs Burn Time - Rose Candle - Handmade Rose Aroma Candle - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"2cttl\",\"text\":\"Net Weight : 150 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"54dhb\",\"text\":\"Burn Time: 40hrs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu91h\",\"text\":\"Size : Height : 55 mm , Dia : 65 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esd0k\",\"text\":\"Made With : Soy Wax  and Essential Oil \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fpjc\",\"text\":\"About Product :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fuv6k\",\"text\":\"When it comes to relaxation and self-care, there's nothing quite like lighting a candle and letting the soothing scents wash over you. And when it comes to calming and comforting fragrances, fewents are as beloved as rose. That's why a rose aromatherapy candle is the perfect addition to any self-care routine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ccgr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"33fnd\",\"text\":\"Not only does the sweet, floral scent of rose promote feelings of relaxation and tranquility, it's also known for its mood-boosting properties. Whether you're feeling stressed, anxious, or just need a little pick-me-up, lighting a rose-scented candle can help you feel more centered and grounded.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1usso\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q86i\",\"text\":\"But not all rose candles are created equal. To ensure you're getting the most out of your aromatherapy experience, look for candles made with high-quality, natural ingredients. Soy wax, cotton wicks, and essential oils are all great choices for a clean-burning candle that won't release harmful chemicals into your home.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ifej\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"34iof\",\"text\":\"So the next time you need a little extra dose of calm and comfort, reach for a rose aromatherapy candle and let the sweet, floral scent transport you to a place of peace and relaxation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "66649240d52eaa78f2a6e500",
+        "name": "Ashwgandha Powder 100g - Organic Ashwgandha Powder - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"2a4et\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65tfl\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3st2n\",\"text\":\"Introducing our Ashwagandha Powder, a premium botanical supplement carefully crafted to support your journey towards holistic wellness. Sourced from the lush fields of organic farms, our Ashwagandha Powder encapsulates the essence of this revered adaptogenic herb, cherished for centuries in Ayurvedic tradition for its remarkable health benefits.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718352321301.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718352321310.png"
+            "https://apneehatti.s3.amazonaws.com/image-1719213161915.png",
+            "https://apneehatti.s3.amazonaws.com/image-1719213161920.png"
         ],
-        "alt_text": "Rose Aromatherapy Candle",
-        "price": 400,
-        "MRP": 400,
+        "alt_text": "Ashwgandha Powder 100g",
+        "price": 160,
+        "MRP": 160,
         "rating": 0,
-        "SKU": "1717867050076",
+        "SKU": "1717867072665",
         "category_id": {
             "_id": "64785e092fda48934d12332f",
             "name": "Health Care",
             "active": true
         },
-        "brand_id": "652924c827cc3c23602463f8",
+        "brand_id": "64fc46f622663b4bcdde5191",
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:30.082Z",
-        "updatedAt": "2024-06-14T08:05:22.931Z",
-        "__v": 0
+        "createdAt": "2024-06-08T17:17:52.673Z",
+        "updatedAt": "2024-07-08T07:40:27.750Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719213161915.png"
     }
 ]

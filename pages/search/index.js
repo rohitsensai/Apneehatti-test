@@ -383,7 +383,7 @@ const productScreen = ({ prod, pro_category, query }) => {
                       MRP: item.MRP,
                       // category: item.category_id,
                       rating: item.rating,
-                      image: item.images[0],
+                      image: item.main_image,
                       alt_text: item.alt_text,
                     }}
                   />

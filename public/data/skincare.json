@@ -1,43 +1,16 @@
 [
     {
-        "_id": "6664923fd52eaa78f2a6e4f8",
-        "name": "Amla, Amarbel and Lavender Shampoo 100ml - Natural Handmade Shampoo | Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"4u7ss\",\"text\":\"Weight: 200 ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2t0nm\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ej5o\",\"text\":\"Experience the harmonious blend of nature's goodness with our Amla & Lavender Shampoo, a natural handmade shampoo crafted to nourish and revitalize your hair. Enriched with the benefits of amla and the soothing aroma of lavender, this artisanal shampoo offers a luxurious and rejuvenating hair care experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3m2mg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ana4v\",\"text\":\"Carefully curated with premium natural ingredients, our shampoo provides a gentle yet effective cleanse. Amla, known for its strengthening properties, works to promote healthy hair growth, while the calming essence of lavender adds a touch of relaxation to your hair care routine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n5j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ovqf\",\"text\":\"Free from harsh chemicals and additives, our Amla & Lavender Shampoo reflects our commitment to quality hair care. Immerse your hair in the nourishing embrace of amla and the aromatic delight of lavender, leaving your locks feeling refreshed and beautifully scented.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b7269\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brkvs\",\"text\":\"Transform your daily hair care routine into a spa-like indulgence with the natural richness of our Amla & Lavender Shampoo. Embrace the fusion of tradition and handmade craftsmanship, and let your hair revel in the wholesome luxury of this exquisite shampoo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpdo5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "666491f9d52eaa78f2a6e39a",
+        "name": "Ratanjot Oil 100ml - Ratanjot with Mustard Oil - Ratanjot Hair Oil - Ratan Jot for Hair - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"bvrsn\",\"text\":\"Quantity: 100ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3sgm\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6u191\",\"text\":\"Introducing our exclusive Ratanjot oil, meticulously crafted using the purest Ratanjot (Onosma echioides) herbs. Throughout the ages, Ratanjot has held a special place in traditional Ayurvedic and herbal practices due to its myriad of skincare benefits. Our careful extraction process ensures that each drop is enriched with powerful bioactive compounds, offering transformative results for your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718374020915.png"
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718456916762.png"
         ],
-        "alt_text": "Amla, Amarbel and Lavender Shampoo ",
+        "alt_text": "Ratanjot Oil 100ml",
         "price": 220,
         "MRP": 220,
         "rating": 0,
-        "SKU": "1717867071006",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:51.021Z",
-        "updatedAt": "2024-06-14T14:08:07.412Z",
-        "__v": 0
-    },
-    {
-        "_id": "666491f7d52eaa78f2a6e38e",
-        "name": "Apricot Scrub 80g - Himalaya Facial Scrub - Apricot Face Scrub - Apricot Exfoliating Scrub - Himalaya Apricot Scrub - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"9t6pk\",\"text\":\"Weight : 80g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tenn\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cafka\",\"text\":\"Natural and chemical free apricot scrub is good for skin as it helps in sloughing off dead cells, impurities and excess oil by unclogging the pores and maintaining the skin's natural moisture. A scrub that's also infused with soothing and nourishing ingredients can also help keep your skin calm and hydrated. Also Use pure apricot oil afterwards for better results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718454115604.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718454115619.png",
-            "https://apneehatti.s3.amazonaws.com/image-1718454115587.png"
-        ],
-        "alt_text": "Apricot Scrub 80g",
-        "price": 150,
-        "MRP": 150,
-        "rating": 0,
-        "SKU": "1717866999121",
+        "SKU": "1717867001258",
         "category_id": {
             "_id": "644132c476fb670dd86bae43",
             "name": "Skincare & Beauty",
@@ -47,34 +20,10 @@
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:39.127Z",
-        "updatedAt": "2024-06-15T13:25:01.463Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923cd52eaa78f2a6e4ee",
-        "name": "Mustard Soap with Scrub 100g - Handmade Mustard Soap - Natural Handmade Soap - Organic Handmade Soap - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"4191s\",\"text\":\"Weight: 100 g (If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71mj7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21em2\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hma2\",\"text\":\"Elevate your skincare routine with our Mustard Soap with Scrub, a natural handmade soap that combines the nourishing properties of mustard with gentle exfoliation. Immerse yourself in the invigorating blend that cleanses, moisturizes, and revitalizes your skin, leaving it feeling refreshed and renewed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k0es\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"edms5\",\"text\":\"Carefully crafted with premium, natural ingredients, this artisanal soap provides a dual-action experience. Mustard, known for its hydrating and anti-inflammatory benefits, joins forces with the gentle exfoliation of natural scrub particles to cleanse away impurities and promote smooth, radiant skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6kg7r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73ckd\",\"text\":\"Free from harsh chemicals and additives, our Mustard Soap with Scrub embodies our commitment to quality skincare. Enjoy the wholesome richness of mustard and the rejuvenating touch of exfoliation in this unique handmade soap.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bab6f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dhg9\",\"text\":\"Transform your daily skincare routine into a spa-like indulgence with the enriching fusion of our Mustard Soap with Scrub. Embrace the natural goodness and exfoliating charm of this exquisite handmade soap for a revitalized and pampered skin experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19ui9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718371982962.png"
-        ],
-        "alt_text": "Mustard Soap with Scrub 100g",
-        "price": 110,
-        "MRP": 110,
-        "rating": 0,
-        "SKU": "1717867068669",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "644a75d47eadaf08327d2c6b",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:48.688Z",
-        "updatedAt": "2024-06-14T13:33:04.805Z",
-        "__v": 0
+        "createdAt": "2024-06-08T17:16:41.262Z",
+        "updatedAt": "2024-07-08T07:39:13.570Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718456916762.png"
     },
     {
         "_id": "6664923ed52eaa78f2a6e4f6",
@@ -98,21 +47,22 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:50.607Z",
-        "updatedAt": "2024-06-14T14:04:57.975Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:26.138Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718373894356.png"
     },
     {
-        "_id": "66649240d52eaa78f2a6e4fe",
-        "name": "Lemon and Mint Soap 100g - Lemon Soap - Mint Soap - Lemon and Soap - Handmade Lemon Soap - Handmade Mint Soap - Natural Handmade Soap - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"brfgu\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64rf5\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kfpj\",\"text\":\"Elevate your daily skincare routine with our invigorating Lemon and Mint Soap, a refreshing and natural handmade soap. Immerse yourself in the revitalizing blend of zesty lemon and cool mint, carefully crafted to awaken your senses and leave your skin feeling refreshed and rejuvenated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an49r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hlth\",\"text\":\"This artisanal soap is thoughtfully created with premium, natural ingredients to provide a gentle yet effective cleansing experience. The citrusy notes of lemon work synergistically with the cooling essence of mint to cleanse and purify your skin, leaving it feeling energized and subtly fragrant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dfbh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72cnf\",\"text\":\"Pamper your skin with the nourishing properties of this handmade soap, which is free from harsh chemicals and additives. Our commitment to quality ensures that you're treating your skin to a luxurious and wholesome cleansing experience. Indulge in the crisp, clean feeling that Lemon and Mint Soap brings to your daily routine, and let the natural goodness enhance the health and vibrancy of your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcuuj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "6664923fd52eaa78f2a6e4f8",
+        "name": "Amla, Amarbel and Lavender Shampoo 100ml - Natural Handmade Shampoo | Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"4u7ss\",\"text\":\"Weight: 200 ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2t0nm\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ej5o\",\"text\":\"Experience the harmonious blend of nature's goodness with our Amla & Lavender Shampoo, a natural handmade shampoo crafted to nourish and revitalize your hair. Enriched with the benefits of amla and the soothing aroma of lavender, this artisanal shampoo offers a luxurious and rejuvenating hair care experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3m2mg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ana4v\",\"text\":\"Carefully curated with premium natural ingredients, our shampoo provides a gentle yet effective cleanse. Amla, known for its strengthening properties, works to promote healthy hair growth, while the calming essence of lavender adds a touch of relaxation to your hair care routine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n5j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ovqf\",\"text\":\"Free from harsh chemicals and additives, our Amla & Lavender Shampoo reflects our commitment to quality hair care. Immerse your hair in the nourishing embrace of amla and the aromatic delight of lavender, leaving your locks feeling refreshed and beautifully scented.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b7269\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brkvs\",\"text\":\"Transform your daily hair care routine into a spa-like indulgence with the natural richness of our Amla & Lavender Shampoo. Embrace the fusion of tradition and handmade craftsmanship, and let your hair revel in the wholesome luxury of this exquisite shampoo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpdo5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374376765.png"
+            "https://apneehatti.s3.amazonaws.com/image-1718374020915.png"
         ],
-        "alt_text": "Lemon and Mint Soap",
-        "price": 110,
-        "MRP": 110,
+        "alt_text": "Amla, Amarbel and Lavender Shampoo ",
+        "price": 220,
+        "MRP": 220,
         "rating": 0,
-        "SKU": "1717867072242",
+        "SKU": "1717867071006",
         "category_id": {
             "_id": "644132c476fb670dd86bae43",
             "name": "Skincare & Beauty",
@@ -122,9 +72,37 @@
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:17:52.252Z",
-        "updatedAt": "2024-06-14T14:12:58.517Z",
-        "__v": 0
+        "createdAt": "2024-06-08T17:17:51.021Z",
+        "updatedAt": "2024-07-08T07:40:26.426Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718374020915.png"
+    },
+    {
+        "_id": "666491fdd52eaa78f2a6e3b0",
+        "name": "Tulsi Soap 100g - Basil Soap - Soap Basil - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"djn4k\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ehu5g\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6i5s\",\"text\":\"Experience the essence of nature with Tulsi Soap, crafted to cleanse and rejuvenate your skin. Infused with the natural goodness of Tulsi (Holy Basil), this soap offers a refreshing and soothing bathing experience. Tulsi, renowned for its antibacterial and antioxidant properties, helps to purify the skin, leaving it soft, smooth, and radiant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"quqk\",\"text\":\"Free from harsh chemicals and enriched with natural oils, Tulsi Soap is gentle on the skin, making it suitable for all skin types. Let the calming aroma of Tulsi invigorate your senses while nourishing your skin with every use. Elevate your daily skincare routine with Tulsi Soap – a touch of nature’s purity in every bar. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1719733775077.png",
+            "https://apneehatti.s3.amazonaws.com/image-1719733775062.png"
+        ],
+        "alt_text": "Tulsi Soap 100g",
+        "price": 80,
+        "MRP": 80,
+        "rating": 0,
+        "SKU": "1717867005673",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "652137b6f61a6b9da043c852",
+        "featured": "trending_products",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:45.675Z",
+        "updatedAt": "2024-07-08T07:39:16.717Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1719733775077.png"
     },
     {
         "_id": "666491f5d52eaa78f2a6e384",
@@ -150,21 +128,24 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:16:37.091Z",
-        "updatedAt": "2024-06-15T13:33:23.916Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:39:10.563Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718453773443.png"
     },
     {
-        "_id": "666491f9d52eaa78f2a6e39a",
-        "name": "Ratanjot Oil 100ml - Ratanjot with Mustard Oil - Ratanjot Hair Oil - Ratan Jot for Hair - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"bvrsn\",\"text\":\"Quantity: 100ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3sgm\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6u191\",\"text\":\"Introducing our exclusive Ratanjot oil, meticulously crafted using the purest Ratanjot (Onosma echioides) herbs. Throughout the ages, Ratanjot has held a special place in traditional Ayurvedic and herbal practices due to its myriad of skincare benefits. Our careful extraction process ensures that each drop is enriched with powerful bioactive compounds, offering transformative results for your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "_id": "666491f7d52eaa78f2a6e38e",
+        "name": "Apricot Scrub 80g - Himalaya Facial Scrub - Apricot Face Scrub - Apricot Exfoliating Scrub - Himalaya Apricot Scrub - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"9t6pk\",\"text\":\"Weight : 80g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tenn\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cafka\",\"text\":\"Natural and chemical free apricot scrub is good for skin as it helps in sloughing off dead cells, impurities and excess oil by unclogging the pores and maintaining the skin's natural moisture. A scrub that's also infused with soothing and nourishing ingredients can also help keep your skin calm and hydrated. Also Use pure apricot oil afterwards for better results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
         "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718456916762.png"
+            "https://apneehatti.s3.amazonaws.com/image-1718454115604.png",
+            "https://apneehatti.s3.amazonaws.com/image-1718454115619.png",
+            "https://apneehatti.s3.amazonaws.com/image-1718454115587.png"
         ],
-        "alt_text": "Ratanjot Oil 100ml",
-        "price": 220,
-        "MRP": 220,
+        "alt_text": "Apricot Scrub 80g",
+        "price": 150,
+        "MRP": 150,
         "rating": 0,
-        "SKU": "1717867001258",
+        "SKU": "1717866999121",
         "category_id": {
             "_id": "644132c476fb670dd86bae43",
             "name": "Skincare & Beauty",
@@ -174,185 +155,10 @@
         "featured": "false",
         "out_of_stock": false,
         "active": true,
-        "createdAt": "2024-06-08T17:16:41.262Z",
-        "updatedAt": "2024-06-15T13:08:57.869Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923ed52eaa78f2a6e4f4",
-        "name": "Turmeric & Black Seed Soap 100 g - Turmeric Soap - Turmeric and Soap - Handmade Soap - Natrual Handmade Soap - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"712pj\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aonqm\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tm3i\",\"text\":\"Unveil the radiance of your skin with our Turmeric & Black Seed Soap, a natural handmade soap crafted to elevate your skincare routine. Immerse yourself in the powerful blend of turmeric and black seed, meticulously combined to cleanse, nourish, and promote a vibrant complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fda9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"108d6\",\"text\":\"This artisanal soap is thoughtfully created with premium, natural ingredients to provide a gentle yet effective cleansing experience. The golden glow of turmeric, celebrated for its anti-inflammatory and antioxidant properties, harmonizes with the potent benefits of black seed to leave your skin feeling refreshed and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5so88\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66hpo\",\"text\":\"Free from harsh chemicals and additives, our Turmeric & Black Seed Soap embraces the essence of natural skincare. Indulge in the earthy warmth of this unique blend, known for its skin-loving properties, as it works to enhance your skin's natural beauty.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3geg4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6vsri\",\"text\":\"Transform your daily ritual into a spa-like experience with the wholesome richness of our Turmeric & Black Seed Soap. Embrace the fusion of tradition and natural craftsmanship, and let your skin bask in the nourishing embrace of this exquisite handmade soap.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2q0t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372224921.png"
-        ],
-        "alt_text": "Turmeric & Black Seed Soap 100 g",
-        "price": 110,
-        "MRP": 110,
-        "rating": 0,
-        "SKU": "1717867070086",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:50.103Z",
-        "updatedAt": "2024-06-14T13:37:06.669Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923fd52eaa78f2a6e4fa",
-        "name": "Walnut Soap 100g - Walnut Scrub Soap - Handmade Walnut Soap - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"5gesp\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fck42\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6isns\",\"text\":\"Indulge your senses and nourish your skin with our luxurious Handmade Walnut Soap. Crafted with care using natural ingredients, this exquisite soap is infused with the goodness of walnut to provide a gentle yet effective cleansing experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0n16\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13vf1\",\"text\":\"Each bar of our handmade walnut soap is meticulously crafted by skilled artisans, ensuring a high-quality product that exceeds your expectations. The rich, creamy lather envelops your skin, leaving it feeling refreshed, rejuvenated, and irresistibly soft.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1o7rd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tg85\",\"text\":\"Walnut is renowned for its exfoliating properties, gently sloughing away dead skin cells to reveal a radiant complexion underneath. Enriched with moisturizing ingredients, our walnut soap helps hydrate and replenish your skin, leaving it feeling supple and smooth.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374187037.png"
-        ],
-        "alt_text": "Walnut Soap 100g",
-        "price": 110,
-        "MRP": 110,
-        "rating": 0,
-        "SKU": "1717867071418",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:51.427Z",
-        "updatedAt": "2024-06-14T14:09:48.870Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923dd52eaa78f2a6e4f0",
-        "name": "Apricot Soap 100g - Natural Handmade Soap - Made in Himachal - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"ap3v0\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa0ue\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2s72f\",\"text\":\"Experience the luscious embrace of nature with our Apricot Soap, a delightful natural handmade soap that transforms your daily skincare ritual into a luxurious sensory escape. Immerse yourself in the sweet and fruity essence of apricot, expertly blended to cleanse, nourish, and rejuvenate your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9evc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jaji\",\"text\":\"Crafted with care using premium, natural ingredients, this artisanal soap is designed to provide a gentle yet effective cleansing experience. The sweet aroma of apricot creates a sensory oasis, leaving your skin feeling soft, supple, and delicately scented.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dek2v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6eand\",\"text\":\"Free from harsh chemicals and additives, our Apricot Soap is a testament to our commitment to quality skincare. Embrace the natural goodness of apricot, known for its moisturizing and revitalizing properties, as you cleanse away the stresses of the day.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a21ip\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9uspm\",\"text\":\"Elevate your skincare routine with the sumptuous touch of our Apricot Soap, where the beauty of nature meets the art of handmade craftsmanship. Imbue your skin with the richness it deserves, and savor the indulgence of this exquisite, natural bathing experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eketv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718372034539.png"
-        ],
-        "alt_text": "Apricot Soap 100g",
-        "price": 110,
-        "MRP": 110,
-        "rating": 0,
-        "SKU": "1717867069165",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:49.179Z",
-        "updatedAt": "2024-06-14T13:33:58.008Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923fd52eaa78f2a6e4fc",
-        "name": "Honey Lemon Soap 100g - Honey and Lemon Soap - Lemon Honey Soap -Handmade Honey Lemo",
-        "desc": "{\"blocks\":[{\"key\":\"cam90\",\"text\":\"Weight: 100\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a4i1\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fj9s3\",\"text\":\"Refresh and rejuvenate your skin with our Handmade Honey Lemon Soap. Crafted with care using natural ingredients, this luxurious soap is infused with the nourishing goodness of honey and the invigorating scent of lemon.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dia46\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2l88e\",\"text\":\"Indulge in the sweet and citrusy aroma as you lather up with our artisanal soap. Honey is known for its moisturizing and antibacterial properties, helping to hydrate the skin while fighting off harmful bacteria. Lemon adds a refreshing burst of vitamin C, promoting a brighter and more radiant complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ijkb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12k54\",\"text\":\"Each bar of our handmade soap is meticulously crafted to provide a gentle yet effective cleansing experience. The rich, creamy lather removes impurities and excess oil, leaving your skin feeling fresh, soft, and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.amazonaws.com/image-1718374309225.png"
-        ],
-        "alt_text": "Honey Lemon Soap 100g",
-        "price": 60,
-        "MRP": 60,
-        "rating": 0,
-        "SKU": "1717867071824",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:51.828Z",
-        "updatedAt": "2024-06-14T14:11:52.492Z",
-        "__v": 0
-    },
-    {
-        "_id": "6664923dd52eaa78f2a6e4f2",
-        "name": "Charcoal Soap 100g - Coal Soap - Activated Charcoal Soap - Handmade Charcoal Soap - Natural Handmade Soap - Organic Handmade Soap - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"dbst0\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5el5m\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"62r6j\",\"text\":\"Revitalize your skincare routine with our Handmade Charcoal Soap, a purifying and invigorating cleansing experience. Activated charcoal, the star ingredient, works harmoniously to draw out impurities, leaving your skin feeling refreshed and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f49u5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jvhd\",\"text\":\"Crafted with care using premium natural ingredients, this artisanal soap provides a gentle yet effective cleanse. Charcoal's natural detoxifying properties are harnessed to unclog pores and absorb excess oil, promoting a clearer complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9dr8a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c871k\",\"text\":\"Free from harsh chemicals and additives, our Handmade Charcoal Soap is a testament to our commitment to quality skincare. Treat your skin to the purifying benefits of activated charcoal while indulging in the simple luxury of handmade craftsmanship.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fkgsr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dvve\",\"text\":\"Transform your daily ritual into a spa-like experience with the purifying touch of our Charcoal Soap. Embrace the power of nature to unveil a radiant and refreshed complexion, making every wash a moment of skin-loving indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arr7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372131678.png"
-        ],
-        "alt_text": "Charcoal Soap 100g",
-        "price": 110,
-        "MRP": 110,
-        "rating": 0,
-        "SKU": "1717867069579",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6669938f0348f7fcbfed35e9",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:17:49.591Z",
-        "updatedAt": "2024-06-14T13:35:33.569Z",
-        "__v": 0
-    },
-    {
-        "_id": "666491fdd52eaa78f2a6e3b0",
-        "name": "Tulsi Soap 100g - Basil Soap - Soap Basil - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"djn4k\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718113899263.png",
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718113899245.png"
-        ],
-        "alt_text": "Tulsi Soap 100g",
-        "price": 80,
-        "MRP": 80,
-        "rating": 0,
-        "SKU": "1717867005673",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "652137b6f61a6b9da043c852",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:45.675Z",
-        "updatedAt": "2024-06-11T13:51:41.478Z",
-        "__v": 0
-    },
-    {
-        "_id": "666491f6d52eaa78f2a6e38c",
-        "name": "Pumpkin Seed Oil 15ml - Handmade Pumpkin Seed Oil - Organic Pumpkin Seed Oil - Apneehatti",
-        "desc": "{\"blocks\":[{\"key\":\"c6vli\",\"text\":\"Weight: 15ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3lhm4\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pfdv\",\"text\":\"Introducing our premium Pumpkin Seed Oil, a culinary delight that adds a rich, nutty flavor and a burst of nutritional benefits to your dishes. Harvested from the finest pumpkin seeds, our oil undergoes a meticulous cold-press extraction process to preserve its natural goodness and distinctive taste.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"24qqq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n7g5\",\"text\":\"Crafted with care, our Pumpkin Seed Oil is a versatile addition to your kitchen repertoire. Drizzle it over salads for a delightful dressing, use it to elevate the flavor of soups and sauces, or simply enjoy it as a dip for freshly baked bread.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
-        "images": [
-            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718453968032.png"
-        ],
-        "alt_text": "Pumpkin Seed Oil 15ml",
-        "price": 180,
-        "MRP": 180,
-        "rating": 0,
-        "SKU": "1717866998738",
-        "category_id": {
-            "_id": "644132c476fb670dd86bae43",
-            "name": "Skincare & Beauty",
-            "active": true
-        },
-        "brand_id": "6475f5f989fc5e3437615655",
-        "featured": "false",
-        "out_of_stock": false,
-        "active": true,
-        "createdAt": "2024-06-08T17:16:38.744Z",
-        "updatedAt": "2024-06-15T13:06:09.587Z",
-        "__v": 0
+        "createdAt": "2024-06-08T17:16:39.127Z",
+        "updatedAt": "2024-07-08T07:39:11.926Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718454115604.png"
     },
     {
         "_id": "666491f6d52eaa78f2a6e38a",
@@ -378,8 +184,35 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:16:38.318Z",
-        "updatedAt": "2024-06-15T13:32:49.667Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:39:11.389Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718457798676.png"
+    },
+    {
+        "_id": "6664923fd52eaa78f2a6e4fa",
+        "name": "Walnut Soap 100g - Walnut Scrub Soap - Handmade Walnut Soap - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"5gesp\",\"text\":\"Weight: 100g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fck42\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6isns\",\"text\":\"Indulge your senses and nourish your skin with our luxurious Handmade Walnut Soap. Crafted with care using natural ingredients, this exquisite soap is infused with the goodness of walnut to provide a gentle yet effective cleansing experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0n16\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13vf1\",\"text\":\"Each bar of our handmade walnut soap is meticulously crafted by skilled artisans, ensuring a high-quality product that exceeds your expectations. The rich, creamy lather envelops your skin, leaving it feeling refreshed, rejuvenated, and irresistibly soft.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1o7rd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tg85\",\"text\":\"Walnut is renowned for its exfoliating properties, gently sloughing away dead skin cells to reveal a radiant complexion underneath. Enriched with moisturizing ingredients, our walnut soap helps hydrate and replenish your skin, leaving it feeling supple and smooth.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374187037.png"
+        ],
+        "alt_text": "Walnut Soap 100g",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867071418",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:51.427Z",
+        "updatedAt": "2024-07-08T07:40:26.720Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374187037.png"
     },
     {
         "_id": "6664923cd52eaa78f2a6e4ec",
@@ -403,7 +236,190 @@
         "out_of_stock": false,
         "active": true,
         "createdAt": "2024-06-08T17:17:48.291Z",
-        "updatedAt": "2024-06-14T13:32:13.590Z",
-        "__v": 0
+        "updatedAt": "2024-07-08T07:40:24.408Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718371930756.png"
+    },
+    {
+        "_id": "6664923dd52eaa78f2a6e4f2",
+        "name": "Charcoal Soap 100g - Coal Soap - Activated Charcoal Soap - Handmade Charcoal Soap - Natural Handmade Soap - Organic Handmade Soap - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"dbst0\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5el5m\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"62r6j\",\"text\":\"Revitalize your skincare routine with our Handmade Charcoal Soap, a purifying and invigorating cleansing experience. Activated charcoal, the star ingredient, works harmoniously to draw out impurities, leaving your skin feeling refreshed and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f49u5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jvhd\",\"text\":\"Crafted with care using premium natural ingredients, this artisanal soap provides a gentle yet effective cleanse. Charcoal's natural detoxifying properties are harnessed to unclog pores and absorb excess oil, promoting a clearer complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9dr8a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c871k\",\"text\":\"Free from harsh chemicals and additives, our Handmade Charcoal Soap is a testament to our commitment to quality skincare. Treat your skin to the purifying benefits of activated charcoal while indulging in the simple luxury of handmade craftsmanship.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fkgsr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dvve\",\"text\":\"Transform your daily ritual into a spa-like experience with the purifying touch of our Charcoal Soap. Embrace the power of nature to unveil a radiant and refreshed complexion, making every wash a moment of skin-loving indulgence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arr7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372131678.png"
+        ],
+        "alt_text": "Charcoal Soap 100g",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867069579",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:49.591Z",
+        "updatedAt": "2024-07-08T07:40:25.488Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372131678.png"
+    },
+    {
+        "_id": "6664923cd52eaa78f2a6e4ee",
+        "name": "Mustard Soap with Scrub 100g - Handmade Mustard Soap - Natural Handmade Soap - Organic Handmade Soap - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"4191s\",\"text\":\"Weight: 100 g (If you need assistance or have any questions about our products, feel free to ask, DM/Call - +91-7876752516. We're here to help!)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71mj7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21em2\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hma2\",\"text\":\"Elevate your skincare routine with our Mustard Soap with Scrub, a natural handmade soap that combines the nourishing properties of mustard with gentle exfoliation. Immerse yourself in the invigorating blend that cleanses, moisturizes, and revitalizes your skin, leaving it feeling refreshed and renewed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k0es\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"edms5\",\"text\":\"Carefully crafted with premium, natural ingredients, this artisanal soap provides a dual-action experience. Mustard, known for its hydrating and anti-inflammatory benefits, joins forces with the gentle exfoliation of natural scrub particles to cleanse away impurities and promote smooth, radiant skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6kg7r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73ckd\",\"text\":\"Free from harsh chemicals and additives, our Mustard Soap with Scrub embodies our commitment to quality skincare. Enjoy the wholesome richness of mustard and the rejuvenating touch of exfoliation in this unique handmade soap.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bab6f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dhg9\",\"text\":\"Transform your daily skincare routine into a spa-like indulgence with the enriching fusion of our Mustard Soap with Scrub. Embrace the natural goodness and exfoliating charm of this exquisite handmade soap for a revitalized and pampered skin experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19ui9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718371982962.png"
+        ],
+        "alt_text": "Mustard Soap with Scrub 100g",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867068669",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "644a75d47eadaf08327d2c6b",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:48.688Z",
+        "updatedAt": "2024-07-08T07:40:24.704Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718371982962.png"
+    },
+    {
+        "_id": "666491f6d52eaa78f2a6e38c",
+        "name": "Pumpkin Seed Oil 15ml - Handmade Pumpkin Seed Oil - Organic Pumpkin Seed Oil - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"c6vli\",\"text\":\"Weight: 15ml \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3lhm4\",\"text\":\"About Product: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pfdv\",\"text\":\"Introducing our premium Pumpkin Seed Oil, a culinary delight that adds a rich, nutty flavor and a burst of nutritional benefits to your dishes. Harvested from the finest pumpkin seeds, our oil undergoes a meticulous cold-press extraction process to preserve its natural goodness and distinctive taste.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"24qqq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n7g5\",\"text\":\"Crafted with care, our Pumpkin Seed Oil is a versatile addition to your kitchen repertoire. Drizzle it over salads for a delightful dressing, use it to elevate the flavor of soups and sauces, or simply enjoy it as a dip for freshly baked bread.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718453968032.png"
+        ],
+        "alt_text": "Pumpkin Seed Oil 15ml",
+        "price": 180,
+        "MRP": 180,
+        "rating": 0,
+        "SKU": "1717866998738",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6475f5f989fc5e3437615655",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:16:38.744Z",
+        "updatedAt": "2024-07-08T07:39:11.664Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718453968032.png"
+    },
+    {
+        "_id": "6664923ed52eaa78f2a6e4f4",
+        "name": "Turmeric & Black Seed Soap 100 g - Turmeric Soap - Turmeric and Soap - Handmade Soap - Natrual Handmade Soap - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"712pj\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aonqm\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tm3i\",\"text\":\"Unveil the radiance of your skin with our Turmeric & Black Seed Soap, a natural handmade soap crafted to elevate your skincare routine. Immerse yourself in the powerful blend of turmeric and black seed, meticulously combined to cleanse, nourish, and promote a vibrant complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fda9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"108d6\",\"text\":\"This artisanal soap is thoughtfully created with premium, natural ingredients to provide a gentle yet effective cleansing experience. The golden glow of turmeric, celebrated for its anti-inflammatory and antioxidant properties, harmonizes with the potent benefits of black seed to leave your skin feeling refreshed and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5so88\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66hpo\",\"text\":\"Free from harsh chemicals and additives, our Turmeric & Black Seed Soap embraces the essence of natural skincare. Indulge in the earthy warmth of this unique blend, known for its skin-loving properties, as it works to enhance your skin's natural beauty.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3geg4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6vsri\",\"text\":\"Transform your daily ritual into a spa-like experience with the wholesome richness of our Turmeric & Black Seed Soap. Embrace the fusion of tradition and natural craftsmanship, and let your skin bask in the nourishing embrace of this exquisite handmade soap.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2q0t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372224921.png"
+        ],
+        "alt_text": "Turmeric & Black Seed Soap 100 g",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867070086",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:50.103Z",
+        "updatedAt": "2024-07-08T07:40:25.772Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718372224921.png"
+    },
+    {
+        "_id": "6664923fd52eaa78f2a6e4fc",
+        "name": "Honey Lemon Soap 100g - Honey and Lemon Soap - Lemon Honey Soap -Handmade Honey Lemo",
+        "desc": "{\"blocks\":[{\"key\":\"cam90\",\"text\":\"Weight: 100\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a4i1\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fj9s3\",\"text\":\"Refresh and rejuvenate your skin with our Handmade Honey Lemon Soap. Crafted with care using natural ingredients, this luxurious soap is infused with the nourishing goodness of honey and the invigorating scent of lemon.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dia46\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2l88e\",\"text\":\"Indulge in the sweet and citrusy aroma as you lather up with our artisanal soap. Honey is known for its moisturizing and antibacterial properties, helping to hydrate the skin while fighting off harmful bacteria. Lemon adds a refreshing burst of vitamin C, promoting a brighter and more radiant complexion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ijkb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12k54\",\"text\":\"Each bar of our handmade soap is meticulously crafted to provide a gentle yet effective cleansing experience. The rich, creamy lather removes impurities and excess oil, leaving your skin feeling fresh, soft, and revitalized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718374309225.png"
+        ],
+        "alt_text": "Honey Lemon Soap 100g",
+        "price": 60,
+        "MRP": 60,
+        "rating": 0,
+        "SKU": "1717867071824",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:51.828Z",
+        "updatedAt": "2024-07-08T07:40:27.068Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718374309225.png"
+    },
+    {
+        "_id": "66649240d52eaa78f2a6e4fe",
+        "name": "Lemon and Mint Soap 100g - Lemon Soap - Mint Soap - Lemon and Soap - Handmade Lemon Soap - Handmade Mint Soap - Natural Handmade Soap - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"brfgu\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64rf5\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kfpj\",\"text\":\"Elevate your daily skincare routine with our invigorating Lemon and Mint Soap, a refreshing and natural handmade soap. Immerse yourself in the revitalizing blend of zesty lemon and cool mint, carefully crafted to awaken your senses and leave your skin feeling refreshed and rejuvenated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an49r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hlth\",\"text\":\"This artisanal soap is thoughtfully created with premium, natural ingredients to provide a gentle yet effective cleansing experience. The citrusy notes of lemon work synergistically with the cooling essence of mint to cleanse and purify your skin, leaving it feeling energized and subtly fragrant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dfbh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72cnf\",\"text\":\"Pamper your skin with the nourishing properties of this handmade soap, which is free from harsh chemicals and additives. Our commitment to quality ensures that you're treating your skin to a luxurious and wholesome cleansing experience. Indulge in the crisp, clean feeling that Lemon and Mint Soap brings to your daily routine, and let the natural goodness enhance the health and vibrancy of your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcuuj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374376765.png"
+        ],
+        "alt_text": "Lemon and Mint Soap",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867072242",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:52.252Z",
+        "updatedAt": "2024-07-08T07:40:27.342Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.ap-south-1.amazonaws.com/image-1718374376765.png"
+    },
+    {
+        "_id": "6664923dd52eaa78f2a6e4f0",
+        "name": "Apricot Soap 100g - Natural Handmade Soap - Made in Himachal - Apneehatti",
+        "desc": "{\"blocks\":[{\"key\":\"ap3v0\",\"text\":\"Weight: 100 g \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa0ue\",\"text\":\"About Product:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2s72f\",\"text\":\"Experience the luscious embrace of nature with our Apricot Soap, a delightful natural handmade soap that transforms your daily skincare ritual into a luxurious sensory escape. Immerse yourself in the sweet and fruity essence of apricot, expertly blended to cleanse, nourish, and rejuvenate your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9evc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jaji\",\"text\":\"Crafted with care using premium, natural ingredients, this artisanal soap is designed to provide a gentle yet effective cleansing experience. The sweet aroma of apricot creates a sensory oasis, leaving your skin feeling soft, supple, and delicately scented.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dek2v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6eand\",\"text\":\"Free from harsh chemicals and additives, our Apricot Soap is a testament to our commitment to quality skincare. Embrace the natural goodness of apricot, known for its moisturizing and revitalizing properties, as you cleanse away the stresses of the day.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a21ip\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9uspm\",\"text\":\"Elevate your skincare routine with the sumptuous touch of our Apricot Soap, where the beauty of nature meets the art of handmade craftsmanship. Imbue your skin with the richness it deserves, and savor the indulgence of this exquisite, natural bathing experience.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eketv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+        "images": [
+            "https://apneehatti.s3.amazonaws.com/image-1718372034539.png"
+        ],
+        "alt_text": "Apricot Soap 100g",
+        "price": 110,
+        "MRP": 110,
+        "rating": 0,
+        "SKU": "1717867069165",
+        "category_id": {
+            "_id": "644132c476fb670dd86bae43",
+            "name": "Skincare & Beauty",
+            "active": true
+        },
+        "brand_id": "6669938f0348f7fcbfed35e9",
+        "featured": "false",
+        "out_of_stock": false,
+        "active": true,
+        "createdAt": "2024-06-08T17:17:49.179Z",
+        "updatedAt": "2024-07-08T07:40:25.132Z",
+        "__v": 0,
+        "main_image": "https://apneehatti.s3.amazonaws.com/image-1718372034539.png"
     }
 ]

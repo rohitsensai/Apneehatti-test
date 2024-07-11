@@ -6,7 +6,7 @@ import { getNextSeventhDayDate } from "../helper/estimateDeliveryDate";
 
 const OrderCard = ({ orders }) => {
   return (
-    <div className="min-h-screen container lg:w-5/6 m-auto p-5 ">
+    <div className="min-h-screen  container lg:w-5/6 m-auto p-5 ">
       <h1 className="font-medium text-xl">Order History</h1>
 
       {orders.length > 0 ? (

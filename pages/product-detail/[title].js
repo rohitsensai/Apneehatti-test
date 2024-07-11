@@ -83,7 +83,7 @@ const ProductDetail = ({
 }) => {
   const dispatch = useDispatch();
   const [mainImg, setMainImg] = useState(
-    product_data && product_data.images[0]
+    product_data && product_data.main_image
   );
   const [zoomIn, setZoomIn] = useState(false);
   const [reviews, setReviews] = useState(pro_review || []);

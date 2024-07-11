@@ -1,7 +1,6 @@
 import { models, model, Schema } from "mongoose";
-import Category from "../model/categorySchema";
-import Brand from "../model/brandSchema";
-
+import Category from "./categorySchema";
+import Brand from "./brandSchema";
 const productSchema = new Schema(
   {
     name: {
@@ -18,6 +17,10 @@ const productSchema = new Schema(
         required: true,
       },
     ],
+    main_image:{
+      type: String,
+      default: null,
+    },
     alt_text: {
       type: String,
       default: "Product_image",
@@ -39,10 +42,6 @@ const productSchema = new Schema(
     },
     SKU: {
       type: String,
-      required: true,
-    },
-    weight: {
-      type: Number,
       required: true,
     },
     category_id: {
@@ -70,5 +69,5 @@ const productSchema = new Schema(
   },
   { timestamps: true }
 );
-productSchema.index({ name: "text" });
+
 module.exports = models.Product || model("Product", productSchema);

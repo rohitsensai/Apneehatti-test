@@ -1,5 +1,6 @@
+"use client"
 import Head from "next/head";
-import { useEffect, useState  } from "react";
+import { useEffect, useState } from "react";
 import { useSession, signOut } from "next-auth/react";
 
 import "intl-tel-input/build/css/intlTelInput.css";
@@ -9,18 +10,19 @@ import { getSession } from "next-auth/react";
 import { HiUserCircle } from "react-icons/hi";
 import { toast } from "react-toastify";
 import SignOutConfirmation from "../components/signOutConfimation";
+import Link from "next/link";
 
 
 export async function getServerSideProps({ req }) {
   let session = await getSession({ req });
-  // session = "eyJpZCI6IjBiMjM2NDk0LTZhOTYtNDQ3ZS1hN2EwLWZmMjljNTA0MzJmYiIsImMiOjE3MDk4OTM5ODU4ODEsInMiOjEsInIiOjEsInNiIjowLCJzciI6MCwic2UiOjAsImZzIjowLCJzcCI6MX0"
 
-  console.log("kajal",{ session });
+
+
   if (!session) {
     return {
       redirect: {
         permanent: false,
-        destination: "/login",
+        destination: "/",
       },
     };
   } else {
@@ -119,7 +121,7 @@ const myprofile = ({ profile, session }) => {
       <Head>
         <title>My Profile</title>
       </Head>
-      <div className="min-h-screen container lg:w-2/5   m-auto p-5 ">
+      <div className="min-h-screen container lg:w-2/5 mt-4  m-auto p-5 ">
         <h1 className="font-medium text-xl flex gap-2 mx-auto justify-center items-center">
           <HiUserCircle className="text-2xl" />
           My Profile
@@ -168,13 +170,25 @@ const myprofile = ({ profile, session }) => {
                   </h1>
                 )}
               </div>
-              <div className="">
-                <button type="submit" className=" btn2">
+              <div className="my-4">
+                <button type="submit" className="mybtn text-bold  w-full">
                   Update Profile
                 </button>
               </div>
-              <SignOutConfirmation signOut={signOut} />
-            </div>
+              <div className="my-4">
+               <Link className='mybtn w-full' href='/myorders'>
+                  
+               <button type="submit" className="mybtn text-bold  w-full">
+
+                My Orders
+                  </button>
+                </Link>
+              </div>
+              <div className="w-full">
+                <SignOutConfirmation className="p-2 w-full" signOut={signOut} />
+              </div>
+              </div>
+
           </form>
         </div>
       </div>

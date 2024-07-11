@@ -72,48 +72,7 @@ const MobileSidebar = ({
                   <HiHome className="mb-1" /> Home
                 </h6>
               </Link>
-              {status != "authenticated" ? (
-                <Link href="/login">
-                  <h6
-                    onClick={() => setCloseSidebar(!closeSidebar)}
-                    className=" text-gray-500 capitalize p-2 border-b"
-                  >
-                    Sign In
-                  </h6>
-                </Link>
-              ) : (
-                <div className="space-y-2">
-                  <Link href="/myprofile">
-                    <h6 className=" text-gray-500 flex items-center gap-x-2 m-0 capitalize p-2 border-b">
-                      <BsPersonCircle className="mb-1" />{" "}
-                      {session && session.user.name}
-                    </h6>
-                  </Link>
-
-                  <Link href="/myorders">
-                    <h6
-                      onClick={() => setCloseSidebar(!closeSidebar)}
-                      className=" text-gray-500 flex items-center gap-x-2 m-0 capitalize p-2 border-b"
-                    >
-                      <CiShoppingBasket className="mb-1 text-lg" /> My Orders
-                    </h6>
-                  </Link>
-                  <Link href="/wishlist">
-                    <h6
-                      onClick={() => setCloseSidebar(!closeSidebar)}
-                      className=" text-gray-500 flex items-center gap-x-2 m-0 capitalize p-2 border-b"
-                    >
-                      <SiWish className="mb-1 text-lg" /> My Wishlist
-                    </h6>
-                  </Link>
-                  <h6
-                    onClick={() => signOut({ callbackUrl: "/" })}
-                    className=" text-gray-500 flex items-center gap-x-2 m-0 capitalize p-2 border-b"
-                  >
-                    <HiOutlineLogout className="mb-1 text-lg" /> Logout
-                  </h6>
-                </div>
-              )}
+             
             </div>
           </div>
           <div className=" overflow-y-auto">
