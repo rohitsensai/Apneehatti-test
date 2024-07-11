@@ -183,12 +183,9 @@ export default function Home({ socket_URL }) {
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
       </Head >
       <div className="bg-grey;">
         <Herosection />
-
-
         <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
           <div className="">
             <img
@@ -208,16 +205,10 @@ export default function Home({ socket_URL }) {
               loading="lazy"
               placeholder="blur"
               blurDataURL="/images/banner/offer-1.png"
-
             />
-          </div>
-
         </div>
-
+      </div>
         <div className=" ">
-
-
-
           <div className="py-4">
             <h3 className="text-center text-2xl font-semibold uppercase  ">
               Deals of the day
@@ -226,18 +217,10 @@ export default function Home({ socket_URL }) {
               Upto 50% Off plus free shipping | Grab it Fast
             </h3>
           </div>
-
         </div>
-
-
-
-
-       
-
         <div>
-
           <BannerandProduct name="LATEST NEW ARRIVAL" slider={newArrivalSlider} products={newArrival} image="/images/banner/new.jpg"/>
-          <BannerandProduct name="TOP DEALS" slider={topDealSlider} products={topDeals} image="/images/banner/3.jpg"/>
+          <BannerandProduct name="TOP DEALS" slider={topDealSlider} products={topDeals} image="/images/banner/2.jpg"/>
           <BannerandProduct name="SUMMER SPECIAL" slider={bestSellerSlider} products={topDeals} image="/images/banner/summer.jpg"/>
           <BannerandProduct name="TOP SELLING PRODUCTS" slider={trendingProductSlider} products={topDeals} image="/images/banner/3.jpg"/>
           <BannerandProduct name="HANDLOOMS" slider={handloomsSlider} products={products1} image="/images/banner/handlooms.jpg"/>
@@ -245,18 +228,10 @@ export default function Home({ socket_URL }) {
           <BannerandProduct name="HANDCRAFTS" slider={handcraftsSlider} products={products3} image="/images/banner/handcrafts.jpg"/>
           <BannerandProduct name="ORGANIC FOOD PRODUCTS" slider={organiSlider} products={products4} image="/images/banner/organics.jpg"/>
           <BannerandProduct name="HEALTH CARE" slider={healthCareSlider} products={products5} image="/images/banner/healthcare.jpg"/>
-
-  
-
         </div>
       </div>
       <Benefits />
       <Testimonials />
-
-
-
-
-
     </>
   );
 }
