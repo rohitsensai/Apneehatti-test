@@ -55,7 +55,7 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
     (state) => state.cart
   );
   const [shipping, setShipping] = useState(0)
-  
+
   const { data: session, status } = useSession();
   const router = useRouter();
   const Razorpay = useRazorpay();
@@ -422,10 +422,10 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
   console.log("picked=", pickedaddress)
 
   useEffect(() => {
-    if(session === null){
+    if (session === null) {
       router.push('/');
     }
-  },[session])
+  }, [session])
 
 
   return (
@@ -661,7 +661,9 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 </div>
               </div>
             )}
-            <div className="relative ">
+            <div className="bg-white">
+            <div >Add Promotional Code</div>
+            <div className="relative flex">
               <input
                 onBlur={(e) => couponHandler(e)}
                 onClick={() => setShowCouponField(true)}
@@ -669,19 +671,20 @@ const PlaceOrder = ({ saved_address, RAZORPAY_KEY }) => {
                 name="discount"
                 onChange={(e) => setCoupon_code(e.target.value)}
                 id="discount"
-                className="text-center border-0 border-gray-300 placeholder:text-green-500 placeholder:font-medium text-sm rounded-lg focus:ring-green-500 focus:shadow focus:border  focus:border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-green-500"
-                placeholder="Add promotional code"
+                className="text-center text-sm rounded-l-lg focus:ring-green-500 focus:shadow focus:border-none border-green-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-green-500 dark:focus:border-none"
               />
-              {showCouponField && (
-                <button
-                  type="button"
-                  onClick={isCouponValid}
-                  className=" w-44 absolute rounded-lg top-[3px] right-0 text-center text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm px-5 mr-2  dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
-                >
-                  Apply
-                </button>
-              )}
+
+              <button
+                type="button"
+                onClick={isCouponValid}
+                className="w-auto px-5 flex items-center justify-center rounded-r-lg text-white bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-300 font-medium border-2 border-green-700 text-sm dark:bg-green-600 dark:hover:bg-green-700 focus:outline-none dark:focus:ring-green-800"
+              >
+                Apply
+              </button>
             </div>
+            </div>
+
+
             <div className="rounded shadow px-5 py-2 ">
               <h4 className="text-lg py-4 ">Payment Details</h4>
               <div className="grid grid-cols-1 space-y-3 md:space-y-0 md:grid-cols-2">
