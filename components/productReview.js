@@ -4,6 +4,8 @@ import React from "react";
 import { FaRegThumbsDown, FaRegThumbsUp } from "react-icons/fa";
 import calculateAverageRating from "../helper/calculateAverageRating";
 import Image from "next/image";
+import { toast } from "react-toastify";
+
 
 const ProductReview = ({
   reviews,
@@ -24,6 +26,10 @@ const ProductReview = ({
   product_data,
 }) => {
   const router = useRouter();
+  const handlereview = () => {
+    toast.warning("Please SignIn First");
+    console.log("hii")
+  }
   return (
     <>
       <div className="border bg-white rounded">
@@ -78,7 +84,7 @@ const ProductReview = ({
                   onClick={() => {
                     session && session.user
                       ? setReviewModalOpen(!reviewModalOpen)
-                      : router.push("/login");
+                      : handlereview();
                   }}
                   className=" px-10 py-2 rounded uppercase  text-sm font-bold w-full mt-2 border border-black cursor-pointer"
                 >

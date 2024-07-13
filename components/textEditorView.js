@@ -15,32 +15,32 @@ const TextEditorView = ({ desc }) => {
   // Define a helper function to render table rows
   const renderTableRows = () => {
     if (!desc) return null; // Return early if desc is empty
-
+  
     const prevDesc = JSON.parse(desc);
     const blocks = prevDesc.blocks;
-
+  
     return blocks.map((block, index) => {
       const { text } = block;
       const colonIndex = text.indexOf(":");
       if (colonIndex !== -1) {
         const propertyName = text.substring(0, colonIndex).trim();
         const propertyValue = text.substring(colonIndex + 1).trim();
-
+  
         return (
-          <tr key={index}>
-            <td style={{ padding: "0 10px" }}>{propertyName}</td>
-            <td style={{ padding: "0 10px" }}>{propertyValue}</td>
+          <tr key={index} className="border-b border-gray-200">
+            <td className="px-4 py-2">{propertyName}</td>
+            <td className="px-4 py-2">{propertyValue}</td>
           </tr>
         );
       }
       return null; // Skip rendering if colonIndex is -1 (invalid format)
     });
   };
+  
 
   return (
-    
     <div>
-      <table id={textEditorView["property-table"]} className={textEditorView["table"]} >
+      <table id={textEditorView["property-table"]} className={textEditorView["table"]}>
         <thead>
           <tr>
             <th style={{ padding: "0 10px" }} className={textEditorView["th"]}>Property Name</th>
@@ -52,6 +52,9 @@ const TextEditorView = ({ desc }) => {
         </tbody>
       </table>
     </div>
+
+
+
   );
 };
 

@@ -186,28 +186,30 @@ export default function Home({ socket_URL }) {
       </Head >
       <div className="bg-grey;">
         <Herosection />
-        <div className="grid grid-cols-2 gap-1 mx-4 mx-2 py-0  mt-4 ">
+        <div className="grid grid-cols-2 gap-1 mx-4 py-0  mt-4 ">
           <div className="">
             <img
-              src="/images/banner/offer-2.png"
+              src="/images/banner/image2.png"
               width="100%"
               alt=""
               loading="lazy"
               placeholder="blur"
-              blurDataURL="/images/banner/offer-2.png"
+              blurDataURL="/images/banner/image2.png"
             />
           </div>
           <div className="">
             <img
-              src="/images/banner/offer-1.png"
+              src="/images/banner/image1.png"
               width="100%"
               alt=""
               loading="lazy"
               placeholder="blur"
-              blurDataURL="/images/banner/offer-1.png"
+              blurDataURL="/images/banner/image1.png"
             />
+          </div>
         </div>
-      </div>
+
+
         <div className=" ">
           <div className="py-4">
             <h3 className="text-center text-2xl font-semibold uppercase  ">
@@ -219,15 +221,15 @@ export default function Home({ socket_URL }) {
           </div>
         </div>
         <div>
-          <BannerandProduct name="LATEST NEW ARRIVAL" slider={newArrivalSlider} products={newArrival} image="/images/banner/new.jpg"/>
-          <BannerandProduct name="TOP DEALS" slider={topDealSlider} products={topDeals} image="/images/banner/2.jpg"/>
-          <BannerandProduct name="SUMMER SPECIAL" slider={bestSellerSlider} products={topDeals} image="/images/banner/summer.jpg"/>
-          <BannerandProduct name="TOP SELLING PRODUCTS" slider={trendingProductSlider} products={topDeals} image="/images/banner/3.jpg"/>
-          <BannerandProduct name="HANDLOOMS" slider={handloomsSlider} products={products1} image="/images/banner/handlooms.jpg"/>
-          <BannerandProduct name="SKINCARE & BEAUTY" slider={skinCareandBeautySlider} products={products2} image="/images/banner/skincare.jpg"/>
-          <BannerandProduct name="HANDCRAFTS" slider={handcraftsSlider} products={products3} image="/images/banner/handcrafts.jpg"/>
-          <BannerandProduct name="ORGANIC FOOD PRODUCTS" slider={organiSlider} products={products4} image="/images/banner/organics.jpg"/>
-          <BannerandProduct name="HEALTH CARE" slider={healthCareSlider} products={products5} image="/images/banner/healthcare.jpg"/>
+          <BannerandProduct name="LATEST NEW ARRIVAL" slider={newArrivalSlider} products={newArrival} image="/images/banner/new.jpg" />
+          <BannerandProduct name="TOP DEALS" slider={topDealSlider} products={topDeals} image="/images/banner/2.jpg" />
+          <BannerandProduct name="SUMMER SPECIAL" slider={bestSellerSlider} products={topDeals} image="/images/banner/summer.jpg" />
+          <BannerandProduct name="TOP SELLING PRODUCTS" slider={trendingProductSlider} products={topDeals} image="/images/banner/3.jpg" />
+          <BannerandProduct name="HANDLOOMS" slider={handloomsSlider} products={products1} image="/images/banner/handlooms.jpg" />
+          <BannerandProduct name="SKINCARE & BEAUTY" slider={skinCareandBeautySlider} products={products2} image="/images/banner/skincare.jpg" />
+          <BannerandProduct name="HANDCRAFTS" slider={handcraftsSlider} products={products3} image="/images/banner/handcrafts.jpg" />
+          <BannerandProduct name="ORGANIC FOOD PRODUCTS" slider={organiSlider} products={products4} image="/images/banner/organics.jpg" />
+          <BannerandProduct name="HEALTH CARE" slider={healthCareSlider} products={products5} image="/images/banner/healthcare.jpg" />
         </div>
       </div>
       <Benefits />
